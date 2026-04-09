@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cordão de Coruja — Amuleto de Proteção e Sabedoria | Misticismo Verde</title>
+  <meta name="description" content="Cordão de Coruja artesanal: amuleto de proteção, sabedoria e intuição. Uma peça única para fortalecer a percepção, a clareza e o cuidado espiritual." />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --verde-fundo:#050f07;
+      --verde-escuro:#0a1a0f;
+      --verde-medio:#0d2818;
+      --verde-musgo:#1a3d1f;
+      --verde-claro:#2d5a27;
+      --dourado:#c9a84c;
+      --dourado-claro:#e8c96a;
+      --dourado-suave:#f0dfa0;
+      --creme:#f5ead8;
+      --creme-suave:rgba(245,234,216,0.78);
+      --creme-fraco:rgba(245,234,216,0.48);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      background:var(--verde-fundo);
+      color:var(--creme);
+      font-family:'Cormorant Garamond', Georgia, serif;
+      overflow-x:hidden;
+    }
+
+    nav{
+      position:fixed;
+      top:0;left:0;right:0;
+      z-index:1000;
+      padding:18px 42px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:linear-gradient(to bottom, rgba(5,15,7,0.96), rgba(5,15,7,0.65));
+      border-bottom:1px solid rgba(201,168,76,0.12);
+    }
+
+    .nav-logo{
+      text-decoration:none;
+      color:var(--dourado);
+      font-family:'Cinzel Decorative', serif;
+      font-size:0.95rem;
+      letter-spacing:0.12em;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:28px;
+      list-style:none;
+    }
+
+    .nav-links a{
+      color:var(--creme-suave);
+      text-decoration:none;
+      font-size:0.78rem;
+      letter-spacing:0.2em;
+      text-transform:uppercase;
+      transition:.3s;
+    }
+
+    .nav-links a:hover{
+      color:var(--dourado);
+    }
+
+    .hero{
+      position:relative;
+      min-height:88vh;
+      display:flex;
+      align-items:end;
+      padding:140px 60px 70px;
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(to bottom, rgba(5,15,7,0.28), rgba(5,15,7,0.55) 38%, rgba(5,15,7,0.92) 85%, var(--verde-fundo) 100%),
+        url('img-produto-coruja-1.jpg') center center / cover no-repeat;
+      filter:brightness(.72) saturate(1.05);
+      transform:scale(1.03);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:1;
+      max-width:760px;
+    }
+
+    .tag{
+      display:inline-block;
+      color:var(--dourado);
+      font-size:0.68rem;
+      letter-spacing:0.36em;
+      text-transform:uppercase;
+      margin-bottom:18px;
+    }
+
+    .hero h1{
+      font-family:'Cinzel Decorative', serif;
+      font-size:clamp(1.8rem,4vw,3.2rem);
+      line-height:1.28;
+      margin-bottom:18px;
+      color:var(--creme);
+    }
+
+    .hero p{
+      font-size:1.18rem;
+      line-height:1.8;
+      color:var(--creme-suave);
+      font-style:italic;
+      max-width:680px;
+      margin-bottom:28px;
+    }
+
+    .hero-cta{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn-hero,
+    .btn-sec{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      min-height:46px;
+      padding:12px 26px;
+      font-size:0.76rem;
+      letter-spacing:0.24em;
+      text-transform:uppercase;
+      transition:.3s;
+      font-family:'Cormorant Garamond', serif;
+    }
+
+    .btn-hero{
+      border:1px solid var(--dourado);
+      color:var(--dourado);
+    }
+
+    .btn-hero:hover{
+      background:var(--dourado);
+      color:var(--verde-fundo);
+    }
+
+    .btn-sec{
+      border:1px solid rgba(245,234,216,0.2);
+      color:var(--creme-suave);
+    }
+
+    .btn-sec:hover{
+      border-color:var(--dourado);
+      color:var(--dourado);
+    }
+
+    .container{
+      max-width:1180px;
+      margin:0 auto;
+      padding:0 32px;
+    }
+
+    .section{
+      padding:88px 0;
+    }
+
+    .section-header{
+      text-align:center;
+      margin-bottom:44px;
+    }
+
+    .sec-title{
+      font-family:'Cinzel Decorative', serif;
+      font-size:clamp(1.5rem,3vw,2.5rem);
+      line-height:1.3;
+      color:var(--creme);
+      margin-bottom:14px;
+    }
+
+    .sec-sub{
+      max-width:720px;
+      margin:0 auto;
+      color:var(--creme-fraco);
+      font-size:1.04rem;
+      line-height:1.8;
+      font-style:italic;
+    }
+
+    .intro-card{
+      display:grid;
+      grid-template-columns:1.15fr .95fr;
+      gap:34px;
+      align-items:center;
+      background:linear-gradient(135deg, rgba(13,40,24,0.92), rgba(10,26,15,0.92));
+      border:1px solid rgba(201,168,76,0.18);
+      padding:34px;
+    }
+
+    .intro-card p{
+      font-size:1.08rem;
+      line-height:1.95;
+      color:var(--creme-suave);
+      margin-bottom:18px;
+      font-weight:300;
+    }
+
+    .intro-card p:last-child{
+      margin-bottom:0;
+    }
+
+    .intro-figure img{
+      width:100%;
+      display:block;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      border:1px solid rgba(201,168,76,0.16);
+      filter:brightness(.92);
+    }
+
+    .intro-figure figcaption{
+      margin-top:10px;
+      font-size:.84rem;
+      color:rgba(245,234,216,0.45);
+      font-style:italic;
+      line-height:1.6;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .galeria-card{
+      background:rgba(10,26,15,0.62);
+      border:1px solid rgba(201,168,76,0.12);
+      overflow:hidden;
+    }
+
+    .galeria-card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .galeria-card p{
+      padding:14px 16px 16px;
+      color:rgba(245,234,216,0.62);
+      font-size:.92rem;
+      line-height:1.6;
+      font-style:italic;
+    }
+
+    .beneficios{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      margin-top:10px;
+    }
+
+    .beneficio{
+      background:linear-gradient(135deg, rgba(13,40,24,0.86), rgba(10,26,15,0.72));
+      border:1px solid rgba(201,168,76,0.12);
+      padding:26px 22px;
+    }
+
+    .beneficio h3{
+      color:var(--dourado);
+      font-family:'Cinzel Decorative', serif;
+      font-size:.88rem;
+      line-height:1.45;
+      margin-bottom:10px;
+    }
+
+    .beneficio p{
+      color:var(--creme-suave);
+      line-height:1.82;
+      font-size:1rem;
+      font-weight:300;
+    }
+
+    .bloco-texto{
+      max-width:860px;
+      margin:0 auto;
+    }
+
+    .bloco-texto p{
+      font-size:1.1rem;
+      line-height:2;
+      color:var(--creme-suave);
+      margin-bottom:18px;
+      font-weight:300;
+    }
+
+    .quote{
+      font-family:'IM Fell English', serif;
+      font-size:1.42rem;
+      line-height:1.6;
+      color:var(--dourado-suave);
+      border-left:2px solid rgba(201,168,76,0.34);
+      padding-left:20px;
+      margin:28px 0 34px;
+      font-style:italic;
+    }
+
+    .info-box{
+      background:rgba(201,168,76,0.06);
+      border:1px solid rgba(201,168,76,0.18);
+      padding:28px;
+      margin-top:28px;
+    }
+
+    .info-box ul{
+      padding-left:18px;
+      color:var(--creme-suave);
+    }
+
+    .info-box li{
+      margin-bottom:10px;
+      line-height:1.8;
+      font-size:1rem;
+    }
+
+    .cta-box{
+      text-align:center;
+      background:
+        radial-gradient(circle at center, rgba(42,90,38,0.18), transparent 70%),
+        linear-gradient(135deg, rgba(13,40,24,0.94), rgba(5,15,7,0.96));
+      border:1px solid rgba(201,168,76,0.18);
+      padding:42px 28px;
+    }
+
+    .cta-box h2{
+      font-family:'Cinzel Decorative', serif;
+      color:var(--creme);
+      font-size:clamp(1.3rem,3vw,2rem);
+      line-height:1.4;
+      margin-bottom:16px;
+    }
+
+    .cta-box p{
+      max-width:700px;
+      margin:0 auto 24px;
+      color:var(--creme-suave);
+      line-height:1.85;
+      font-size:1.08rem;
+      font-style:italic;
+    }
+
+    footer{
+      border-top:1px solid rgba(201,168,76,0.1);
+      padding:34px 32px 44px;
+      text-align:center;
+      color:rgba(245,234,216,0.34);
+      font-size:.88rem;
+      line-height:1.7;
+    }
+
+    @media (max-width: 900px){
+      nav{
+        padding:16px 20px;
+      }
+
+      .nav-links{
+        gap:14px;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+      }
+
+      .hero{
+        min-height:76vh;
+        padding:130px 24px 54px;
+      }
+
+      .container{
+        padding:0 18px;
+      }
+
+      .intro-card,
+      .grid-3,
+      .beneficios{
+        grid-template-columns:1fr;
+      }
+
+      .galeria-card img{
+        height:280px;
+      }
+
+      .section{
+        padding:72px 0;
+      }
+    }
+
+    @media (max-width: 560px){
+      .nav-links{
+        display:none;
+      }
+
+      .hero h1{
+        font-size:1.7rem;
+      }
+
+      .hero p,
+      .bloco-texto p,
+      .intro-card p,
+      .cta-box p{
+        font-size:1rem;
+      }
+
+      .galeria-card img{
+        height:240px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Misticismo Verde</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Início</a></li>
+      <li><a href="index.html#loja">Loja</a></li>
+      <li><a href="index.html#sabedoria">Sabedoria</a></li>
+      <li><a href="biblioteca.html">Biblioteca</a></li>
+      <li><a href="index.html#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="tag">✦ Amuleto artesanal · Proteção · Intuição ✦</span>
+      <h1>Cordão de Coruja —<br>Amuleto de Proteção e Sabedoria</h1>
+      <p>
+        Mais do que um acessório, este cordão carrega a presença silenciosa e profunda da coruja —
+        animal de poder ligado à sabedoria, à intuição e à visão além do óbvio.
+      </p>
+      <div class="hero-cta">
+        <a href="https://wa.me/5591996324631?text=Olá!%20Vi%20o%20Cordão%20de%20Coruja%20no%20site%20e%20quero%20saber%20mais." class="btn-hero" target="_blank">Quero este amuleto</a>
+        <a href="#galeria" class="btn-sec">Ver detalhes</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="intro-card">
+        <div>
+          <span class="tag">✦ A força simbólica da coruja ✦</span>
+          <p>
+            Feito artesanalmente à mão, cada peça é única e carrega em si a intenção de conexão com o invisível,
+            com aquilo que não se revela aos olhos apressados.
+          </p>
+          <p>
+            A coruja, guardiã da noite, nos ensina a enxergar na escuridão e a confiar na própria percepção.
+            Sua presença é discreta, mas profunda: ela observa, silencia, escuta e só então se move.
+          </p>
+          <p>
+            Este amuleto é ideal para quem busca proteção energética, clareza nos caminhos e fortalecimento da intuição.
+          </p>
+        </div>
+
+        <figure class="intro-figure">
+          <img src="img-produto-coruja-1.jpg" alt="Cordão artesanal de coruja em detalhe" />
+          <figcaption>
+            Cada peça é feita à mão e carrega pequenas variações que tornam o amuleto singular.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">✦ Galeria do amuleto ✦</span>
+        <h2 class="sec-title">Três olhares sobre a mesma presença</h2>
+        <p class="sec-sub">
+          Um amuleto para quem deseja caminhar com mais percepção, proteção e conexão interior.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <figure class="galeria-card">
+          <img src="img-produto-coruja-1.jpg" alt="Cordão de coruja pendente entre folhas verdes" />
+          <p>Um olhar frontal da peça, ressaltando sua presença silenciosa e protetora.</p>
+        </figure>
+
+        <figure class="galeria-card">
+          <img src="img-produto-coruja-2.jpg" alt="Cordão de coruja artesanal em meio à vegetação" />
+          <p>A coruja como símbolo de discernimento, observação e visão além do aparente.</p>
+        </figure>
+
+        <figure class="galeria-card">
+          <img src="img-produto-coruja-3.jpg" alt="Cordão de coruja apoiado sobre folha verde" />
+          <p>Uma peça que conversa com a natureza e com os mistérios guardados no silêncio.</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">✦ Intenção energética ✦</span>
+        <h2 class="sec-title">Proteção, sabedoria e intuição</h2>
+      </div>
+
+      <div class="beneficios">
+        <div class="beneficio">
+          <h3>Proteção energética</h3>
+          <p>
+            A presença simbólica da coruja favorece recolhimento, observação e defesa sutil do campo energético.
+          </p>
+        </div>
+
+        <div class="beneficio">
+          <h3>Clareza nos caminhos</h3>
+          <p>
+            Um amuleto para momentos em que é preciso enxergar além da pressa, do ruído e da confusão.
+          </p>
+        </div>
+
+        <div class="beneficio">
+          <h3>Fortalecimento da intuição</h3>
+          <p>
+            Ao usá-lo, você se conecta com a energia do discernimento, da escuta interior e da percepção refinada.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="bloco-texto">
+        <span class="tag">✦ Um amuleto para o caminho espiritual ✦</span>
+        <p class="quote">
+          “A coruja guarda a noite não com medo, mas com consciência. Ela vê onde os outros não veem.”
+        </p>
+
+        <p>
+          Mais do que um objeto bonito, este cordão pode acompanhar práticas espirituais, momentos de introspecção
+          e também o dia a dia, como um lembrete silencioso de proteção, presença e lucidez.
+        </p>
+
+        <p>
+          Ele pode ser usado como amuleto pessoal, em rituais, meditações, atendimentos ou sempre que você sentir
+          necessidade de se reconectar com sua própria percepção.
+        </p>
+
+        <div class="info-box">
+          <ul>
+            <li><strong>Intenção energética:</strong> proteção, sabedoria e intuição</li>
+            <li><strong>Produção:</strong> artesanal, feito à mão</li>
+            <li><strong>Uso:</strong> amuleto pessoal para o dia a dia ou para práticas espirituais</li>
+            <li><strong>Natureza da peça:</strong> cada unidade é única, com pequenas diferenças que fazem parte de sua beleza</li>
+            <li><strong>Valor:</strong>R$ 39,90</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-box">
+        <span class="tag">✦ Escolha com intenção ✦</span>
+        <h2>Se esta peça chamou você, talvez não tenha sido por acaso</h2>
+        <p>
+          Cada amuleto encontra quem precisa dele em um momento específico. Se você sentiu conexão com a coruja,
+          fale comigo e eu te envio os detalhes.
+        </p>
+        <a href="https://wa.me/5591996324631?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Cordão%20de%20Coruja." class="btn-hero" target="_blank">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Misticismo Verde · Thai Terrear · Belém, Pará<br>
+    Feito com respeito, intenção e escuta da floresta ✦
+  </footer>
+
+</body>
+</html>

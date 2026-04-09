@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muiraquitã: a lenda viva da Amazônia | Misticismo Verde</title>
+  <meta name="description" content="Um mergulho na lenda, na força simbólica e no valor ancestral do muiraquitã — amuleto amazônico ligado à proteção, memória e pertencimento." />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --verde-fundo: #050f07;
+      --verde-escuro: #0a1a0f;
+      --verde-medio: #0d2818;
+      --verde-musgo: #1a3d1f;
+      --verde-claro: #2d5a27;
+      --dourado: #c9a84c;
+      --dourado-claro: #e8c96a;
+      --dourado-suave: #f0dfa0;
+      --creme: #f5ead8;
+      --creme-suave: rgba(245,234,216,0.75);
+      --creme-fraco: rgba(245,234,216,0.45);
+      --sombra: 0 20px 60px rgba(0,0,0,0.45);
+      --borda: 1px solid rgba(201,168,76,0.18);
+    }
+
+    body {
+      background: linear-gradient(to bottom, var(--verde-fundo), var(--verde-escuro));
+      color: var(--creme);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to bottom, rgba(5,15,7,0.96), rgba(5,15,7,0.45), transparent);
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-logo {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 0.95rem;
+      color: var(--dourado);
+      text-decoration: none;
+      letter-spacing: 0.12em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo svg { width: 26px; height: 26px; }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--creme-suave);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover { color: var(--dourado); }
+
+    .nav-cta {
+      border: 1px solid var(--dourado);
+      color: var(--dourado) !important;
+      padding: 8px 18px;
+    }
+
+    .hero {
+      min-height: 88vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 140px 24px 90px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(5,15,7,0.35), rgba(5,15,7,0.55) 35%, rgba(5,15,7,0.9) 78%, var(--verde-fundo) 100%),
+        url('img-produto-muiraquita-uso.jpg') center top / cover no-repeat;
+      filter: brightness(0.45) saturate(0.95);
+      transform: scale(1.03);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(201,168,76,0.06), transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 0.42em;
+      font-size: 0.68rem;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.22;
+      color: var(--creme);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span { color: var(--dourado-suave); }
+
+    .hero-sub {
+      max-width: 700px;
+      margin: 0 auto 26px;
+      color: rgba(245,234,216,0.82);
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      line-height: 1.8;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .hero-meta {
+      color: rgba(245,234,216,0.45);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .main-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+
+    .intro-card {
+      margin: -50px auto 70px;
+      position: relative;
+      z-index: 3;
+      max-width: 980px;
+      padding: 34px 34px;
+      background: linear-gradient(135deg, rgba(13,40,24,0.95), rgba(10,26,15,0.92));
+      border: var(--borda);
+      box-shadow: var(--sombra);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .intro-card p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: rgba(245,234,216,0.78);
+      font-weight: 300;
+    }
+
+    .intro-figure img {
+      width: 100%;
+      display: block;
+      border: 1px solid rgba(201,168,76,0.18);
+      filter: brightness(0.95);
+    }
+
+    .intro-figure small {
+      display: block;
+      margin-top: 10px;
+      color: rgba(245,234,216,0.38);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 760px) minmax(260px, 320px);
+      gap: 42px;
+      align-items: start;
+    }
+
+    .article {
+      min-width: 0;
+    }
+
+    .section {
+      margin-bottom: 56px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      font-size: 0.66rem;
+    }
+
+    .section h2 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      line-height: 1.35;
+      color: var(--creme);
+      margin-bottom: 18px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: rgba(245,234,216,0.78);
+      font-weight: 300;
+      margin-bottom: 18px;
+    }
+
+    .section p strong {
+      color: var(--creme);
+      font-weight: 600;
+    }
+
+    .destaque {
+      font-family: 'IM Fell English', serif;
+      font-size: 1.35rem !important;
+      font-style: italic;
+      color: var(--dourado-suave) !important;
+      line-height: 1.75 !important;
+      border-left: 2px solid rgba(201,168,76,0.35);
+      padding-left: 22px;
+      margin: 24px 0 30px !important;
+    }
+
+    .image-block {
+      margin: 20px auto;
+      max-width: 70%;
+      background: linear-gradient(135deg, rgba(13,40,24,0.82), rgba(10,26,15,0.72));
+      border: var(--borda);
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    .image-block img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      filter: brightness(0.88) saturate(1.05);
+}
+
+    .image-block figcaption {
+      margin-top: 12px;
+      color: rgba(245,234,216,0.5);
+      font-size: 0.92rem;
+      font-style: italic;
+      line-height: 1.7;
+    }
+
+    .callout {
+      margin: 28px 0 34px;
+      padding: 24px 24px;
+      border: 1px solid rgba(201,168,76,0.22);
+      background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(13,40,24,0.45));
+    }
+
+    .callout h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 0.86rem;
+      color: var(--dourado);
+      letter-spacing: 0.14em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .callout p {
+      margin: 0;
+      font-size: 1rem;
+      color: rgba(245,234,216,0.76);
+      line-height: 1.85;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .side-card {
+      background: linear-gradient(135deg, rgba(13,40,24,0.88), rgba(10,26,15,0.88));
+      border: var(--borda);
+      padding: 26px 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.28);
+    }
+
+    .side-card h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      color: var(--dourado);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .side-card p,
+    .side-card li {
+      color: rgba(245,234,216,0.7);
+      line-height: 1.8;
+      font-size: 0.96rem;
+      font-weight: 300;
+    }
+
+    .side-card ul {
+      padding-left: 18px;
+    }
+
+    .side-card li {
+      margin-bottom: 8px;
+    }
+
+    .btn-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .btn-main,
+    .btn-sec {
+      display: inline-block;
+      text-decoration: none;
+      padding: 13px 24px;
+      font-size: 0.76rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      transition: all 0.28s ease;
+    }
+
+    .btn-main {
+      border: 1px solid var(--dourado);
+      color: var(--dourado);
+    }
+
+    .btn-main:hover {
+      background: var(--dourado);
+      color: var(--verde-fundo);
+    }
+
+    .btn-sec {
+      border: 1px solid rgba(245,234,216,0.15);
+      color: rgba(245,234,216,0.7);
+    }
+
+    .btn-sec:hover {
+      border-color: rgba(201,168,76,0.4);
+      color: var(--dourado);
+      background: rgba(201,168,76,0.05);
+    }
+
+    .ritual-strip {
+      margin: 70px 0 0;
+      padding: 90px 24px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.08);
+      border-bottom: 1px solid rgba(201,168,76,0.08);
+    }
+
+    .ritual-strip::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(5,15,7,0.88), rgba(5,15,7,0.78)),
+        url('img-art-ervas.jpg') center / cover no-repeat;
+      filter: brightness(0.35) saturate(0.85);
+    }
+
+    .ritual-strip .inner {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .ritual-strip h2 {
+      font-family: 'IM Fell English', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-style: italic;
+      color: var(--dourado-suave);
+      line-height: 1.45;
+      margin-bottom: 18px;
+    }
+
+    .ritual-strip p {
+      color: rgba(245,234,216,0.7);
+      font-size: 1.06rem;
+      line-height: 1.85;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .assinatura {
+      margin-top: 34px;
+      font-family: 'Cinzel Decorative', serif;
+      color: var(--dourado);
+      font-size: 0.95rem;
+    }
+
+    .assinatura span {
+      display: block;
+      margin-top: 5px;
+      font-family: 'Cormorant Garamond', serif;
+      color: rgba(201,168,76,0.45);
+      font-size: 0.76rem;
+      font-style: italic;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      padding: 36px 24px 50px;
+      text-align: center;
+      color: rgba(245,234,216,0.3);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 980px) {
+      nav {
+        padding: 16px 18px;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .intro-card,
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .hero {
+        padding-top: 180px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      .hero-sub,
+      .section p { font-size: 1rem; }
+      .intro-card { padding: 24px 20px; }
+      .section h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html#home" class="nav-logo">
+      <svg viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        <path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+        <path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        <path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+      Misticismo Verde
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html#home">Início</a></li>
+      <li><a href="index.html#loja">Portal da Loja</a></li>
+      <li><a href="biblioteca.html">Biblioteca Viva</a></li>
+      <li><a href="produto-muiraquita.html" class="nav-cta">Ver o Muiraquitã</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">✦ Biblioteca Viva · Ancestralidade Amazônica ✦</span>
+      <h1>Muiraquitã: a <span>lenda viva</span> da Amazônia</h1>
+      <p class="hero-sub">
+        Mais do que um amuleto, o muiraquitã é memória, proteção simbólica,
+        pertencimento e ponte com a ancestralidade da floresta.
+      </p>
+      <div class="hero-meta">Por Misticismo Verde · Cultura amazônica · Resgate ancestral</div>
+    </div>
+  </section>
+
+  <main class="main-wrap">
+    <section class="intro-card">
+      <div>
+        <p>
+            O muiraquitã não é apenas um objeto bonito, nem apenas um adorno carregado de mistério.
+            Ele é um símbolo que atravessa séculos, reunindo lenda, espiritualidade, memória e identidade amazônica.
+            Em suas formas ancestrais, era esculpido em pedra verde e associado à figura da rã ou do sapo — guardião das águas, da fertilidade e dos ciclos da vida. Hoje, pode ser encontrado em diferentes materiais, como cerâmica, madeira, resinas e outros elementos contemporâneos.
+            Essa transformação não enfraquece sua força — pelo contrário, revela sua capacidade de atravessar o tempo e se adaptar sem perder sua essência. O que sustenta o poder do muiraquitã não é apenas a matéria, mas a identidade cultural, a ancestralidade e o significado que ele carrega.
+            Mais do que um amuleto físico, ele continua sendo um símbolo vivo de proteção, conexão com a natureza e vínculo com saberes antigos — pulsando entre o passado e o presente, em diferentes formas, mas com a mesma essência.
+        </p>
+      </div>
+      <figure class="intro-figure">
+        <img src="img-produto-muiraquita-cartao.jpg" alt="Muiraquitã artesanal com cartão explicativo" />
+        <small>Muiraquitã artesanal · símbolo de proteção e memória</small>
+      </figure>
+    </section>
+
+    <section class="article-grid">
+      <article class="article">
+
+        <div class="section">
+          <span class="section-tag">✦ Origem e presença ✦</span>
+          <h2>Um símbolo que vive entre a história e o encantamento</h2>
+          <p>
+            Falar do muiraquitã é falar de um símbolo que vive em duas dimensões ao mesmo tempo:
+            a da história e a do encantamento. Do lado arqueológico, ele aparece como um artefato sofisticado,
+            produzido em pedra verde e ligado a povos amazônicos de alta complexidade social. Do lado da tradição oral,
+            ele surge envolto em narrativas de poder feminino, mistério e conexão com as águas sagradas da Amazônia.
+          </p>
+          <p>
+            É justamente nessa convivência entre matéria e mito que sua força permanece viva até hoje.
+            O muiraquitã não se explica por inteiro apenas pela ciência, nem apenas pela lenda.
+            Ele atravessa as duas. E talvez seja isso que o torne tão profundo: ele é, ao mesmo tempo,
+            presença física e linguagem simbólica.
+          </p>
+          <p class="destaque">
+            “Há símbolos que não pertencem apenas ao passado. Eles continuam respirando dentro da memória de um povo.”
+          </p>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ A lenda do muiraquitã ✦</span>
+          <h2>As Icamiabas, as águas sagradas e o mistério da floresta</h2>
+          <p>
+            Uma das narrativas mais conhecidas liga o muiraquitã às Icamiabas,
+            as lendárias mulheres guerreiras da Amazônia. Segundo a tradição,
+            elas ofereciam o muiraquitã como presente sagrado em rituais ligados às águas,
+            à fertilidade e à força vital. Em diferentes versões do mito, essas pedras verdes
+            surgem do fundo de lagos encantados ou são associadas a poderes guardados
+            nas profundezas da floresta e das águas.
+          </p>
+          <p>
+            Essa dimensão lendária fez do muiraquitã muito mais do que um ornamento:
+            transformou-o em emblema de mistério, feminilidade, proteção e poder ancestral.
+            Na Amazônia, onde a natureza nunca é apenas cenário, a água, os animais,
+            as pedras e os ciclos carregam sentido. O muiraquitã nasce justamente nesse universo
+            em que o visível e o invisível caminham juntos.
+          </p>
+
+          <figure class="image-block">
+            <img src="img-produto-muiraquita-uso.jpg" alt="Muiraquitã sendo usado no corpo" />
+            <figcaption>
+              Usado junto ao corpo, o muiraquitã ganha ainda mais força simbólica:
+              presença, intenção, proteção e lembrança viva da ancestralidade.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ História e arqueologia ✦</span>
+          <h2>O que os vestígios antigos revelam</h2>
+          <p>
+            Para além da tradição oral, o muiraquitã também possui forte relevância histórica.
+            Estudos arqueológicos associam esses artefatos às sociedades do Baixo Amazonas,
+            especialmente aos universos Tapajó e Konduri, mostrando que eles circularam em redes
+            amplas de troca, prestígio e relação entre povos antigos.
+          </p>
+          <p>
+            Isso é importante porque rompe uma visão rasa sobre a Amazônia pré-colonial.
+            O muiraquitã nos lembra que havia tecnologia, estética, espiritualidade,
+            circulação de matérias-primas e sistemas complexos de valor muito antes da colonização europeia.
+            Não se trata de uma peça isolada: trata-se de um vestígio de civilizações sofisticadas,
+            com profunda inteligência material e simbólica.
+          </p>
+
+          <div class="callout">
+            <h3>Importante</h3>
+            <p>
+              Quando o Misticismo Verde fala do muiraquitã, não está reduzindo esse símbolo a superstição.
+              Está reconhecendo sua riqueza cultural, sua força ritual e o valor histórico de uma herança amazônica
+              que sobreviveu ao tempo.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ Benefícios do uso ✦</span>
+          <h2>O que significa carregar um muiraquitã</h2>
+          <p>
+            Falar dos benefícios de usar o muiraquitã é falar, antes de tudo,
+            de uma experiência simbólica e espiritual. Na tradição amazônica e no imaginário popular,
+            ele é ligado à proteção, à sorte, à força interior, ao amor e à conexão com a ancestralidade.
+            Seu uso atravessa o tempo porque ele é percebido como um objeto de presença:
+            algo que lembra quem você é, de onde vem sua força e com quais energias deseja caminhar.
+          </p>
+          <p>
+            Para algumas pessoas, o muiraquitã atua como um lembrete de proteção.
+            Para outras, é um vínculo com a floresta e com os saberes antigos.
+            Há quem o use como símbolo de coragem, enraizamento, abertura de caminhos
+            e fortalecimento da própria identidade. Seu valor está menos em promessas automáticas
+            e mais na intenção que ele sustenta.
+          </p>
+          <p>
+            Um amuleto ancestral não substitui a caminhada interior — mas pode acompanhá-la.
+            E quando essa companhia carrega memória, pertencimento e reverência,
+            ela se torna mais do que um objeto: torna-se uma presença de caminho.
+          </p>
+        </div>
+
+        <figure class="image-block">
+          <img src="img-art-elementos.jpg" alt="Mistura dos elementos" />
+          <figcaption>
+            O muiraquitã conversa com o mesmo universo simbólico das ervas, da terra,
+            das águas e dos rituais de reconexão com a natureza.
+          </figcaption>
+        </figure>
+
+        <div class="section">
+          <span class="section-tag">✦ Resgate ancestral ✦</span>
+          <h2>Por que esse resgate é tão rico hoje</h2>
+          <p>
+            Resgatar o muiraquitã hoje é muito mais do que repetir uma lenda bonita.
+            É devolver profundidade a saberes amazônicos que durante séculos foram exotificados,
+            empurrados para a margem ou lidos sem escuta verdadeira. É reconhecer que a floresta
+            também produz pensamento, espiritualidade, arte, técnica e modos complexos de habitar o mundo.
+          </p>
+          <p>
+            Esse resgate é rico porque nos convida a sair da lógica do consumo vazio e entrar na lógica da relação.
+            Quando alguém usa ou contempla um muiraquitã com respeito, não está apenas adquirindo uma peça.
+            Está tocando uma herança cultural viva. Está se aproximando de uma memória amazônica que continua pulsando,
+            apesar do apagamento histórico. Está dizendo, de algum modo, que essa ancestralidade não ficou para trás.
+          </p>
+          <p>
+            Em um tempo em que tanta coisa perdeu profundidade, o muiraquitã permanece como convite à presença.
+            Ele nos lembra que há símbolos que não foram feitos para a pressa. Foram feitos para serem honrados.
+            Para quem sente chamado pela ancestralidade, pela floresta e por uma espiritualidade mais enraizada,
+            o muiraquitã pode ser menos um acessório e mais uma companhia de travessia.
+          </p>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ Fechamento ✦</span>
+          <h2>Uma pequena peça, um mundo inteiro de memória</h2>
+          <p>
+            O muiraquitã segue vivo porque nunca foi apenas pedra.
+            Ele é lembrança, oferenda, símbolo e travessia. Carrega em si a força das águas,
+            o eco das mulheres encantadas, a inteligência dos povos da Amazônia e a beleza
+            de uma herança que resiste.
+          </p>
+          <p>
+            Resgatar o muiraquitã é, no fundo, resgatar uma forma mais profunda de pertencimento:
+            com a terra, com a memória e com o sagrado. E talvez por isso ele ainda toque tanta gente —
+            porque em tempos de excesso, ele devolve essência.
+          </p>
+
+          <div class="assinatura">
+            Misticismo Verde
+            <span>Sabedoria ancestral da floresta · Belém, Pará</span>
+          </div>
+        </div>
+
+      </article>
+
+      <aside class="sidebar">
+        <div class="side-card">
+          <h3>Sobre este artigo</h3>
+          <p>
+            Este texto foi pensado como conteúdo editorial, separado da página de venda,
+            para aprofundar a dimensão cultural, simbólica e ancestral do muiraquitã.
+          </p>
+        </div>
+
+        <div class="side-card">
+          <h3>Temas que ele aborda</h3>
+          <ul>
+            <li>Lenda das Icamiabas</li>
+            <li>Muiraquitã e águas sagradas</li>
+            <li>Valor simbólico e espiritual</li>
+            <li>História amazônica e arqueologia</li>
+            <li>Resgate ancestral e pertencimento</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>Leitura complementar</h3>
+          <p>
+            Depois deste artigo, o caminho mais natural é conhecer a peça artesanal
+            e ver como esse símbolo foi acolhido dentro do Misticismo Verde.
+          </p>
+          <div class="btn-wrap">
+            <a href="produto-muiraquita.html" class="btn-main">Ver o Muiraquitã</a>
+            <a href="biblioteca.html" class="btn-sec">Voltar à Biblioteca</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <section class="ritual-strip">
+    <div class="inner">
+      <h2>“Há objetos que não servem apenas para enfeitar. Servem para lembrar.”</h2>
+      <p>
+        Lembrar da floresta. Lembrar da ancestralidade. Lembrar de que nem tudo precisa ser explicado
+        para ser sentido com verdade.
+      </p>
+      <a href="produto-muiraquita.html" class="btn-main">Conhecer a peça artesanal</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Misticismo Verde · misticismoverde.com.br<br>
+    <span style="font-size:0.72rem; opacity:0.7;">Feito com respeito, memória e intenção ✦</span>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produto — Misticismo Verde</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+:root {
+  --d:#c9a84c; --ds:#f0dfa0; --cr:#f5ead8;
+  --cs:rgba(245,234,216,.75); --cf:rgba(245,234,216,.45);
+  --vf:#050f07; --ve:#0a1a0f; --vm:#0d2818;
+}
+body { background:var(--vf); color:var(--cr); font-family:'Cormorant Garamond',Georgia,serif; overflow-x:hidden; }
+
+/* NAV */
+nav { position:fixed; top:0; left:0; right:0; z-index:1000; padding:18px 60px; display:flex; align-items:center; justify-content:space-between; background:linear-gradient(to bottom,rgba(5,15,7,.97),transparent); transition:background .3s,padding .3s; }
+nav.scrolled { background:rgba(5,15,7,.98); padding:12px 60px; border-bottom:1px solid rgba(201,168,76,.12); }
+.nav-logo { font-family:'Cinzel Decorative',serif; font-size:.9rem; color:var(--d); text-decoration:none; display:flex; align-items:center; gap:10px; letter-spacing:.12em; }
+.nav-links { display:flex; gap:32px; list-style:none; }
+.nav-links a { color:var(--cf); text-decoration:none; font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; transition:color .3s; }
+.nav-links a:hover,.nav-links a.ativo { color:var(--d); }
+.nav-cta { border:1px solid var(--d)!important; color:var(--d)!important; padding:6px 16px; }
+.nav-cta:hover { background:var(--d)!important; color:var(--vf)!important; }
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
+.hamburger span { width:24px; height:1px; background:var(--d); display:block; }
+
+/* HERO — layout duas colunas */
+.hero { position:relative; min-height:100vh; display:grid; grid-template-columns:1fr 1fr; align-items:center; padding-top:80px; }
+.hero-bg { position:absolute; inset:0; z-index:0; background:url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=80') center/cover no-repeat; filter:brightness(.2) saturate(1.4); }
+.hero-grad { position:absolute; inset:0; z-index:1; background: radial-gradient(ellipse 70% 90% at 25% 50%,rgba(5,15,7,.97),transparent 72%), linear-gradient(to right,rgba(5,15,7,.88) 35%,transparent 75%), linear-gradient(to top,rgba(5,15,7,1) 0%,transparent 28%); }
+.hero-txt { position:relative; z-index:2; padding:80px 60px 80px 80px; }
+.hero-eyebrow { font-size:.64rem; letter-spacing:.5em; text-transform:uppercase; color:var(--d); margin-bottom:18px; display:block; animation:fiu 1s ease both; }
+.hero-titulo { font-family:'Cinzel Decorative',serif; font-size:clamp(1.7rem,3.2vw,3rem); color:var(--cr); line-height:1.2; margin-bottom:10px; animation:fiu 1s .15s ease both; }
+.hero-energia { font-family:'IM Fell English',serif; font-size:clamp(.95rem,1.6vw,1.2rem); font-style:italic; color:var(--ds); margin-bottom:26px; animation:fiu 1s .3s ease both; }
+.hero-intro { font-size:1rem; line-height:1.9; color:rgba(245,234,216,.68); font-weight:300; max-width:500px; margin-bottom:38px; animation:fiu 1s .45s ease both; }
+.hero-acoes { display:flex; gap:14px; flex-wrap:wrap; animation:fiu 1s .6s ease both; }
+.btn-comprar { display:inline-flex; align-items:center; gap:9px; background:rgba(37,211,102,.11); border:1px solid rgba(37,211,102,.38); color:#63e887; padding:13px 28px; text-decoration:none; font-family:'Cormorant Garamond',serif; font-size:.8rem; letter-spacing:.2em; text-transform:uppercase; transition:all .3s; cursor:pointer; }
+.btn-comprar:hover { background:rgba(37,211,102,.2); transform:translateY(-2px); }
+.btn-sec { display:inline-flex; align-items:center; gap:8px; background:none; border:1px solid rgba(201,168,76,.22); color:rgba(201,168,76,.55); padding:13px 24px; font-family:'Cormorant Garamond',serif; font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; transition:all .3s; text-decoration:none; cursor:pointer; }
+.btn-sec:hover { color:var(--d); border-color:var(--d); }
+
+/* IMAGEM hero */
+.hero-img { position:relative; z-index:2; padding:80px 80px 80px 40px; display:flex; flex-direction:column; align-items:center; }
+.img-wrap { position:relative; width:100%; max-width:420px; cursor:zoom-in; }
+.img-frame { position:absolute; inset:-14px; border:1px solid rgba(201,168,76,.13); pointer-events:none; z-index:1; }
+.img-c1,.img-c2,.img-c3,.img-c4 { position:absolute; width:26px; height:26px; border-color:var(--d); border-style:solid; pointer-events:none; z-index:2; }
+.img-c1 { top:-14px;    left:-14px;  border-width:1px 0 0 1px; }
+.img-c2 { top:-14px;    right:-14px; border-width:1px 1px 0 0; }
+.img-c3 { bottom:-14px; left:-14px;  border-width:0 0 1px 1px; }
+.img-c4 { bottom:-14px; right:-14px; border-width:0 1px 1px 0; }
+.prod-img { width:100%; display:block; filter:brightness(.86) saturate(1.15); transition:filter .5s,transform .6s; }
+.img-wrap:hover .prod-img { filter:brightness(.98) saturate(1.3); transform:scale(1.03); }
+.img-hint { margin-top:14px; font-size:.63rem; letter-spacing:.28em; text-transform:uppercase; color:rgba(201,168,76,.35); }
+.preco { margin-top:26px; font-family:'Cinzel Decorative',serif; font-size:1.55rem; color:var(--d); }
+.preco-det { font-size:.76rem; font-style:italic; color:rgba(245,234,216,.35); margin-top:4px; letter-spacing:.1em; text-align:center; }
+
+/* LIGHTBOX */
+.lb-ov { position:fixed; inset:0; z-index:9000; background:rgba(5,15,7,.97); display:none; align-items:center; justify-content:center; padding:40px; backdrop-filter:blur(14px); cursor:zoom-out; }
+.lb-ov.open { display:flex; }
+.lb-inner { position:relative; max-width:780px; width:100%; animation:lbIn .5s cubic-bezier(.22,1,.36,1) both; cursor:default; }
+@keyframes lbIn { from{opacity:0;transform:scale(.88)} to{opacity:1;transform:scale(1)} }
+.lb-img { width:100%; display:block; box-shadow:0 40px 100px rgba(0,0,0,.7); filter:brightness(.95) saturate(1.2); }
+.lb-close { position:absolute; top:-18px; right:-18px; width:42px; height:42px; border-radius:50%; background:rgba(13,40,24,.98); border:1px solid rgba(201,168,76,.32); color:var(--d); font-size:1rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .3s; }
+.lb-close:hover { background:rgba(201,168,76,.15); transform:scale(1.1); }
+.lb-cap { text-align:center; margin-top:18px; font-family:'Cinzel Decorative',serif; font-size:.73rem; color:rgba(201,168,76,.45); letter-spacing:.15em; }
+
+/* CONTEÚDO */
+.conteudo { max-width:860px; margin:0 auto; padding:0 60px 120px; }
+.secao { padding:64px 0; border-bottom:1px solid rgba(201,168,76,.07); }
+.secao:last-of-type { border-bottom:none; }
+.s-eyebrow { font-size:.62rem; letter-spacing:.5em; text-transform:uppercase; color:var(--d); opacity:.8; display:block; margin-bottom:14px; }
+.s-titulo { font-family:'Cinzel Decorative',serif; font-size:clamp(1.1rem,2.2vw,1.55rem); color:var(--cr); line-height:1.3; margin-bottom:20px; }
+.s-corpo { font-size:1rem; line-height:1.95; color:rgba(245,234,216,.68); font-weight:300; }
+.s-corpo p { margin-bottom:15px; }
+.s-corpo p:last-child { margin-bottom:0; }
+.s-corpo em { font-style:italic; color:rgba(245,234,216,.88); }
+.s-corpo strong { font-weight:600; color:var(--cr); }
+
+/* Para quem é */
+.id-lista { list-style:none; padding:0; margin-top:6px; }
+.id-lista li { padding:9px 0 9px 22px; position:relative; font-size:.97rem; font-style:italic; color:rgba(245,234,216,.63); line-height:1.6; font-weight:300; border-bottom:1px solid rgba(201,168,76,.05); }
+.id-lista li:last-child { border-bottom:none; }
+.id-lista li::before { content:'✦'; position:absolute; left:0; top:12px; color:var(--d); opacity:.5; font-size:.5rem; }
+
+/* Ritual */
+.ritual-step { display:grid; grid-template-columns:44px 1fr; gap:18px; align-items:flex-start; margin-bottom:26px; padding-bottom:26px; border-bottom:1px solid rgba(201,168,76,.05); }
+.ritual-step:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+.r-num { width:44px; height:44px; min-width:44px; border:1px solid rgba(201,168,76,.22); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Cinzel Decorative',serif; font-size:.68rem; color:var(--d); margin-top:2px; }
+.r-modo { font-family:'Cinzel Decorative',serif; font-size:.66rem; letter-spacing:.16em; text-transform:uppercase; color:var(--d); margin-bottom:7px; display:block; }
+.r-desc { font-size:.97rem; line-height:1.8; color:rgba(245,234,216,.66); font-weight:300; }
+
+/* Intenção */
+.intencao { background:linear-gradient(135deg,rgba(13,40,24,.92),rgba(42,90,38,.2)); border:1px solid rgba(201,168,76,.18); padding:44px 48px; text-align:center; position:relative; overflow:hidden; }
+.intencao::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 80% 70% at 50% 0%,rgba(201,168,76,.04),transparent 60%); pointer-events:none; }
+.int-orn { font-size:.6rem; letter-spacing:.5em; text-transform:uppercase; color:rgba(201,168,76,.45); display:block; margin-bottom:18px; }
+.int-frase { font-family:'IM Fell English',serif; font-size:clamp(1.1rem,2.4vw,1.6rem); font-style:italic; color:var(--ds); line-height:1.65; position:relative; z-index:1; }
+
+/* Experiência */
+.exp-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:22px; }
+.exp-item { background:rgba(13,40,24,.55); border:1px solid rgba(201,168,76,.07); padding:24px 20px; transition:border-color .3s; }
+.exp-item:hover { border-color:rgba(201,168,76,.2); }
+.exp-ico { font-size:1.25rem; margin-bottom:9px; display:block; }
+.exp-nome { font-family:'Cinzel Decorative',serif; font-size:.66rem; color:var(--d); letter-spacing:.1em; margin-bottom:6px; text-transform:uppercase; display:block; }
+.exp-desc { font-size:.86rem; font-style:italic; color:rgba(245,234,216,.5); line-height:1.6; font-weight:300; }
+
+/* Cuidados */
+.cuid-box { background:rgba(10,26,15,.7); border-left:3px solid rgba(201,168,76,.22); padding:20px 24px; }
+.cuid-box p { font-size:.93rem; line-height:1.8; color:rgba(245,234,216,.56); font-weight:300; font-style:italic; }
+
+/* Ancestral */
+.anc-cit { font-family:'IM Fell English',serif; font-size:1.1rem; font-style:italic; color:var(--ds); line-height:1.7; padding-left:20px; border-left:2px solid rgba(201,168,76,.28); margin-bottom:20px; }
+
+/* CTA Final */
+.cta-final { text-align:center; padding:80px 60px; position:relative; overflow:hidden; border-top:1px solid rgba(201,168,76,.08); }
+.cta-bg { position:absolute; inset:0; background:radial-gradient(ellipse 80% 100% at 50% 50%,rgba(13,40,24,.8),transparent 70%); }
+.cta-inner { position:relative; z-index:1; max-width:540px; margin:0 auto; }
+.cta-titulo { font-family:'Cinzel Decorative',serif; font-size:clamp(1.1rem,2.2vw,1.65rem); color:var(--cr); margin-bottom:14px; }
+.cta-txt { font-size:1rem; font-style:italic; color:rgba(245,234,216,.56); line-height:1.85; font-weight:300; margin-bottom:32px; }
+.cta-acoes { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+
+/* Outros */
+.outros { background:rgba(10,26,15,.3); border-top:1px solid rgba(201,168,76,.07); padding:80px 60px; }
+.outros-header { text-align:center; margin-bottom:44px; }
+.outros-header span { font-size:.62rem; letter-spacing:.48em; text-transform:uppercase; color:var(--d); display:block; margin-bottom:10px; }
+.outros-header h2 { font-family:'Cinzel Decorative',serif; font-size:clamp(1.3rem,2.4vw,1.9rem); color:var(--cr); }
+.outros-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; max-width:1100px; margin:0 auto; }
+.o-card { background:rgba(13,40,24,.6); border:1px solid rgba(201,168,76,.07); padding:20px 16px; cursor:pointer; transition:all .35s; text-decoration:none; display:block; }
+.o-card:hover { border-color:rgba(201,168,76,.28); transform:translateY(-4px); }
+.o-img { width:100%; aspect-ratio:1; object-fit:cover; filter:brightness(.68) saturate(1.1); transition:filter .4s; display:block; margin-bottom:13px; }
+.o-card:hover .o-img { filter:brightness(.84) saturate(1.3); }
+.o-nome { font-family:'Cinzel Decorative',serif; font-size:.68rem; color:var(--cr); line-height:1.4; margin-bottom:4px; }
+.o-energia { font-size:.74rem; font-style:italic; color:rgba(201,168,76,.5); }
+
+/* Footer */
+footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:flex; align-items:center; justify-content:space-between; background:var(--vf); }
+.ft-logo { font-family:'Cinzel Decorative',serif; font-size:.83rem; color:var(--d); }
+.ft-logo span { display:block; font-family:'Cormorant Garamond',serif; font-size:.67rem; color:rgba(201,168,76,.34); text-transform:uppercase; font-style:italic; margin-top:3px; }
+.ft-copy { font-size:.7rem; color:rgba(245,234,216,.17); text-align:center; line-height:1.7; }
+.ft-link { font-size:.7rem; color:rgba(201,168,76,.34); text-decoration:none; transition:color .3s; }
+.ft-link:hover { color:var(--d); }
+
+/* Som */
+.sound-btn { position:fixed; bottom:28px; left:28px; z-index:500; background:rgba(13,40,24,.88); border:1px solid rgba(201,168,76,.22); color:var(--d); width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:.95rem; transition:all .3s; box-shadow:0 4px 20px rgba(0,0,0,.4); }
+.sound-btn:hover { border-color:var(--d); transform:scale(1.08); }
+
+@keyframes fiu { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+
+/* RESPONSIVO */
+@media(max-width:960px){
+  nav { padding:15px 22px; }
+  nav.scrolled { padding:10px 22px; }
+  .nav-links { display:none; }
+  .nav-links.aberto { display:flex; flex-direction:column; position:fixed; inset:0; background:rgba(5,15,7,.98); align-items:center; justify-content:center; gap:28px; z-index:999; }
+  .nav-links.aberto a { font-size:.95rem; }
+  .hamburger { display:flex; position:relative; z-index:1001; }
+  .hero { grid-template-columns:1fr; min-height:auto; }
+  .hero-img { padding:100px 28px 40px; order:-1; }
+  .hero-txt { padding:40px 28px 60px; }
+  .conteudo { padding:0 22px 80px; }
+  .exp-grid { grid-template-columns:1fr 1fr; }
+  .outros-grid { grid-template-columns:1fr 1fr; }
+  .outros { padding:60px 22px; }
+  .cta-final { padding:60px 22px; }
+  .intencao { padding:34px 24px; }
+  footer { flex-direction:column; gap:14px; text-align:center; padding:28px 22px; }
+}
+@media(max-width:600px){
+  .hero-acoes,.cta-acoes { flex-direction:column; }
+  .exp-grid { grid-template-columns:1fr; }
+  .ritual-step { grid-template-columns:38px 1fr; gap:12px; }
+}
+</style>
+</head>
+<body>
+
+<button class="sound-btn" id="soundBtn">🌿</button>
+<audio id="florestAudio" loop preload="auto" src="floresta.mp3"></audio>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <svg width="24" height="24" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      <path d="M20 4C20 4 28 12 28 22C28 30 20 36 20 36C20 36 12 30 12 22C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="M20 36L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+    </svg>
+    Misticismo Verde
+  </a>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="index.html#sobre">Sobre</a></li>
+    <li><a href="index.html#loja" class="ativo">Produtos</a></li>
+    <li><a href="biblioteca.html">Biblioteca Viva</a></li>
+    <li><a href="index.html#contato" class="nav-cta">Contato</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-txt">
+    <span class="hero-eyebrow">✦ Misticismo Verde · Portal da Loja ✦</span>
+    <h1 class="hero-titulo" id="heroTitulo"></h1>
+    <p  class="hero-energia" id="heroEnergia"></p>
+    <p  class="hero-intro"   id="heroIntro"></p>
+    <div class="hero-acoes">
+      <a class="btn-comprar" id="btnHero" href="#" target="_blank">💬 Quero este produto</a>
+      <a class="btn-sec" href="index.html#loja">← Ver todos os rituais</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <div class="img-wrap" id="imgWrap" onclick="abrirLb()">
+      <div class="img-frame"></div>
+      <div class="img-c1"></div><div class="img-c2"></div>
+      <div class="img-c3"></div><div class="img-c4"></div>
+      <img class="prod-img" id="prodImg" src="" alt="">
+    </div>
+    <p class="img-hint">✦ &nbsp;toque para ampliar</p>
+    <p class="preco"    id="preco"></p>
+    <p class="preco-det" id="precoDet"></p>
+  </div>
+</div>
+
+<main class="conteudo">
+  <section class="secao">
+    <span class="s-eyebrow">🌿 Para quem é</span>
+    <h2 class="s-titulo" id="pqTitulo"></h2>
+    <div class="s-corpo"><p id="pqTexto"></p><ul class="id-lista" id="pqLista"></ul></div>
+  </section>
+  <section class="secao">
+    <span class="s-eyebrow">🔮 O que ele atua</span>
+    <h2 class="s-titulo" id="atTitulo"></h2>
+    <div class="s-corpo" id="atCorpo"></div>
+  </section>
+  <section class="secao">
+    <span class="s-eyebrow">🕯️ Como usar — Ritual guiado</span>
+    <h2 class="s-titulo" id="rTitulo"></h2>
+    <p style="font-size:.97rem;line-height:1.85;color:rgba(245,234,216,.6);font-weight:300;font-style:italic;margin-bottom:30px" id="rIntro"></p>
+    <div id="rSteps"></div>
+  </section>
+  <section class="secao">
+    <span class="s-eyebrow">✨ Intenção sugerida</span>
+    <div class="intencao">
+      <span class="int-orn">· · · repita com o coração · · ·</span>
+      <div class="int-frase" id="intFrase"></div>
+    </div>
+  </section>
+  <section class="secao">
+    <span class="s-eyebrow">🌙 Experiência após o uso</span>
+    <h2 class="s-titulo" id="expTitulo"></h2>
+    <p style="font-size:.97rem;line-height:1.85;color:rgba(245,234,216,.6);font-weight:300;margin-bottom:4px" id="expTexto"></p>
+    <div class="exp-grid" id="expGrid"></div>
+  </section>
+  <section class="secao">
+    <span class="s-eyebrow">⚠️ Cuidados</span>
+    <div class="cuid-box" id="cuidBox"></div>
+  </section>
+  <section class="secao">
+    <span class="s-eyebrow">🌿 Conexão com a natureza</span>
+    <h2 class="s-titulo" id="ancTitulo"></h2>
+    <div class="anc-cit" id="ancCit"></div>
+    <p class="s-corpo" id="ancTexto"></p>
+  </section>
+</main>
+
+<div class="cta-final">
+  <div class="cta-bg"></div>
+  <div class="cta-inner">
+    <h2 class="cta-titulo" id="ctaTitulo"></h2>
+    <p  class="cta-txt"    id="ctaTexto"></p>
+    <div class="cta-acoes">
+      <a class="btn-comprar" id="btnCta" href="#" target="_blank">💬 Permitir esta experiência</a>
+      <a class="btn-sec" href="index.html#contato">Falar com Thais</a>
+    </div>
+  </div>
+</div>
+
+<div class="outros">
+  <div class="outros-header">
+    <span>✦ Outros rituais ✦</span>
+    <h2>Cada intenção tem a sua fórmula</h2>
+  </div>
+  <div class="outros-grid" id="outrosGrid"></div>
+</div>
+
+<footer>
+  <div class="ft-logo">Misticismo Verde<span>Thais Maciel — Belém, Pará</span></div>
+  <p class="ft-copy">© 2025 Misticismo Verde · misticismoverde.com.br</p>
+  <a href="#" class="ft-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Topo</a>
+</footer>
+
+<div class="lb-ov" id="lbOv" onclick="fecharLb()">
+  <div class="lb-inner" onclick="event.stopPropagation()">
+    <button class="lb-close" onclick="fecharLb()">✕</button>
+    <img class="lb-img" id="lbImg" src="" alt="">
+    <p class="lb-cap" id="lbCap"></p>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+//  DADOS DO PRODUTO
+//  Para criar nova página: copie este arquivo, renomeie e edite
+//  SOMENTE este objeto. O resto renderiza automaticamente.
+// ═══════════════════════════════════════════════════════════════
+var P = JSON.parse('{"titulo": "Sal 3 em 1 — Amor-Próprio e Equilíbrio", "energia": "Autoestima · Harmonia Interior · Acolhimento", "img": "img-produto-amor.jpg", "preco": "R$ 20,00", "peso": "180g a 200g · banho · escalda-pés · defumação", "whatsapp": "https://wa.me/5591996324631?text=Olá%20Thais!%20Gostaria%20de%20adquirir%20o%20Sal%20Amor-Próprio%20e%20Equilíbrio.", "heroIntro": "Existe um tipo de cansaço que vem de passar muito tempo sem se ver com gentileza. De se cobrar mais do que se cuida, de se criticar mais do que se acolhe. Este sal foi criado para esse cansaço — o da alma que precisa voltar para si mesma com amor. Não como luxo. Como necessidade.", "pqTitulo": "Para quem cuida de todo mundo, mas esqueceu de cuidar de si", "pqTexto": "Você sabe se dedicar. Sabe cuidar, proteger, apoiar. Mas quando foi a última vez que se olhou com a mesma generosidade que olha para os outros? O amor-próprio não é egoísmo — é o fundamento. É o que torna possível tudo o mais.", "pqLista": ["Quem está em um momento de autocrítica intensa e julgamento interno", "Quem saiu de relacionamentos ou situações que abalaram a autoestima", "Quem sente dificuldade de colocar limites ou priorizar as próprias necessidades", "Quem quer fortalecer o relacionamento com a própria imagem e valor", "Quem está em um processo de reconexão consigo mesma"], "atTitulo": "O que este sal suaviza, fortalece e reconecta dentro de você", "atCorpo": "<p>O Sal 3 em 1 — Amor-Próprio e Equilíbrio trabalha nas camadas mais sensíveis do campo emocional. Ele <em>suaviza</em> a dureza que a gente constrói sobre si mesma — aquela armadura que protege, mas também aprisiona. E ao suavizar, ele abre espaço para a <em>reconexão real</em>: com o próprio valor, com a própria presença.</p><p>Ele atua sobre <strong>feridas de autoestima</strong> — o que ficou de relações que diminuíram, de comparações que machucaram. Sobre <strong>desequilíbrios emocionais</strong> — aquela oscilação entre a exigência excessiva e o colapso.</p><p>E ao equilibrar, ele restaura o <strong>amor que é seu por natureza</strong>. O que você é quando para de se comparar, de se cobrar, de se diminuir.</p>", "rTitulo": "Um ritual que é só seu — feito por você, para você", "rIntro": "Antes de começar, olhe-se no espelho por alguns segundos. Sem julgamento. Apenas vendo. Esse olhar já é parte do ritual.", "rSteps": [{"num": "I", "modo": "Banho de acolhimento", "desc": "Dissolva em água morna e suave. Antes de entrar, diga em voz baixa: Me recebo com gentileza. Aplique do pescoço para baixo com toque lento e consciente — como se estivesse cuidando de alguém que você ama. Porque está."}, {"num": "II", "modo": "Escalda-pés meditativo", "desc": "Dissolva em água morna. Mergulhe os pés e fique em silêncio por 15 minutos. Sem telefone, sem distração. Apenas você e o momento. Sinta o calor, sinta os pés — que te carregam todos os dias sem você notar. Agradeça por eles."}, {"num": "III", "modo": "Defumação de equilíbrio", "desc": "Queime em brasa no seu espaço pessoal. Passe a fumaça ao redor do próprio corpo com movimentos suaves e circulares. Visualize o campo se harmonizando, os extremos se equilibrando, o centro sendo restabelecido."}], "intFrase": "Me recebo com amor. Sou suficiente. Mereço o cuidado que ofereço aos outros.", "expTitulo": "O que muda quando você começa a se olhar com amor", "expTexto": "O amor-próprio não chega de uma vez. Ele vai se instalando — em gestos pequenos, em pensamentos que mudam de direção, em escolhas diferentes:", "expItens": [{"ico": "🌸", "nome": "Suavidade", "desc": "O tom interno muda. A voz que antes criticava começa a perguntar, a entender, a acolher."}, {"ico": "⚖️", "nome": "Equilíbrio", "desc": "As oscilações emocionais diminuem. Há um centro que começa a se firmar."}, {"ico": "💗", "nome": "Autoestima", "desc": "Não como arrogância — como reconhecimento. A sensação de que você tem valor, simplesmente por existir."}, {"ico": "🌿", "nome": "Presença", "desc": "Você começa a ocupar mais espaço — não por imposição, mas por direito."}, {"ico": "🔓", "nome": "Abertura", "desc": "Com amor-próprio vem a capacidade de se relacionar de forma mais saudável."}, {"ico": "✨", "nome": "Brilho próprio", "desc": "Há um brilho que vem de dentro quando a pessoa está em paz consigo mesma. E ele aparece."}], "cuidados": "<p>Este sal é gentil — pode ser usado com mais frequência. Até três vezes por semana em períodos de maior necessidade emocional. Evite uso interno. Gestantes devem preferir a defumação ao banho. Em momentos de crise emocional intensa, considere também buscar apoio humano — o ritual complementa, não substitui.</p>", "ancTitulo": "O amor a si mesma é o mais antigo dos saberes", "ancCit": "Antes de qualquer ritual, qualquer erva, qualquer fórmula — existe a intenção de quem cuida. E cuidar de si é o ato mais sagrado que existe.", "ancTexto": "As tradições de cura que inspiram este sal sempre souberam que o equilíbrio começa por dentro. As ervas escolhidas têm história de uso em práticas de harmonização emocional e fortalecimento do feminino — saberes guardados por mulheres que entenderam que a cura começa no autoconhecimento.", "ctaTitulo": "Você merece de si mesma o que não cansa de oferecer aos outros", "ctaTexto": "Se algo nessas palavras tocou em você, é porque uma parte de você já sabe que chegou a hora. De voltar para si. De se receber. De cuidar de você mesma, primeiro.", "outros": [{"nome": "Limpeza Profunda", "energia": "Purificação e renovação", "img": "img-produto-limpeza.jpg", "href": "produto-limpeza.html"}, {"nome": "Proteção dos Caminhos", "energia": "Blindagem energética", "img": "img-produto-protecao.jpg", "href": "produto-protecao.html"}, {"nome": "Prosperidade e Abundância", "energia": "Fluxo de prosperidade", "img": "img-produto-prosperidade.jpg", "href": "produto-prosperidade.html"}, {"nome": "Força e Vitalidade", "energia": "Energia interior", "img": "img-produto-forca.jpg", "href": "produto-forca.html"}]}');
+
+// ── RENDERIZAÇÃO (não editar) ────────────────────────────────
+function init() {
+  document.title = P.titulo + " — Misticismo Verde";
+  document.getElementById("heroTitulo").textContent  = P.titulo;
+  document.getElementById("heroEnergia").textContent = P.energia;
+  document.getElementById("heroIntro").textContent   = P.heroIntro;
+  document.getElementById("prodImg").src             = P.img;
+  document.getElementById("prodImg").alt             = P.titulo;
+  document.getElementById("preco").textContent       = P.preco;
+  document.getElementById("precoDet").textContent    = P.peso;
+  document.getElementById("btnHero").href            = P.whatsapp;
+  document.getElementById("btnCta").href             = P.whatsapp;
+
+  // Para quem é
+  document.getElementById("pqTitulo").textContent = P.pqTitulo;
+  document.getElementById("pqTexto").textContent  = P.pqTexto;
+  var lista = document.getElementById("pqLista");
+  P.pqLista.forEach(function(t){ var li=document.createElement("li"); li.textContent=t; lista.appendChild(li); });
+
+  // Atuação
+  document.getElementById("atTitulo").textContent = P.atTitulo;
+  document.getElementById("atCorpo").innerHTML    = P.atCorpo;
+
+  // Ritual
+  document.getElementById("rTitulo").textContent = P.rTitulo;
+  document.getElementById("rIntro").textContent  = P.rIntro;
+  var steps = document.getElementById("rSteps");
+  P.rSteps.forEach(function(s){
+    var d=document.createElement("div"); d.className="ritual-step";
+    d.innerHTML='<div class="r-num">'+s.num+'</div><div><span class="r-modo">'+s.modo+'</span><p class="r-desc">'+s.desc+'</p></div>';
+    steps.appendChild(d);
+  });
+
+  // Intenção
+  document.getElementById("intFrase").textContent = '"'+P.intFrase+'"';
+
+  // Experiência
+  document.getElementById("expTitulo").textContent = P.expTitulo;
+  document.getElementById("expTexto").textContent  = P.expTexto;
+  var eg=document.getElementById("expGrid");
+  P.expItens.forEach(function(i){
+    var d=document.createElement("div"); d.className="exp-item";
+    d.innerHTML='<span class="exp-ico">'+i.ico+'</span><span class="exp-nome">'+i.nome+'</span><p class="exp-desc">'+i.desc+'</p>';
+    eg.appendChild(d);
+  });
+
+  // Cuidados
+  document.getElementById("cuidBox").innerHTML = P.cuidados;
+
+  // Ancestral
+  document.getElementById("ancTitulo").textContent = P.ancTitulo;
+  document.getElementById("ancCit").textContent    = P.ancCit;
+  document.getElementById("ancTexto").textContent  = P.ancTexto;
+
+  // CTA
+  document.getElementById("ctaTitulo").textContent = P.ctaTitulo;
+  document.getElementById("ctaTexto").textContent  = P.ctaTexto;
+
+  // Outros
+  var og=document.getElementById("outrosGrid");
+  P.outros.forEach(function(o){
+    var a=document.createElement("a"); a.className="o-card"; a.href=o.href;
+    a.innerHTML='<img src="'+o.img+'" alt="'+o.nome+'" class="o-img"><div class="o-nome">'+o.nome+'</div><div class="o-energia">'+o.energia+'</div>';
+    og.appendChild(a);
+  });
+}
+
+// Lightbox
+function abrirLb() {
+  document.getElementById("lbImg").src = P.img;
+  document.getElementById("lbCap").textContent = P.titulo+" · Misticismo Verde";
+  document.getElementById("lbOv").classList.add("open");
+  document.body.style.overflow="hidden";
+}
+function fecharLb() { document.getElementById("lbOv").classList.remove("open"); document.body.style.overflow=""; }
+
+// Nav
+window.addEventListener("scroll",function(){ document.getElementById("nav").classList.toggle("scrolled",window.scrollY>50); });
+document.getElementById("hamburger").addEventListener("click",function(){ document.getElementById("navLinks").classList.toggle("aberto"); });
+document.addEventListener("keydown",function(e){ if(e.key==="Escape") fecharLb(); });
+
+// Som
+var sb=document.getElementById("soundBtn"), audio=document.getElementById("florestAudio"), tocando=false;
+function fadeIn(){ audio.volume=0; var t=setInterval(function(){ audio.volume=Math.min(audio.volume+.025,.45); if(audio.volume>=.45)clearInterval(t); },80); }
+function fadeOut(cb){ var t=setInterval(function(){ audio.volume=Math.max(audio.volume-.03,0); if(audio.volume<=0){clearInterval(t);audio.pause();audio.currentTime=0;if(cb)cb();} },70); }
+sb.addEventListener("click",function(){
+  if(!tocando){ audio.play().then(function(){tocando=true;sb.textContent="🔊";fadeIn();}).catch(function(){}); }
+  else { fadeOut(function(){tocando=false;sb.textContent="🌿";}); }
+});
+
+init();
+</script>
+</body>
+</html>

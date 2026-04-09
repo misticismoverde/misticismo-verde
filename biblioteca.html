@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca Viva de Plantas — Misticismo Verde</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+:root{--vf:#050f07;--ve:#0a1a0f;--d:#c9a84c;--ds:#f0dfa0;--cr:#f5ead8;--cs:rgba(245,234,216,0.75);--cf:rgba(245,234,216,0.45);}
+body{background:var(--vf);color:var(--cr);font-family:'Cormorant Garamond',Georgia,serif;overflow-x:hidden;}
+.leaf{position:fixed;pointer-events:none;z-index:0;opacity:0;font-size:1.1rem;animation:leafFall linear infinite;}
+@keyframes leafFall{0%{transform:translateY(-60px) rotate(0deg);opacity:0;}10%{opacity:0.18;}90%{opacity:0.08;}100%{transform:translateY(110vh) rotate(360deg);opacity:0;}}
+.orb{position:fixed;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(42,90,38,0.1),transparent 70%);animation:orbP 10s ease-in-out infinite alternate;}
+@keyframes orbP{from{transform:scale(1);opacity:0.3;}to{transform:scale(1.4);opacity:0.6;}}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 60px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(5,15,7,0.97),transparent);transition:all 0.3s;}
+nav.scrolled{background:rgba(5,15,7,0.98);padding:12px 60px;border-bottom:1px solid rgba(201,168,76,0.12);}
+.nav-logo{font-family:'Cinzel Decorative',serif;font-size:0.9rem;color:var(--d);text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:0.12em;}
+.nav-back{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--cf);text-decoration:none;border:1px solid rgba(201,168,76,0.2);padding:7px 18px;transition:all 0.3s;}
+.nav-back:hover{color:var(--d);border-color:var(--d);}
+.hero{position:relative;min-height:68vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:120px 40px 80px;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(13,40,24,0.9),transparent 70%),url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=80') center/cover no-repeat;filter:brightness(0.28) saturate(1.4);}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,15,7,0.4),transparent 40%,transparent 70%,rgba(5,15,7,1));}
+.hero-c{position:relative;z-index:2;max-width:800px;}
+.eyebrow{font-size:0.68rem;letter-spacing:0.5em;text-transform:uppercase;color:var(--d);margin-bottom:24px;display:block;animation:fiu 1s ease forwards;}
+.hero-title{font-family:'Cinzel Decorative',serif;font-size:clamp(1.8rem,4vw,3.5rem);color:var(--cr);line-height:1.2;margin-bottom:20px;animation:fiu 1s ease 0.2s forwards;opacity:0;}
+.hero-title span{color:var(--d);}
+.hero-intro{font-family:'IM Fell English',serif;font-size:clamp(1rem,1.8vw,1.25rem);font-style:italic;color:rgba(245,234,216,0.82);line-height:1.85;max-width:620px;margin:0 auto 48px;animation:fiu 1s ease 0.4s forwards;opacity:0;}
+@keyframes fiu{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.oracle-btn{position:relative;display:inline-flex;align-items:center;gap:12px;padding:16px 36px;background:linear-gradient(135deg,rgba(42,90,38,0.4),rgba(13,40,24,0.6));border:1px solid rgba(201,168,76,0.5);color:var(--ds);font-family:'Cinzel Decorative',serif;font-size:0.82rem;letter-spacing:0.15em;cursor:pointer;transition:all 0.4s;animation:fiu 1s ease 0.6s forwards;opacity:0;}
+.oracle-btn:hover{border-color:var(--d);box-shadow:0 0 40px rgba(201,168,76,0.2);transform:translateY(-2px);}
+.oracle-ico{font-size:1.3rem;animation:glow 3s ease-in-out infinite;}
+@keyframes glow{0%,100%{text-shadow:0 0 8px rgba(201,168,76,0.4);}50%{text-shadow:0 0 22px rgba(201,168,76,0.9);}}
+/* BUSCA */
+.busca-sec{position:relative;z-index:2;max-width:920px;margin:0 auto;padding:0 40px 56px;}
+.busca-wrap{position:relative;margin-bottom:26px;}
+.busca-input{width:100%;padding:15px 22px 15px 50px;background:rgba(13,40,24,0.72);border:1px solid rgba(201,168,76,0.2);color:var(--cr);font-family:'Cormorant Garamond',serif;font-size:1.05rem;outline:none;transition:all 0.3s;}
+.busca-input::placeholder{color:var(--cf);}
+.busca-input:focus{border-color:rgba(201,168,76,0.5);background:rgba(13,40,24,0.92);}
+.busca-icon{position:absolute;left:17px;top:50%;transform:translateY(-50%);color:rgba(201,168,76,0.5);font-size:1.05rem;pointer-events:none;}
+.filtros{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;}
+.fbtn{padding:7px 18px;background:rgba(13,40,24,0.6);border:1px solid rgba(201,168,76,0.18);color:var(--cf);font-family:'Cormorant Garamond',serif;font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;}
+.fbtn:hover,.fbtn.ativo{background:rgba(201,168,76,0.12);border-color:var(--d);color:var(--d);}
+/* MAIN */
+.main{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:0 40px 120px;}
+.cat-sec{margin-bottom:80px;}
+.cat-header{display:flex;align-items:center;gap:18px;margin-bottom:32px;padding-bottom:14px;border-bottom:1px solid rgba(201,168,76,0.12);}
+.cat-icon{font-size:1.5rem;}
+.cat-titulo{font-family:'Cinzel Decorative',serif;font-size:1.1rem;color:var(--cr);}
+.cat-desc{font-size:0.82rem;font-style:italic;color:var(--cf);margin-top:3px;}
+.cat-linha{flex:1;height:1px;background:linear-gradient(to right,rgba(201,168,76,0.18),transparent);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;}
+/* CARD */
+.pcard{background:linear-gradient(135deg,rgba(13,40,24,0.82),rgba(10,26,15,0.6));border:1px solid rgba(201,168,76,0.1);padding:24px 22px;cursor:pointer;transition:all 0.4s;position:relative;overflow:hidden;}
+.pcard::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 50% 0%,rgba(42,90,38,0.14),transparent 60%);opacity:0;transition:opacity 0.4s;}
+.pcard:hover{border-color:rgba(201,168,76,0.38);transform:translateY(-5px);box-shadow:0 16px 44px rgba(0,0,0,0.38);}
+.pcard:hover::before{opacity:1;}
+.pcard-ico{font-size:1.8rem;margin-bottom:12px;display:block;}
+.pcard-nome{font-family:'Cinzel Decorative',serif;font-size:0.92rem;color:var(--cr);margin-bottom:5px;line-height:1.3;}
+.pcard-latin{font-size:0.74rem;font-style:italic;color:var(--cf);margin-bottom:10px;}
+.pcard-ess{font-size:0.87rem;font-style:italic;color:rgba(245,234,216,0.62);line-height:1.6;margin-bottom:14px;font-weight:300;}
+.ptags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:16px;}
+.ptag{font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;padding:2px 8px;border:1px solid rgba(201,168,76,0.22);color:rgba(201,168,76,0.68);background:rgba(201,168,76,0.04);}
+.btn-exp{width:100%;padding:9px;background:none;border:1px solid rgba(201,168,76,0.18);color:var(--cf);font-family:'Cormorant Garamond',serif;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;}
+.btn-exp:hover{color:var(--d);border-color:var(--d);}
+.sem-res{text-align:center;padding:60px 20px;display:none;}
+.sem-res.vis{display:block;}
+.sem-res p{font-family:'IM Fell English',serif;font-size:1.15rem;font-style:italic;color:var(--cf);}
+/* ORACLE OVERLAY */
+.ov-oracle{position:fixed;inset:0;background:rgba(5,15,7,0.95);z-index:7000;display:none;align-items:center;justify-content:center;padding:32px;backdrop-filter:blur(12px);}
+.ov-oracle.open{display:flex;}
+.ocard{max-width:540px;width:100%;background:linear-gradient(135deg,rgba(13,40,24,0.98),rgba(5,15,7,0.99));border:1px solid rgba(201,168,76,0.35);padding:48px 40px;text-align:center;position:relative;overflow:hidden;animation:orev 0.8s cubic-bezier(0.22,1,0.36,1) forwards;}
+@keyframes orev{from{opacity:0;transform:scale(0.85) translateY(20px);}to{opacity:1;transform:scale(1) translateY(0);}}
+.ocard::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 50% 0%,rgba(201,168,76,0.06),transparent 60%);pointer-events:none;}
+.oorn{font-size:0.68rem;letter-spacing:0.5em;text-transform:uppercase;color:var(--d);opacity:0.7;margin-bottom:22px;display:block;}
+.oico{font-size:2.8rem;margin-bottom:10px;display:block;}
+.onome{font-family:'Cinzel Decorative',serif;font-size:clamp(1.3rem,3vw,1.9rem);color:var(--cr);margin-bottom:7px;}
+.olatin{font-style:italic;color:var(--cf);font-size:0.88rem;margin-bottom:26px;}
+.omsg{font-family:'IM Fell English',serif;font-size:1.08rem;font-style:italic;color:var(--ds);line-height:1.7;margin-bottom:24px;padding:18px 22px;border-left:2px solid rgba(201,168,76,0.28);border-right:2px solid rgba(201,168,76,0.28);text-align:left;}
+.ouso{font-size:0.93rem;color:var(--cs);line-height:1.7;margin-bottom:32px;}
+.obtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.obtn{padding:11px 22px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.32);color:var(--d);font-family:'Cormorant Garamond',serif;font-size:0.76rem;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;}
+.obtn:hover{background:rgba(201,168,76,0.2);}
+.obtn-s{padding:11px 22px;background:none;border:1px solid rgba(245,234,216,0.12);color:var(--cf);font-family:'Cormorant Garamond',serif;font-size:0.76rem;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;}
+.obtn-s:hover{color:var(--cr);}
+/* PLANTA MODAL */
+.ov-pm{position:fixed;inset:0;background:rgba(5,15,7,0.97);z-index:6000;display:none;align-items:flex-start;justify-content:center;padding:80px 32px 40px;overflow-y:auto;backdrop-filter:blur(8px);}
+.ov-pm.open{display:flex;}
+.pm-close{position:fixed;top:22px;right:30px;z-index:6001;background:rgba(13,40,24,0.95);border:1px solid rgba(201,168,76,0.28);color:var(--d);width:40px;height:40px;border-radius:50%;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s;}
+.pm-close:hover{background:rgba(201,168,76,0.14);}
+.pm-inner{max-width:740px;width:100%;padding-bottom:60px;}
+.pm-topo{text-align:center;padding:0 0 36px;border-bottom:1px solid rgba(201,168,76,0.1);margin-bottom:36px;}
+.pm-ico{font-size:3.2rem;margin-bottom:14px;display:block;filter:drop-shadow(0 0 18px rgba(42,90,38,0.5));}
+.pm-nome{font-family:'Cinzel Decorative',serif;font-size:clamp(1.5rem,3vw,2.2rem);color:var(--cr);margin-bottom:7px;}
+.pm-latin{font-size:0.95rem;font-style:italic;color:var(--cf);margin-bottom:18px;}
+.pm-tags{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;}
+.pm-sec{margin-bottom:32px;}
+.pm-st{display:flex;align-items:center;gap:9px;font-family:'Cinzel Decorative',serif;font-size:0.76rem;color:var(--d);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid rgba(201,168,76,0.09);}
+.pm-sec p{font-size:0.98rem;line-height:1.9;color:var(--cs);font-weight:300;margin-bottom:10px;}
+.pm-sec ul{list-style:none;padding:0;}
+.pm-sec li{font-size:0.93rem;color:var(--cs);padding:5px 0 5px 18px;position:relative;line-height:1.55;font-weight:300;}
+.pm-sec li::before{content:"✦";position:absolute;left:0;color:var(--d);opacity:0.55;font-size:0.55rem;top:9px;}
+.ritual-box{background:linear-gradient(135deg,rgba(13,40,24,0.8),rgba(42,90,38,0.14));border:1px solid rgba(201,168,76,0.14);padding:24px 28px;margin:8px 0;}
+.ritual-box p{color:rgba(245,234,216,0.78);}
+.int-box{text-align:center;padding:28px;border:1px solid rgba(201,168,76,0.18);background:rgba(201,168,76,0.025);margin:8px 0;}
+.int-frase{font-family:'IM Fell English',serif;font-size:1.2rem;font-style:italic;color:var(--ds);line-height:1.6;}
+.cuid-box{background:rgba(10,26,15,0.8);border-left:3px solid rgba(201,168,76,0.28);padding:18px 22px;}
+.uso-modo{font-weight:600;color:var(--d);font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;display:block;margin-bottom:5px;}
+.prod-sug{margin-top:7px;padding:18px 22px;background:rgba(13,40,24,0.7);border:1px solid rgba(201,168,76,0.1);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+.prod-nome{font-family:'Cinzel Decorative',serif;font-size:0.8rem;color:var(--cr);}
+.prod-desc{font-size:0.82rem;font-style:italic;color:var(--cf);margin-top:3px;}
+.btn-prod{padding:8px 18px;background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.28);color:#63e887;font-family:'Cormorant Garamond',serif;font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:all 0.3s;display:inline-block;white-space:nowrap;}
+.btn-prod:hover{background:rgba(37,211,102,0.2);}
+.btn-vol{background:none;border:1px solid rgba(201,168,76,0.18);color:rgba(201,168,76,0.48);padding:8px 18px;cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;transition:all 0.3s;}
+.btn-vol:hover{color:var(--d);}
+footer{position:relative;z-index:2;border-top:1px solid rgba(201,168,76,0.1);padding:36px 60px;display:flex;align-items:center;justify-content:space-between;background:var(--vf);}
+.ft-logo{font-family:'Cinzel Decorative',serif;font-size:0.82rem;color:var(--d);letter-spacing:0.12em;}
+.ft-logo span{display:block;font-family:'Cormorant Garamond',serif;font-size:0.68rem;color:rgba(201,168,76,0.35);text-transform:uppercase;font-style:italic;margin-top:3px;}
+.ft-copy{font-size:0.7rem;color:rgba(245,234,216,0.18);}
+@media(max-width:768px){
+  nav{padding:15px 18px;}nav.scrolled{padding:9px 18px;}
+  .hero{padding:95px 22px 56px;}
+  .busca-sec{padding:0 18px 44px;}
+  .main{padding:0 18px 80px;}
+  .grid{grid-template-columns:1fr;}
+  .ov-pm{padding:65px 14px 36px;}
+  .pm-close{right:14px;}
+  footer{flex-direction:column;gap:14px;text-align:center;padding:28px 18px;}
+  .oracle-btn{font-size:0.72rem;padding:14px 26px;}
+}
+</style>
+</head>
+<body>
+
+<div class="leaf" style="left:4%;animation-duration:19s;animation-delay:0s">🍃</div>
+<div class="leaf" style="left:18%;animation-duration:23s;animation-delay:5s;font-size:0.8rem">🌿</div>
+<div class="leaf" style="left:38%;animation-duration:17s;animation-delay:9s">🍃</div>
+<div class="leaf" style="left:58%;animation-duration:21s;animation-delay:2s;font-size:0.9rem">🌿</div>
+<div class="leaf" style="left:76%;animation-duration:25s;animation-delay:7s">🍃</div>
+<div class="leaf" style="left:91%;animation-duration:18s;animation-delay:12s;font-size:0.7rem">🌱</div>
+<div class="orb" style="width:600px;height:600px;top:-200px;left:-150px;animation-duration:10s"></div>
+<div class="orb" style="width:380px;height:380px;bottom:180px;right:-90px;animation-duration:13s;animation-delay:3s"></div>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <svg width="22" height="22" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      <path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+    </svg>
+    Misticismo Verde
+  </a>
+  <a href="index.html" class="nav-back">← Voltar ao Portal</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ov"></div>
+  <div class="hero-c">
+    <span class="eyebrow">✦ Misticismo Verde · Sabedoria Ancestral ✦</span>
+    <h1 class="hero-title">Biblioteca <span>Viva</span><br>de Plantas</h1>
+    <p class="hero-intro">
+      Cada planta carrega um espírito, uma memória e um propósito.<br>
+      Aqui, você não apenas aprende — você se reconecta.<br>
+      Permita-se sentir qual planta está te chamando.
+    </p>
+    <button class="oracle-btn" id="btnOraculo">
+      <span class="oracle-ico">🔮</span>
+      Descobrir a planta para mim
+    </button>
+  </div>
+</div>
+
+<div class="busca-sec">
+  <div class="busca-wrap">
+    <span class="busca-icon">🔍</span>
+    <input type="text" class="busca-input" id="buscaInput" placeholder="Buscar por nome ou propriedade...">
+  </div>
+  <div class="filtros">
+    <button class="fbtn ativo" data-filtro="todos">Todas</button>
+    <button class="fbtn" data-filtro="protecao">🛡️ Proteção</button>
+    <button class="fbtn" data-filtro="limpeza">✨ Limpeza</button>
+    <button class="fbtn" data-filtro="amor">💗 Amor</button>
+    <button class="fbtn" data-filtro="prosperidade">💰 Prosperidade</button>
+    <button class="fbtn" data-filtro="cura">🌿 Cura</button>
+    <button class="fbtn" data-filtro="amazonica">🌳 Amazônicas</button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="cat-sec" id="cat-amazonica">
+    <div class="cat-header"><span class="cat-icon">🌳</span><div><div class="cat-titulo">Plantas Amazônicas</div><div class="cat-desc">Floresta ancestral · Povos originários · Sabedoria da selva · Encantados</div></div><div class="cat-linha"></div></div>
+    <div class="grid" id="grid-amazonica"></div>
+  </div>
+    <div class="cat-sec" id="cat-protecao">
+    <div class="cat-header"><span class="cat-icon">🛡️</span><div><div class="cat-titulo">Proteção</div><div class="cat-desc">Blindagem · Afastamento de energias densas · Fortalecimento espiritual</div></div><div class="cat-linha"></div></div>
+    <div class="grid" id="grid-protecao"></div>
+  </div>
+  <div class="cat-sec" id="cat-limpeza">
+    <div class="cat-header"><span class="cat-icon">✨</span><div><div class="cat-titulo">Limpeza Energética</div><div class="cat-desc">Descarrego · Purificação · Renovação</div></div><div class="cat-linha"></div></div>
+    <div class="grid" id="grid-limpeza"></div>
+  </div>
+  <div class="cat-sec" id="cat-amor">
+    <div class="cat-header"><span class="cat-icon">💗</span><div><div class="cat-titulo">Amor</div><div class="cat-desc">Autoestima · Afeto · Abertura do coração · Atração</div></div><div class="cat-linha"></div></div>
+    <div class="grid" id="grid-amor"></div>
+  </div>
+  <div class="cat-sec" id="cat-prosperidade">
+    <div class="cat-header"><span class="cat-icon">💰</span><div><div class="cat-titulo">Prosperidade</div><div class="cat-desc">Abertura de caminhos · Abundância · Expansão</div></div><div class="cat-linha"></div></div>
+    <div class="grid" id="grid-prosperidade"></div>
+  </div>
+  <div class="cat-sec" id="cat-cura">
+    <div class="cat-header"><span class="cat-icon">🌿</span><div><div class="cat-titulo">Cura</div><div class="cat-desc">Equilíbrio · Regeneração · Bem-estar físico, emocional e espiritual</div></div><div class="cat-linha"></div></div>
+    <div class="grid" id="grid-cura"></div>
+  </div>
+  <div class="sem-res" id="semRes"><p>🍃 Nenhuma planta encontrada...<br>Tente buscar por outro nome ou intenção.</p></div>
+</div>
+
+<div class="ov-oracle" id="ovOracle">
+  <div class="ocard" id="oracleCard">
+    <span class="oorn">✦ A floresta escolheu para você ✦</span>
+    <span class="oico" id="oIco"></span>
+    <div class="onome" id="oNome"></div>
+    <div class="olatin" id="oLatin"></div>
+    <div class="omsg" id="oMsg"></div>
+    <div class="ouso" id="oUso"></div>
+    <div class="obtns">
+      <button class="obtn" id="btnExpOracle">🌿 Explorar esta planta</button>
+      <button class="obtn" id="btnNovaPlanta">↻ Outra planta</button>
+      <button class="obtn-s" id="btnFechaOracle">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<div class="ov-pm" id="ovPm">
+  <button class="pm-close" id="pmClose">✕</button>
+  <div class="pm-inner" id="pmInner"></div>
+</div>
+
+<footer>
+  <div class="ft-logo">Misticismo Verde<span>Biblioteca Viva de Plantas</span></div>
+  <p class="ft-copy">© 2025 Misticismo Verde · Thais Maciel — Belém, Pará</p>
+</footer>
+
+<script>
+var TL = {protecao:"Proteção",limpeza:"Limpeza",amor:"Amor",prosperidade:"Prosperidade",cura:"Cura",amazonica:"Amazônica"};
+
+var PLANTAS = [
+  // ── PROTEÇÃO ────────────────────────────────────────────────────
+  {id:"arruda",ico:"🌿",nome:"Arruda",latin:"Ruta graveolens",
+   tags:["protecao","limpeza"],
+   cats:["protecao","limpeza"],
+   ess:"A guardiã dos quintais brasileiros — protege, limpa e não pede licença ao negativo.",
+   essComp:"A arruda é talvez a planta de proteção mais conhecida do Brasil. Cresce em qualquer quintal, cheira forte e protege com a intensidade de quem não tem medo. Ela não apenas afasta energias negativas — ela limpa o campo onde passou, renovando a vibração de tudo que toca. Planta de múltiplas camadas: protege, purifica e fortalece.",
+   usos:["Proteção contra mau-olhado e inveja","Quebra de feitiços e energias negativas","Limpeza profunda do campo energético","Fortalecimento da aura","Proteção de crianças e lares"],
+   modos:[{m:"Galho no corpo",d:"Passe um galho fresco de cima para baixo com intenção de limpeza. Descarte fora de casa."},{m:"Banho",d:"Infusão de folhas frescas para banho de limpeza e proteção. Excelente nas viradas de semana."},{m:"Planta viva",d:"Um vaso na entrada da casa cria proteção permanente e contínua."}],
+   ritual:"Numa sexta-feira, pegue um galho de arruda fresco. Esfregue suavemente ao longo do seu corpo de cima para baixo, visualizando toda energia negativa sendo absorvida pela planta. Descarte em encruzilhada ou no lixo da rua. Agradeça. A arruda protege, mas também limpa e fortalece — confie nela.",
+   cuid:"Não ingerir. Pode causar irritação em pele sensível. Gestantes devem evitar contato direto. Cuidado com crianças pequenas.",
+   anc:"Patrimônio imaterial da cura popular brasileira. Usada por benzedeiras, terreiros, parteiras e avós há séculos em todas as regiões do Brasil.",
+   int:"Estou protegida. O que não é meu não tem poder sobre mim.",
+   prod:{n:"Sal 3 em 1 — Proteção dos Caminhos",d:"Amplifica a blindagem energética.",l:"index.html#loja"}},
+
+  {id:"guine",ico:"🌱",nome:"Guiné",latin:"Petiveria alliacea",
+   tags:["protecao","limpeza"],
+   cats:["protecao","limpeza"],
+   ess:"A planta que limpa antes de proteger — entra fundo onde a arruda não chega.",
+   essComp:"O guiné é uma das plantas de trabalho espiritual mais respeitadas do Brasil. Seu aroma forte e penetrante é sinal de sua potência: ele entra fundo no campo energético, dissolvendo o que foi plantado com má intenção e criando uma barreira de difícil penetração. Na umbanda, é planta de caboclos e entidades guerreiras.",
+   usos:["Proteção contra trabalhos e feitiços","Limpeza de energias intencionalmente negativas","Desobstrução de campos energéticos bloqueados","Fortalecimento espiritual intenso"],
+   modos:[{m:"Banho",d:"Infusão forte das folhas para banho de descarrego. Use em momentos de vulnerabilidade intensa."},{m:"Defumação",d:"Folhas secas queimadas para limpeza de ambientes pesados."},{m:"Amuleto",d:"Folhas secas num sachê para proteção contínua."}],
+   ritual:"Em dia de lua minguante, prepare um banho forte de guiné. Antes de entrar no banho, declare em voz alta o que deseja afastar. Entre no banho do pescoço para baixo, sentindo a energia densa sendo dissolvida. Depois, descanse — o trabalho do guiné continua agindo por horas.",
+   cuid:"Planta de ação intensa — não use em excesso. Grávidas devem evitar. Crianças pequenas, consulte antes de usar.",
+   anc:"Amplamente usada nos cultos afro-brasileiros, especialmente em terreiros de umbanda e candomblé. Considerada planta de proteção guerreira, ligada a Ogum e Exu.",
+   int:"Nenhuma energia negativa atravessa meu campo. Estou blindada.",
+   prod:{n:"Sal 3 em 1 — Proteção dos Caminhos",d:"Reforça a blindagem energética.",l:"index.html#loja"}},
+
+  {id:"espada",ico:"⚔️",nome:"Espada-de-São-Jorge",latin:"Sansevieria trifasciata",
+   tags:["protecao"],
+   cats:["protecao"],
+   ess:"Ereta e firme como um guerreiro — corta o que é negativo antes que chegue a você.",
+   essComp:"A Espada-de-São-Jorge é uma das plantas de proteção mais poderosas do mundo espiritual brasileiro. Sua forma — folhas longas e pontiagudas como espadas — não é coincidência: ela literalmente corta energias negativas antes que se instalem. Associada a Ogum e ao Arcanjo Miguel, ela é presença obrigatória em qualquer lar que busca proteção.",
+   usos:["Corte de energias negativas e inveja","Proteção permanente de ambientes","Blindagem espiritual do lar","Afastamento de influências maléficas","Fortalecimento do campo de proteção"],
+   modos:[{m:"Planta viva",d:"Mantenha na entrada da casa, nos cantos e próxima à porta de acesso. Cada folha é uma espada de proteção."},{m:"Banho de folhas",d:"Infusão das folhas para banho de proteção intensa."},{m:"Defumação",d:"Folhas secas queimadas para limpar e proteger ambientes."}],
+   ritual:"Posicione uma espada-de-São-Jorge na entrada da sua casa. Ao regá-la, visualize as folhas crescendo como escudos ao redor do seu lar. Diga: 'São Jorge guerreiro, protege este espaço e todos que aqui habitam.' Regue com gratidão e intenção.",
+   cuid:"Planta mildemente tóxica se ingerida — mantenha longe de animais e crianças pequenas. Para uso energético externo, é completamente segura.",
+   anc:"Sagrada em diversas tradições afro-brasileiras. Associada a Ogum — orixá da guerra, dos caminhos e da proteção. Considerada guardiã espiritual do lar em toda a cultura popular brasileira.",
+   int:"Meu espaço está protegido. Nenhuma energia negativa entra onde eu habito.",
+   prod:{n:"Sal 3 em 1 — Proteção dos Caminhos",d:"Potencializa a proteção do seu campo.",l:"index.html#loja"}},
+
+  {id:"comigo",ico:"🌿",nome:"Comigo-ninguém-pode",latin:"Dieffenbachia seguine",
+   tags:["protecao"],
+   cats:["protecao"],
+   ess:"O nome já diz tudo — e a planta cumpre o que promete.",
+   essComp:"O nome 'comigo-ninguém-pode' não é marketing — é uma descrição espiritual precisa. Esta planta cria um campo energético de proteção tão forte que neutraliza inveja, olho-gordo e intenções negativas antes que se instalem. É considerada uma das plantas de proteção mais eficazes da tradição popular brasileira.",
+   usos:["Neutralização de inveja e olho-gordo","Proteção contra intenções negativas","Blindagem energética do ambiente","Afastamento de energias que drenam"],
+   modos:[{m:"Planta viva",d:"Coloque em locais estratégicos da casa: entrada, sala de estar e no trabalho."},{m:"Banho simbólico",d:"Passe as folhas (sem contato com a seiva) ao redor do espaço com intenção de proteção."},{m:"Presença",d:"A simples presença da planta no ambiente já exerce proteção constante."}],
+   ritual:"Posicione a planta num local central da sua casa. Toda semana, ao regá-la, toque suavemente as folhas e diga: 'Comigo-ninguém-pode. Proteção e força para este espaço.' A planta absorve e trabalha de forma contínua.",
+   cuid:"ATENÇÃO: A seiva é tóxica e pode causar queimação intensa na boca e garganta se ingerida. Não leve à boca. Lave as mãos após manusear. Mantenha longe de crianças e animais.",
+   anc:"Fortemente presente na cultura popular brasileira de proteção. Nome que atravessou gerações, carregando a sabedoria de que certas plantas criam campos de força além do visível.",
+   int:"Comigo, ninguém pode. Estou protegida por forças que não se veem mas se sentem.",
+   prod:{n:"Sal 3 em 1 — Proteção dos Caminhos",d:"Blindagem energética completa.",l:"index.html#loja"}},
+
+  {id:"alecrim",ico:"🌿",nome:"Alecrim",latin:"Rosmarinus officinalis",
+   tags:["protecao","limpeza","prosperidade"],
+   cats:["protecao","limpeza","prosperidade"],
+   ess:"Aroma de clareza e força — limpa, protege e abre caminhos ao mesmo tempo.",
+   essComp:"O alecrim é uma das plantas mais versáteis do mundo espiritual. Seu aroma vigoroso e limpo faz três coisas ao mesmo tempo: limpa o que é negativo, protege o que é seu e abre espaço para a prosperidade entrar. Na tradição europeia é símbolo de memória e fidelidade; no Brasil, planta de terreiro e benzedura.",
+   usos:["Limpeza e proteção simultâneas","Abertura de caminhos para prosperidade","Memória e clareza mental","Fortalecimento do campo energético","Purificação de ambientes"],
+   modos:[{m:"Defumação",d:"Galhos secos queimados para limpeza e proteção de ambientes. Aroma poderoso e imediato."},{m:"Banho",d:"Infusão das folhas para banho de limpeza, proteção e abertura de caminhos."},{m:"Óleo essencial",d:"Algumas gotas em difusor ou nos pulsos diluído para proteção e clareza."}],
+   ritual:"Prepare um banho com alecrim fresco numa sexta-feira de manhã. Enquanto o aroma preenche o banheiro, visualize caminhos se abrindo à sua frente — trabalho, amor, saúde. O alecrim trabalha nos três campos ao mesmo tempo.",
+   cuid:"Evite ingerir em grande quantidade. Gestantes devem evitar uso medicinal intenso. Para uso energético em banhos e defumações, é seguro.",
+   anc:"Uma das plantas mais antigas em uso ritual no mundo — presente desde o Egito Antigo até as tradições europeias medievais. No Brasil, integrado à prática das benzedeiras e terreiros.",
+   int:"Meu caminho está limpo, protegido e aberto. O que é meu por direito vem até mim.",
+   prod:{n:"Sal 3 em 1 — Proteção dos Caminhos",d:"Reforça a limpeza e proteção.",l:"index.html#loja"}},
+
+  {id:"jurema",ico:"🌾",nome:"Jurema Preta",latin:"Mimosa tenuiflora",
+   tags:["protecao","limpeza","cura","amazonica"],
+   cats:["protecao","limpeza","cura"],
+   ess:"Guardiã dos portais entre mundos — protege, purifica e revela o que está oculto.",
+   essComp:"A Jurema Preta é uma das plantas mais sagradas do Brasil. Usada há milênios pelos povos originários do Nordeste e da Amazônia, ela não é apenas uma planta — é uma entidade. Uma mãe ancestral que guarda os mistérios entre o visível e o invisível, que protege com força ancestral e limpa com profundidade que poucos vegetais alcançam.",
+   usos:["Proteção profunda do campo energético","Limpeza de memórias energéticas densas","Abertura de portais espirituais","Comunicação com ancestrais","Cura de padrões emocionais antigos"],
+   modos:[{m:"Defumação",d:"Queime cascas secas em brasa. Passe a fumaça ao redor do corpo e pelos ambientes."},{m:"Banho",d:"Infusão com folhas secas. Use do pescoço para baixo com intenção de renovação."},{m:"Amuleto",d:"Pequeno pedaço de casca envolto em pano natural próximo ao corpo."}],
+   ritual:"Acenda uma vela branca ao anoitecer. Segure um pedaço de casca de Jurema nas mãos. Respire três vezes fundo. Visualize uma luz verde-dourada envolvendo seu corpo. Diga: 'Que a sabedoria da Jurema me proteja, me guie e me cure.' Permaneça em silêncio, recebendo.",
+   cuid:"Use com respeito e intenção. Para consumo cerimonial, somente com orientação experiente. Respeite os contextos tradicionais indígenas.",
+   anc:"Sagrada para os povos Pankararu, Fulni-ô, Kariri e outros indígenas nordestinos. Presente na Umbanda através da Linha da Jurema com seus mestres e caboclos.",
+   int:"Abro meu coração para a sabedoria da floresta. Estou protegida, guiada e em paz.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Potencializa a limpeza do campo espiritual.",l:"index.html#loja"}},
+
+  {id:"salvia",ico:"🕯️",nome:"Sálvia Branca",latin:"Salvia apiana",
+   tags:["protecao","limpeza"],
+   cats:["protecao","limpeza"],
+   ess:"A fumaça que fala com os espíritos — purifica o que os olhos não veem.",
+   essComp:"A sálvia branca é a purificadora suprema do mundo espiritual. Seu uso atravessa culturas e continentes: onde sua fumaça passa, o peso não fica. Ela não apenas limpa — ela cria um campo de proteção vibracional que dura horas após sua queima.",
+   usos:["Limpeza energética profunda de ambientes","Purificação do campo energético pessoal","Criação de campo de proteção vibracional","Dissolução de energias estagnadas","Preparação de espaços sagrados"],
+   modos:[{m:"Smudge",d:"Acenda o maço, sopre suavemente. Passe pelos ambientes em sentido anti-horário para limpeza."},{m:"Corpo",d:"Passe a fumaça ao redor do próprio corpo, de cima para baixo, com intenção clara."},{m:"Objetos",d:"Passe a fumaça ao redor de cristais, amuletos e objetos rituais."}],
+   ritual:"Antes de qualquer ritual, acenda a sálvia branca. Começando pela porta de entrada, caminhe pelos cômodos no sentido anti-horário. Diga: 'Que esta fumaça leve tudo que não serve. Que apenas luz e amor permaneçam.' Abra as janelas para o negativo ter saída.",
+   cuid:"Use em ambientes ventilados. Compre de fornecedores sustentáveis. A planta silvestre é sagrada para povos originários norte-americanos — respeite.",
+   anc:"Sagrada para os povos nativos da América do Norte em cerimônias de purificação. Seu uso se espalhou por diversas tradições espirituais ao redor do mundo.",
+   int:"Este espaço está limpo. Este corpo está limpo. Apenas o que é de luz permanece.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Aprofunda a limpeza energética.",l:"index.html#loja"}},
+
+  {id:"cipocuz",ico:"🌿",nome:"Cipó-cruz",latin:"Chiococca alba",
+   tags:["protecao","limpeza"],
+   cats:["protecao","limpeza"],
+   ess:"A planta que forma cruzes de proteção invisíveis onde é colocada.",
+   essComp:"O Cipó-cruz é uma planta de proteção e limpeza muito utilizada nas tradições populares do Norte e Nordeste do Brasil. Seu nome deriva do formato de suas hastes, que naturalmente formam cruzamentos — símbolo universal de proteção e interseção entre mundos. Ela limpa e protege simultaneamente.",
+   usos:["Proteção de espaços e pessoas","Limpeza de energias negativas acumuladas","Criação de barreiras energéticas","Afastamento de influências densas"],
+   modos:[{m:"Defumação",d:"Queime galhos secos para limpeza e proteção de ambientes."},{m:"Banho",d:"Infusão para banho de descarrego e proteção."},{m:"Posicionamento",d:"Coloque galhos secos nas entradas e cantos da casa como proteção permanente."}],
+   ritual:"Coloque galhos de cipó-cruz em forma de X nas entradas da sua casa. Ao fazê-lo, visualize uma barreira de luz dourada se formando. Diga: 'Este cruzamento sela minha proteção. Nenhuma energia negativa cruza este limiar.'",
+   cuid:"Planta segura para uso externo. Não indicada para ingestão sem orientação especializada.",
+   anc:"Amplamente usada nas tradições populares do Norte e Nordeste brasileiro em rituais de proteção e cura. Planta de benzedeiras e raizeiros da Amazônia.",
+   int:"Estou cruzada de proteção. Nenhum mal me alcança.",
+   prod:{n:"Sal 3 em 1 — Proteção dos Caminhos",d:"Fortalece sua blindagem.",l:"index.html#loja"}},
+
+  {id:"patchouli",ico:"🌙",nome:"Patchouli",latin:"Pogostemon cablin",
+   tags:["protecao","amor","prosperidade"],
+   cats:["protecao","amor","prosperidade"],
+   ess:"A terra em forma de aroma — ancora, protege, atrai e materializa.",
+   essComp:"O patchouli tem um dos aromas mais reconhecíveis da espiritualidade: terroso, profundo, quase hipnótico. Ele ancora o que está disperso, cria uma base energética sólida de proteção e ao mesmo tempo atrai amor e prosperidade. É a planta da presença plena no mundo material.",
+   usos:["Ancoragem e proteção energética","Atração de prosperidade e riqueza","Atração de amor e relacionamentos","Manifestação no plano físico","Equilíbrio entre espiritual e material"],
+   modos:[{m:"Óleo essencial",d:"Passe diluído nos pulsos para proteção, atração de amor e prosperidade."},{m:"Incenso",d:"Queime antes de rituais de manifestação ou meditações de ancoragem."},{m:"Banho",d:"Óleo essencial diluído no banho para ancoragem e atração."}],
+   ritual:"Numa noite de lua crescente, acenda incenso de patchouli. Escreva o que deseja manifestar. Segure o papel enquanto o aroma preenche o ambiente. Visualize seu desejo já realizado com detalhes. Diga: 'Isso já é meu. Recebo com gratidão.'",
+   cuid:"Óleo puro pode irritar pele sensível — sempre dilua antes de aplicar. Grávidas devem evitar uso intenso.",
+   anc:"Usado em tradições orientais, africanas e das américas por séculos. Na umbanda, relacionado com orixás da riqueza e da terra. Uma das essências mais antigas em uso ritual no mundo.",
+   int:"Estou ancorada na abundância. Atraio o que é meu com presença e clareza.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Potencializa a manifestação.",l:"index.html#loja"}},
+
+  {id:"paudarco",ico:"🌳",nome:"Pau-d'arco",latin:"Tabebuia impetiginosa",
+   tags:["protecao","cura","amazonica"],
+   cats:["protecao","cura"],
+   ess:"A árvore-guerreira da Amazônia — cura com força e protege com raízes profundas.",
+   essComp:"O Pau-d'arco é uma das árvores sagradas da Amazônia. Sua casca interna, de cor avermelhada, é usada há milênios pelos povos indígenas para cura física e espiritual. Energeticamente, ela representa força, resistência e proteção profunda — como uma raiz que nada consegue arrancar.",
+   usos:["Proteção espiritual de longa duração","Fortalecimento do sistema imune energético","Cura de enfermidades físicas e espirituais","Conexão com a força ancestral da floresta"],
+   modos:[{m:"Chá da casca",d:"Prepare com a casca interna. Beba com intenção de fortalecimento e cura."},{m:"Banho",d:"Infusão da casca para banho de fortalecimento e proteção."},{m:"Defumação",d:"Pequenos pedaços de casca seca queimados para proteção do ambiente."}],
+   ritual:"Prepare um chá de pau-d'arco ao amanhecer. Segure a xícara com as duas mãos. Visualize as raízes profundas desta árvore milenar se conectando às suas próprias raízes. Sinta a força da floresta entrando no seu corpo. Beba devagar, recebendo cada gole como uma bênção.",
+   cuid:"Evite uso prolongado sem orientação. Contraindicado para gestantes. Consulte profissional de saúde antes de usar medicinalente. Não use em excesso.",
+   anc:"Sagrado para os povos Quéchua, Tupi-Guarani e outros povos indígenas sul-americanos. Usado em rituais de cura e fortalecimento há milênios. Considerado árvore de poder pela medicina tradicional amazônica.",
+   int:"Tenho a força das raízes da floresta. Nada me dobra, nada me derruba.",
+   prod:{n:"Sal 3 em 1 — Proteção dos Caminhos",d:"Fortalece e protege o campo energético.",l:"index.html#loja"}},
+
+  // ── LIMPEZA ──────────────────────────────────────────────────────
+  {id:"capimsto",ico:"🌾",nome:"Capim-santo",latin:"Cymbopogon citratus",
+   tags:["limpeza","cura"],
+   cats:["limpeza","cura"],
+   ess:"Leveza em forma de cheiro — dissolve a energia densa com suavidade e alegria.",
+   essComp:"O capim-santo, também conhecido como capim-limão, tem um aroma cítrico e fresco que imediatamente transforma o ambiente. Ele limpa sem esforço — como uma brisa que passa e leva embora o que estava parado. É a planta da leveza, do alívio e da renovação gentil.",
+   usos:["Limpeza energética suave e contínua","Dissolução de energias estagnadas","Alegria e leveza para ambientes","Equilíbrio emocional","Relaxamento e paz"],
+   modos:[{m:"Banho",d:"Infusão para banho de limpeza leve e renovação. Excelente para uso frequente."},{m:"Chá ritual",d:"Beba com intenção de alegria e leveza. Ótimo antes de meditações."},{m:"Defumação",d:"Folhas frescas queimadas rapidamente para limpeza rápida de ambientes."}],
+   ritual:"Prepare um chá de capim-santo numa tarde tranquila. Enquanto bebe, visualize cada sip dissolvendo uma camada de tensão ou energia densa. Ao terminar, respire fundo e note a leveza. O capim-santo trabalha com gentileza — mas é profundo.",
+   cuid:"Planta segura para uso geral. Evite uso excessivo durante a gravidez. Para uso em banhos e chás esporádicos, é completamente seguro.",
+   anc:"Amplamente usada na medicina popular e espiritual brasileira. Presente em comunidades ribeirinhas e indígenas como planta de cura e bem-estar cotidiano.",
+   int:"Estou leve. Cada respiração dissolve o que não me serve mais.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Aprofunda a renovação energética.",l:"index.html#loja"}},
+
+  {id:"eucalipto",ico:"🌿",nome:"Eucalipto",latin:"Eucalyptus globulus",
+   tags:["limpeza","cura"],
+   cats:["limpeza","cura"],
+   ess:"O aroma que limpa o ar e o campo energético com a mesma eficiência.",
+   essComp:"O eucalipto age em múltiplas dimensões: limpa o ar fisicamente (comprovado cientificamente) e limpa o campo energético com a mesma eficiência. Seu aroma forte e mentolado dissolve energias densas, desobstrui o que está fechado e traz clareza onde havia confusão.",
+   usos:["Limpeza profunda de ambientes","Desobstrução energética e respiratory","Clareza mental e espiritual","Renovação do campo energético","Cura de vias respiratórias e emocionais"],
+   modos:[{m:"Defumação",d:"Folhas secas ou óleo essencial no difusor para limpeza intensa de ambientes."},{m:"Banho",d:"Infusão das folhas para banho de limpeza e renovação. Sensação imediata de frescor."},{m:"Vaporizacao",d:"Adicione folhas numa tigela de água quente. Inale o vapor com intenção de limpeza."}],
+   ritual:"No primeiro dia do mês, defume todos os cômodos da sua casa com eucalipto. Abra as janelas. Enquanto a fumaça circula, diga: 'Tudo que é velho, pesado ou desnecessário sai agora. Renovo este espaço com luz e leveza.' Deixe o ar fresco entrar.",
+   cuid:"Evite uso em crianças menores de 6 anos. Óleo essencial puro pode causar irritação. Sempre dilua antes de aplicar na pele.",
+   anc:"Embora originário da Austrália, o eucalipto foi completamente incorporado à tradição popular de cura brasileira. Presente em benzeduras, remédios caseiros e práticas de limpeza espiritual por gerações.",
+   int:"Meu campo está limpo e desobstruído. Respiro com liberdade.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Complementa a limpeza energética.",l:"index.html#loja"}},
+
+  {id:"manjericao",ico:"🌱",nome:"Manjericão",latin:"Ocimum basilicum",
+   tags:["limpeza","amor","prosperidade"],
+   cats:["limpeza","amor","prosperidade"],
+   ess:"A planta da alegria — limpa, ama e atrai com o mesmo sorriso aberto.",
+   essComp:"O manjericão faz três coisas com maestria: limpa energias pesadas, abre o coração para o amor e atrai prosperidade. É a planta da alegria de viver — seu aroma doce e fresco transforma qualquer ambiente em lugar de acolhimento e leveza.",
+   usos:["Limpeza de energias densas","Atração de amor e harmonia","Prosperidade e boas oportunidades","Alegria e bem-estar","Harmonia em relacionamentos e no lar"],
+   modos:[{m:"Planta viva",d:"Mantenha na cozinha — centro energético do lar. Presença constante de limpeza e atração."},{m:"Banho",d:"Infusão das folhas para banho de abertura e alegria."},{m:"Chá",d:"Beba com intenção de amor e prosperidade. Doce e benevolente."}],
+   ritual:"Toda manhã de segunda-feira, passe levemente as mãos pelas folhas do manjericão e respire o aroma. Visualize a semana se abrindo com oportunidades, amor e alegria. O manjericão é gentil — trabalha com quem o cuida.",
+   cuid:"Planta segura para uso geral. Evite excesso medicinal durante a gravidez. Para uso energético cotidiano, é completamente seguro.",
+   anc:"Sagrado em diversas culturas: na Grécia Antiga era planta de reis, na Índia é sagrado a Vishnu. No Brasil, integrado às práticas populares de atração e proteção do lar.",
+   int:"Meu lar está limpo e cheio de amor. A prosperidade e a alegria habitam este espaço.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Ativa o fluxo de abundância.",l:"index.html#loja"}},
+
+  {id:"alfazema",ico:"💜",nome:"Alfazema",latin:"Lavandula angustifolia",
+   tags:["limpeza","amor","cura"],
+   cats:["limpeza","amor","cura"],
+   ess:"A paz em forma de planta — limpa com suavidade e cura o que doeu.",
+   essComp:"A alfazema, ou lavanda, é a planta da cura emocional. Seu aroma delicado e inconfundível limpa as camadas emocionais com suavidade — sem o vigor do guiné ou a força da arruda, mas com uma profundidade que chega onde as outras não chegam: no coração cansado, na ansiedade, no medo.",
+   usos:["Limpeza emocional suave","Cura da ansiedade e estresse","Abertura do coração para o amor","Paz e tranquilidade","Sono restaurador e proteção durante o sono"],
+   modos:[{m:"Banho",d:"Infusão ou óleo essencial diluído no banho para paz e cura emocional."},{m:"Ambiente",d:"Sachês de flores secas nos ambientes e no travesseiro para paz e sono tranquilo."},{m:"Óleo essencial",d:"Uma gota no pulso e nas têmporas para acalmar e equilibrar."}],
+   ritual:"Antes de dormir, prepare um banho com alfazema. Enquanto a água quente libera o aroma, respire fundo e solte a tensão do dia. Visualize cada preocupação se dissolvendo na água. Saia do banho leve. Deixe um sachê de alfazema sob o travesseiro — ela continua trabalhando durante o sono.",
+   cuid:"Planta segura para uso geral. Óleo essencial diluído é seguro. Evite uso intenso durante a gravidez.",
+   anc:"Uma das plantas medicinais e espirituais mais antigas do mundo mediterrâneo. Usada por séculos em rituais de purificação, amor e proteção em diversas culturas.",
+   int:"Estou em paz. Meu coração está curado e tranquilo.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Harmoniza e aprofunda o equilíbrio emocional.",l:"index.html#loja"}},
+
+  {id:"folaranja",ico:"🍊",nome:"Folha de Laranja",latin:"Citrus sinensis",
+   tags:["limpeza","prosperidade"],
+   cats:["limpeza","prosperidade"],
+   ess:"Alegria solar em forma de folha — limpa com leveza e abre portas com sorriso.",
+   essComp:"As folhas de laranjeira carregam a energia do sol — quente, alegre, expansiva. Elas limpam energias pesadas com leveza, sem o peso de plants mais densas, e ao mesmo tempo trazem a vibração da prosperidade e das boas oportunidades. É a planta da alegria que abre caminhos.",
+   usos:["Limpeza energética leve e alegre","Abertura de caminhos de prosperidade","Atração de boas oportunidades","Alegria e otimismo","Harmonia e leveza no ambiente"],
+   modos:[{m:"Banho",d:"Infusão das folhas para banho de limpeza e alegria. Ótimo para começar novos ciclos."},{m:"Defumação",d:"Folhas secas queimadas para limpeza suave e alegre de ambientes."},{m:"Chá",d:"Beba com intenção de abertura e gratidão pelas bênçãos já presentes."}],
+   ritual:"Na virada de mês, prepare um banho com folhas de laranjeira e uma casca de laranja. Enquanto se banha, visualize o mês anterior sendo lavado embora — com gratidão pelo que veio — e o novo mês se abrindo cheio de luz e oportunidades. A laranjeira transforma.",
+   cuid:"Planta segura para uso geral. Certifique-se que as folhas não foram tratadas com agrotóxicos antes de usar em banho ou chá.",
+   anc:"Presente nas tradições populares brasileiras em banhos de abertura e prosperidade. A laranjeira é símbolo de abundância e alegria em muitas culturas ao redor do mundo.",
+   int:"A alegria é minha vibração natural. Abro o novo ciclo com gratidão e expectativa.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Potencializa a abertura de caminhos.",l:"index.html#loja"}},
+
+  // ── AMOR ─────────────────────────────────────────────────────────
+  {id:"rosa",ico:"🌹",nome:"Rosa Vermelha",latin:"Rosa centifolia",
+   tags:["amor","cura"],
+   cats:["amor","cura"],
+   ess:"O amor em forma de flor — cura o coração que se fechou por medo.",
+   essComp:"A rosa vermelha é o símbolo universal do amor, mas sua dimensão espiritual vai muito além do romance. Ela cura o coração — o que se fechou por dor, o que se endureceu por medo, o que esqueceu como é se abrir. A rosa não apenas atrai amor: ela restaura a capacidade de amar e ser amado.",
+   usos:["Cura emocional profunda do coração","Atração de amor verdadeiro e duradouro","Abertura para receber afeto","Autoamor e autoestima","Harmonia em relacionamentos"],
+   modos:[{m:"Banho de pétalas",d:"Pétalas frescas no banho para cura emocional e abertura do coração."},{m:"Agua de rosas",d:"Hidrolato de rosa no rosto e corpo para elevar a vibração de amor."},{m:"Oferenda",d:"Pétalas em oferenda a divindades do amor com intenção clara e coração aberto."}],
+   ritual:"Encha uma bacia com água morna e adicione pétalas de rosa vermelha. Enquanto se banha, visualize seu coração se abrindo como uma rosa em flor. Permita que qualquer dor antiga se dissolva na água. Diga com convicção: 'Meu coração está aberto. Mereço amor e dou amor com alegria.'",
+   cuid:"Planta segura para uso geral. Certifique-se que as rosas não foram tratadas com agrotóxicos antes de usar em banho ou chá.",
+   anc:"Sagrada em diversas tradições: oferenda a Afrodite na Grécia antiga, usada em terreiros de candomblé e umbanda em oferendas a Oxum, rainha do amor e das águas doces.",
+   int:"Meu coração está aberto e curado. Mereço ser amada e amo plenamente.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Harmoniza e fortalece o amor-próprio.",l:"index.html#loja"}},
+
+  {id:"hibisco",ico:"🌺",nome:"Hibisco",latin:"Hibiscus rosa-sinensis",
+   tags:["amor","cura"],
+   cats:["amor","cura"],
+   ess:"A flor que sabe que é bela e te lembra que você também é — autoestima em flor.",
+   essComp:"O hibisco é a planta da autoestima e da beleza interior. Sua cor intensa e sua forma dramática são um convite a se perceber como algo precioso. Energeticamente, ele trabalha na autoconfiança, na percepção do próprio valor e na atração de relacionamentos que respeitam quem você é.",
+   usos:["Fortalecimento da autoestima","Autoconfiança e percepção do próprio valor","Atração de amor respeitoso","Beleza interior e exterior","Abertura do chakra do coração"],
+   modos:[{m:"Banho",d:"Infusão das flores para banho de autoestima e atração. A água fica avermelhada — linda e poderosa."},{m:"Cha",d:"Beba com intenção de reconhecimento do próprio valor."},{m:"Oferenda",d:"Flores frescas em oferenda para atrair amor com respeito."}],
+   ritual:"Prepare um chá de hibisco em uma tarde de lua cheia. Antes de beber, olhe no espelho e diga três coisas que você admira em si mesma. Depois beba o chá visualizando essas qualidades crescendo e brilhando. O hibisco amplifica o que você já é.",
+   cuid:"Planta segura para uso geral. Pode ter efeito hipotensor em grandes quantidades. Gestantes devem evitar uso medicinal intenso.",
+   anc:"Usada em diversas tradições africanas, caribenhas e brasileiras em rituais de amor, beleza e autoconhecimento. No Brasil, planta de quintal e de benzedura.",
+   int:"Sou preciosa. Reconheço meu valor e atraio quem me vê com os olhos certos.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Fortalece a autoestima e o amor-próprio.",l:"index.html#loja"}},
+
+  {id:"jasmim",ico:"🌸",nome:"Jasmim",latin:"Jasminum officinale",
+   tags:["amor","cura"],
+   cats:["amor","cura"],
+   ess:"O amor que chega no ar antes de ser visto — suave, irresistível e transformador.",
+   essComp:"O jasmim é a planta do amor romântico e da sedução espiritual. Seu aroma noturno e envolvente desperta a sensibilidade, abre o coração para experiências profundas de amor e cria uma aura de magnetismo natural. Ele atrai amor verdadeiro pela via da essência, não da aparência.",
+   usos:["Atração de amor romântico","Magnetismo e sensualidade espiritual","Abertura emocional profunda","Confiança em relações íntimas","Cura de decepções amorosas"],
+   modos:[{m:"Perfume natural",d:"Óleo essencial de jasmim como perfume espiritual. Atrai por vibração."},{m:"Banho",d:"Infusão das flores para banho de atração e abertura amorosa."},{m:"Ambiente noturno",d:"Planta viva no quarto libera aroma à noite, trabalhando durante o sono."}],
+   ritual:"Numa sexta-feira à noite, acenda uma vela rosa e coloque flores ou óleo de jasmim próximo. Escreva as qualidades que você busca num relacionamento. Leia em voz alta. Queime o papel. O jasmim transmite sua intenção às esferas do amor.",
+   cuid:"Planta segura para uso geral. Óleo essencial puro pode causar sensibilização — sempre dilua. Evite uso interno sem orientação.",
+   anc:"Sagrado em culturas árabes, indianas e chinesas em rituais de amor e devoção espiritual. Na Índia, presente em cerimônias de casamento e cultos a divindades do amor.",
+   int:"Sou magnética. O amor verdadeiro me encontra porque minha essência o chama.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Harmoniza e abre o coração.",l:"index.html#loja"}},
+
+  {id:"lavanda",ico:"💜",nome:"Lavanda",latin:"Lavandula angustifolia",
+   tags:["amor","limpeza","cura"],
+   cats:["amor","limpeza","cura"],
+   ess:"Onde a lavanda está, o amor tranquilo e a paz profunda habitam.",
+   essComp:"A lavanda trabalha no amor pela via da paz. Ela não atrai com sedução — ela cria um campo de tranquilidade e harmonia onde o amor verdadeiro pode florescer sem o ruído do medo e da ansiedade. É a planta do amor maduro, calmo e duradouro.",
+   usos:["Criação de campo de paz para o amor","Harmonia em relacionamentos","Cura emocional suave","Limpeza energética delicada","Sono restaurador e proteção"],
+   modos:[{m:"Sachê",d:"Flores secas em sachê no quarto para harmonia e paz nos relacionamentos."},{m:"Banho",d:"Para relaxamento profundo e abertura emocional gentil."},{m:"Difusor",d:"Óleo essencial em difusor para criar ambiente de harmonia e paz."}],
+   ritual:"Antes de uma conversa importante num relacionamento, diffuse lavanda no ambiente. O aroma cria um campo de paz que facilita a comunicação honesta e o amor. A lavanda não resolve — ela cria o espaço onde as coisas podem se resolver.",
+   cuid:"Planta segura para uso geral. Evite uso interno intenso durante a gravidez.",
+   anc:"Uma das plantas mais antigas em uso medicinal e espiritual no mundo mediterrâneo. Usada em rituais de purificação e amor por séculos em diversas tradições.",
+   int:"Estou em paz comigo e nas minhas relações. O amor tranquilo é o que me nutre.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Promove equilíbrio e paz interior.",l:"index.html#loja"}},
+
+  {id:"baunilha",ico:"🟤",nome:"Baunilha",latin:"Vanilla planifolia",
+   tags:["amor","prosperidade"],
+   cats:["amor","prosperidade"],
+   ess:"Doce como o amor que não dói — aquece, atrai e faz ficar.",
+   essComp:"A baunilha é a planta do amor acolhedor e duradouro. Seu aroma quente e doce evoca conforto, segurança e afeto profundo. Energeticamente, ela atrai relacionamentos que nutrem, amizades verdadeiras e uma atmosfera de amor em casa. É a planta do lar feliz.",
+   usos:["Atração de amor acolhedor e duradouro","Criação de atmosfera de afeto no lar","Harmonia familiar","Conforto emocional","Atração de prosperidade gentil"],
+   modos:[{m:"Essencia natural",d:"Fava de baunilha ou essência natural em difusor para criar atmosfera de amor e conforto."},{m:"Ritual de lar",d:"Cozinhe algo com baunilha com intenção de preencher o lar de amor e alegria."},{m:"Perfume",d:"Essência natural aplicada como perfume para atrair amor acolhedor."}],
+   ritual:"Prepare uma bebida quente com baunilha natural numa tarde fria. Enquanto bebe, sinta o calor se espalhando pelo corpo. Visualize seu lar cheio de amor, riso e aconchego. A baunilha materializa exatamente essa sensação no campo energético.",
+   cuid:"Planta segura para uso alimentar e aromático. Use essência natural, não artificial, para trabalho espiritual.",
+   anc:"Originária da Mesoamérica, era usada pelos Astecas em rituais de amor e como presente para os deuses. Chegou ao mundo como um dos aromas mais amados da humanidade.",
+   int:"Sou acolhedora e sou acolhida. O amor que me nutre é real, quente e duradouro.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Harmoniza e fortalece o amor no lar.",l:"index.html#loja"}},
+
+  {id:"canela",ico:"🟤",nome:"Canela",latin:"Cinnamomum verum",
+   tags:["amor","prosperidade"],
+   cats:["amor","prosperidade"],
+   ess:"Quente como o amor que transforma e doce como a prosperidade que chega.",
+   essComp:"A canela é a planta do calor — no amor e na prosperidade. Ela aquece o que estava frio, acelera o que estava parado e transforma situações estagnadas. No amor, desperta paixão e confiança. Na prosperidade, acelera o fluxo de dinheiro e oportunidades.",
+   usos:["Atração de amor apaixonado","Aceleração de prosperidade","Aquecimento de relacionamentos esfriados","Confiança e coragem","Aceleração de manifestações"],
+   modos:[{m:"Defumacao",d:"Paus de canela queimados ou aroma para aquecer e acelerar manifestações."},{m:"Banho",d:"Infusão com paus ou pó de canela para atração de amor e prosperidade."},{m:"Ritual de prosperidade",d:"Sopre canela em pó pela porta de entrada na lua nova para atrair prosperidade."}],
+   ritual:"Na lua nova, sopre uma colher de canela em pó pela porta principal da sua casa. Enquanto faz isso, diga: 'Que a prosperidade e o amor entrem por esta porta e fiquem.' Repita todo mês.",
+   cuid:"Evite contato direto com a pele em concentrações altas. Não use em excesso internamente. Alergia à canela é possível — teste antes.",
+   anc:"Uma das especiarias mais valiosas da história humana, usada em rituais sagrados do Oriente Médio, Egito Antigo e em terreiros brasileiros em trabalhos de atração e prosperidade.",
+   int:"O amor e a prosperidade me encontram. O que desejo se aquece e se materializa.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Acelera o fluxo de prosperidade.",l:"index.html#loja"}},
+
+  {id:"cravo",ico:"🌷",nome:"Cravo-da-índia",latin:"Syzygium aromaticum",
+   tags:["amor","prosperidade","protecao"],
+   cats:["amor","prosperidade","protecao"],
+   ess:"Intenso e certeiro — atrai, protege e manifesta com precisão de flecha.",
+   essComp:"O cravo-da-índia é uma das especiarias mais poderosas em trabalhos espirituais. Seu aroma intenso e penetrante atrai amor com força, protege com precisão e acelera manifestações de prosperidade. É a planta de quem quer resultados claros e diretos.",
+   usos:["Atração de amor intenso e verdadeiro","Proteção espiritual pontual","Manifestação de prosperidade","Aceleração de pedidos e rituais","Fortalecimento de intenções"],
+   modos:[{m:"Defumação",d:"Queime cravos em brasa para atrair amor e prosperidade intensamente."},{m:"Banho",d:"Infusão de cravos para banho de atração e proteção."},{m:"Ritual de amor",d:"Cravos espetados em velas vermelhas ou cor-de-rosa para trabalhos de amor."}],
+   ritual:"Escreva o nome de uma qualidade que deseja em amor (ex: lealdade, paixão, parceria). Envolva o papel num cravo e acenda uma vela vermelha ao lado. Visualize essa qualidade se manifestando. O cravo amplifica a intenção com força.",
+   cuid:"Não use óleo essencial puro na pele — é extremamente concentrado. O contato direto pode causar irritação grave. Sempre dilua.",
+   anc:"Uma das especiarias mais valiosas das rotas comerciais medievais. Usado em rituais de proteção e atração em terreiros afro-brasileiros e em tradições populares europeias.",
+   int:"O que peço com coração limpo se manifesta. Minhas intenções são claras e poderosas.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Potencializa a manifestação.",l:"index.html#loja"}},
+
+  {id:"ervadoce",ico:"🌿",nome:"Erva-doce",latin:"Pimpinella anisum",
+   tags:["amor","cura"],
+   cats:["amor","cura"],
+   ess:"Suave como um abraço de avó — cura com amor e traz doçura onde havia amargura.",
+   essComp:"A erva-doce tem a energia do amor gentil e incondicional — aquele que cura sem exigir, que acolhe sem julgar. Ela transforma a amargura em doçura, o ressentimento em compreensão e a solidão em conexão. É a planta perfeita para quem precisa se reconciliar com o amor após decepções.",
+   usos:["Cura de decepções amorosas","Transformação de amargura em doçura","Atração de amor gentil","Reconciliação com relacionamentos","Paz interior e acolhimento"],
+   modos:[{m:"Chá ritual",d:"Beba com intenção de curar a memória de dores antigas no amor."},{m:"Banho",d:"Infusão para banho de renovação emocional após término ou decepção."},{m:"Aroma no lar",d:"Sementes num sachê para criar atmosfera de doçura e acolhimento."}],
+   ritual:"Prepare um chá de erva-doce após uma situação difícil no amor. Enquanto bebe, permita-se sentir a dor — e depois deixe ela ir com cada gole. A erva-doce não apaga o que aconteceu: ela transforma o que sobrou.",
+   cuid:"Planta segura para uso geral. Evite excesso durante a gravidez. Para uso cotidiano em chás e aromas, é completamente seguro.",
+   anc:"Presente na medicina popular e espiritual brasileira e europeia. Usada por gerações em remédios de avó para curar o corpo e confortar a alma.",
+   int:"Me reconcilio com o amor. A doçura é minha natureza e o afeto é meu direito.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Promove cura emocional e harmonia.",l:"index.html#loja"}},
+
+  // ── PROSPERIDADE ─────────────────────────────────────────────────
+  {id:"louro",ico:"🌿",nome:"Louro",latin:"Laurus nobilis",
+   tags:["prosperidade","protecao"],
+   cats:["prosperidade","protecao"],
+   ess:"A planta das vitórias — foi usada para coroar reis, pode abrir seus caminhos.",
+   essComp:"O louro é a planta da vitória, do reconhecimento e da prosperidade merecida. Sua história atravessa a Grécia Antiga, onde coroava os vitoriosos, até as tradições populares brasileiras onde abre caminhos e atrai o sucesso. É a planta de quem trabalha com dedicação e merece colher os frutos.",
+   usos:["Atração de sucesso e reconhecimento","Abertura de caminhos profissionais","Prosperidade e abundância","Vitória em objetivos","Proteção durante conquistas"],
+   modos:[{m:"Folha na carteira",d:"Coloque uma folha de louro seca na carteira para atrair prosperidade contínua."},{m:"Ritual de pedido",d:"Escreva seu desejo em uma folha de louro e queime para enviar ao universo."},{m:"Banho",d:"Infusão de folhas para banho de abertura de caminhos e sucesso."}],
+   ritual:"Escreva três objetivos que deseja conquistar em três folhas de louro secas. Queime uma de cada vez enquanto visualiza cada objetivo sendo alcançado. O fumo que sobe leva sua intenção. O louro é direto — ele entrega.",
+   cuid:"Planta segura para uso geral. Certifique-se de usar louro verdadeiro (Laurus nobilis) e não confundir com plantas parecidas.",
+   anc:"Sagrado na Grécia Antiga — coroava poetas, atletas e generais vitoriosos. Considerado planta de Apolo, deus das artes e do sucesso. Atravessou séculos mantendo sua reputação de planta da vitória.",
+   int:"O sucesso e o reconhecimento que mereço chegam até mim. Sou vitoriosa.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Abre e ativa o fluxo de prosperidade.",l:"index.html#loja"}},
+
+  {id:"girassol",ico:"🌻",nome:"Girassol",latin:"Helianthus annuus",
+   tags:["prosperidade","amor"],
+   cats:["prosperidade","amor"],
+   ess:"A planta que olha para o sol e nos lembra: siga sempre a luz.",
+   essComp:"O girassol é a planta da expansão, da alegria e da abundância solar. Ele não apenas atrai prosperidade — ele transforma a perspectiva, ajudando a ver oportunidades onde antes só havia obstáculos. É a planta de quem quer crescer, brilhar e atrair tudo de bom que a vida tem para oferecer.",
+   usos:["Atração de prosperidade e abundância","Expansão de perspectivas e oportunidades","Alegria e otimismo","Confiança no futuro","Fortalecimento da autoconfiança"],
+   modos:[{m:"Planta viva ou flores",d:"Girassóis no lar atraem energia solar de prosperidade e alegria."},{m:"Sementes",d:"Carregue sementes de girassol como amuleto de prosperidade."},{m:"Banho de flores",d:"Pétalas frescas no banho para renovar a perspectiva e atrair a luz."}],
+   ritual:"Numa manhã ensolarada, sente-se diante de um girassol (ou de sua imagem). Feche os olhos e sinta o calor do sol em você. Visualize sua vida se expandindo na direção da luz — novos caminhos, novas oportunidades, nova versão de você. O girassol sabe o caminho.",
+   cuid:"Planta segura para uso geral. Sementes são comestíveis. Para uso espiritual, não há restrições.",
+   anc:"Planta solar sagrada para diversas culturas indígenas das Américas. Símbolo de adoração ao sol, de crescimento e de volta constante para a luz. Presente em rituais de prosperidade em muitas tradições.",
+   int:"Viro meu rosto para a luz. Crescimento, expansão e abundância são meu caminho natural.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Ativa o fluxo solar de abundância.",l:"index.html#loja"}},
+
+  {id:"nozmoscada",ico:"🟤",nome:"Noz-moscada",latin:"Myristica fragrans",
+   tags:["prosperidade","protecao"],
+   cats:["prosperidade","protecao"],
+   ess:"Uma das especiarias mais valiosas da história — ela sabe o que vale.",
+   essComp:"A noz-moscada foi tão valiosa historicamente que guerras foram travadas por ela. Essa história de valor e poder está gravada em sua energia: ela atrai prosperidade com a força de quem sabe seu próprio preço. Espiritualmente, é usada para atrair dinheiro, sorte e proteção em negócios.",
+   usos:["Atração de dinheiro e riqueza","Prosperidade em negócios","Proteção financeira","Sorte e boas oportunidades","Amplificação de outras intenções"],
+   modos:[{m:"Amuleto",d:"Carregue uma noz-moscada inteira na carteira ou bolso para atrair prosperidade."},{m:"Pó em rituais",d:"Polvilhe um pouco de pó na carteira, no caixa do negócio ou em rituais de prosperidade."},{m:"Banho",d:"Adicione em banhos de prosperidade para amplificar a intenção."}],
+   ritual:"Segure uma noz-moscada inteira na mão direita. Visualize seu negócio, trabalho ou situação financeira florescendo com abundância. Sinta o calor da especiaria em sua mão. Coloque-a depois na carteira ou no caixa do seu negócio. Renove este ritual a cada lua nova.",
+   cuid:"Em doses medicinais altas pode ser tóxica — use apenas como amuleto ou em pequenas quantidades em banhos. Não ingira em quantidade.",
+   anc:"Uma das especiarias mais valiosas do comércio medieval. Usada em rituais de prosperidade em terreiros afro-brasileiros e em tradições populares europeias por séculos.",
+   int:"Sei o meu valor. A prosperidade me reconhece e vem ao meu encontro.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Amplifica a atração de prosperidade.",l:"index.html#loja"}},
+
+  // ── CURA ─────────────────────────────────────────────────────────
+  {id:"ervacidreira",ico:"🌿",nome:"Erva-cidreira",latin:"Melissa officinalis",
+   tags:["cura","limpeza"],
+   cats:["cura","limpeza"],
+   ess:"A mãe gentil das plantas de cura — cuida do sistema nervoso e da alma ansiosa.",
+   essComp:"A erva-cidreira é a planta da cura gentil do sistema nervoso. Em tempos de ansiedade e aceleração, ela oferece o que mais precisamos: calma real. Seu aroma suave e seu sabor delicado chegam direto onde a tensão mora — nos ombros, no peito, na mente acelerada — e dissolve com cuidado de mãe.",
+   usos:["Cura da ansiedade e nervosismo","Equilíbrio do sistema nervoso","Limpeza emocional suave","Paz e tranquilidade","Sono profundo e restaurador"],
+   modos:[{m:"Cha",d:"Prepare com folhas frescas. Beba com intenção de calma e cura nervosa."},{m:"Banho",d:"Infusão para banho de cura emocional. Perfeito após dias difíceis."},{m:"Compressa",d:"Panos embebidos em chá forte aplicados na testa para dores de cabeça tensionais."}],
+   ritual:"Num momento de ansiedade intensa, prepare um chá de erva-cidreira. Antes de beber, segure a xícara quente nas mãos e sinta o calor se espalhando. Respire o aroma. Beba devagar, com atenção plena em cada gole. A erva-cidreira pede que você desacelere — e cura nesse espaço.",
+   cuid:"Planta muito segura para uso geral. Pode haver interação com medicamentos sedativos — consulte um profissional se usar medicamentos. Evite uso excessivo durante a gravidez.",
+   anc:"Uma das plantas de cura mais antigas da medicina popular europeia e brasileira. Presente nas receitas de benzedeiras, raizeiros e na medicina popular de todas as regiões do Brasil.",
+   int:"Meu sistema nervoso está em paz. Sou calma, centrada e inteira.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Revigora e restaura a energia vital.",l:"index.html#loja"}},
+
+  {id:"camomila",ico:"🌼",nome:"Camomila",latin:"Matricaria chamomilla",
+   tags:["cura","amor"],
+   cats:["cura","amor"],
+   ess:"A flor do cuidado — cura com a delicadeza de quem nunca machuca.",
+   essComp:"A camomila é a planta do cuidado gentil. Seu aroma suave e seu sabor delicado são a tradução botânica do que significa ser tratado com carinho. Ela cura as inflamações físicas e emocionais — aquele nó no estômago, a raiva que ferve por baixo, a irritação que não tem nome — com uma suavidade que desarma.",
+   usos:["Cura de inflamações físicas e emocionais","Equilíbrio do sistema digestivo e emocional","Paz e gentileza","Cura de relacionamentos tensos","Acolhimento emocional"],
+   modos:[{m:"Cha",d:"Para cura interna — física e emocional. Beba com intenção de cuidado consigo."},{m:"Banho",d:"Infusão para banho de cura e acolhimento emocional."},{m:"Compressa",d:"Panos embebidos em chá para inflamações físicas e emocionais localizadas."}],
+   ritual:"Prepare um banho de camomila numa tarde de descanso. Enquanto se banha, fale consigo mesmo como falaria com uma criança que você ama: com gentileza, sem julgamento. A camomila cria o campo seguro para esse encontro interno.",
+   cuid:"Planta muito segura para uso geral, inclusive crianças. Possível alergia em pessoas alérgicas à família Asteraceae. Verifique se houver dúvida.",
+   anc:"Uma das plantas de cura mais antigas do mundo. Presente no Egito Antigo, na medicina medieval europeia e nas receitas de avó de todo o Brasil. Símbolo universal do cuidado.",
+   int:"Me cuido com gentileza. Mereço o mesmo cuidado que ofereço aos outros.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Promove cura e equilíbrio emocional.",l:"index.html#loja"}},
+
+  {id:"boldo",ico:"🍃",nome:"Boldo",latin:"Plectranthus barbatus",
+   tags:["cura","limpeza"],
+   cats:["cura","limpeza"],
+   ess:"A planta que limpa por dentro — dissolve o que o corpo e a alma não conseguem digerir.",
+   essComp:"O boldo não é apenas digestivo — é um purificador completo de corpo, emoções e energia. Ele limpa o fígado físico e o 'fígado energético': aquele lugar onde guardamos mágoas, ressentimentos e emoções não digeridas. Quando algo pesado fica parado dentro de você, o boldo dissolve.",
+   usos:["Limpeza de emoções não processadas","Liberação de mágoas e ressentimentos","Purificação energética interna","Saúde do fígado físico e emocional","Renovação e leveza interior"],
+   modos:[{m:"Cha",d:"Prepare com folhas frescas. Beba com intenção de liberação. Visualize o que precisa ir se dissolvendo."},{m:"Banho de assento",d:"Infusão forte para banho de assento, liberando bloqueios da região do ventre."},{m:"Defumacao leve",d:"Folhas secas queimadas para limpeza suave de ambientes."}],
+   ritual:"Prepare uma xícara de chá de boldo. Antes de beber, escreva em um papel algo que quer liberar — uma mágoa, um padrão antigo. Enquanto toma o chá, visualize isso sendo dissolvido. Depois queime o papel. O boldo e o fogo completam o trabalho juntos.",
+   cuid:"Não use por longos períodos. Contraindicado para gestantes e pessoas com doenças hepáticas graves. Consulte profissional se necessário.",
+   anc:"Planta de cura popular amplamente conhecida no Brasil. Usada por benzedeiras e raizeiros para limpar o sangue, renovar o corpo e a energia há gerações.",
+   int:"Libero o que não me serve mais. Meu corpo, meu coração e minha energia estão limpos e renovados.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Complementa a limpeza energética interna.",l:"index.html#loja"}},
+
+  {id:"juca",ico:"🌳",nome:"Jucá",latin:"Libidibia ferrea",
+   tags:["cura","amazonica"],
+   cats:["cura"],
+   ess:"A árvore de ferro da Amazônia — cura o que parecia incurável com a força da floresta.",
+   essComp:"O Jucá, ou pau-ferro, é uma das árvores de cura mais respeitadas da Amazônia e do Nordeste brasileiro. Seu nome popular 'pau-ferro' diz tudo sobre sua energia: é dura, resistente, inquebrável. Energeticamente, ela fortalece o que está fraco, reconstrói o que foi destruído e dá persistência para continuar.",
+   usos:["Cura de enfermidades persistentes","Fortalecimento do organismo físico e energético","Reconstrução de campos enfraquecidos","Resistência e persistência espiritual","Cura de ossos e estrutura energética"],
+   modos:[{m:"Cha da casca",d:"Prepare com a casca. Beba com intenção de fortalecimento e cura profunda."},{m:"Banho",d:"Infusão da casca para banho de fortalecimento estrutural."},{m:"Meditacao",d:"Visualize as raízes desta árvore de ferro se conectando ao seu próprio sistema de cura."}],
+   ritual:"Prepare um chá de jucá numa manhã difícil. Segure a xícara e sinta o calor da casca milenar. Visualize a árvore — firme, alta, de madeira de ferro — como símbolo da sua própria resistência. Beba com a consciência de que você é mais forte do que imagina.",
+   cuid:"Uso moderado. Consulte um profissional de saúde antes de usar medicialmente para condições específicas. Não indicado para uso prolongado sem orientação.",
+   anc:"Sagrada na medicina tradicional amazônica e do Nordeste brasileiro. Usada por curandeiros, benzedeiras e raizeiros para fortalecer o corpo e o espírito. Patrimônio vivo da medicina popular.",
+   int:"Tenho a resistência da árvore de ferro. Me curo com força e me ergo com dignidade.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Revigora e fortalece a energia vital.",l:"index.html#loja"}},
+
+  {id:"andiroba",ico:"🌿",nome:"Andiroba",latin:"Carapa guianensis",
+   tags:["cura","amazonica"],
+   cats:["cura"],
+   ess:"O óleo sagrado da floresta — cura por dentro e protege por fora.",
+   essComp:"A andiroba é uma das plantas sagradas mais importantes da Amazônia. Seu óleo, extraído das sementes, é usado há séculos pelos povos indígenas para cura física e espiritual. Energeticamente, ela cria uma camada de proteção na pele e no campo áurico, curando enquanto protege.",
+   usos:["Cura de inflamações físicas e energéticas","Proteção da pele e do campo áurico","Anti-inflamatório físico e espiritual","Fortalecimento das defesas energéticas","Cura de trauma físico e emocional"],
+   modos:[{m:"Oleo",d:"Aplique o óleo com intenção de cura e proteção. Massageie nas áreas que precisam de atenção."},{m:"Banho",d:"Adicione algumas gotas de óleo ao banho para cura e proteção combinadas."},{m:"Meditacao",d:"Visualize o óleo criando uma camada protetora ao redor de todo o seu corpo."}],
+   ritual:"Após o banho, aplique óleo de andiroba em todo o corpo, começando pelos pés. Enquanto massageia cada área, diga: 'Curo, protejo e fortaleço.' Sinta a planta trabalhando — ela é viva e consciente de sua função.",
+   cuid:"Planta segura para uso externo. Para uso interno, consulte um profissional. Compre de fontes confiáveis que extrativismo de forma sustentável.",
+   anc:"Planta sagrada para os povos indígenas da Amazônia, especialmente os Tikuna, Yanomami e outros. Usada em rituais de cura e proteção há milênios. Símbolo do conhecimento médico da floresta.",
+   int:"Estou curada e protegida. A floresta me oferece sua medicina e eu a recebo com gratidão.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Complementa a cura e fortalecimento.",l:"index.html#loja"}},
+
+  {id:"copaiba",ico:"🌿",nome:"Copaíba",latin:"Copaifera langsdorffii",
+   tags:["cura","amazonica"],
+   cats:["cura"],
+   ess:"A resina dourada que cura sem pressa — profunda, persistente e sábia.",
+   essComp:"A copaíba é uma das resinas mais preciosas da Amazônia. Seu óleo dourado, extraído do tronco da árvore, carrega a inteligência de séculos de existência na floresta. Energeticamente, ela cura com profundidade — não a cura rápida e superficial, mas aquela que transforma a estrutura energética.",
+   usos:["Cura profunda de traumas físicos e emocionais","Anti-inflamatório físico e energético","Fortalecimento das estruturas energéticas","Cura de feridas antigas","Conexão com a sabedoria ancestral da floresta"],
+   modos:[{m:"Oleo",d:"Use o óleo com intenção de cura profunda — seja física (aplicado na pele) ou energética (algumas gotas no banho)."},{m:"Defumacao",d:"A resina queimada em brasa purifica e cura o ambiente com profundidade."},{m:"Meditacao",d:"Segure um frasco de óleo de copaíba durante a meditação e visualize cura profunda."}],
+   ritual:"Numa lua minguante, aplique óleo de copaíba no plexo solar enquanto visualiza tudo que precisa ser curado — seja físico, emocional ou espiritual. A copaíba trabalha em camadas, como a floresta: lentamente, profundamente, sem pressa.",
+   cuid:"Para uso interno, somente com orientação profissional. Para uso externo em banhos e meditações, é seguro. Respeite a origem — compre de fontes que extraem de forma sustentável.",
+   anc:"Planta sagrada para inúmeros povos amazônicos, usada há milênios em rituais de cura e como remédio universal. Mencionada nas primeiras crônicas dos colonizadores como a medicina mais poderosa da floresta.",
+   int:"Me curo em profundidade. Cada camada que precisa de atenção recebe a medicina da floresta.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Aprofunda a limpeza e renovação energética.",l:"index.html#loja"}},
+
+  {id:"unhadegato",ico:"🌿",nome:"Unha-de-gato",latin:"Uncaria tomentosa",
+   tags:["cura","amazonica"],
+   cats:["cura"],
+   ess:"A planta que agarra e não larga — persiste na cura até o fim.",
+   essComp:"A Unha-de-gato, com seus espinhos em forma de garra, é uma das plantas de cura mais potentes da Amazônia. Sua energia espiritual reflete sua forma física: ela agarra o que precisa ser curado e não larga. É a planta para as curas que pedem persistência, para as condições que precisam de força e constância.",
+   usos:["Cura de condições persistentes e crônicas","Fortalecimento do sistema imunológico energético","Persistência em processos de cura","Fortalecimento geral","Anti-inflamatório físico e espiritual profundo"],
+   modos:[{m:"Cha da casca",d:"Prepare com a casca e beba com intenção de cura persistente e fortalecimento."},{m:"Banho",d:"Infusão para banho de fortalecimento e cura profunda."},{m:"Meditacao",d:"Visualize as garras da planta segurando firmemente tudo que tenta enfraquecer você."}],
+   ritual:"Prepare um chá de unha-de-gato e beba em silêncio. Visualize a planta com suas garras segurando firme aquilo que você está tentando curar ou transformar. Sinta que você não está sozinha nesse processo — a planta está junto, persistindo com você.",
+   cuid:"Contraindicado para gestantes, crianças pequenas e pessoas com doenças autoimunes sem orientação médica. Não combine com anticoagulantes. Sempre consulte um profissional antes do uso medicinal.",
+   anc:"Planta sagrada para os povos Asháninka do Peru e outros povos amazônicos. Considerada uma das plantas de cura mais poderosas da farmacopeia indígena amazônica. Pesquisada mundialmente pela ciência.",
+   int:"A cura que preciso está acontecendo. Sou persistente e o processo me fortalece.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Fortalece e revigora o campo vital.",l:"index.html#loja"}}
+,
+  {id:"muirapuama",ico:"🌳",nome:"Muirapuama",latin:"Ptychopetalum olacoides",
+   tags:["cura","prosperidade","amazonica"],cats:["amazonica","cura","prosperidade"],
+   ess:"A raiz da vitalidade amazônica — desperta o que estava adormecido dentro de você.",
+   essComp:"A Muirapuama, conhecida como pau de potência, é uma das plantas mais poderosas da farmacopeia amazônica. Sua energia é de despertar — ela não cria força onde não existe, ela revela a força que sempre esteve lá, mas que o cansaço, o estresse ou os traumas esconderam. É a planta do renascimento da vitalidade.",
+   usos:["Despertar da vitalidade física e espiritual","Renovação da força vital","Cura do esgotamento profundo","Fortalecimento da memória e clareza","Conexão com o próprio poder interior"],
+   modos:[{m:"Chá da raiz",d:"Prepare com a raiz seca. Beba com intenção de despertar a vitalidade adormecida."},{m:"Tintura",d:"Tintura da raiz como suplemento energético — consulte um profissional para dosagem."},{m:"Meditação",d:"Segure um pedaço da raiz durante meditação e visualize sua vitalidade sendo restaurada."}],
+   ritual:"Pela manhã, prepare um chá de muirapuama. Antes de beber, de pé, respire fundo três vezes. Visualize uma raiz profunda saindo dos seus pés e entrando na terra da Amazônia. Sinta a força subir por essas raízes até o seu corpo. Beba o chá recebendo essa energia de despertar.",
+   cuid:"Não use durante gravidez ou amamentação. Pode interagir com medicamentos para pressão. Consulte um profissional antes do uso medicinal contínuo. Prefira fontes de extrativismo sustentável.",
+   anc:"Usada pelos povos indígenas da Amazônia há séculos como tônico de vitalidade e planta cerimonial de fortalecimento. Considerada uma das plantas medicinais mais valiosas da região.",
+   int:"Desperto minha força. O poder que sempre esteve em mim se revela agora.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Revigora e amplifica a energia vital.",l:"index.html#loja"}},
+
+  {id:"crajiru",ico:"🌿",nome:"Crajiru",latin:"Arrabidaea chica",
+   tags:["cura","limpeza","amazonica"],cats:["amazonica","cura","limpeza"],
+   ess:"A tinta sagrada da floresta — colore o campo energético com a vibração da cura.",
+   essComp:"O Crajiru é uma das plantas mais peculiares e sagradas da Amazônia. Suas folhas produzem uma tinta avermelhada usada pelos povos indígenas tanto para pintura corporal ritual quanto para medicina. Energeticamente, essa cor vermelha representa o sangue da terra — a força vital que cura, fortalece e reconecta.",
+   usos:["Cura de inflamações físicas e energéticas","Limpeza profunda do campo energético","Fortalecimento do sistema energético feminino","Reconexão com a força vital","Rituais de pintura e proteção corporal"],
+   modos:[{m:"Chá",d:"Prepare com as folhas secas. Beba com intenção de cura e fortalecimento."},{m:"Banho",d:"A infusão tingirá levemente a água. Deixe esse vermelho sagrado purificar seu campo."},{m:"Defumação",d:"Folhas secas queimadas para limpeza e fortalecimento energético."}],
+   ritual:"Prepare um banho de crajiru. Enquanto o balde se tinge de vermelho suave, visualize essa cor como o sangue da floresta — vivo, purificador, ancestral. Banhe-se sentindo a tinta sagrada renovar cada célula do seu campo energético.",
+   cuid:"Planta segura para uso externo. O chá pode tingir temporariamente a boca e urina — é normal. Para uso medicinal interno contínuo, consulte um profissional.",
+   anc:"Sagrada para os povos Tikuna, Yanomami, Kayapó e outros povos amazônicos. Usada em rituais de iniciação, proteção e cura. A pintura corporal com crajiru é um ato ritual de conexão com a força vital da floresta.",
+   int:"A força vital da floresta flui em mim. Estou curada, renovada e conectada.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Complementa a renovação energética profunda.",l:"index.html#loja"}},
+
+  {id:"catuaba",ico:"🌳",nome:"Catuaba",latin:"Erythroxylum vacciniifolium",
+   tags:["amor","cura","amazonica"],cats:["amazonica","amor","cura"],
+   ess:"A planta do prazer de existir — desperta os sentidos adormecidos pela rotina.",
+   essComp:"A Catuaba desperta o prazer de existir. Em tempos em que a rotina apaga os sentidos, a catuaba os acende novamente — o prazer do toque, a alegria do corpo, a vontade de se conectar com o outro e consigo mesmo. É a planta que devolve o entusiasmo que o cotidiano foi roubando.",
+   usos:["Despertar dos sentidos e do prazer de viver","Fortalecimento da autoconfiança","Cura da inibição e do bloqueio emocional","Reconexão com o corpo","Atração de amor com presença plena"],
+   modos:[{m:"Chá da casca",d:"Prepare com a casca. Beba com intenção de despertar sua presença e vitalidade."},{m:"Tintura",d:"Tintura para uso moderado — consulte dosagem com profissional."},{m:"Banho",d:"Infusão para banho de despertar dos sentidos e confiança corporal."}],
+   ritual:"Prepare um chá de catuaba numa tarde de descanso. Enquanto bebe, coloque música que você ama, dance um pouco, sinta seu corpo. A catuaba trabalha melhor quando convidada com alegria — ela é a planta do prazer, não da seriedade.",
+   cuid:"Uso moderado. Evite em excesso. Gestantes e pessoas com histórico de convulsões devem evitar. Consulte profissional para uso contínuo.",
+   anc:"Planta nativa do cerrado e da Amazônia, usada pelos povos Tupi como tônico e planta cerimonial de celebração da vida. Seu nome em Tupi significa o que fortalece o índio.",
+   int:"Celebro minha presença no mundo. Meu corpo é sagrado e meus sentidos são dons.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Fortalece a autoestima e o amor ao próprio corpo.",l:"index.html#loja"}},
+
+  {id:"guarana",ico:"🌿",nome:"Guaraná",latin:"Paullinia cupana",
+   tags:["prosperidade","cura","amazonica"],cats:["amazonica","prosperidade","cura"],
+   ess:"Os olhos da floresta — vê o que outros não veem e vai onde outros não chegam.",
+   essComp:"O guaraná carrega uma mitologia única. Para os Sateré-Mawé, povo que o cultivou por séculos, o guaraná nasceu dos olhos de uma criança sagrada — e por isso seus frutos têm a forma de um olho. Energeticamente, ele amplia a percepção, aguça a visão espiritual e dá força para percorrer caminhos longos.",
+   usos:["Ampliação da percepção e visão espiritual","Força e resistência em jornadas longas","Foco e clareza de propósito","Energia para manifestar objetivos","Conexão com a visão além do óbvio"],
+   modos:[{m:"Pó natural",d:"Uma colher do pó natural em água com intenção de clareza e foco para o dia."},{m:"Ritual de visão",d:"Prepare o guaraná antes de meditações de visão ou tomadas de decisão importantes."},{m:"Amuleto",d:"Sementes secas carregadas como amuleto de percepção e força."}],
+   ritual:"Numa manhã importante, prepare o guaraná com água e intenção. Antes de beber, feche os olhos e peça clareza sobre um caminho, uma decisão, um desafio. O guaraná não diz o que você quer ouvir; ele amplia sua capacidade de ver o que já está lá.",
+   cuid:"Contém cafeína — evite à noite e em excesso. Cuidado com pessoas sensíveis à cafeína, cardíacos e gestantes. Prefira o pó natural sem aditivos.",
+   anc:"Cultivado exclusivamente pelo povo Sateré-Mawé da Amazônia por séculos. Considerado planta sagrada, ligada à criação do mundo e à visão espiritual. Hoje símbolo da Amazônia no mundo inteiro.",
+   int:"Minha visão é clara. Vejo além do óbvio e caminho com força e propósito.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Amplifica a energia e o foco.",l:"index.html#loja"}},
+
+  {id:"cumaru",ico:"🌰",nome:"Cumaru",latin:"Dipteryx odorata",
+   tags:["amor","prosperidade","amazonica"],cats:["amazonica","amor","prosperidade"],
+   ess:"O perfume sagrado da Amazônia — o amor que dura como a madeira mais densa da floresta.",
+   essComp:"O Cumaru é uma das árvores mais nobres e perfumadas da floresta. Suas sementes exalam um aroma de cumarina — doce, quente, inconfundível — usado em rituais de amor, prosperidade e atração há séculos. É a planta da abundância que cheira a amor, da riqueza com doçura.",
+   usos:["Atração de amor verdadeiro e duradouro","Prosperidade com doçura","Criação de atmosfera sagrada e acolhedora","Harmonização de relacionamentos","Conexão com a abundância da floresta"],
+   modos:[{m:"Semente como amuleto",d:"Carregue uma semente de cumaru como amuleto de amor e prosperidade."},{m:"Aroma",d:"Sementes raladas ou em pó em ritual de atração e harmonização."},{m:"Banho",d:"Infusão das sementes para banho de amor e abundância."}],
+   ritual:"Segure uma semente de cumaru nas mãos e inale seu aroma profundo. Visualize o amor e a prosperidade que deseja — não com ansiedade, mas com a calma de quem sabe que a floresta entrega no tempo certo. O cumaru trabalha com paciência, como uma árvore centenária.",
+   cuid:"Planta segura para uso aromático e em banhos. As sementes contêm cumarina — não ingira em grande quantidade. Para uso externo, é completamente segura.",
+   anc:"Planta nativa da Amazônia usada por povos indígenas em rituais de harmonização, celebração e atração. O óleo de cumaru é um dos aromas mais nobres da perfumaria natural brasileira.",
+   int:"O amor e a prosperidade chegam até mim com a doçura e a paciência da floresta.",
+   prod:{n:"Sal 3 em 1 — Prosperidade e Abundância",d:"Ativa o fluxo de abundância com doçura.",l:"index.html#loja"}},
+
+  {id:"priprioca",ico:"🌾",nome:"Priprioca",latin:"Cyperus articulatus",
+   tags:["amor","prosperidade","amazonica"],cats:["amazonica","amor","prosperidade"],
+   ess:"O perfume da terra amazônica — enraíza no amor e âncora na prosperidade.",
+   essComp:"A Priprioca é uma das essências mais exclusivas e sagradas da Amazônia. Seu aroma terroso, quente e profundo é completamente amazônico. Usada por povos indígenas em rituais de atração e proteção, ela enraíza o amor, âncora a prosperidade e conecta quem a usa com a força da terra. Perfume que nasceu na floresta e pertence a ela.",
+   usos:["Ancoragem no amor e nos relacionamentos","Atração de prosperidade enraizada","Conexão com a terra e com as raízes","Perfume ritual de atração","Estabilidade emocional e espiritual"],
+   modos:[{m:"Óleo essencial",d:"Uma gota nos pulsos como perfume ritual. Seu aroma atrai com a força da terra."},{m:"Banho",d:"Infusão das raízes para banho de ancoragem e atração."},{m:"Amuleto de raiz",d:"Pedaço da raiz seca carregado como amuleto de amor e estabilidade."}],
+   ritual:"Aplique óleo de priprioca nos pés — não apenas nos pulsos. Visualize raízes saindo dos seus pés e entrando na terra amazônica. Diga: Estou enraizada. O amor e a prosperidade que chegam até mim são sólidos como a floresta.",
+   cuid:"Planta segura para uso aromático e em banhos. O óleo essencial deve ser diluído antes de aplicar na pele. Compre de fontes que trabalham com extrativismo sustentável na Amazônia.",
+   anc:"Planta usada pelos povos indígenas amazônicos em rituais de atração e proteção. Famosa internacionalmente pela perfumaria de luxo — mas seu uso mais sagrado é o ancestral, nos rituais da floresta.",
+   int:"Sou enraizada. Meu amor e minha prosperidade têm fundações sólidas como a floresta.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Harmoniza e enraíza o amor-próprio.",l:"index.html#loja"}},
+
+  {id:"copaiba",ico:"🌿",nome:"Copaíba",latin:"Copaifera langsdorffii",
+   tags:["cura","amazonica"],cats:["amazonica","cura"],
+   ess:"A resina dourada que cura sem pressa — profunda, persistente e sábia como a floresta.",
+   essComp:"A copaíba é uma das resinas mais preciosas da Amazônia. Seu óleo dourado, extraído do tronco da árvore, carrega a inteligência de séculos. Energeticamente, ela cura com profundidade — não a cura rápida e superficial, mas aquela que transforma a estrutura energética de dentro para fora.",
+   usos:["Cura profunda de traumas físicos e emocionais","Anti-inflamatório físico e energético","Fortalecimento das estruturas energéticas","Cura de feridas antigas","Conexão com a sabedoria ancestral da floresta"],
+   modos:[{m:"Óleo",d:"Use o óleo com intenção de cura profunda — aplicado na pele ou algumas gotas no banho."},{m:"Defumação",d:"A resina queimada em brasa purifica e cura o ambiente com profundidade."},{m:"Meditação",d:"Segure um frasco de óleo de copaíba durante a meditação e visualize cura profunda."}],
+   ritual:"Numa lua minguante, aplique óleo de copaíba no plexo solar enquanto visualiza tudo que precisa ser curado — seja físico, emocional ou espiritual. A copaíba trabalha em camadas, como a floresta: lentamente, profundamente, sem pressa.",
+   cuid:"Para uso interno, somente com orientação profissional. Para uso externo em banhos e meditações, é seguro. Respeite a origem — compre de fontes sustentáveis.",
+   anc:"Planta sagrada para inúmeros povos amazônicos, usada há milênios em rituais de cura. Mencionada nas primeiras crônicas dos colonizadores como a medicina mais poderosa da floresta.",
+   int:"Me curo em profundidade. Cada camada que precisa de atenção recebe a medicina da floresta.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Aprofunda a limpeza e renovação energética.",l:"index.html#loja"}},
+
+  {id:"sanguedrago",ico:"🩸",nome:"Sangue-de-dragão",latin:"Croton lechleri",
+   tags:["cura","protecao","amazonica"],cats:["amazonica","cura","protecao"],
+   ess:"A resina vermelha da floresta — cura as feridas que o tempo não conseguiu fechar.",
+   essComp:"O Sangue-de-dragão é uma das resinas mais impressionantes da Amazônia. Seu nome vem da cor avermelhada que escorre do tronco quando cortado. Energeticamente, ele cura feridas — físicas e emocionais — que parecem não querer fechar. É a planta da cicatrização profunda, do selamento de processos dolorosos.",
+   usos:["Cicatrização de feridas físicas e emocionais","Cura de traumas antigos que não fecharam","Proteção de feridas energéticas","Fortalecimento após períodos de dor","Selamento de processos de cura"],
+   modos:[{m:"Resina diluída",d:"Aplique a resina diluída sobre feridas físicas ou pontos do corpo que precisam de cura."},{m:"Banho",d:"Algumas gotas da resina no banho para cura de feridas energéticas."},{m:"Ritual de fechamento",d:"Use a resina para simbolicamente selar um processo de dor que precisa ser encerrado."}],
+   ritual:"Segure o frasco de sangue-de-dragão. Visualize todas as feridas ainda abertas — físicas, emocionais, espirituais. Aplique a resina diluída sobre o coração. Diga: Esta ferida está sendo curada. Este processo está sendo selado. Estou inteira. O sangue-de-dragão sela.",
+   cuid:"Para uso externo. Consulte um profissional antes de usar internamente. Compre de fontes certificadas. Evite durante a gravidez.",
+   anc:"Usada por povos indígenas da Amazônia peruana e brasileira há milênios em rituais de cura e proteção. Considerada um dos maiores presentes medicinais da floresta pela sua capacidade de cicatrizar.",
+   int:"Minhas feridas estão sendo curadas. Sou inteira. O passado está selado com amor.",
+   prod:{n:"Sal 3 em 1 — Limpeza Profunda",d:"Aprofunda a limpeza e regeneração do campo.",l:"index.html#loja"}},
+
+  {id:"andiroba",ico:"🌿",nome:"Andiroba",latin:"Carapa guianensis",
+   tags:["cura","amazonica"],cats:["amazonica","cura"],
+   ess:"O óleo sagrado da floresta — cura por dentro e protege por fora simultaneamente.",
+   essComp:"A andiroba é uma das plantas sagradas mais importantes da Amazônia. Seu óleo, extraído das sementes, é usado há séculos pelos povos indígenas para cura física e espiritual. Energeticamente, ela cria uma camada de proteção na pele e no campo áurico, curando enquanto protege — dois presentes em um.",
+   usos:["Cura de inflamações físicas e energéticas","Proteção da pele e do campo áurico","Anti-inflamatório físico e espiritual","Fortalecimento das defesas energéticas","Cura de trauma físico e emocional"],
+   modos:[{m:"Óleo",d:"Aplique o óleo com intenção de cura e proteção. Massageie nas áreas que precisam de atenção."},{m:"Banho",d:"Adicione algumas gotas de óleo ao banho para cura e proteção combinadas."},{m:"Meditação",d:"Visualize o óleo criando uma camada protetora ao redor de todo o seu corpo."}],
+   ritual:"Após o banho, aplique óleo de andiroba em todo o corpo, começando pelos pés. Enquanto massageia cada área, diga: Curo, protejo e fortaleço. Sinta a planta trabalhando — ela é viva e consciente de sua função.",
+   cuid:"Planta segura para uso externo. Para uso interno, consulte um profissional. Compre de fontes que fazem extrativismo de forma sustentável.",
+   anc:"Planta sagrada para os povos indígenas da Amazônia, especialmente os Tikuna, Yanomami e outros. Usada em rituais de cura e proteção há milênios. Símbolo do conhecimento médico da floresta.",
+   int:"Estou curada e protegida. A floresta me oferece sua medicina e eu a recebo com gratidão.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Complementa a cura e fortalecimento.",l:"index.html#loja"}},
+
+  {id:"marapuama",ico:"🌿",nome:"Marapuama",latin:"Liriosma ovata",
+   tags:["cura","amor","amazonica"],cats:["amazonica","cura","amor"],
+   ess:"A planta que reacende o brilho — quando o mundo tirou seu entusiasmo, ela devolve.",
+   essComp:"A Marapuama trabalha na dimensão mais sutil da cura: a alegria de existir. Quando a vida pesa tanto que o brilho some, quando o corpo cansa de verdade e o espírito perde o entusiasmo, a marapuama acende uma luz. Suave, mas real. É a planta para quem precisa lembrar por que vale a pena.",
+   usos:["Restauração da alegria e entusiasmo pela vida","Cura do esgotamento profundo","Fortalecimento da vitalidade espiritual","Reconexão com o prazer de existir","Cura da melancolia e do apagamento emocional"],
+   modos:[{m:"Chá da casca",d:"Prepare com a casca seca. Beba com intenção de reconectar com o prazer de viver."},{m:"Tintura",d:"Tintura em doses moderadas — consulte dosagem com profissional."},{m:"Meditação",d:"Segure um pedaço da casca e visualize seu entusiasmo sendo reacendido."}],
+   ritual:"Prepare um chá de marapuama numa tarde tranquila. Antes de beber, escreva três coisas que já fizeram você genuinamente feliz na vida — não o que deveria fazer feliz, o que realmente fez. Beba o chá pensando nessas memórias. A marapuama amplifica o que já existe de bom.",
+   cuid:"Uso moderado. Evite durante gravidez e amamentação. Pode interagir com medicamentos. Consulte um profissional para uso contínuo.",
+   anc:"Planta nativa da Amazônia usada pelos povos indígenas como tônico de vitalidade e bem-estar. Considerada um dos maiores presentes da farmacopeia amazônica para a saúde do espírito.",
+   int:"A alegria de viver é minha. Meu brilho está sendo restaurado agora.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Revigora e restaura o entusiasmo vital.",l:"index.html#loja"}},
+
+  {id:"abuta",ico:"🌿",nome:"Abuta",latin:"Abuta grandifolia",
+   tags:["cura","amazonica"],cats:["amazonica","cura"],
+   ess:"A planta das mulheres da floresta — honra o ciclo feminino com sabedoria ancestral.",
+   essComp:"A Abuta é conhecida como planta das mulheres na tradição indígena amazônica. Ela cuida do ciclo feminino em sua totalidade — não apenas o físico, mas o energético: os ciclos de criação e entrega, os ritmos de expansão e recolhimento, a sabedoria que só quem vive em ciclos conhece.",
+   usos:["Cura e equilíbrio do ciclo feminino energético","Honrar e fortalecer o feminino sagrado","Equilíbrio hormonal físico e energético","Cura de traumas do feminino","Conexão com os próprios ciclos e ritmos"],
+   modos:[{m:"Chá da casca",d:"Prepare com a casca. Beba com intenção de honrar e curar seu ciclo feminino."},{m:"Banho",d:"Infusão para banho de cura e honra do feminino sagrado."},{m:"Meditação de ciclo",d:"Durante seu período, medite com a abuta como símbolo de honra ao seu próprio ritmo."}],
+   ritual:"No início do seu ciclo menstrual, prepare um chá de abuta. Enquanto bebe, permita-se honrar seu ciclo — não como inconveniência, mas como sabedoria. A abuta lembra: você é lunar por natureza.",
+   cuid:"Contraindicada para gestantes. Para uso medicinal do ciclo, consulte um profissional de saúde. Para uso espiritual e energético, é gentil e segura.",
+   anc:"Planta sagrada para os povos indígenas amazônicos, especialmente usada por parteiras, curandeiras e líderes espirituais femininas. Símbolo do cuidado com o feminino na medicina tradicional amazônica.",
+   int:"Honro meu ciclo e minha natureza feminina. Sou lunar, poderosa e sagrada.",
+   prod:{n:"Sal 3 em 1 — Amor-Próprio e Equilíbrio",d:"Harmoniza e fortalece o feminino.",l:"index.html#loja"}},
+
+  {id:"paudarco",ico:"🌳",nome:"Pau-d'arco",latin:"Tabebuia impetiginosa",
+   tags:["protecao","cura","amazonica"],cats:["amazonica","protecao","cura"],
+   ess:"A árvore-guerreira da Amazônia — cura com força e protege com raízes de séculos.",
+   essComp:"O Pau-d'arco é uma das árvores sagradas da Amazônia. Sua casca interna, de cor avermelhada, é usada há milênios pelos povos indígenas para cura física e espiritual. Energeticamente, ela representa força, resistência e proteção profunda — como uma raiz que nada consegue arrancar.",
+   usos:["Proteção espiritual de longa duração","Fortalecimento do sistema imune energético","Cura de enfermidades físicas e espirituais","Conexão com a força ancestral da floresta","Resistência em períodos difíceis"],
+   modos:[{m:"Chá da casca",d:"Prepare com a casca interna. Beba com intenção de fortalecimento e cura."},{m:"Banho",d:"Infusão da casca para banho de fortalecimento e proteção."},{m:"Defumação",d:"Pequenos pedaços de casca seca queimados para proteção do ambiente."}],
+   ritual:"Prepare um chá de pau-d'arco ao amanhecer. Segure a xícara com as duas mãos. Visualize as raízes profundas desta árvore milenar se conectando às suas. Sinta a força da floresta entrando no seu corpo. Beba devagar, recebendo cada gole como uma bênção de fortaleza.",
+   cuid:"Evite uso prolongado sem orientação. Contraindicado para gestantes. Consulte profissional de saúde antes de usar medicinalmente. Não use em excesso.",
+   anc:"Sagrado para os povos Quéchua, Tupi-Guarani e outros povos indígenas sul-americanos. Usado em rituais de cura e fortalecimento há milênios. Considerado árvore de poder pela medicina tradicional amazônica.",
+   int:"Tenho a força das raízes da floresta. Nada me dobra, nada me derruba.",
+   prod:{n:"Sal 3 em 1 — Proteção dos Caminhos",d:"Fortalece e protege o campo energético.",l:"index.html#loja"}},
+
+  {id:"acai",ico:"🌴",nome:"Açaí",latin:"Euterpe oleracea",
+   tags:["cura","prosperidade","amazonica"],cats:["amazonica","cura","prosperidade"],
+   ess:"O fruto sagrado que sustenta a floresta e quem nela vive — ancestral e abundante.",
+   essComp:"O açaí é muito mais que um superalimento — é a coluna vertebral de inúmeras culturas amazônicas. Para os povos ribeirinhos, o açaizeiro é símbolo de fartura, resistência e identidade. Energeticamente, ele fortalece o campo vital, conecta com a abundância da terra e nutre tanto o corpo quanto o espírito.",
+   usos:["Fortalecimento e nutrição do campo vital","Conexão com a abundância da floresta","Cura do esgotamento","Enraizamento e fortalecimento","Gratidão e celebração da vida"],
+   modos:[{m:"Alimentação ritual",d:"Consuma o açaí com gratidão e intenção — a intenção transforma qualquer alimento em medicina."},{m:"Ritual de gratidão",d:"Use o açaí como oferenda de gratidão pela fartura que a floresta oferece."},{m:"Meditação",d:"Contemple o açaizeiro como símbolo de resistência e generosidade — ele dá seus frutos repetidamente."}],
+   ritual:"Num café da manhã especial, prepare açaí com consciência. Antes de comer, agradeça pela floresta que o produziu, pelos povos que o cultivaram, pela terra que o sustentou. Coma devagar, sentindo a nutrição da Amazônia entrando no seu corpo.",
+   cuid:"Alimento seguro para a maioria das pessoas. Verificar origem — prefira açaí produzido de forma sustentável e justa para as comunidades ribeirinhas.",
+   anc:"Alimento sagrado para os povos ribeirinhos da Amazônia. O açaizeiro é considerado planta-mãe em muitas comunidades — sua fartura sustenta gerações. Presente em rituais de celebração e gratidão pela floresta.",
+   int:"Sou nutrida pela fartura da terra. A floresta me sustenta e eu a honro.",
+   prod:{n:"Sal 3 em 1 — Força e Vitalidade",d:"Revigora e fortalece a energia vital.",l:"index.html#loja"}}
+];
+
+// ── ESTADO ──────────────────────────────────────────────────
+var filtroAtivo = "todos";
+var oraculoId = null;
+
+// ── RENDERIZAR ───────────────────────────────────────────────
+function render() {
+  var grids = {
+    amazonica: document.getElementById("grid-amazonica"),
+    protecao: document.getElementById("grid-protecao"),
+    limpeza: document.getElementById("grid-limpeza"),
+    amor: document.getElementById("grid-amor"),
+    prosperidade: document.getElementById("grid-prosperidade"),
+    cura: document.getElementById("grid-cura")
+  };
+  Object.keys(grids).forEach(function(k){ grids[k].innerHTML = ""; });
+
+  var termo = document.getElementById("buscaInput").value.toLowerCase().trim();
+  var total = 0;
+
+  PLANTAS.forEach(function(p) {
+    var mFiltro = filtroAtivo === "todos" ||
+      filtroAtivo === "amazonica" && p.tags.indexOf("amazonica") > -1 ||
+      p.tags.indexOf(filtroAtivo) > -1;
+    var mBusca = !termo ||
+      p.nome.toLowerCase().indexOf(termo) > -1 ||
+      p.latin.toLowerCase().indexOf(termo) > -1 ||
+      p.ess.toLowerCase().indexOf(termo) > -1 ||
+      p.tags.some(function(t){ return t.indexOf(termo) > -1; });
+
+    if (!mFiltro || !mBusca) return;
+    total++;
+
+    var tagsHTML = p.tags.map(function(t){
+      return '<span class="ptag">' + (TL[t]||t) + '</span>';
+    }).join("");
+
+    p.cats.forEach(function(cat) {
+      if (!grids[cat]) return;
+      var card = document.createElement("div");
+      card.className = "pcard";
+      card.innerHTML =
+        '<span class="pcard-ico">' + p.ico + '</span>' +
+        '<div class="pcard-nome">' + p.nome + '</div>' +
+        '<div class="pcard-latin">' + p.latin + '</div>' +
+        '<p class="pcard-ess">' + p.ess + '</p>' +
+        '<div class="ptags">' + tagsHTML + '</div>' +
+        '<button class="btn-exp">Explorar →</button>';
+      card.querySelector(".btn-exp").addEventListener("click", function(e){
+        e.stopPropagation();
+        abrirPlanta(p.id);
+      });
+      card.addEventListener("click", function(){ abrirPlanta(p.id); });
+      grids[cat].appendChild(card);
+    });
+  });
+
+  ["amazonica","protecao","limpeza","amor","prosperidade","cura"].forEach(function(cat){
+    var sec = document.getElementById("cat-"+cat);
+    sec.style.display = grids[cat].children.length > 0 ? "block" : "none";
+  });
+  document.getElementById("semRes").classList.toggle("vis", total === 0);
+}
+
+// ── FILTROS ──────────────────────────────────────────────────
+document.querySelectorAll(".fbtn").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    filtroAtivo = this.dataset.filtro;
+    document.querySelectorAll(".fbtn").forEach(function(b){ b.classList.remove("ativo"); });
+    this.classList.add("ativo");
+    render();
+  });
+});
+document.getElementById("buscaInput").addEventListener("input", render);
+
+// ── MODAL PLANTA ─────────────────────────────────────────────
+function abrirPlanta(id) {
+  var p = null;
+  for (var i = 0; i < PLANTAS.length; i++) {
+    if (PLANTAS[i].id === id) { p = PLANTAS[i]; break; }
+  }
+  if (!p) return;
+
+  var tagsHTML = p.tags.map(function(t){
+    return '<span class="ptag">' + (TL[t]||t) + '</span>';
+  }).join("");
+
+  var usosHTML = p.usos.map(function(u){ return '<li>' + u + '</li>'; }).join("");
+
+  var modosHTML = p.modos.map(function(u){
+    return '<div style="margin-bottom:14px"><span class="uso-modo">' + u.m + '</span><p>' + u.d + '</p></div>';
+  }).join("");
+
+  var prodHTML = "";
+  if (p.prod) {
+    prodHTML = '<div class="pm-sec">' +
+      '<div class="pm-st"><span>🌿</span> Para Potencializar Este Ritual...</div>' +
+      '<div class="prod-sug">' +
+      '<div><div class="prod-nome">' + p.prod.n + '</div><div class="prod-desc">' + p.prod.d + '</div></div>' +
+      '<a href="' + p.prod.l + '" class="btn-prod">Ver produto</a>' +
+      '</div></div>';
+  }
+
+  var waMsg = encodeURIComponent("Olá Thais! Estou estudando " + p.nome + " na Biblioteca Viva e gostaria de conversar!");
+
+  document.getElementById("pmInner").innerHTML =
+    '<div class="pm-topo">' +
+    '<span class="pm-ico">' + p.ico + '</span>' +
+    '<div class="pm-nome">' + p.nome + '</div>' +
+    '<div class="pm-latin">' + p.latin + '</div>' +
+    '<div class="pm-tags">' + tagsHTML + '</div>' +
+    '</div>' +
+    '<div class="pm-sec"><div class="pm-st"><span>✨</span> Essência Espiritual</div><p>' + p.essComp + '</p></div>' +
+    '<div class="pm-sec"><div class="pm-st"><span>🔮</span> Usos Energéticos</div><ul>' + usosHTML + '</ul></div>' +
+    '<div class="pm-sec"><div class="pm-st"><span>🕯️</span> Como Usar</div>' + modosHTML + '</div>' +
+    '<div class="pm-sec"><div class="pm-st"><span>🌙</span> Ritual Simples</div><div class="ritual-box"><p>' + p.ritual + '</p></div></div>' +
+    '<div class="pm-sec"><div class="pm-st"><span>⚠️</span> Cuidados</div><div class="cuid-box"><p>' + p.cuid + '</p></div></div>' +
+    '<div class="pm-sec"><div class="pm-st"><span>🌿</span> Conexão Ancestral</div><p>' + p.anc + '</p></div>' +
+    '<div class="pm-sec"><div class="pm-st"><span>🧿</span> Intenção Guiada</div><div class="int-box"><div class="int-frase">"' + p.int + '"</div></div></div>' +
+    prodHTML +
+    '<div style="margin-top:28px;padding-top:22px;border-top:1px solid rgba(201,168,76,0.1);display:flex;gap:10px;flex-wrap:wrap">' +
+    '<a href="https://wa.me/5591996324631?text=' + waMsg + '" class="btn-prod" target="_blank">💬 Conversar com Thais</a>' +
+    '<button class="btn-vol" id="btnVol">← Voltar à Biblioteca</button>' +
+    '</div>';
+
+  document.getElementById("ovPm").classList.add("open");
+  document.getElementById("ovPm").scrollTop = 0;
+  document.body.style.overflow = "hidden";
+  document.getElementById("btnVol").addEventListener("click", fecharPlanta);
+}
+
+function fecharPlanta() {
+  document.getElementById("ovPm").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+document.getElementById("pmClose").addEventListener("click", fecharPlanta);
+document.getElementById("ovPm").addEventListener("click", function(e){
+  if (e.target === this) fecharPlanta();
+});
+
+// ── ORÁCULO ──────────────────────────────────────────────────
+function revelarOraculo() {
+  var p = PLANTAS[Math.floor(Math.random() * PLANTAS.length)];
+  oraculoId = p.id;
+  document.getElementById("oIco").textContent = p.ico;
+  document.getElementById("oNome").textContent = p.nome;
+  document.getElementById("oLatin").textContent = p.latin;
+  document.getElementById("oMsg").textContent = p.essComp.substring(0, 230) + "...";
+  document.getElementById("oUso").textContent = "✦ " + p.modos[0].m + ": " + p.modos[0].d.substring(0, 110) + "...";
+  var card = document.getElementById("oracleCard");
+  card.style.animation = "none";
+  card.offsetHeight;
+  card.style.animation = "orev 0.8s cubic-bezier(0.22,1,0.36,1) forwards";
+  document.getElementById("ovOracle").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+document.getElementById("btnOraculo").addEventListener("click", revelarOraculo);
+document.getElementById("btnNovaPlanta").addEventListener("click", revelarOraculo);
+document.getElementById("btnFechaOracle").addEventListener("click", function(){
+  document.getElementById("ovOracle").classList.remove("open");
+  document.body.style.overflow = "";
+});
+document.getElementById("btnExpOracle").addEventListener("click", function(){
+  document.getElementById("ovOracle").classList.remove("open");
+  document.body.style.overflow = "";
+  setTimeout(function(){ abrirPlanta(oraculoId); }, 200);
+});
+document.getElementById("ovOracle").addEventListener("click", function(e){
+  if (e.target === this) {
+    this.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+});
+
+// ── GERAL ────────────────────────────────────────────────────
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape") {
+    fecharPlanta();
+    document.getElementById("ovOracle").classList.remove("open");
+    document.body.style.overflow = "";
+  }
+});
+window.addEventListener("scroll", function(){
+  document.getElementById("nav").classList.toggle("scrolled", window.scrollY > 50);
+});
+
+render();
+</script>
+</body>
+</html>
