@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script>
+// Permitir que o app acesse as APIs
+window.fetch = window.fetch || (() => {});
+// Isso é só um placeholder - o CORS será configurado pelo Cloudflare
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Misticismo Verde — Portal da Floresta</title>
@@ -957,5 +962,45 @@ document.addEventListener("DOMContentLoaded", function(){
 // ── INICIALIZAR ──────────────────────────────────────
 renderProdutos();
 </script>
+<script>
+
+// API SIMPLES PARA O APP
+// Isso cria endpoints que o app vai consumir
+
+// Endpoint: /api/sussurro-hoje
+if (window.location.pathname === '/api/sussurro-hoje') {
+  const carta = getCartaDoDia();
+  const resposta = {
+    data: new Date().toISOString().split('T')[0],
+    planta: carta.nome,
+    mensagem: carta.mensagem,
+    ritual: carta.ritual,
+    significado: carta.significado,
+    tempoRitual: carta.tempoRitual,
+    cor: carta.cor
+  };
+  document.body.innerHTML = JSON.stringify(resposta);
+  document.body.style.whiteSpace = 'pre-wrap';
+}
+
+// Endpoint: /api/cartas (lista todas)
+if (window.location.pathname === '/api/cartas') {
+  const listaCartas = cartas.map(c => ({
+    id: c.id,
+    nome: c.nome,
+    mensagem: c.mensagem,
+    tempoRitual: c.tempoRitual
+  }));
+  document.body.innerHTML = JSON.stringify(listaCartas);
+}
+
+// Endpoint: /api/carta/{id}
+if (window.location.pathname.startsWith('/api/carta/')) {
+  const id = parseInt(window.location.pathname.split('/').pop());
+  const carta = cartas.find(c => c.id === id);
+  document.body.innerHTML = JSON.stringify(carta || { erro: "Carta não encontrada" });
+}
+</script>
+
 </body>
 </html>
