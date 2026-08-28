@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misticismo Verde — Portal da Floresta</title>
+<meta name="description" content="Misticismo Verde: rituais, plantas e sabedoria ancestral da Amazônia. Sais energéticos, amuletos, plantas vivas e difusores artesanais.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+#home{position:relative;height:100vh;min-height:650px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,15,7,0.5) 0%,transparent 30%,transparent 65%,#050f07 100%),url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=80') center/cover no-repeat;filter:brightness(0.4) saturate(1.3);}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:860px;padding:0 32px;}
+.hero-eyebrow{font-size:0.72rem;letter-spacing:0.45em;text-transform:uppercase;color:#c9a84c;margin-bottom:28px;display:block;}
+.hero-title{font-family:'Cinzel Decorative',serif;font-size:clamp(2rem,5vw,4.2rem);color:#f5ead8;line-height:1.2;margin-bottom:16px;}
+.hero-title span{color:#c9a84c;}
+.hero-subtitle{font-size:clamp(1rem,2vw,1.4rem);font-style:italic;color:rgba(245,234,216,0.8);font-weight:300;margin-bottom:48px;line-height:1.8;}
+.scroll-down{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--creme-fraco);font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;}
+.scroll-line{width:1px;height:44px;background:linear-gradient(to bottom,var(--dourado),transparent);animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+
+#jornada{position:relative;padding:100px 0 80px;overflow:hidden;}
+#jornada::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(13,40,24,0.6),transparent 70%);pointer-events:none;}
+.jornada-header{text-align:center;padding:0 40px 64px;position:relative;z-index:2;}
+.jornada-subtitulo{font-size:1.05rem;font-style:italic;color:rgba(245,234,216,0.55);max-width:560px;margin:0 auto;line-height:1.75;font-weight:300;}
+.jornada-trilha{position:relative;max-width:1100px;margin:0 auto;padding:0 60px;}
+.jornada-trilha::before{content:'';position:absolute;top:64px;left:calc(60px + 11%);right:calc(60px + 11%);height:1px;background:linear-gradient(to right,transparent,rgba(201,168,76,0.3) 15%,rgba(201,168,76,0.3) 85%,transparent);z-index:1;}
+.jornada-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;position:relative;z-index:2;}
+.j-card{background:linear-gradient(160deg,rgba(13,40,24,0.85),rgba(10,26,15,0.7));border:1px solid rgba(201,168,76,0.1);padding:0 0 32px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color 0.4s,transform 0.4s;}
+.j-card:hover{border-color:rgba(201,168,76,0.32);transform:translateY(-5px);}
+.j-topo{width:100%;padding:28px 24px 20px;position:relative;}
+.j-no{width:52px;height:52px;border:1px solid rgba(201,168,76,0.35);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 18px;background:rgba(13,40,24,0.9);position:relative;z-index:2;transition:border-color 0.4s,box-shadow 0.4s;}
+.j-card:hover .j-no{border-color:rgba(201,168,76,0.7);box-shadow:0 0 20px rgba(201,168,76,0.12);}
+.j-step{font-size:0.58rem;letter-spacing:0.45em;text-transform:uppercase;color:rgba(201,168,76,0.45);margin-bottom:10px;display:block;}
+.j-titulo{font-family:'Cinzel Decorative',serif;font-size:0.9rem;color:#f5ead8;line-height:1.3;margin-bottom:0;}
+.j-corpo{padding:0 24px;flex:1;display:flex;flex-direction:column;}
+.j-desc{font-size:0.92rem;font-style:italic;color:rgba(245,234,216,0.55);line-height:1.7;font-weight:300;margin-bottom:24px;flex:1;}
+.j-btn{display:inline-block;padding:9px 22px;border:1px solid rgba(201,168,76,0.28);color:rgba(201,168,76,0.7);font-family:'Cormorant Garamond',serif;font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;background:none;text-decoration:none;}
+.j-btn:hover{border-color:var(--dourado);color:#c9a84c;background:rgba(201,168,76,0.06);}
+.j-card.destaque{border-color:rgba(201,168,76,0.18);}
+.j-card.destaque .j-no{border-color:rgba(201,168,76,0.55);background:rgba(42,90,38,0.3);}
+
+.apres-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto;padding:0 60px 100px;}
+.apres-text h2{font-family:'Cinzel Decorative',serif;font-size:2rem;color:#c9a84c;margin-bottom:22px;line-height:1.3;}
+.apres-text p{font-size:1.1rem;line-height:1.9;color:rgba(245,234,216,0.78);font-weight:300;margin-bottom:18px;}
+.apres-card{background:linear-gradient(135deg,rgba(13,40,24,0.9),rgba(42,90,38,0.25));border:1px solid rgba(201,168,76,0.2);padding:40px 36px;}
+.pillar{display:flex;align-items:flex-start;gap:18px;margin-bottom:28px;}
+.pillar:last-child{margin-bottom:0;}
+.picon{width:42px;height:42px;min-width:42px;border:1px solid rgba(201,168,76,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a84c;font-size:1.1rem;}
+.ptext h4{font-family:'Cinzel Decorative',serif;font-size:0.8rem;color:#c9a84c;margin-bottom:5px;letter-spacing:0.1em;}
+.ptext p{font-size:0.9rem;color:rgba(245,234,216,0.6);line-height:1.6;font-style:italic;margin-bottom:0;}
+
+.ritual-banner{position:relative;padding:90px 60px;text-align:center;overflow:hidden;}
+.ritual-banner-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 100% at 50% 50%,rgba(42,90,38,0.2) 0%,transparent 70%),linear-gradient(to right,#050f07,rgba(10,26,15,0.75),#050f07);}
+.ritual-content{position:relative;z-index:1;max-width:680px;margin:0 auto;}
+.ritual-content h2{font-family:'IM Fell English',serif;font-size:clamp(1.8rem,4vw,3.2rem);font-style:italic;color:#f0dfa0;line-height:1.3;margin-bottom:24px;}
+.ritual-content p{font-size:1.05rem;color:rgba(245,234,216,0.6);line-height:1.8;font-weight:300;margin-bottom:36px;}
+
+@media(max-width:900px){
+  .jornada-trilha::before{display:none;}
+  .jornada-grid{grid-template-columns:1fr 1fr;gap:2px;}
+  .jornada-trilha{padding:0 18px;}
+  .apres-grid{grid-template-columns:1fr;gap:40px;padding:0 24px 80px;}
+  .ritual-banner{padding:72px 24px;}
+}
+@media(max-width:520px){ .jornada-grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<button class="sound-btn" id="soundBtn" title="Sons da floresta">🌿</button>
+<audio id="florestAudio" loop preload="auto" src="assets/floresta.mp3"></audio>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/><path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
+    Misticismo Verde
+  </a>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="ativo">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="loja.html">Loja</a></li>
+    <li><a href="artigos.html">Artigos</a></li>
+    <li><a href="biblioteca.html">Biblioteca Viva</a></li>
+    <li><a href="contato.html" class="nav-cta">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">✦ Amazônia · Ancestralidade · Energia ✦</span>
+    <h1 class="hero-title">A floresta não é<br><span>silêncio.</span><br>Ela ensina.</h1>
+    <p class="hero-subtitle">Cada folha carrega uma memória.<br>Cada raiz, uma cura.<br>Cada símbolo, uma história.</p>
+    <a href="loja.html" class="btn-hero">Entrar no portal</a>
+  </div>
+  <div class="scroll-down"><div class="scroll-line"></div><span>Descer</span></div>
+</section>
+
+<!-- JORNADA -->
+<section id="jornada">
+  <div class="jornada-header">
+    <span class="tag">✦ Seu caminho começa aqui ✦</span>
+    <h2 class="sec-title">Cada pessoa chega em um momento diferente.</h2>
+    <p class="jornada-subtitulo">Siga o fluxo que faz sentido para você.</p>
+  </div>
+  <div class="jornada-trilha">
+    <div class="jornada-grid">
+      <div class="j-card">
+        <div class="j-topo"><div class="j-no">🌱</div><span class="j-step">✦ Passo 01</span><h3 class="j-titulo">Conheça a origem</h3></div>
+        <div class="j-corpo"><p class="j-desc">Saiba quem é Thai Terrear e de onde nasce o Misticismo Verde.</p><a class="j-btn" href="sobre.html">Conhecer a história</a></div>
+      </div>
+      <div class="j-card">
+        <div class="j-topo"><div class="j-no">🌿</div><span class="j-step">✦ Passo 02</span><h3 class="j-titulo">Entenda sua energia</h3></div>
+        <div class="j-corpo"><p class="j-desc">Explore a Biblioteca Viva e descubra qual planta fala com você.</p><a class="j-btn" href="biblioteca.html">Explorar a biblioteca</a></div>
+      </div>
+      <div class="j-card">
+        <div class="j-topo"><div class="j-no">🌳</div><span class="j-step">✦ Passo 03</span><h3 class="j-titulo">Escolha seu ritual</h3></div>
+        <div class="j-corpo"><p class="j-desc">Sais, amuletos, plantas vivas e difusores para cada intenção.</p><a class="j-btn" href="loja.html">Ver a loja</a></div>
+      </div>
+      <div class="j-card destaque">
+        <div class="j-topo"><div class="j-no">🔮</div><span class="j-step">✦ Passo 04</span><h3 class="j-titulo">Aprofunde-se</h3></div>
+        <div class="j-corpo"><p class="j-desc">Leia artigos sobre plantas, rituais e sabedoria ancestral.</p><a class="j-btn" href="artigos.html">Ler artigos</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APRESENTAÇÃO -->
+<div class="apres-grid">
+  <div class="apres-text">
+    <h2>Um portal entre o visível e o sagrado</h2>
+    <div class="divider"></div>
+    <p>O Misticismo Verde nasceu do sussurro da floresta. Das plantas que curam sem palavras, dos rituais que transcendem o tempo, da sabedoria que a Amazônia carrega em silêncio.</p>
+    <p>Aqui, cada produto é uma intenção. Cada erva, uma aliada. Cada entrega, uma pequena cerimônia.</p>
+    <a href="sobre.html" class="btn-sec-out" style="margin-top:8px;display:inline-flex;">Conhecer o Misticismo Verde →</a>
+  </div>
+  <div class="apres-card">
+    <div class="pillar"><div class="picon">⊛</div><div class="ptext"><h4>Proteção Energética</h4><p>Escudos vibracionais contra influências densas</p></div></div>
+    <div class="pillar"><div class="picon">✦</div><div class="ptext"><h4>Cura Ancestral</h4><p>Plantas e rituais que atravessaram gerações</p></div></div>
+    <div class="pillar"><div class="picon">◈</div><div class="ptext"><h4>Elevação Espiritual</h4><p>Ferramentas para expandir consciência</p></div></div>
+    <div class="pillar" style="margin-bottom:0"><div class="picon">❋</div><div class="ptext"><h4>Floresta Viva</h4><p>Colhido com respeito à inteligência da natureza</p></div></div>
+  </div>
+</div>
+
+<div class="ornamento">· · · ✦ · · ·</div>
+
+<!-- BANNER -->
+<div class="ritual-banner">
+  <div class="ritual-banner-bg"></div>
+  <div class="ritual-content">
+    <h2>"Quando você se abre para a natureza, a natureza se abre para você."</h2>
+    <p>Não existe caminho espiritual sem reconexão com a terra. Cada ritual, cada planta, é um convite para lembrar quem você é.</p>
+    <a href="contato.html" class="btn-hero">Iniciar minha jornada</a>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
+  <p class="foot-copy">© 2025 Misticismo Verde · misticismoverde.com.br<br><span style="font-size:0.68rem;opacity:0.7;">Feito com respeito e intenção ✦</span></p>
+  <a href="#home" class="foot-link">↑ Voltar ao topo</a>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>
+// Tenta tocar a música assim que o usuário interagir com a página
+document.addEventListener('click', function iniciarAudio() {
+  var audio = document.getElementById('florestAudio');
+  if (audio) {
+    audio.play().then(function() {
+      console.log('Áudio iniciado!');
+      var btn = document.getElementById('soundBtn');
+      if (btn) btn.textContent = '🔊';
+    }).catch(function(err) {
+      console.log('Autoplay bloqueado:', err);
+    });
+  }
+  document.removeEventListener('click', iniciarAudio);
+}, { once: true });
+
+document.addEventListener('scroll', function iniciarAudioScroll() {
+  var audio = document.getElementById('florestAudio');
+  if (audio) {
+    audio.play().then(function() {
+      console.log('Áudio iniciado pelo scroll!');
+      var btn = document.getElementById('soundBtn');
+      if (btn) btn.textContent = '🔊';
+    }).catch(function(err) {});
+  }
+  document.removeEventListener('scroll', iniciarAudioScroll);
+}, { once: true });
+</script>
+</body>
+</html>

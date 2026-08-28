@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Misticismo Verde</title>
+<meta name="description" content="Fale com Thai Terrear pelo WhatsApp, Instagram ou e-mail. Deixe sua mensagem no Livro de Visitas do Misticismo Verde.">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.pagehero{position:relative;min-height:40vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:150px 40px 50px;}
+.pagehero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(13,40,24,0.9),transparent 70%),url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=80') center/cover no-repeat;filter:brightness(0.26) saturate(1.3);}
+.pagehero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,15,7,0.4),transparent 40%,transparent 70%,rgba(5,15,7,1));}
+.pagehero-c{position:relative;z-index:2;max-width:720px;}
+
+#contato{background:linear-gradient(to bottom,#050f07,rgba(13,40,24,0.12));}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;max-width:1100px;margin:0 auto;padding:0 60px 100px;}
+.contato-text h2{font-family:'Cinzel Decorative',serif;font-size:1.8rem;color:#c9a84c;line-height:1.3;margin-bottom:18px;}
+.contato-text p{font-size:1rem;font-style:italic;color:rgba(245,234,216,0.6);line-height:1.8;font-weight:300;margin-bottom:30px;}
+.social-label{font-size:0.72rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(245,234,216,0.3);margin-bottom:16px;display:block;}
+.socials{display:flex;gap:12px;}
+.slink{width:42px;height:42px;border:1px solid rgba(201,168,76,0.22);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(201,168,76,0.55);text-decoration:none;transition:all 0.3s;}
+.slink:hover{border-color:#c9a84c;color:#c9a84c;background:rgba(201,168,76,0.07);}
+.ctas{display:flex;flex-direction:column;gap:14px;}
+.cta-whats{display:flex;align-items:center;gap:14px;background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.3);padding:22px 26px;text-decoration:none;transition:all 0.35s;}
+.cta-whats:hover{background:rgba(37,211,102,0.18);transform:translateX(4px);}
+.cta-icon{width:46px;height:46px;min-width:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;background:rgba(37,211,102,0.13);}
+.cta-label{font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:rgba(99,232,135,0.65);margin-bottom:3px;}
+.cta-val{font-family:'Cinzel Decorative',serif;font-size:0.88rem;color:#63e887;}
+.cta-sec{display:flex;align-items:center;gap:14px;background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.18);padding:18px 26px;text-decoration:none;transition:all 0.35s;cursor:pointer;}
+.cta-sec:hover{background:rgba(201,168,76,0.1);transform:translateX(4px);}
+.cta-sec .cta-icon{background:rgba(201,168,76,0.08);color:#c9a84c;font-size:1.1rem;}
+.cta-sec .cta-label{color:rgba(201,168,76,0.55);}
+.cta-sec .cta-val{color:#c9a84c;font-size:0.82rem;}
+
+#livro-visitas{padding:20px 0 100px;}
+.livro-card{max-width:800px;margin:0 auto 48px;padding:0 24px;}
+.form-box{background:linear-gradient(135deg,rgba(13,40,24,0.85),rgba(5,15,7,0.8));border:1px solid rgba(201,168,76,0.2);border-radius:24px;padding:32px;}
+.form-box h3{font-family:'Cinzel Decorative',serif;color:#c9a84c;font-size:1.2rem;margin-bottom:24px;text-align:center;}
+.form-row{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:20px;}
+.form-row input{flex:1;background:rgba(5,15,7,0.6);border:1px solid rgba(201,168,76,0.3);border-radius:40px;padding:12px 20px;color:#f5ead8;font-family:'Cormorant Garamond',serif;font-size:1rem;}
+.form-box textarea{width:100%;background:rgba(5,15,7,0.6);border:1px solid rgba(201,168,76,0.3);border-radius:16px;padding:16px 20px;color:#f5ead8;font-family:'Cormorant Garamond',serif;font-size:1rem;resize:vertical;}
+.form-foot{display:flex;justify-content:space-between;align-items:center;margin-top:20px;flex-wrap:wrap;gap:16px;}
+.form-checks{display:flex;gap:20px;flex-wrap:wrap;}
+.form-checks label{display:flex;align-items:center;gap:8px;cursor:pointer;}
+.form-checks span{color:rgba(245,234,216,0.6);font-size:0.85rem;}
+.btn-enviar{background:#c9a84c;color:#0a1a0f;border:none;border-radius:40px;padding:12px 32px;font-family:'Cinzel Decorative',serif;font-weight:bold;cursor:pointer;transition:all 0.3s;}
+.btn-enviar:hover{background:#e8c96a;}
+#formFeedback{margin-top:20px;text-align:center;font-size:0.9rem;}
+
+.mural-wrap{max-width:800px;margin:0 auto;padding:0 24px;}
+.mural-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:16px;margin-bottom:24px;border-bottom:1px solid rgba(201,168,76,0.2);padding-bottom:16px;}
+.mural-head h3{font-family:'Cinzel Decorative',serif;color:#c9a84c;font-size:1rem;letter-spacing:0.1em;}
+.mural-head p{color:rgba(245,234,216,0.4);font-size:0.75rem;}
+.mensagem-item{background:linear-gradient(135deg,rgba(13,40,24,0.6),rgba(5,15,7,0.5));border:1px solid rgba(201,168,76,0.15);border-radius:20px;padding:24px;transition:all 0.3s;}
+.msg-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
+.msg-avatar{width:40px;height:40px;background:rgba(201,168,76,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;}
+.msg-nome{font-family:'Cinzel Decorative',serif;color:#c9a84c;font-size:0.85rem;}
+.msg-meta{color:rgba(245,234,216,0.4);font-size:0.65rem;}
+.msg-texto{color:rgba(245,234,216,0.75);line-height:1.8;font-size:0.95rem;font-style:italic;}
+#semMensagens{text-align:center;padding:60px 20px;color:rgba(245,234,216,0.3);font-style:italic;}
+.btn-carregar{background:none;border:1px solid rgba(201,168,76,0.3);color:rgba(201,168,76,0.6);padding:8px 24px;border-radius:40px;cursor:pointer;font-family:'Cormorant Garamond',serif;display:none;margin-top:12px;}
+.btn-carregar:hover{border-color:#c9a84c;color:#c9a84c;}
+
+@media(max-width:900px){
+  .contato-grid{grid-template-columns:1fr;gap:40px;padding:0 24px 80px;}
+}
+</style>
+</head>
+<body>
+
+<button class="sound-btn" id="soundBtn" title="Sons da floresta">🌿</button>
+<audio id="florestAudio" loop preload="auto" src="assets/floresta.mp3"></audio>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/><path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
+    Misticismo Verde
+  </a>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="loja.html">Loja</a></li>
+    <li><a href="artigos.html">Artigos</a></li>
+    <li><a href="biblioteca.html">Biblioteca Viva</a></li>
+    <li><a href="contato.html" class="nav-cta ativo">Contato</a></li>
+  </ul>
+</nav>
+
+<section class="pagehero">
+  <div class="pagehero-bg"></div>
+  <div class="pagehero-ov"></div>
+  <div class="pagehero-c">
+    <span class="tag">✦ Encontre seu caminho ✦</span>
+    <h1 class="sec-title">A floresta aguarda sua chegada</h1>
+    <p class="sec-sub">Cada pessoa chega com uma busca diferente. Fale comigo antes de comprar — quero entender o que você precisa.</p>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="contato-grid">
+    <div class="contato-text">
+      <h2>Vamos conversar?</h2>
+      <p>Cada pessoa chega com uma busca diferente. Antes de comprar, fale comigo. Quero entender o que você precisa e indicar o que realmente faz sentido para sua jornada.</p>
+      <span class="social-label">Siga nas redes sociais</span>
+      <div class="socials">
+        <a href="https://instagram.com/misticismoverde" class="slink" target="_blank"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.tiktok.com/@misticismoverde" class="slink" target="_blank"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.33 6.33 0 0 0-6.33 6.33 6.33 6.33 0 0 0 6.33 6.33 6.33 6.33 0 0 0 6.33-6.33V8.79a8.18 8.18 0 0 0 4.78 1.52V6.88a4.85 4.85 0 0 1-1.01-.19z"/></svg></a>
+        <a href="https://wa.me/5591996324631" class="slink" target="_blank"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+      </div>
+    </div>
+    <div class="ctas">
+      <a href="https://wa.me/5591996324631?text=Olá!%20Vim%20pelo%20portal%20Misticismo%20Verde%20e%20gostaria%20de%20saber%20mais." class="cta-whats" target="_blank"><div class="cta-icon">💬</div><div><div class="cta-label">Fale agora pelo</div><div class="cta-val">WhatsApp</div></div></a>
+      <div class="cta-sec" onclick="copiarEmail()">
+        <div class="cta-icon">✉</div>
+        <div><div class="cta-label">Clique para copiar o e-mail</div><div class="cta-val" id="emailTexto">misticismoverde@gmail.com</div></div>
+      </div>
+      <a href="https://instagram.com/misticismoverde" class="cta-sec" target="_blank"><div class="cta-icon">◈</div><div><div class="cta-label">Instagram</div><div class="cta-val">@misticismoverde</div></div></a>
+      <a href="https://www.tiktok.com/@misticismoverde" class="cta-sec" target="_blank"><div class="cta-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.33 6.33 0 0 0-6.33 6.33 6.33 6.33 0 0 0 6.33 6.33 6.33 6.33 0 0 0 6.33-6.33V8.79a8.18 8.18 0 0 0 4.78 1.52V6.88a4.85 4.85 0 0 1-1.01-.19z"/></svg></div><div><div class="cta-label">TikTok</div><div class="cta-val">@misticismoverde</div></div></a>
+    </div>
+  </div>
+</section>
+
+<div class="ornamento">· · · ✦ · · ·</div>
+
+<section id="livro-visitas">
+  <div class="section-header" style="padding:0 24px 44px;">
+    <span class="tag">✦ Livro de Visitas ✦</span>
+    <h2 class="sec-title">O que a floresta desperta em você</h2>
+    <p class="sec-sub">Compartilhe sua experiência, deixe uma mensagem ou apenas diga olá. Suas palavras são energia que fica neste portal.</p>
+  </div>
+
+  <div class="livro-card">
+    <div class="form-box">
+      <h3>✍️ Deixe sua mensagem</h3>
+      <form id="formMensagem">
+        <div class="form-row">
+          <input type="text" id="nomeVisitante" placeholder="Seu nome ou apelido místico" required>
+          <input type="text" id="cidadeVisitante" placeholder="Sua cidade (opcional)">
+        </div>
+        <textarea id="mensagemVisitante" rows="4" placeholder="Sua mensagem, experiência ou sentimento..." required></textarea>
+        <div class="form-foot">
+          <div class="form-checks">
+            <label><input type="checkbox" id="anonimo" style="accent-color:#c9a84c;"><span>Mensagem anônima</span></label>
+            <label><input type="checkbox" id="exibirSite" style="accent-color:#c9a84c;"><span>Autorizo exibir no mural</span></label>
+          </div>
+          <button type="submit" class="btn-enviar">🌿 Enviar mensagem</button>
+        </div>
+      </form>
+      <div id="formFeedback"></div>
+    </div>
+  </div>
+
+  <div class="mural-wrap">
+    <div class="mural-head">
+      <h3>📖 MURAL DE EXPERIÊNCIAS</h3>
+      <p><span id="contadorMensagens">0</span> mensagens compartilhadas</p>
+    </div>
+    <div id="muralMensagens" style="display:flex;flex-direction:column;gap:24px;">
+      <div id="semMensagens">✦ Ainda não há mensagens. Seja a primeira pessoa a deixar sua energia aqui! ✦</div>
+    </div>
+    <div style="text-align:center;">
+      <button id="btnCarregarMais" class="btn-carregar">Carregar mais mensagens</button>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <div style="display:inline-block;background:rgba(201,168,76,0.1);border-radius:40px;padding:6px 20px;">
+        <p style="color:rgba(245,234,216,0.4);font-size:0.7rem;letter-spacing:0.2em;">✦ TODAS AS MENSAGENS SÃO LIDAS COM CARINHO ✦</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
+  <p class="foot-copy">© 2025 Misticismo Verde · misticismoverde.com.br</p>
+  <a href="#top" class="foot-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Voltar ao topo</a>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>
+var mensagens = [];
+function carregarMensagens() {
+  var salvas = localStorage.getItem("misticismo_mensagens");
+  if (salvas) { mensagens = JSON.parse(salvas); }
+  else {
+    mensagens = [
+      {id:Date.now()+1,nome:"Ana M.",cidade:"Belém, PA",mensagem:"Comecei a usar o Sal de Limpeza numa semana em que estava completamente sobrecarregada. Depois do primeiro banho, algo realmente mudou — senti leveza de um jeito que não consigo explicar direito. Só sei que era real.",data:new Date(Date.now()-7*24*60*60*1000).toISOString(),anonimo:false,exibir:true},
+      {id:Date.now()+2,nome:"Carla R.",cidade:"Manaus, AM",mensagem:"A Biblioteca de Plantas foi uma descoberta incrível. Fiquei horas explorando. Voltei no dia seguinte. E no outro.",data:new Date(Date.now()-3*24*60*60*1000).toISOString(),anonimo:false,exibir:true},
+      {id:Date.now()+3,nome:"Juliana S.",cidade:"Santarém, PA",mensagem:"O Sal de Proteção virou parte da minha rotina. Desde que comecei, noto que chego em casa diferente. Mais inteira. Menos drenada.",data:new Date(Date.now()-1*24*60*60*1000).toISOString(),anonimo:false,exibir:true}
+    ];
+    salvarMensagens();
+  }
+  atualizarMural();
+}
+function salvarMensagens(){ localStorage.setItem("misticismo_mensagens",JSON.stringify(mensagens)); }
+function formatarData(dataISO){ var data=new Date(dataISO); var agora=new Date(); var diff=agora-data; var dias=Math.floor(diff/(1000*60*60*24)); if(dias===0)return"Hoje"; if(dias===1)return"Ontem"; if(dias<7)return"Há "+dias+" dias"; if(dias<30)return"Há "+Math.floor(dias/7)+" semanas"; return data.toLocaleDateString("pt-BR"); }
+function atualizarMural() {
+  var exibir = mensagens.filter(function(m){ return m.exibir===true; }).sort(function(a,b){ return new Date(b.data)-new Date(a.data); });
+  var contador = document.getElementById("contadorMensagens");
+  var muralDiv = document.getElementById("muralMensagens");
+  var semMsgDiv = document.getElementById("semMensagens");
+  var btnCarregar = document.getElementById("btnCarregarMais");
+  if (contador) contador.textContent = exibir.length;
+  var mostrar = exibir.slice(0,5);
+  if (btnCarregar) btnCarregar.style.display = exibir.length>5?"block":"none";
+  if (exibir.length===0){ if(semMsgDiv)semMsgDiv.style.display="block"; if(muralDiv)muralDiv.innerHTML=""; return; }
+  if (semMsgDiv) semMsgDiv.style.display="none";
+  var html="";
+  mostrar.forEach(function(msg){
+    var dataF=formatarData(msg.data); var nomeE=msg.anonimo?"🌿 Visitante da Floresta":msg.nome; var cidadeE=msg.cidade?" · "+msg.cidade:"";
+    html+='<div class="mensagem-item fade-item"><div class="msg-head"><div class="msg-avatar"><span style="font-size:1.2rem;">'+(msg.anonimo?"🌿":"✧")+'</span></div><div><h4 class="msg-nome">'+nomeE+'</h4><p class="msg-meta">'+dataF+cidadeE+'</p></div></div><p class="msg-texto">"'+msg.mensagem+'"</p></div>';
+  });
+  muralDiv.innerHTML=html;
+}
+document.addEventListener("DOMContentLoaded", function(){
+  carregarMensagens();
+  var form=document.getElementById("formMensagem"); var feedback=document.getElementById("formFeedback");
+  if(form){ form.addEventListener("submit",function(e){ e.preventDefault();
+    var nome=document.getElementById("nomeVisitante").value.trim();
+    var cidade=document.getElementById("cidadeVisitante").value.trim();
+    var msg=document.getElementById("mensagemVisitante").value.trim();
+    var anonimo=document.getElementById("anonimo").checked;
+    var exibir=document.getElementById("exibirSite").checked;
+    if(!msg){ feedback.innerHTML='<span style="color:#c9a84c;">⚠️ Por favor, escreva sua mensagem.</span>'; return; }
+    if(!anonimo&&!nome){ feedback.innerHTML='<span style="color:#c9a84c;">⚠️ Se não quiser se identificar, marque mensagem anônima.</span>'; return; }
+    mensagens.unshift({id:Date.now(),nome:anonimo?"":nome,cidade:cidade,mensagem:msg.trim(),data:new Date().toISOString(),anonimo:anonimo,exibir:exibir});
+    salvarMensagens(); atualizarMural();
+    document.getElementById("nomeVisitante").value=""; document.getElementById("cidadeVisitante").value=""; document.getElementById("mensagemVisitante").value=""; document.getElementById("anonimo").checked=false; document.getElementById("exibirSite").checked=true;
+    feedback.innerHTML='<span style="color:#63e887;">✓ Mensagem enviada com gratidão! 🌿</span>';
+    setTimeout(function(){ feedback.innerHTML=""; },5000);
+  }); }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url><loc>https://misticismoverde.com.br/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://misticismoverde.com.br/sobre.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/loja.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://misticismoverde.com.br/artigos.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://misticismoverde.com.br/biblioteca.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://misticismoverde.com.br/contato.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Produtos -->
+  <url><loc>https://misticismoverde.com.br/produto-limpeza.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-protecao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-prosperidade.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-forca.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-amor.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-muiraquita.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-coruja.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-difusor.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-semente-da-noite.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-solo-estelar.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-oraculo-azul.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-jiboianeon.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://misticismoverde.com.br/produto-miniespada.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Artigos -->
+  <url><loc>https://misticismoverde.com.br/artigo-muiraquita.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://misticismoverde.com.br/artigo-absorcao-energia.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+</urlset>

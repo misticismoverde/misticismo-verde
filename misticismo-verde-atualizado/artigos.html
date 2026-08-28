@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artigos & Sabedoria — Misticismo Verde</title>
+<meta name="description" content="Reflexões, rituais e conhecimento ancestral da Amazônia: Jurema, limpeza energética, fases da lua, ervas e proteção espiritual.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.pagehero{position:relative;min-height:44vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:150px 40px 56px;}
+.pagehero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(13,40,24,0.9),transparent 70%),url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=80') center/cover no-repeat;filter:brightness(0.26) saturate(1.3);}
+.pagehero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,15,7,0.4),transparent 40%,transparent 70%,rgba(5,15,7,1));}
+.pagehero-c{position:relative;z-index:2;max-width:760px;}
+
+.artigos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1300px;margin:0 auto;padding:0 40px 100px;align-items:stretch;}
+.artigo,a.artigo{background:rgba(10,26,15,0.55);border:1px solid rgba(201,168,76,0.08);overflow:hidden;cursor:pointer;transition:all 0.4s;display:flex;flex-direction:column;text-decoration:none;color:inherit;height:100%;}
+.artigo:hover,a.artigo:hover{border-color:rgba(201,168,76,0.28);transform:translateY(-3px);}
+.artigo-img{width:100%;height:220px;object-fit:cover;filter:brightness(0.6) saturate(1.2);transition:filter 0.4s;display:block;}
+.artigo:hover .artigo-img,a.artigo:hover .artigo-img{filter:brightness(0.75) saturate(1.4);}
+.artigo-body{padding:22px;display:flex;flex-direction:column;flex:1;}
+.artigo-tag{font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px;display:block;opacity:0.8;}
+.artigo-titulo{font-family:'Cinzel Decorative',serif;font-size:0.92rem;color:#f5ead8;line-height:1.4;margin-bottom:10px;}
+.artigo-resumo{font-size:0.88rem;font-style:italic;color:rgba(245,234,216,0.5);line-height:1.7;font-weight:300;}
+.leia-mais{display:inline-block;margin-top:auto;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:#c9a84c;border-bottom:1px solid rgba(201,168,76,0.3);padding-bottom:2px;padding-top:12px;}
+.artigo-foot{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-top:1px solid rgba(201,168,76,0.07);font-size:0.72rem;color:rgba(245,234,216,0.3);}
+
+.artigo-modal{position:fixed;inset:0;background:rgba(5,15,7,0.96);z-index:6000;display:none;align-items:flex-start;justify-content:center;padding:100px 32px 40px;overflow-y:auto;backdrop-filter:blur(8px);}
+.artigo-modal.aberto{display:flex;}
+.artigo-modal-fechar{position:fixed;top:24px;right:32px;background:rgba(13,40,24,0.9);border:1px solid rgba(201,168,76,0.3);color:#c9a84c;width:40px;height:40px;border-radius:50%;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:6001;}
+.artigo-modal-fechar:hover{background:rgba(201,168,76,0.15);}
+.artigo-modal-inner{max-width:720px;width:100%;position:relative;}
+.artigo-modal-tag{font-size:0.65rem;letter-spacing:0.42em;text-transform:uppercase;color:#c9a84c;margin-bottom:20px;display:block;}
+.artigo-modal-titulo{font-family:'Cinzel Decorative',serif;font-size:clamp(1.4rem,3vw,2.2rem);color:#f5ead8;line-height:1.3;margin-bottom:12px;}
+.artigo-modal-meta{font-size:0.78rem;color:rgba(245,234,216,0.3);letter-spacing:0.12em;margin-bottom:40px;padding-bottom:24px;border-bottom:1px solid rgba(201,168,76,0.12);}
+.artigo-modal-corpo{font-size:1.08rem;line-height:2;color:rgba(245,234,216,0.78);font-weight:300;}
+.artigo-modal-corpo p{margin-bottom:24px;}
+.artigo-modal-corpo h3{font-family:'Cinzel Decorative',serif;font-size:0.95rem;color:#c9a84c;letter-spacing:0.12em;margin:36px 0 14px;}
+.artigo-modal-corpo .destaque{font-family:'IM Fell English',serif;font-size:1.2rem;font-style:italic;color:#f0dfa0;border-left:2px solid rgba(201,168,76,0.35);padding-left:20px;margin:32px 0;}
+.artigo-modal-assinatura{margin-top:48px;padding-top:24px;border-top:1px solid rgba(201,168,76,0.12);font-family:'Cinzel Decorative',serif;font-size:0.85rem;color:#c9a84c;}
+.artigo-modal-assinatura span{display:block;font-family:'Cormorant Garamond',serif;font-size:0.75rem;color:rgba(201,168,76,0.45);font-style:italic;margin-top:4px;letter-spacing:0.15em;}
+.btn-vol{background:none;border:1px solid rgba(201,168,76,0.25);color:rgba(201,168,76,0.6);padding:13px 26px;cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;transition:all 0.3s;}
+.btn-vol:hover{color:#c9a84c;border-color:#c9a84c;}
+
+/* ── BOTÃO DE SOM ── */
+.sound-btn {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 9999;
+  background: rgba(13,40,24,0.88);
+  border: 1px solid rgba(201,168,76,0.22);
+  color: #c9a84c;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.sound-btn:hover {
+  border-color: #c9a84c;
+  transform: scale(1.08);
+}
+
+@media(max-width:900px){
+  .artigos-grid{grid-template-columns:1fr;padding:0 18px 80px;}
+  .artigo-modal{padding:80px 20px 40px;}
+  .artigo-modal-fechar{right:16px;}
+}
+
+/* ── DOWNLOADS ─────────────────────────────────────────────── */
+#downloads{background:linear-gradient(to bottom,rgba(5,15,7,0.8),rgba(13,40,24,0.3),rgba(5,15,7,0.8));padding:40px 0 100px;}
+.download-card{max-width:900px;margin:0 auto;padding:0 24px;}
+.download-item{background:linear-gradient(135deg,rgba(13,40,24,0.85),rgba(5,15,7,0.7));border:1px solid rgba(201,168,76,0.2);border-radius:24px;overflow:hidden;transition:all 0.4s;}
+.download-item:hover{border-color:rgba(201,168,76,0.5);transform:translateY(-4px);}
+.download-inner{display:flex;flex-wrap:wrap;gap:0;}
+.download-icon{flex:0 0 120px;background:linear-gradient(135deg,#1a3d2a,#0a2a1a);display:flex;align-items:center;justify-content:center;padding:24px;font-size:3.5rem;}
+.download-content{flex:1;padding:24px 28px;}
+.download-badge{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#c9a84c;display:inline-block;margin-bottom:8px;}
+.download-content h3{font-family:'Cinzel Decorative',serif;font-size:1.4rem;color:#f5ead8;margin-bottom:12px;}
+.download-content p{color:rgba(245,234,216,0.65);line-height:1.7;margin-bottom:20px;max-width:500px;}
+.download-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;}
+.download-meta span{display:flex;align-items:center;gap:6px;color:rgba(245,234,216,0.5);font-size:0.75rem;}
+.download-btn{display:inline-block;background:#c9a84c;color:#0a1a0f;padding:14px 28px;border-radius:40px;text-decoration:none;font-family:'Cinzel Decorative',serif;font-weight:bold;font-size:0.85rem;transition:all 0.3s;}
+.download-btn:hover{background:#e8c96a;}
+.download-footer{text-align:center;margin-top:48px;}
+.download-footer p{color:rgba(245,234,216,0.35);font-size:0.8rem;font-style:italic;}
+.download-footer .btn-hero{margin-top:20px;padding:10px 28px;font-size:0.7rem;display:inline-block;}
+</style>
+</head>
+<body>
+
+<button class="sound-btn" id="soundBtn" title="Sons da floresta">🌿</button>
+<audio id="florestAudio" loop preload="auto" src="assets/floresta.mp3"></audio>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/><path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
+    Misticismo Verde
+  </a>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="loja.html">Loja</a></li>
+    <li><a href="artigos.html" class="ativo">Artigos</a></li>
+    <li><a href="biblioteca.html">Biblioteca Viva</a></li>
+    <li><a href="contato.html" class="nav-cta">Contato</a></li>
+  </ul>
+</nav>
+
+<section class="pagehero">
+  <div class="pagehero-bg"></div>
+  <div class="pagehero-ov"></div>
+  <div class="pagehero-c">
+    <span class="tag">✦ Sabedoria da Floresta ✦</span>
+    <h1 class="sec-title">O que a Amazônia tem a ensinar</h1>
+    <p class="sec-sub">Reflexões, rituais e conhecimento ancestral para nutrir sua caminhada espiritual.</p>
+  </div>
+</section>
+
+<div class="artigos-grid">
+  <div class="artigo" onclick="abrirArtigo('jurema')">
+    <img src="imagens/artigos/img-art-jurema.jpg" class="artigo-img" alt="Jurema Preta">
+    <div class="artigo-body"><span class="artigo-tag">🌿 Plantas Sagradas</span><h3 class="artigo-titulo">A Jurema e os portais que ela abre: uma jornada pela espiritualidade amazônica</h3><p class="artigo-resumo">Usada há séculos pelos povos originários do Brasil, a Jurema carrega uma sabedoria que desafia o entendimento racional.</p><span class="leia-mais">Ler artigo completo →</span></div>
+    <div class="artigo-foot"><span>8 min</span><span>Plantas · Ancestralidade</span></div>
+  </div>
+  <div class="artigo" onclick="abrirArtigo('ritual')">
+    <img src="imagens/artigos/img-art-ritual.jpg" class="artigo-img" alt="Ritual de limpeza">
+    <div class="artigo-body"><span class="artigo-tag">🔥 Rituais</span><h3 class="artigo-titulo">Como fazer um ritual de limpeza energética da sua casa</h3><p class="artigo-resumo">Passo a passo com defumação, sal grosso e intenções claras.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-foot"><span>5 min</span><span>Ritual · Lar</span></div>
+  </div>
+  <div class="artigo" onclick="abrirArtigo('lua')">
+    <img src="imagens/artigos/img-art-lua.jpg" class="artigo-img" alt="Fases da lua">
+    <div class="artigo-body"><span class="artigo-tag">🌙 Lua</span><h3 class="artigo-titulo">O poder das fases lunares na sua prática espiritual</h3><p class="artigo-resumo">Alinhe seus rituais e intenções com os ciclos da lua.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-foot"><span>6 min</span><span>Lua · Energia</span></div>
+  </div>
+  <div class="artigo" onclick="abrirArtigo('protecao')">
+    <img src="imagens/artigos/img-art-limpeza-urgente.jpg" class="artigo-img" alt="Limpeza energética urgente">
+    <div class="artigo-body"><span class="artigo-tag">🛡️ Proteção</span><h3 class="artigo-titulo">Sinais de que você precisa de uma limpeza energética urgente</h3><p class="artigo-resumo">Quando a energia fica pesada, o corpo e a alma avisam.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-foot"><span>4 min</span><span>Proteção · Cura</span></div>
+  </div>
+  <div class="artigo" onclick="abrirArtigo('ervas')">
+    <img src="imagens/artigos/img-art-ervas.jpg" class="artigo-img" alt="Ervas amazônicas">
+    <div class="artigo-body"><span class="artigo-tag">🌱 Ervas</span><h3 class="artigo-titulo">Cinco ervas amazônicas que mudam o campo energético</h3><p class="artigo-resumo">Da arruda ao cipó de alho: o que cada planta tem a oferecer.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-foot"><span>7 min</span><span>Ervas · Amazônia</span></div>
+  </div>
+  <a class="artigo" href="artigos/artigo-muiraquita.html">
+    <img src="imagens/geral/img-muiraquita-final.jpg" class="artigo-img" alt="Muiraquitã ancestral amazônico">
+    <div class="artigo-body"><span class="artigo-tag">🐸 Ancestralidade</span><h3 class="artigo-titulo">Muiraquitã: a lenda viva da Amazônia</h3><p class="artigo-resumo">Um mergulho na lenda, na força simbólica e no valor ancestral do muiraquitã.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-foot"><span>9 min</span><span>Muiraquitã · Amazônia</span></div>
+  </a>
+  <a class="artigo" href="artigos/artigo-absorcao-energia.html">
+    <img src="imagens/artigos/img-absorve-energia.jpg" class="artigo-img" alt="Proteção energética e equilíbrio espiritual">
+    <div class="artigo-body"><span class="artigo-tag">🛡️ Proteção Energética</span><h3 class="artigo-titulo">Como reconhecer sinais de absorção energética</h3><p class="artigo-resumo">Cansaço sem explicação, irritação repentina, peso no corpo e sensação de esgotamento podem ser sinais de que você está absorvendo energias demais.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-foot"><span>5 min</span><span>Proteção · Energia</span></div>
+  </a>
+</div>
+
+<!-- ─── DOWNLOADS ─── -->
+<section id="downloads">
+  <div class="section-header" style="padding:0 24px 44px;">
+    <span class="tag">✦ Downloads Gratuitos ✦</span>
+    <h2 class="sec-title">Ferramentas para sua jornada</h2>
+    <p class="sec-sub">Arquivos gratuitos para aprofundar sua conexão com os ciclos da natureza e os saberes da floresta.</p>
+  </div>
+  <div class="download-card">
+    <div class="download-item">
+      <div class="download-inner">
+        <div class="download-icon">🌙</div>
+        <div class="download-content">
+          <span class="download-badge">✦ Novo para 2026 ✦</span>
+          <h3>Calendário Lunar 2026</h3>
+          <p>Todas as fases da lua, datas de lua cheia, nova, quartos, eclipses e dicas de rituais para cada ciclo.</p>
+          <div class="download-meta">
+            <span><span>📅</span> 12 meses</span>
+            <span><span>🌙</span> Todas as fases</span>
+            <span><span>📖</span> Dicas de rituais</span>
+          </div>
+          <a href="downloads/calendario-lunar-2026.pdf" download class="download-btn">📥 Baixar PDF (2.3 MB)</a>
+        </div>
+      </div>
+    </div>
+    <div class="download-footer">
+      <p>✦ Mais materiais em breve. Inscreva-se para receber novidades ✦</p>
+      <a href="https://wa.me/5591996324631?text=Olá!%20Gostaria%20de%20receber%20materiais%20gratuitos%20do%20Misticismo%20Verde!" class="btn-hero" style="padding:10px 28px;font-size:0.7rem;">📬 Quero receber novidades</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
+  <p class="foot-copy">© 2025 Misticismo Verde · misticismoverde.com.br</p>
+  <a href="#top" class="foot-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Voltar ao topo</a>
+</footer>
+
+<!-- MODAIS ARTIGOS -->
+<div class="artigo-modal" id="artigoModal_jurema">
+  <button class="artigo-modal-fechar" onclick="fecharArtigo('jurema')">✕</button>
+  <div class="artigo-modal-inner">
+    <span class="artigo-modal-tag">🌿 Plantas Sagradas · Misticismo Verde</span>
+    <h1 class="artigo-modal-titulo">A Jurema e os portais que ela abre: uma jornada pela espiritualidade amazônica</h1>
+    <p class="artigo-modal-meta">Por Thai Terrear &nbsp;·&nbsp; 8 minutos &nbsp;·&nbsp; Plantas · Ancestralidade · Rituais</p>
+    <div class="artigo-modal-corpo">
+      <p class="destaque">"A Jurema não é uma planta para ser levada de volta ao conforto do cotidiano. Ela exige reciprocidade."</p>
+      <p>A Jurema (Mimosa tenuiflora) é uma das plantas mais sagradas do Brasil. Carregando séculos de conhecimento dos povos originários, ela não é apenas uma planta — é uma entidade. Uma mãe ancestral que guarda os mistérios entre o visível e o invisível.</p>
+      <h3>NA TRADIÇÃO DOS POVOS ORIGINÁRIOS</h3>
+      <p>Para os indígenas do Nordeste, o Catimbó da Jurema é um sistema ritual completo. Envolve rezas, defumações, pontos cantados e o uso cerimonial da bebida preparada com a casca da raiz. O objetivo não é a alteração de consciência por si só, mas o acesso a outros planos de existência.</p>
+      <h3>NA UMBANDA E NO CATIMBÓ</h3>
+      <p>Ao longo dos séculos, o culto da Jurema se misturou com o espiritismo e a umbanda, dando origem à Linha da Jurema — entidades ligadas à floresta, à mata fechada, aos mistérios da noite.</p>
+      <h3>COMO SE RELACIONAR COM A JUREMA HOJE</h3>
+      <p>— Defumação com cascas e folhas secas, invocando proteção e clareza<br>— Banho com folhas de Jurema para limpeza profunda<br>— Meditação com intenção de conexão com o espírito da planta<br>— Oferendas simples: água, flores brancas, vela acesa em gratidão</p>
+      <p class="destaque">"Se ela chamou sua atenção até aqui, talvez não seja por acaso. A floresta sempre tem seus motivos."</p>
+    </div>
+    <div class="artigo-modal-assinatura">Thai Terrear<span>Guardiã do Misticismo Verde — Belém, Pará</span></div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid rgba(201,168,76,0.12);display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="https://wa.me/5591996324631?text=Olá%20Thai!%20Li%20o%20artigo%20sobre%20a%20Jurema%20e%20gostaria%20de%20conversar!" class="btn-whats" target="_blank">💬 Falar com Thai</a>
+      <button class="btn-vol" onclick="fecharArtigo('jurema')">← Voltar aos artigos</button>
+    </div>
+  </div>
+</div>
+<div class="artigo-modal" id="artigoModal_ritual">
+  <button class="artigo-modal-fechar" onclick="fecharArtigo('ritual')">✕</button>
+  <div class="artigo-modal-inner">
+    <span class="artigo-modal-tag">🔥 Rituais · Misticismo Verde</span>
+    <h1 class="artigo-modal-titulo">Como fazer um ritual de limpeza energética da sua casa</h1>
+    <p class="artigo-modal-meta">Por Thai Terrear &nbsp;·&nbsp; 5 minutos &nbsp;·&nbsp; Rituais · Lar · Proteção</p>
+    <div class="artigo-modal-corpo">
+      <p class="destaque">"A casa que você habita carrega a energia de tudo que já aconteceu dentro dela. Limpar o espaço é limpar a si mesmo."</p>
+      <p>Toda casa acumula energia. Discussões, medos, doenças, visitas pesadas — tudo deixa uma marca vibracional no ambiente.</p>
+      <h3>ANTES DE COMEÇAR</h3>
+      <p>Abra todas as janelas e portas. A energia densa precisa de saída. Tenha em mãos: um defumador de ervas, sal grosso e uma tigela pequena.</p>
+      <h3>PASSO 1 — SAL NOS CANTOS</h3>
+      <p>Coloque pequenas porções de sal grosso nos quatro cantos de cada cômodo. O sal absorve energias densas. Deixe por pelo menos uma hora. Depois, recolha e descarte fora de casa.</p>
+      <h3>PASSO 2 — A DEFUMAÇÃO</h3>
+      <p>Acenda o defumador e comece pela porta de entrada. Caminhe no sentido anti-horário pelos cômodos, passando a fumaça por todos os cantos.</p>
+      <h3>PASSO 3 — SELANDO O ESPAÇO</h3>
+      <p>Após a defumação, acenda uma vela branca na entrada. Feche o ritual agradecendo.</p>
+      <p class="destaque">"Um espaço limpo energeticamente é um espaço que descansa, que cura, que acolhe."</p>
+    </div>
+    <div class="artigo-modal-assinatura">Thai Terrear<span>Guardiã do Misticismo Verde — Belém, Pará</span></div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid rgba(201,168,76,0.12);display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="https://wa.me/5591996324631?text=Olá%20Thai!%20Li%20o%20artigo%20sobre%20limpeza%20da%20casa%20e%20gostaria%20de%20conversar!" class="btn-whats" target="_blank">💬 Falar com Thai</a>
+      <button class="btn-vol" onclick="fecharArtigo('ritual')">← Voltar aos artigos</button>
+    </div>
+  </div>
+</div>
+<div class="artigo-modal" id="artigoModal_lua">
+  <button class="artigo-modal-fechar" onclick="fecharArtigo('lua')">✕</button>
+  <div class="artigo-modal-inner">
+    <span class="artigo-modal-tag">🌙 Lua · Misticismo Verde</span>
+    <h1 class="artigo-modal-titulo">O poder das fases lunares na sua prática espiritual</h1>
+    <p class="artigo-modal-meta">Por Thai Terrear &nbsp;·&nbsp; 6 minutos &nbsp;·&nbsp; Lua · Rituais · Energia</p>
+    <div class="artigo-modal-corpo">
+      <p class="destaque">"A lua não muda de forma — ela revela faces diferentes do mesmo mistério. Assim como nós."</p>
+      <h3>LUA NOVA — O TEMPO DAS SEMENTES</h3>
+      <p>Momento ideal para plantar intenções. Use nosso Sal 3 em 1 — Prosperidade para potencializar.</p>
+      <h3>LUA CRESCENTE — O TEMPO DA AÇÃO</h3>
+      <p>A lua cresce, a energia cresce. Use nosso Sal 3 em 1 — Força e Vitalidade para despertar sua energia de ação.</p>
+      <h3>LUA CHEIA — O TEMPO DA ILUMINAÇÃO</h3>
+      <p>A lua cheia revela. Deixe seus cristais e amuletos à luz da lua para recarga.</p>
+      <h3>LUA MINGUANTE — O TEMPO DA LIMPEZA</h3>
+      <p>Fase de soltar, encerrar, limpar. Use nosso Sal 3 em 1 — Limpeza Profunda com intenção de liberação.</p>
+      <p class="destaque">"Você não precisa entender a lua completamente para deixar que ela te guie."</p>
+    </div>
+    <div class="artigo-modal-assinatura">Thai Terrear<span>Guardiã do Misticismo Verde — Belém, Pará</span></div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid rgba(201,168,76,0.12);display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="https://wa.me/5591996324631?text=Olá%20Thai!%20Li%20o%20artigo%20sobre%20fases%20lunares%20e%20gostaria%20de%20conversar!" class="btn-whats" target="_blank">💬 Falar com Thai</a>
+      <button class="btn-vol" onclick="fecharArtigo('lua')">← Voltar aos artigos</button>
+    </div>
+  </div>
+</div>
+<div class="artigo-modal" id="artigoModal_protecao">
+  <button class="artigo-modal-fechar" onclick="fecharArtigo('protecao')">✕</button>
+  <div class="artigo-modal-inner">
+    <span class="artigo-modal-tag">🛡️ Proteção · Misticismo Verde</span>
+    <h1 class="artigo-modal-titulo">Sinais de que você precisa de uma limpeza energética urgente</h1>
+    <p class="artigo-modal-meta">Por Thai Terrear &nbsp;·&nbsp; 4 minutos &nbsp;·&nbsp; Proteção · Cura · Energia</p>
+    <div class="artigo-modal-corpo">
+      <p class="destaque">"O corpo avisa antes de adoecer. O campo energético também. Aprenda a ouvir os sinais."</p>
+      <h3>CANSAÇO SEM EXPLICAÇÃO</h3><p>Você dormiu bem, não está doente — mas está exausta. Esse tipo de esgotamento muitas vezes indica um campo energético sobrecarregado.</p>
+      <h3>SENSAÇÃO DE PESO E SUFOCAMENTO</h3><p>Você entra em determinados ambientes e sente o ar pesado. Ou acorda com essa sensação sem saber por quê.</p>
+      <h3>PENSAMENTOS INTRUSIVOS E NEGATIVOS</h3><p>Uma mente que não para, pensamentos negativos que chegam sem convite, dificuldade de ver clareza em situações simples.</p>
+      <h3>O QUE FAZER</h3><p>Comece com um banho de ervas de limpeza. Faça uma defumação do seu espaço. Passe tempo na natureza. Beba muita água.</p>
+      <p class="destaque">"Cuidar do seu campo energético não é luxo. É higiene. É saúde."</p>
+    </div>
+    <div class="artigo-modal-assinatura">Thai Terrear<span>Guardiã do Misticismo Verde — Belém, Pará</span></div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid rgba(201,168,76,0.12);display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="https://wa.me/5591996324631?text=Olá%20Thai!%20Li%20o%20artigo%20sobre%20limpeza%20energética%20urgente%20e%20gostaria%20de%20conversar!" class="btn-whats" target="_blank">💬 Falar com Thai</a>
+      <button class="btn-vol" onclick="fecharArtigo('protecao')">← Voltar aos artigos</button>
+    </div>
+  </div>
+</div>
+<div class="artigo-modal" id="artigoModal_ervas">
+  <button class="artigo-modal-fechar" onclick="fecharArtigo('ervas')">✕</button>
+  <div class="artigo-modal-inner">
+    <span class="artigo-modal-tag">🌱 Ervas · Misticismo Verde</span>
+    <h1 class="artigo-modal-titulo">Cinco ervas amazônicas que mudam o campo energético</h1>
+    <p class="artigo-modal-meta">Por Thai Terrear &nbsp;·&nbsp; 7 minutos &nbsp;·&nbsp; Ervas · Amazônia · Plantas</p>
+    <div class="artigo-modal-corpo">
+      <p class="destaque">"A Amazônia é a maior farmácia do mundo. E a maior escola espiritual que conheço."</p>
+      <h3>1. ARRUDA</h3><p>A guardiã dos quintais brasileiros. Afasta energias negativas, quebra inveja e limpa o campo onde passa.</p>
+      <h3>2. ALFAVACA</h3><p>Prima do manjericão, mais intensa e selvagem. Limpa energias pesadas e abre caminhos para prosperidade.</p>
+      <h3>3. CIPÓ DE ALHO</h3><p>Planta de proteção poderosa da Amazônia. Cria barreiras energéticas invisíveis.</p>
+      <h3>4. PAU-ROSA</h3><p>Árvore ameaçada da Amazônia. Seu óleo cura emocionalmente e eleva a vibração.</p>
+      <h3>5. BREU BRANCO</h3><p>A resina sagrada da floresta. Sua fumaça branca purifica profundamente e convida energias benevolentes.</p>
+      <p class="destaque">"A floresta oferece tudo que precisamos. Mas ela pede uma coisa em troca: que a respeitemos."</p>
+    </div>
+    <div class="artigo-modal-assinatura">Thai Terrear<span>Guardiã do Misticismo Verde — Belém, Pará</span></div>
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid rgba(201,168,76,0.12);display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="https://wa.me/5591996324631?text=Olá%20Thai!%20Li%20o%20artigo%20sobre%20ervas%20amazônicas%20e%20gostaria%20de%20conversar!" class="btn-whats" target="_blank">💬 Falar com Thai</a>
+      <button class="btn-vol" onclick="fecharArtigo('ervas')">← Voltar aos artigos</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/site.js"></script>
+<script>
+function abrirArtigo(id) {
+  var el = document.getElementById("artigoModal_" + id);
+  if (!el) return;
+  el.classList.add("aberto"); el.scrollTop = 0;
+  document.body.style.overflow = "hidden";
+}
+function fecharArtigo(id) {
+  var el = document.getElementById("artigoModal_" + id);
+  if (el) el.classList.remove("aberto");
+  document.body.style.overflow = "";
+}
+document.querySelectorAll(".artigo-modal").forEach(function(m) {
+  m.addEventListener("click", function(e) { if (e.target === this) fecharArtigo(this.id.replace("artigoModal_","")); });
+});
+</script>
+</body>
+</html>

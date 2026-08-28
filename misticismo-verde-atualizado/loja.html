@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja — Misticismo Verde</title>
+<meta name="description" content="Sais rituais, amuletos artesanais, plantas vivas e difusores do Misticismo Verde. Produtos criados com intenção e sabedoria ancestral.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.pagehero{position:relative;min-height:44vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:150px 40px 56px;}
+.pagehero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(13,40,24,0.9),transparent 70%),url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=80') center/cover no-repeat;filter:brightness(0.26) saturate(1.3);}
+.pagehero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,15,7,0.4),transparent 40%,transparent 70%,rgba(5,15,7,1));}
+.pagehero-c{position:relative;z-index:2;max-width:760px;}
+
+.loja-categorias{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:0 40px 48px;position:relative;z-index:2;}
+.cat-btn{background:transparent;border:1px solid rgba(201,168,76,0.22);color:rgba(245,234,216,0.5);padding:10px 26px;font-family:'Cormorant Garamond',serif;font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;}
+.cat-btn:hover{color:var(--dourado);border-color:rgba(201,168,76,0.45);}
+.cat-btn.ativo{color:#c9a84c;border-color:rgba(201,168,76,0.55);background:rgba(201,168,76,0.07);}
+.cat-contador{display:inline-block;background:rgba(201,168,76,0.12);color:rgba(201,168,76,0.65);font-size:0.65rem;padding:1px 8px;border-radius:10px;margin-left:6px;letter-spacing:0.05em;}
+.produto-card.oculto{display:none!important;}
+.prod-em-breve.oculto{display:none!important;}
+.cat-vazio{grid-column:1/-1;text-align:center;padding:60px 20px;color:rgba(245,234,216,0.3);font-style:italic;}
+
+.produtos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1300px;margin:0 auto;padding:0 40px 100px;}
+.produto-card{background:rgba(13,40,24,0.5);border:1px solid rgba(201,168,76,0.1);overflow:hidden;cursor:pointer;transition:all 0.4s;text-decoration:none;display:block;color:inherit;}
+.produto-card:hover{border-color:rgba(201,168,76,0.4);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,0.5);}
+.prod-img-wrap{position:relative;overflow:hidden;aspect-ratio:4/3;background:#0a1a0f;}
+.prod-img{width:100%;height:100%;object-fit:cover;filter:brightness(0.72) saturate(1.2);transition:transform 0.7s,filter 0.4s;display:block;}
+.produto-card:hover .prod-img{transform:scale(1.07);filter:brightness(0.82) saturate(1.4);}
+.prod-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,15,7,0.85) 0%,transparent 55%);}
+.prod-badge{position:absolute;top:14px;left:14px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.4);color:#c9a84c;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;padding:3px 10px;}
+.prod-info{padding:24px 24px 28px;}
+.prod-intencao{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px;opacity:0.8;}
+.prod-nome{font-family:'Cinzel Decorative',serif;font-size:0.95rem;color:#f5ead8;margin-bottom:10px;line-height:1.35;}
+.prod-desc{font-size:0.9rem;font-style:italic;color:rgba(245,234,216,0.6);line-height:1.7;margin-bottom:20px;font-weight:300;}
+.prod-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(201,168,76,0.1);padding-top:18px;}
+.prod-preco{font-family:'Cinzel Decorative',serif;font-size:1.1rem;color:#c9a84c;}
+.prod-btn{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,234,216,0.45);border:1px solid rgba(245,234,216,0.18);padding:7px 16px;background:none;cursor:pointer;transition:all 0.3s;font-family:'Cormorant Garamond',serif;}
+.prod-btn:hover{color:#c9a84c;border-color:#c9a84c;}
+.prod-em-breve{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(13,40,24,0.6),rgba(42,90,38,0.15));border:1px dashed rgba(201,168,76,0.18);min-height:280px;cursor:default;}
+
+.modal-tag{font-size:0.62rem;letter-spacing:0.38em;text-transform:uppercase;color:#c9a84c;margin-bottom:14px;}
+.modal-titulo{font-family:'Cinzel Decorative',serif;font-size:1.6rem;color:#f5ead8;margin-bottom:20px;line-height:1.2;}
+.modal-desc{font-size:1rem;font-style:italic;color:rgba(245,234,216,0.65);line-height:1.8;font-weight:300;}
+.modal-secs{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px;}
+.modal-sec h4{font-family:'Cinzel Decorative',serif;font-size:0.7rem;color:#c9a84c;letter-spacing:0.18em;margin-bottom:8px;text-transform:uppercase;}
+.modal-sec p,.modal-sec ul{font-size:0.92rem;line-height:1.8;color:rgba(245,234,216,0.65);font-weight:300;}
+.modal-sec ul{padding-left:16px;}
+.modal-sec li{margin-bottom:5px;}
+.modal-cta{margin-top:32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.modal-preco{font-family:'Cinzel Decorative',serif;font-size:1.4rem;color:#c9a84c;}
+
+@media(max-width:900px){
+  .produtos-grid{grid-template-columns:1fr;padding:0 18px 80px;}
+  .modal-secs{grid-template-columns:1fr;}
+  .loja-categorias{padding:0 18px 36px;}
+}
+</style>
+</head>
+<body>
+
+<button class="sound-btn" id="soundBtn" title="Sons da floresta">🌿</button>
+<audio id="florestAudio" loop preload="auto" src="assets/floresta.mp3"></audio>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/><path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
+    Misticismo Verde
+  </a>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="loja.html" class="ativo">Loja</a></li>
+    <li><a href="artigos.html">Artigos</a></li>
+    <li><a href="biblioteca.html">Biblioteca Viva</a></li>
+    <li><a href="contato.html" class="nav-cta">Contato</a></li>
+  </ul>
+</nav>
+
+<section class="pagehero">
+  <div class="pagehero-bg"></div>
+  <div class="pagehero-ov"></div>
+  <div class="pagehero-c">
+    <span class="tag">✦ Portal da Loja ✦</span>
+    <h1 class="sec-title">Produtos para sua casa, corpo e alma</h1>
+    <p class="sec-sub">Cada produto criado com intenção e sabedoria ancestral. Filtre por categoria e encontre o que faz sentido para você agora.</p>
+  </div>
+</section>
+
+<div class="loja-categorias">
+  <button class="cat-btn ativo" onclick="filtrarCategoria('todos', this)">Todos <span class="cat-contador" id="cnt-todos">0</span></button>
+  <button class="cat-btn" onclick="filtrarCategoria('sais', this)">🧂 Sais Rituais <span class="cat-contador" id="cnt-sais">0</span></button>
+  <button class="cat-btn" onclick="filtrarCategoria('amuletos', this)">🐸 Amuletos <span class="cat-contador" id="cnt-amuletos">0</span></button>
+  <button class="cat-btn" onclick="filtrarCategoria('plantas', this)">🌱 Plantas Vivas <span class="cat-contador" id="cnt-plantas">0</span></button>
+  <button class="cat-btn" onclick="filtrarCategoria('difusores', this)">🌿 Difusores <span class="cat-contador" id="cnt-difusores">0</span></button>
+</div>
+
+<div class="produtos-grid" id="gridProdutos"></div>
+
+<footer>
+  <div class="foot-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
+  <p class="foot-copy">© 2025 Misticismo Verde · misticismoverde.com.br</p>
+  <a href="#top" class="foot-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Voltar ao topo</a>
+</footer>
+
+<!-- MODAL PRODUTO -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal"><button class="modal-fechar" onclick="fecharModal()">✕</button><div class="modal-tag" id="mTag"></div><h2 class="modal-titulo" id="mTitulo"></h2><p class="modal-desc" id="mDesc"></p><div class="modal-secs" id="mSecs"></div><div class="modal-cta"><a href="#" class="btn-whats" id="mWhats" target="_blank">💬 Quero este produto</a><span class="modal-preco" id="mPreco"></span></div></div>
+</div>
+
+<script src="assets/site.js"></script>
+<script>
+var PRODUTOS = [
+  {id:"limpeza", categoria:"sais", href:"produtos/produto-limpeza.html", img:"imagens/produtos/img-produto-limpeza.jpg",
+    badge:"Limpeza", intencao:"❋ Purificação Profunda", nome:"Sal 3 em 1 — Limpeza Profunda",
+    desc:"Remove energias indesejadas e renova o campo espiritual.", preco:"R$ 20,00",
+    tag:"❋ Purificação Profunda", modalDesc:"Remove energias indesejadas e renova completamente o campo espiritual. Banho, escalda-pés e defumação em um só produto.",
+    secs:{"Significado Espiritual":"Este sal ancestral dissolve o que já não serve e prepara o campo para receber o novo.","Benefícios Energéticos":["Remove energias indesejadas","Renova o campo espiritual","Traz leveza e clareza","Prepara para novos ciclos"],"Modo de Uso — 3 em 1":"BANHO: Dissolva em água morna, use do pescoço para baixo. ESCALDA-PÉS: Água quente por 15 min. DEFUMAÇÃO: Queime em brasa.","Peso":"180g a 200g — rende múltiplos usos"}},
+  {id:"protecao", categoria:"sais", href:"produtos/produto-protecao.html", img:"imagens/produtos/img-produto-protecao.jpg",
+    badge:"Proteção", intencao:"⊛ Blindagem Energética", nome:"Sal 3 em 1 — Proteção dos Caminhos",
+    desc:"Proteção ativa e abertura de caminhos seguros.", preco:"R$ 20,00",
+    tag:"⊛ Blindagem Energética", modalDesc:"Proteção ativa e abertura de caminhos seguros. Fórmula ancestral para blindar corpo, aura e seus passos.",
+    secs:{"Significado Espiritual":"Cria uma barreira energética sólida ao redor de quem usa.","Benefícios Energéticos":["Proteção do campo energético","Afasta energias negativas","Abre caminhos seguros","Fortalece a aura"],"Modo de Uso — 3 em 1":"BANHO: Com intenção de proteção. ESCALDA-PÉS: Água quente por 15 min. DEFUMAÇÃO: Para proteger ambientes.","Peso":"180g a 200g — rende múltiplos usos"}},
+  {id:"prosperidade", categoria:"sais", href:"produtos/produto-prosperidade.html", img:"imagens/produtos/img-produto-prosperidade.jpg",
+    badge:"Abundância", intencao:"✦ Fluxo de Prosperidade", nome:"Sal 3 em 1 — Prosperidade & Abundância",
+    desc:"Atrai boas oportunidades e ativa o fluxo de prosperidade.", preco:"R$ 20,00",
+    tag:"✦ Fluxo de Prosperidade", modalDesc:"Atrai boas oportunidades e ativa o fluxo de prosperidade. Limpa os caminhos para a abundância florescer.",
+    secs:{"Significado Espiritual":"Remove os bloqueios que impedem o fluxo de prosperidade.","Benefícios Energéticos":["Atrai boas oportunidades","Ativa o fluxo de prosperidade","Remove bloqueios","Desperta confiança"],"Modo de Uso — 3 em 1":"BANHO: Com intenção de abertura. ESCALDA-PÉS: Visualize caminhos se abrindo. DEFUMAÇÃO: No ambiente de trabalho.","Peso":"180g a 200g — rende múltiplos usos"}},
+  {id:"forca", categoria:"sais", href:"produtos/produto-forca.html", img:"imagens/produtos/img-produto-forca.jpg",
+    badge:"Vitalidade", intencao:"◈ Energia Interior", nome:"Sal 3 em 1 — Força & Vitalidade",
+    desc:"Revigora corpo e energia. Voltada à força interior e renovação.", preco:"R$ 20,00",
+    tag:"◈ Energia Interior", modalDesc:"Revigora corpo e energia. Combinação de sais e ervas voltada à força interior, foco e renovação do espírito.",
+    secs:{"Significado Espiritual":"Criada para despertar a força que já existe dentro de você.","Benefícios Energéticos":["Restaura energia vital","Aumenta foco","Fortalece o campo energético","Desperta força interior"],"Modo de Uso — 3 em 1":"BANHO: Pela manhã para ativar o dia. ESCALDA-PÉS: Após dias longos. DEFUMAÇÃO: Antes de atividades importantes.","Peso":"180g a 200g — rende múltiplos usos"}},
+  {id:"amor", categoria:"sais", href:"produtos/produto-amor.html", img:"imagens/produtos/img-produto-amor.jpg",
+    badge:"Equilíbrio", intencao:"❋ Harmonia Emocional", nome:"Sal 3 em 1 — Amor-Próprio & Equilíbrio",
+    desc:"Harmoniza o emocional e fortalece a autoestima.", preco:"R$ 20,00",
+    tag:"❋ Harmonia Emocional", modalDesc:"Harmoniza o emocional e fortalece a autoestima. Cultive amor por si e harmonia interior com suavidade.",
+    secs:{"Significado Espiritual":"Criada para que você possa se acolher, se perdoar e se fortalecer.","Benefícios Energéticos":["Fortalece autoestima","Equilibra emoções","Promove paz interior","Acolhe o ser na totalidade"],"Modo de Uso — 3 em 1":"BANHO: Com intenção de acolhimento. ESCALDA-PÉS: Respire fundo e se permita sentir. DEFUMAÇÃO: Em momentos de meditação.","Peso":"180g a 200g — rende múltiplos usos"}},
+  {id:"muiraquita", categoria:"amuletos", href:"produtos/produto-muiraquita.html", img:"imagens/produtos/img-produto-muiraquita-prod.jpg",
+    badge:"Artesanal · Único", intencao:"🐸 Amuleto Ancestral", nome:"Muiraquitã — Amuleto Ancestral",
+    desc:"Proteção, sorte e ancestralidade amazônica. Cada peça é única, feita à mão.", preco:"R$ 39,90",
+    tag:"🐸 Amuleto Ancestral", modalDesc:"Amuleto sagrado nascido da lenda das Icamiabas. Cada peça é única, produzida artesanalmente com energia e intenção próprias.",
+    secs:{"Origem":"Cultura Amazônica · Lenda das Icamiabas · Rio Tapajós","Benefícios Espirituais":["Proteção contra energias negativas","Atrai sorte, prosperidade e saúde","Fortalece vínculos de amor e amizade","Conexão com a ancestralidade amazônica","Inspira transformação e equilíbrio"],"Sobre a Peça":"Produção 100% artesanal. Cada Muiraquitã é único — pequenas variações de forma e cor fazem parte da sua natureza. Cordão ajustável.","Preço":"R$ 39,90 · 1 unidade"}},
+  {id:"coruja", categoria:"amuletos", href:"produtos/produto-coruja.html", img:"imagens/produtos/img-produto-coruja-1.jpg",
+    badge:"Artesanal · Único", intencao:"🦉 Proteção e Sabedoria", nome:"Cordão de Coruja — Amuleto de Proteção e Sabedoria",
+    desc:"Amuleto artesanal para proteção energética, clareza nos caminhos e fortalecimento da intuição.", preco:"R$ 39,90",
+    tag:"🦉 Proteção e Sabedoria", modalDesc:"Mais do que um acessório, este cordão carrega a presença simbólica da coruja: proteção, sabedoria, discernimento e visão além do óbvio. Cada peça é feita à mão e é única.",
+    secs:{"Intenção Energética":"Proteção, sabedoria e intuição.","Benefícios Espirituais":["Favorece proteção energética","Fortalece a intuição","Ajuda a enxergar com mais clareza","Apoia momentos de introspecção e observação","Conecta com silêncio, discernimento e presença"],"Sobre a Peça":"Produção artesanal, feita à mão. Cada unidade é única e pode apresentar pequenas variações naturais.","Uso":"Pode ser utilizado no dia a dia como amuleto pessoal ou em práticas espirituais.","Valor":"R$ 39,90 · 1 unidade"}},
+  {id:"jiboianeon", categoria:"plantas", href:"produtos/produto-jiboianeon.html", img:"imagens/produtos/img-produto-jiboianeon.jpg",
+    badge:"Planta Viva · Purificação", intencao:"🍃 Purificação e Renovação", nome:"Jiboia Neon",
+    desc:"Purifica o ar, renova as energias e traz vitalidade para o ambiente.", preco:"R$ 34,90",
+    tag:"🍃 Purificação · Renovação · Vitalidade", modalDesc:"Suas folhas em amarelo-limão vibrante purificam o ar, renovam as energias e trazem movimento onde há estagnação. Planta de fácil cultivo, perfeita para ambientes internos.",
+    secs:{"Origem":"Florestas tropicais da Ásia · Ilhas Salomão","Benefícios Energéticos":["Purifica o ar e as energias do ambiente","Renova espaços estagnados","Estimula criatividade e fluxo","Traz vitalidade e movimento","Oxigena o ambiente mesmo à noite"],"Cuidados Essenciais":"Rega moderada (solo seco entre regas). Luz indireta intensa para manter a cor neon. Tolera sombra, mas perde a vivacidade.","Sobre a Planta":"Muda enraizada em vaso 14cm. Planta pendente que pode ser cultivada em vasos suspensos ou apoiada em superfícies.","Preço":"R$ 34,90 · Planta viva · Envio seguro"}},
+  {id:"miniespada", categoria:"plantas", href:"produtos/produto-miniespada.html", img:"imagens/produtos/img-produto-miniespada.jpg",
+    badge:"Planta Viva · Proteção", intencao:"⚔️ Proteção e Firmeza", nome:"Espada Mini de São Jorge",
+    desc:"Protege a entrada da casa, corta inveja e purifica o ambiente. Suculenta anã de fácil cultivo.", preco:"R$ 29,90",
+    tag:"⚔️ Proteção · Firmeza · Limpeza do Ambiente", modalDesc:"Suculenta anã (15-30cm) que protege a entrada da casa, corta energias negativas e purifica o ambiente. Perfeita para mesas e pequenos espaços.",
+    secs:{"Origem":"Oeste da África (Nigéria, Congo) · Variedade 'Hahnii'","Benefícios Energéticos":["Proteção da entrada da casa","Corte de inveja e mau-olhado","Firmeza energética para moradores","Purificação do ar","Baixíssima manutenção"],"Cuidados Essenciais":"Rega escassa (solo seco entre regas). Tolera pouca luz. No clima do Pará, regar a cada 7-10 dias.","Sobre a Planta":"Muda enraizada em vaso 12cm. Altura: 15-30cm. Perfeita para iniciantes.","Preço":"R$ 29,90 · Planta viva · Envio seguro"}},
+  {id:"solo-estelar", categoria:"difusores", href:"produtos/produto-solo-estelar.html", img:"imagens/produtos/img-produto-soloestelar.jpg",
+    badge:"Coleção Alquimia da Floresta · Peça Única", intencao:"✨ Equilíbrio e Presença", nome:"Solo Estelar — Difusor em Cerâmica Fria",
+    desc:"Difusor artesanal para aterramento, equilíbrio e presença plena. Peça única.", preco:"R$ 39,90",
+    tag:"✨ Equilíbrio · Presença · Aterramento", modalDesc:"Difusor pessoal artesanal em cerâmica fria focado em equilíbrio e presença. Representa a conexão entre a força da terra e o brilho do cosmos.",
+    secs:{"Elemento":"Terra & Cosmos — a ancoragem entre o solo e o estelar","Propósito":"Aterramento, foco, presença e estabilidade interior","Material":"Cerâmica fria moldada à mão","Uso ideal":"Ambientes de trabalho, estudo, meditação","Óleos Sugeridos":"Copaíba, Capim-Limão, Vetiver, Cedro, Priprioca","Preço":"R$ 39,90 · Difusor pessoal · Peça única"}},
+  {id:"semente-da-noite", categoria:"difusores", href:"produtos/produto-semente-da-noite.html", img:"imagens/produtos/img-produto-sementedanoite.jpg",
+    badge:"Coleção Alquimia da Floresta · Peça Única", intencao:"🌙 Proteção e Introspecção", nome:"Semente da Noite — Difusor em Cerâmica Fria",
+    desc:"Difusor artesanal para proteção espiritual, introspecção e descanso reparador.", preco:"R$ 39,90",
+    tag:"🌙 Proteção · Introspecção · Descanso", modalDesc:"Difusor pessoal artesanal em cerâmica fria focado em proteção e introspecção. Inspirado no mistério das florestas sob o luar.",
+    secs:{"Elemento":"Noite & Terra — o silêncio que precede o renascimento","Propósito":"Proteção, introspecção e descanso profundo","Material":"Cerâmica fria com formas orgânicas","Uso ideal":"Rituais noturnos, meditação, momento de dormir","Óleos Sugeridos":"Breu Branco, Lavanda, Cedro, Camomila","Preço":"R$ 39,90 · Difusor pessoal · Peça única"}},
+  {id:"oraculo-azul", categoria:"difusores", href:"produtos/produto-oraculo-azul.html", img:"imagens/produtos/img-produto-oraculoazul.jpg",
+    badge:"Coleção Alquimia da Floresta · Peça Única", intencao:"👁️ Foco e Intuição", nome:"Oráculo Azul — Difusor em Cerâmica Fria",
+    desc:"Difusor artesanal para clareza mental, intuição e expansão da consciência.", preco:"R$ 39,90",
+    tag:"👁️ Foco · Intuição · Clareza Mental", modalDesc:"Difusor pessoal artesanal em cerâmica fria focado em foco e intuição. Inspirado na vastidão do azul cósmico.",
+    secs:{"Elemento":"Água & Ar — a fluidez das águas e a vastidão do céu","Propósito":"Foco, intuição e clareza mental","Material":"Cerâmica fria com pintura artesanal","Uso ideal":"Leitura de tarô, oráculos, meditação ativa","Óleos Sugeridos":"Alecrim, Hortelã-Pimenta, Camomila Azul, Olíbano","Preço":"R$ 39,90 · Difusor pessoal · Peça única"}},
+  {id:"difusor", categoria:"difusores", href:"produtos/produto-difusor.html", img:"imagens/produtos/img-produto-difusor-1.jpg",
+    badge:"Pingente Cerâmico Artesanal", intencao:"🌸 Equilíbrio · Presença", nome:"Difusor Pessoal de Aromaterapia",
+    desc:"Pingente de aromaterapia em cerâmica artesanal. Presença, bem-estar e conexão com o poder das plantas.", preco:"R$ 39,90",
+    tag:"🌸 Equilíbrio · Presença · Bem-estar", modalDesc:"Difusor pessoal em cerâmica artesanal, moldado à mão. Carrega o aroma das plantas junto ao corpo como ritual sutil de autocuidado.",
+    secs:{"Material":"Cerâmica artesanal · cordão ajustável","Benefícios":["Suaviza tensões e ansiedade","Favorece clareza e presença","Cria atmosfera de proteção e bem-estar","Transforma a rotina em ritual"],"Modo de Uso":"Pingue 1-2 gotas de óleo essencial, respire fundo e use junto ao corpo. O calor libera o aroma ao longo do dia.","Preço":"R$ 39,90 · 1 unidade"}},
+  {id:"muiraquita-artigo", categoria:"amuletos", href:"artigos/artigo-muiraquita.html", img:"imagens/geral/img-muiraquita-final.jpg",
+    badge:"Leitura", intencao:"📖 Sabedoria Ancestral", nome:"Quer saber mais sobre o Muiraquitã?",
+    desc:"Leia o artigo completo sobre a lenda das Icamiabas e a história do amuleto.", preco:"Ler artigo →",
+    tag:"", modalDesc:"", secs:{}}
+];
+
+function renderProdutos() {
+  var grid = document.getElementById("gridProdutos");
+  var html = "";
+  PRODUTOS.forEach(function(p) {
+    var isArtigo = p.tag === "";
+    html += '<a class="produto-card" href="' + p.href + '" data-categoria="' + (p.categoria||"outros") + '">' +
+      '<div class="prod-img-wrap"><img src="' + p.img + '" class="prod-img" alt="' + p.nome + '"><div class="prod-overlay"></div><span class="prod-badge">' + p.badge + '</span></div>' +
+      '<div class="prod-info"><div class="prod-intencao">' + p.intencao + '</div><h3 class="prod-nome">' + p.nome + '</h3><p class="prod-desc">' + p.desc + '</p>' +
+      '<div class="prod-footer"><span class="prod-preco">' + p.preco + '</span><span class="prod-btn">' + (isArtigo ? 'Ler' : 'Ver Detalhes') + '</span></div></div></a>';
+  });
+  html += '<div class="prod-em-breve" data-categoria="todos"><div style="text-align:center;padding:36px;"><div style="font-size:1.8rem;margin-bottom:14px;opacity:0.3;">✦</div><p style="font-family:\'Cinzel Decorative\',serif;font-size:0.78rem;color:rgba(201,168,76,0.4);letter-spacing:0.1em;line-height:1.7;">Novos rituais<br>em breve</p></div></div>';
+  grid.innerHTML = html;
+  atualizarContadores();
+}
+
+function atualizarContadores() {
+  var total = PRODUTOS.length;
+  document.getElementById("cnt-todos").textContent = total;
+  ["sais","amuletos","plantas","difusores"].forEach(function(cat) {
+    var n = PRODUTOS.filter(function(p){ return p.categoria === cat; }).length;
+    var elc = document.getElementById("cnt-" + cat);
+    if (elc) elc.textContent = n;
+  });
+}
+
+function filtrarCategoria(cat, btn) {
+  document.querySelectorAll(".cat-btn").forEach(function(b){ b.classList.remove("ativo"); });
+  if (btn) btn.classList.add("ativo");
+  var cards = document.querySelectorAll(".produto-card");
+  var emBreve = document.querySelector(".prod-em-breve");
+  var visiveis = 0;
+  cards.forEach(function(card) {
+    if (cat === "todos" || card.getAttribute("data-categoria") === cat) { card.classList.remove("oculto"); visiveis++; }
+    else { card.classList.add("oculto"); }
+  });
+  if (emBreve) emBreve.classList.toggle("oculto", cat !== "todos");
+  var grid = document.getElementById("gridProdutos");
+  var vazioEl = grid.querySelector(".cat-vazio");
+  if (visiveis === 0) {
+    if (!vazioEl) { var d = document.createElement("div"); d.className = "cat-vazio"; d.textContent = "Produtos desta categoria em breve. ✦"; grid.appendChild(d); }
+  } else { if (vazioEl) vazioEl.remove(); }
+}
+
+document.getElementById("modalOverlay").addEventListener("click", function(e){ if (e.target === this) fecharModal(); });
+function fecharModal() { document.getElementById("modalOverlay").classList.remove("aberto"); document.body.style.overflow = ""; }
+
+renderProdutos();
+</script>
+</body>
+</html>
