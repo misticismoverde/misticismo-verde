@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Produto — Misticismo Verde</title>
+<title>Oráculo Azul — Difusor em Cerâmica Fria | Misticismo Verde</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -199,7 +199,17 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
   </ul>
 </nav>
 
-<div class="hero">
+<!-- AVISO DE ESGOTADO -->
+<div style="background:rgba(200,50,50,0.08);border:1px solid rgba(200,50,50,0.2);padding:14px 24px;text-align:center;position:relative;z-index:2;margin:100px 60px 0 60px;border-radius:8px;">
+  <p style="color:#ff6b6b;font-family:'Cinzel Decorative',serif;font-size:0.75rem;letter-spacing:0.15em;margin:0;">
+    ⚠️ PEÇA ÚNICA — JÁ FOI VENDIDA
+  </p>
+  <p style="color:rgba(255,107,107,0.6);font-size:0.85rem;font-style:italic;margin:4px 0 0;">
+    Esta peça foi vendida, mas sua história e energia permanecem aqui.
+  </p>
+</div>
+
+<div class="hero" style="padding-top:20px;">
   <div class="hero-bg"></div>
   <div class="hero-grad"></div>
   <div class="hero-txt">
@@ -208,7 +218,7 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
     <p  class="hero-energia" id="heroEnergia"></p>
     <p  class="hero-intro"   id="heroIntro"></p>
     <div class="hero-acoes">
-      <a class="btn-comprar" id="btnHero" href="#" target="_blank">💬 Quero este produto</a>
+      <a class="btn-comprar" style="opacity:0.5;cursor:default;pointer-events:none;background:rgba(200,50,50,0.1);border-color:rgba(200,50,50,0.3);color:#ff6b6b;">💬 Produto Indisponível</a>
       <a class="btn-sec" href="../loja.html">← Ver todos os rituais</a>
     </div>
   </div>
@@ -220,8 +230,8 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
       <img class="prod-img" id="prodImg" src="" alt="">
     </div>
     <p class="img-hint">✦ &nbsp;toque para ampliar</p>
-    <p class="preco"    id="preco"></p>
-    <p class="preco-det" id="precoDet"></p>
+    <p class="preco" style="text-decoration:line-through;color:#ff6b6b;" id="preco"></p>
+    <p class="preco-det" id="precoDet" style="color:#ff6b6b;">⚠️ Indisponível · Peça única vendida</p>
   </div>
 </div>
 
@@ -273,7 +283,7 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
     <h2 class="cta-titulo" id="ctaTitulo"></h2>
     <p  class="cta-txt"    id="ctaTexto"></p>
     <div class="cta-acoes">
-      <a class="btn-comprar" id="btnCta" href="#" target="_blank">💬 Permitir esta experiência</a>
+      <a class="btn-comprar" style="opacity:0.5;cursor:default;pointer-events:none;background:rgba(200,50,50,0.1);border-color:rgba(200,50,50,0.3);color:#ff6b6b;">💬 Produto Indisponível</a>
       <a class="btn-sec" href="../contato.html">Falar com Thais</a>
     </div>
   </div>
@@ -288,7 +298,7 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
 </div>
 
 <footer>
-  <div class="ft-logo">Misticismo Verde<span>Thais Maciel — Belém, Pará</span></div>
+  <div class="ft-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
   <p class="ft-copy">© 2025 Misticismo Verde · misticismoverde.com.br</p>
   <a href="#" class="ft-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Topo</a>
 </footer>
@@ -304,12 +314,59 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
 <script>
 // ═══════════════════════════════════════════════════════════════
 //  DADOS DO PRODUTO
-//  Para criar nova página: copie este arquivo, renomeie e edite
-//  SOMENTE este objeto. O resto renderiza automaticamente.
 // ═══════════════════════════════════════════════════════════════
-var P = JSON.parse('{"titulo": "Oráculo Azul", "energia": "Intuição · Clareza · Expansão da Consciência", "img": "img-produto-oraculoazul.jpg", "preco": "R$ 39,90", "peso": "Difusor pessoal · cerâmica fria · cordão de couro sintético regulável", "whatsapp": "https://wa.me/5591996324631?text=Olá%20Thais!%20Gostaria%20de%20adquirir%20o%20difusor%20Or%C3%A1culo%20Azul.", "heroIntro": "As águas mais profundas guardam as respostas que a mente superficial não encontra. O Oráculo Azul é um convite para mergulhar nesse campo sutil — onde a intuição fala mais alto que a lógica e a consciência se expande além do que os olhos alcançam.", "pqTitulo": "Para quem ouve algo dentro de si — e quer aprender a confiar", "pqTexto": "Você já sentiu que sabia a resposta antes de ter evidências. Que algo não estava certo antes de poder explicar por quê. Que uma direção te chamava sem motivo racional. Essa é a sua intuição. O Oráculo Azul foi criado para afinar esse canal.", "pqLista": ["Quem pratica tarô, oráculos ou outras ferramentas de leitura intuitiva", "Quem medita e quer aprofundar o estado de expansão da consciência", "Quem busca clareza em momentos de decisão importante", "Quem quer desenvolver a percepção energética e o campo sutil", "Quem sente que sua intuição existe mas ainda não aprendeu a confiar nela"], "atTitulo": "O que o Oráculo Azul abre e afina", "atCorpo": "<p>A intuição não é magia — é percepção que vai além dos cinco sentidos convencionais. E como qualquer capacidade, ela melhora com prática e com o ambiente certo.</p><p>O Oráculo Azul cria esse ambiente. Ele <em>acalma a mente analítica</em> — aquela que quer controlar, prever, calcular — e abre espaço para que o campo sutil se expresse. A fluidez das águas e a vastidão do céu que inspiram sua forma não são apenas estética: são vibração.</p><p>Use com o cordão durante uma leitura de tarô, ou <strong>deixe próximo durante a meditação</strong> — ele age como âncora para o estado de receptividade.</p>", "rTitulo": "Como trabalhar com o Oráculo Azul", "rIntro": "A intuição não responde a ordens — ela responde a convites. Este ritual é um convite.", "rSteps": [{"num": "I", "modo": "Crie o espaço oracular", "desc": "Organize sua mesa ou espaço de prática. Pingue 2 a 3 gotas do óleo escolhido no Oráculo Azul. Óleos mais sutis — como olíbano, camomila azul ou cumarú — abrem o canal sem sobrecarregar os sentidos."}, {"num": "II", "modo": "Formule sua pergunta", "desc": "Antes de pegar as cartas ou iniciar a meditação, segure o difusor e formule internamente a questão que busca responder. Seja específico, mas permaneça aberto. A intuição responde melhor às perguntas honestas."}, {"num": "III", "modo": "Receba sem julgar", "desc": "Durante a leitura ou meditação, deixe as impressões chegarem sem filtrar pela lógica de imediato. O Oráculo Azul acompanha esse estado de abertura — anote o que vier, mesmo que não faça sentido ainda."}], "intFrase": "Estou aberta ao que já sei. A clareza que busco já existe dentro de mim — e agora eu ouço.", "expTitulo": "O que se revela quando o canal está aberto", "expTexto": "A expansão da consciência não é sempre dramática. Às vezes ela chega como uma percepção mais fina, uma certeza calma:", "expItens": [{"ico": "💧", "nome": "Fluência", "desc": "As leituras e meditações fluem com menos esforço — menos bloqueio mental, mais receptividade."}, {"ico": "🔮", "nome": "Percepção expandida", "desc": "Você começa a notar coisas que antes passavam despercebidas — nos espaços, nas pessoas, em você mesma."}, {"ico": "✨", "nome": "Clareza", "desc": "A névoa da dúvida se dissipa. Não sempre com respostas prontas, mas com uma direção sentida."}, {"ico": "🌀", "nome": "Profundidade", "desc": "Meditações ficam mais profundas. O estado de expansão chega mais rápido e dura mais."}, {"ico": "🌙", "nome": "Sonhos reveladores", "desc": "O campo sutil aberto durante o dia continua trabalhando à noite — os sonhos tornam-se mais vívidos."}, {"ico": "🌿", "nome": "Confiança", "desc": "Você começa a confiar no que sente antes de poder explicar. E isso muda tudo."}], "cuidados": "<p>Cerâmica fria é resistente, mas delicada. Evite imergir em água. Limpe suavemente com pano seco ou levemente úmido ao trocar de óleo. Com o uso regular, o difusor absorve a energia das práticas e pode tornar-se cada vez mais potente como ferramenta ritual. Trate-o como o objeto sagrado que ele é.</p>", "ancTitulo": "O campo sutil sempre foi reconhecido na floresta", "ancCit": "Os encantados não se revelam a quem grita — aparecem para quem sabe escutar no silêncio das águas e no sussurro das folhas.", "ancTexto": "Na tradição amazônica, a percepção do campo energético e espiritual não é privilégio de poucos — é uma capacidade cultivada. Os pajés, as rezadeiras, os mestres das plantas aprenderam a ouvir o que a maioria ignora. O Oráculo Azul honra essa herança: a intuição não é dom, é prática.", "ctaTitulo": "Você já sabe mais do que imagina", "ctaTexto": "O Oráculo Azul não te dá respostas — te ajuda a ouvir as suas. Se você chegou até aqui, o canal já está se abrindo.", "outros": [{"nome": "Solo Estelar", "energia": "Fundação · Aterramento · Presença", "img": "img-produto-soloestelar.jpg", "href": "produto-solo-estelar.html"}, {"nome": "Semente da Noite", "energia": "Introspecção · Transformação · Descanso", "img": "img-produto-sementedanoite.jpg", "href": "produto-semente-da-noite.html"}, {"nome": "Prosperidade e Abundância", "energia": "Abertura de Caminhos · Fluxo", "img": "img-produto-prosperidade.jpg", "href": "produto-prosperidade.html"}, {"nome": "Limpeza Profunda", "energia": "Purificação e renovação", "img": "img-produto-limpeza.jpg", "href": "produto-limpeza.html"}]}');
+var P = {
+  titulo: "Oráculo Azul",
+  energia: "Intuição · Clareza · Expansão da Consciência",
+  img: "../imagens/produtos/img-produto-oraculoazul.jpg",
+  preco: "R$ 39,90",
+  peso: "Difusor pessoal · cerâmica fria · cordão de couro sintético regulável",
+  whatsapp: "#",
+  heroIntro: "As águas mais profundas guardam as respostas que a mente superficial não encontra. O Oráculo Azul é um convite para mergulhar nesse campo sutil — onde a intuição fala mais alto que a lógica e a consciência se expande além do que os olhos alcançam.",
+  pqTitulo: "Para quem ouve algo dentro de si — e quer aprender a confiar",
+  pqTexto: "Você já sentiu que sabia a resposta antes de ter evidências. Que algo não estava certo antes de poder explicar por quê. Que uma direção te chamava sem motivo racional. Essa é a sua intuição. O Oráculo Azul foi criado para afinar esse canal.",
+  pqLista: [
+    "Quem pratica tarô, oráculos ou outras ferramentas de leitura intuitiva",
+    "Quem medita e quer aprofundar o estado de expansão da consciência",
+    "Quem busca clareza em momentos de decisão importante",
+    "Quem quer desenvolver a percepção energética e o campo sutil",
+    "Quem sente que sua intuição existe mas ainda não aprendeu a confiar nela"
+  ],
+  atTitulo: "O que o Oráculo Azul abre e afina",
+  atCorpo: "<p>A intuição não é magia — é percepção que vai além dos cinco sentidos convencionais. E como qualquer capacidade, ela melhora com prática e com o ambiente certo.</p><p>O Oráculo Azul cria esse ambiente. Ele <em>acalma a mente analítica</em> — aquela que quer controlar, prever, calcular — e abre espaço para que o campo sutil se expresse. A fluidez das águas e a vastidão do céu que inspiram sua forma não são apenas estética: são vibração.</p><p>Use com o cordão durante uma leitura de tarô, ou <strong>deixe próximo durante a meditação</strong> — ele age como âncora para o estado de receptividade.</p>",
+  rTitulo: "Como trabalhar com o Oráculo Azul",
+  rIntro: "A intuição não responde a ordens — ela responde a convites. Este ritual é um convite.",
+  rSteps: [
+    { num:"I", modo:"Crie o espaço oracular", desc:"Organize sua mesa ou espaço de prática. Pingue 2 a 3 gotas do óleo escolhido no Oráculo Azul. Óleos mais sutis — como olíbano, camomila azul ou cumarú — abrem o canal sem sobrecarregar os sentidos." },
+    { num:"II", modo:"Formule sua pergunta", desc:"Antes de pegar as cartas ou iniciar a meditação, segure o difusor e formule internamente a questão que busca responder. Seja específico, mas permaneça aberto. A intuição responde melhor às perguntas honestas." },
+    { num:"III", modo:"Receba sem julgar", desc:"Durante a leitura ou meditação, deixe as impressões chegarem sem filtrar pela lógica de imediato. O Oráculo Azul acompanha esse estado de abertura — anote o que vier, mesmo que não faça sentido ainda." }
+  ],
+  intFrase: "Estou aberta ao que já sei. A clareza que busco já existe dentro de mim — e agora eu ouço.",
+  expTitulo: "O que se revela quando o canal está aberto",
+  expTexto: "A expansão da consciência não é sempre dramática. Às vezes ela chega como uma percepção mais fina, uma certeza calma:",
+  expItens: [
+    { ico:"💧", nome:"Fluência", desc:"As leituras e meditações fluem com menos esforço — menos bloqueio mental, mais receptividade." },
+    { ico:"🔮", nome:"Percepção expandida", desc:"Você começa a notar coisas que antes passavam despercebidas — nos espaços, nas pessoas, em você mesma." },
+    { ico:"✨", nome:"Clareza", desc:"A névoa da dúvida se dissipa. Não sempre com respostas prontas, mas com uma direção sentida." },
+    { ico:"🌀", nome:"Profundidade", desc:"Meditações ficam mais profundas. O estado de expansão chega mais rápido e dura mais." },
+    { ico:"🌙", nome:"Sonhos reveladores", desc:"O campo sutil aberto durante o dia continua trabalhando à noite — os sonhos tornam-se mais vívidos." },
+    { ico:"🌿", nome:"Confiança", desc:"Você começa a confiar no que sente antes de poder explicar. E isso muda tudo." }
+  ],
+  cuidados: "<p>Cerâmica fria é resistente, mas delicada. Evite imergir em água. Limpe suavemente com pano seco ou levemente úmido ao trocar de óleo. Com o uso regular, o difusor absorve a energia das práticas e pode tornar-se cada vez mais potente como ferramenta ritual. Trate-o como o objeto sagrado que ele é.</p>",
+  ancTitulo: "O campo sutil sempre foi reconhecido na floresta",
+  ancCit: "Os encantados não se revelam a quem grita — aparecem para quem sabe escutar no silêncio das águas e no sussurro das folhas.",
+  ancTexto: "Na tradição amazônica, a percepção do campo energético e espiritual não é privilégio de poucos — é uma capacidade cultivada. Os pajés, as rezadeiras, os mestres das plantas aprenderam a ouvir o que a maioria ignora. O Oráculo Azul honra essa herança: a intuição não é dom, é prática.",
+  ctaTitulo: "Esta peça única já foi vendida",
+  ctaTexto: "O Oráculo Azul foi uma peça única e já encontrou seu lar. Se você sentiu conexão com sua energia, novas peças podem surgir em breve. Fique atenta!",
+  outros: [
+    { nome:"Solo Estelar", energia:"Fundação · Aterramento · Presença", img:"../imagens/produtos/img-produto-soloestelar.jpg", href:"../produtos/produto-solo-estelar.html" },
+    { nome:"Semente da Noite", energia:"Introspecção · Transformação · Descanso", img:"../imagens/produtos/img-produto-sementedanoite.jpg", href:"../produtos/produto-semente-da-noite.html" },
+    { nome:"Prosperidade e Abundância", energia:"Abertura de Caminhos · Fluxo", img:"../imagens/produtos/img-produto-prosperidade.jpg", href:"../produtos/produto-prosperidade.html" },
+    { nome:"Limpeza Profunda", energia:"Purificação e renovação", img:"../imagens/produtos/img-produto-limpeza.jpg", href:"../produtos/produto-limpeza.html" }
+  ]
+};
 
-// ── RENDERIZAÇÃO (não editar) ────────────────────────────────
+// ── RENDERIZAÇÃO ────────────────────────────────────────────────
 function init() {
   document.title = P.titulo + " — Misticismo Verde";
   document.getElementById("heroTitulo").textContent  = P.titulo;
@@ -319,20 +376,16 @@ function init() {
   document.getElementById("prodImg").alt             = P.titulo;
   document.getElementById("preco").textContent       = P.preco;
   document.getElementById("precoDet").textContent    = P.peso;
-  document.getElementById("btnHero").href            = P.whatsapp;
-  document.getElementById("btnCta").href             = P.whatsapp;
 
-  // Para quem é
+
   document.getElementById("pqTitulo").textContent = P.pqTitulo;
   document.getElementById("pqTexto").textContent  = P.pqTexto;
   var lista = document.getElementById("pqLista");
   P.pqLista.forEach(function(t){ var li=document.createElement("li"); li.textContent=t; lista.appendChild(li); });
 
-  // Atuação
   document.getElementById("atTitulo").textContent = P.atTitulo;
   document.getElementById("atCorpo").innerHTML    = P.atCorpo;
 
-  // Ritual
   document.getElementById("rTitulo").textContent = P.rTitulo;
   document.getElementById("rIntro").textContent  = P.rIntro;
   var steps = document.getElementById("rSteps");
@@ -342,10 +395,8 @@ function init() {
     steps.appendChild(d);
   });
 
-  // Intenção
   document.getElementById("intFrase").textContent = '"'+P.intFrase+'"';
 
-  // Experiência
   document.getElementById("expTitulo").textContent = P.expTitulo;
   document.getElementById("expTexto").textContent  = P.expTexto;
   var eg=document.getElementById("expGrid");
@@ -355,19 +406,15 @@ function init() {
     eg.appendChild(d);
   });
 
-  // Cuidados
   document.getElementById("cuidBox").innerHTML = P.cuidados;
 
-  // Ancestral
   document.getElementById("ancTitulo").textContent = P.ancTitulo;
   document.getElementById("ancCit").textContent    = P.ancCit;
   document.getElementById("ancTexto").textContent  = P.ancTexto;
 
-  // CTA
   document.getElementById("ctaTitulo").textContent = P.ctaTitulo;
   document.getElementById("ctaTexto").textContent  = P.ctaTexto;
 
-  // Outros
   var og=document.getElementById("outrosGrid");
   P.outros.forEach(function(o){
     var a=document.createElement("a"); a.className="o-card"; a.href=o.href;
@@ -376,7 +423,6 @@ function init() {
   });
 }
 
-// Lightbox
 function abrirLb() {
   document.getElementById("lbImg").src = P.img;
   document.getElementById("lbCap").textContent = P.titulo+" · Misticismo Verde";
@@ -385,12 +431,10 @@ function abrirLb() {
 }
 function fecharLb() { document.getElementById("lbOv").classList.remove("open"); document.body.style.overflow=""; }
 
-// Nav
 window.addEventListener("scroll",function(){ document.getElementById("nav").classList.toggle("scrolled",window.scrollY>50); });
 document.getElementById("hamburger").addEventListener("click",function(){ document.getElementById("navLinks").classList.toggle("aberto"); });
 document.addEventListener("keydown",function(e){ if(e.key==="Escape") fecharLb(); });
 
-// Som
 var sb=document.getElementById("soundBtn"), audio=document.getElementById("florestAudio"), tocando=false;
 function fadeIn(){ audio.volume=0; var t=setInterval(function(){ audio.volume=Math.min(audio.volume+.025,.45); if(audio.volume>=.45)clearInterval(t); },80); }
 function fadeOut(cb){ var t=setInterval(function(){ audio.volume=Math.max(audio.volume-.03,0); if(audio.volume<=0){clearInterval(t);audio.pause();audio.currentTime=0;if(cb)cb();} },70); }

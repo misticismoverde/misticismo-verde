@@ -288,7 +288,7 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
 </div>
 
 <footer>
-  <div class="ft-logo">Misticismo Verde<span>Thais Maciel — Belém, Pará</span></div>
+  <div class="ft-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
   <p class="ft-copy">© 2025 Misticismo Verde · misticismoverde.com.br</p>
   <a href="#" class="ft-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Topo</a>
 </footer>
@@ -304,13 +304,11 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
 <script>
 // ═══════════════════════════════════════════════════════════════
 //  DADOS DO PRODUTO
-//  Para criar nova página: copie este arquivo, renomeie e edite
-//  SOMENTE este objeto. O resto renderiza automaticamente.
 // ═══════════════════════════════════════════════════════════════
 var P = {
   titulo:    "Sal 3 em 1 — Limpeza Profunda",
   energia:   "Purificação · Renovação · Leveza",
-  img:       "img-produto-limpeza.jpg",
+  img:       "../imagens/produtos/img-produto-limpeza.jpg",
   preco:     "R$ 20,00",
   peso:      "180g a 200g · banho · escalda-pés · defumação",
   whatsapp:  "https://wa.me/5591996324631?text=Olá%20Thais!%20Gostaria%20de%20adquirir%20o%20Sal%203%20em%201%20Limpeza%20Profunda.",
@@ -361,14 +359,14 @@ var P = {
   ctaTexto:  "Não precisa de um motivo específico para começar um ritual de limpeza. Às vezes, o sinal é exatamente esse: uma sensação de que chegou a hora. Se sentir que esse é o momento, permita-se viver essa experiência.",
 
   outros: [
-    { nome:"Proteção dos Caminhos",     energia:"Blindagem energética",  img:"img-produto-protecao.jpg",      href:"produto-protecao.html" },
-    { nome:"Prosperidade e Abundância", energia:"Fluxo de prosperidade", img:"img-produto-prosperidade.jpg",  href:"produto-prosperidade.html" },
-    { nome:"Força e Vitalidade",        energia:"Energia interior",      img:"img-produto-forca.jpg",         href:"produto-forca.html" },
-    { nome:"Amor-Próprio e Equilíbrio", energia:"Harmonia emocional",    img:"img-produto-amor.jpg",          href:"produto-amor.html" }
+    { nome:"Proteção dos Caminhos",     energia:"Blindagem energética",  img:"../imagens/produtos/img-produto-protecao.jpg",      href:"../produtos/produto-protecao.html" },
+    { nome:"Prosperidade e Abundância", energia:"Fluxo de prosperidade", img:"../imagens/produtos/img-produto-prosperidade.jpg",  href:"../produtos/produto-prosperidade.html" },
+    { nome:"Força e Vitalidade",        energia:"Energia interior",      img:"../imagens/produtos/img-produto-forca.jpg",         href:"../produtos/produto-forca.html" },
+    { nome:"Amor-Próprio e Equilíbrio", energia:"Harmonia emocional",    img:"../imagens/produtos/img-produto-amor.jpg",          href:"../produtos/produto-amor.html" }
   ]
 };
 
-// ── RENDERIZAÇÃO (não editar) ────────────────────────────────
+// ── RENDERIZAÇÃO ────────────────────────────────────────────────
 function init() {
   document.title = P.titulo + " — Misticismo Verde";
   document.getElementById("heroTitulo").textContent  = P.titulo;

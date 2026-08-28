@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Produto — Misticismo Verde</title>
+<title>Semente da Noite — Difusor em Cerâmica Fria | Misticismo Verde</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -93,7 +93,7 @@ nav.scrolled { background:rgba(5,15,7,.98); padding:12px 60px; border-bottom:1px
 .r-desc { font-size:.97rem; line-height:1.8; color:rgba(245,234,216,.66); font-weight:300; }
 
 /* Intenção */
-.intencao { background:linear-gradient(135deg,rgba(13,40,24,.92),rgba(42,90,38,.2)); border:1px solid rgba(201,168,76,.18); padding:44px 48px; text-align:center; position:relative; overflow:hidden; }
+.intencao { background:linear-gradient(135deg,rgba(13,40,24,.92),rgba(42,90,38,.2)); border:1px solid rgba(201,168,76,.18); padding:44px 48px; text-align:center; position:relative; overflow:hidden; margin:20px 0; }
 .intencao::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 80% 70% at 50% 0%,rgba(201,168,76,.04),transparent 60%); pointer-events:none; }
 .int-orn { font-size:.6rem; letter-spacing:.5em; text-transform:uppercase; color:rgba(201,168,76,.45); display:block; margin-bottom:18px; }
 .int-frase { font-family:'IM Fell English',serif; font-size:clamp(1.1rem,2.4vw,1.6rem); font-style:italic; color:var(--ds); line-height:1.65; position:relative; z-index:1; }
@@ -148,7 +148,6 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
 
 @keyframes fiu { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
 
-/* RESPONSIVO */
 @media(max-width:960px){
   nav { padding:15px 22px; }
   nav.scrolled { padding:10px 22px; }
@@ -199,7 +198,17 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
   </ul>
 </nav>
 
-<div class="hero">
+<!-- AVISO DE ESGOTADO -->
+<div style="background:rgba(200,50,50,0.08);border:1px solid rgba(200,50,50,0.2);padding:14px 24px;text-align:center;position:relative;z-index:2;margin:100px 60px 0 60px;border-radius:8px;">
+  <p style="color:#ff6b6b;font-family:'Cinzel Decorative',serif;font-size:0.75rem;letter-spacing:0.15em;margin:0;">
+    ⚠️ PEÇA ÚNICA — JÁ FOI VENDIDA
+  </p>
+  <p style="color:rgba(255,107,107,0.6);font-size:0.85rem;font-style:italic;margin:4px 0 0;">
+    Esta peça foi vendida, mas sua história e energia permanecem aqui.
+  </p>
+</div>
+
+<div class="hero" style="padding-top:20px;">
   <div class="hero-bg"></div>
   <div class="hero-grad"></div>
   <div class="hero-txt">
@@ -208,7 +217,7 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
     <p  class="hero-energia" id="heroEnergia"></p>
     <p  class="hero-intro"   id="heroIntro"></p>
     <div class="hero-acoes">
-      <a class="btn-comprar" id="btnHero" href="#" target="_blank">💬 Quero este produto</a>
+      <a class="btn-comprar" style="opacity:0.5;cursor:default;pointer-events:none;background:rgba(200,50,50,0.1);border-color:rgba(200,50,50,0.3);color:#ff6b6b;">💬 Produto Indisponível</a>
       <a class="btn-sec" href="../loja.html">← Ver todos os rituais</a>
     </div>
   </div>
@@ -220,8 +229,8 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
       <img class="prod-img" id="prodImg" src="" alt="">
     </div>
     <p class="img-hint">✦ &nbsp;toque para ampliar</p>
-    <p class="preco"    id="preco"></p>
-    <p class="preco-det" id="precoDet"></p>
+    <p class="preco" style="text-decoration:line-through;color:#ff6b6b;" id="preco"></p>
+    <p class="preco-det" id="precoDet" style="color:#ff6b6b;">⚠️ Indisponível · Peça única vendida</p>
   </div>
 </div>
 
@@ -273,7 +282,7 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
     <h2 class="cta-titulo" id="ctaTitulo"></h2>
     <p  class="cta-txt"    id="ctaTexto"></p>
     <div class="cta-acoes">
-      <a class="btn-comprar" id="btnCta" href="#" target="_blank">💬 Permitir esta experiência</a>
+      <a class="btn-comprar" style="opacity:0.5;cursor:default;pointer-events:none;background:rgba(200,50,50,0.1);border-color:rgba(200,50,50,0.3);color:#ff6b6b;">💬 Produto Indisponível</a>
       <a class="btn-sec" href="../contato.html">Falar com Thais</a>
     </div>
   </div>
@@ -288,7 +297,7 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
 </div>
 
 <footer>
-  <div class="ft-logo">Misticismo Verde<span>Thais Maciel — Belém, Pará</span></div>
+  <div class="ft-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
   <p class="ft-copy">© 2025 Misticismo Verde · misticismoverde.com.br</p>
   <a href="#" class="ft-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Topo</a>
 </footer>
@@ -304,12 +313,59 @@ footer { border-top:1px solid rgba(201,168,76,.08); padding:38px 60px; display:f
 <script>
 // ═══════════════════════════════════════════════════════════════
 //  DADOS DO PRODUTO
-//  Para criar nova página: copie este arquivo, renomeie e edite
-//  SOMENTE este objeto. O resto renderiza automaticamente.
 // ═══════════════════════════════════════════════════════════════
-var P = JSON.parse('{"titulo": "Semente da Noite", "energia": "Introspecção · Transformação · Descanso", "img": "img-produto-sementedanoite.jpg", "preco": "R$ 39,90", "peso": "Difusor pessoal · cerâmica fria · cordão de couro sintético regulável", "whatsapp": "https://wa.me/5591996324631?text=Olá%20Thais!%20Gostaria%20de%20adquirir%20o%20difusor%20Semente%20da%20Noite.", "heroIntro": "No silêncio que a floresta guarda após o pôr do sol existe um tipo especial de sabedoria. É o tempo da semente que aguarda sob a terra — imóvel, mas carregada de potencial. A Semente da Noite convida você a honrar esse espaço de recolhimento onde toda transformação verdadeira começa.", "pqTitulo": "Para quem sabe que o descanso também é prática espiritual", "pqTexto": "Você sente o peso do dia mesmo depois de fechar os olhos. A mente continua ativa, processando, planejando, repassando. O que você precisa não é apenas dormir — é aprender a soltar. A Semente da Noite foi criada para esse ritual de entrega.", "pqLista": ["Quem tem dificuldade para desacelerar ao fim do dia", "Quem pratica meditação e quer um aliado aromático para aprofundar o estado", "Quem está em processo de transformação interior e precisa de amparo", "Quem quer criar um ritual noturno de recolhimento e cuidado", "Quem busca qualidade de descanso e regeneração durante o sono"], "atTitulo": "O que a Semente da Noite dissolve e protege", "atCorpo": "<p>A noite tem função. Não é apenas ausência de dia — é o tempo em que o que foi vivido se integra, em que o que foi sofrido pode ser processado, em que o que precisa mudar encontra espaço para começar a se mover.</p><p>A Semente da Noite trabalha como <em>portal de transição</em>: ela sinaliza para o corpo e para o campo energético que é seguro soltar. Que a guarda pode ser baixada. Que a transformação pode acontecer no silêncio.</p><p>Com o cordão regulável, ela pode ser usada durante a meditação ou <strong>deixada na cabeceira</strong> para acompanhar o sono.</p>", "rTitulo": "O ritual de encerramento do dia", "rIntro": "A noite pede um gesto de entrega. Não de rendição — de confiança. Este ritual é uma forma de dizer ao corpo: pode soltar agora.", "rSteps": [{"num": "I", "modo": "Prepare o ambiente", "desc": "Diminua as luzes. Acenda uma vela se quiser. Pingue 2 a 3 gotas do óleo escolhido na Semente da Noite — óleos noturnos como lavanda, sândalo ou olíbano amplificam a experiência."}, {"num": "II", "modo": "Segure e respire", "desc": "Com o difusor nas mãos ou ao redor do pescoço, feche os olhos e respire lentamente três vezes. A cada expiração, deixe um peso ir embora. O aroma faz o caminho."}, {"num": "III", "modo": "Durma ou medite", "desc": "Deixe o difusor na cabeceira ou use como colar durante a meditação noturna. A liberação lenta do aroma continua trabalhando enquanto você descansa — mesmo quando a consciência já foi."}], "intFrase": "Entrego o dia com gratidão. No silêncio desta noite, me renovo. Amanhã será diferente.", "expTitulo": "O que nasce depois do recolhimento verdadeiro", "expTexto": "A transformação que acontece à noite raramente é barulhenta. Ela se revela de manhã, quando algo sutilmente mudou:", "expItens": [{"ico": "🌙", "nome": "Leveza", "desc": "Acordar sem o peso do dia anterior. O corpo descansou de verdade, não apenas parou."}, {"ico": "💧", "nome": "Clareza emocional", "desc": "O que parecia enorme antes de dormir encontra proporção no amanhecer."}, {"ico": "🌱", "nome": "Insights", "desc": "A noite processa o que o dia não conseguiu. Soluções chegam como presentes ao acordar."}, {"ico": "🔮", "nome": "Sonhos vivos", "desc": "O campo onírico se aprofunda quando o sistema nervoso entra em descanso real."}, {"ico": "🌿", "nome": "Renovação", "desc": "A sensação de que um ciclo foi concluído. De que é possível começar de novo."}, {"ico": "🛡️", "nome": "Proteção", "desc": "A noite bem cuidada é também um escudo — o campo energético se reconstitui durante o descanso."}], "cuidados": "<p>Cerâmica fria é resistente, mas delicada. Evite imergir em água. Para trocar de óleo, limpe suavemente com pano seco ou levemente úmido. Não coloque na cabeceira de crianças pequenas. O cordão de couro sintético é regulável — para uso noturno como colar, ajuste de forma que fique confortável ao deitar.</p>", "ancTitulo": "A floresta ensina o que a noite significa", "ancCit": "Na floresta, o escuro não é ausência de luz. É o tempo em que a terra respira, as sementes germinam e o invisível trabalha.", "ancTexto": "Nas comunidades ribeirinhas da Amazônia, a noite nunca foi temida — era respeitada. Era o tempo dos encantados, dos sonhos que ensinam, da floresta que fala de outro jeito. A Semente da Noite carrega esse ensinamento: honrar o escuro é parte de crescer.", "ctaTitulo": "Algumas noites pedem um ritual", "ctaTexto": "Se você chegou até aqui, talvez seu corpo já esteja pedindo permissão para descansar de verdade. A Semente da Noite está aqui para isso.", "outros": [{"nome": "Solo Estelar", "energia": "Fundação · Aterramento · Presença", "img": "img-produto-soloestelar.jpg", "href": "produto-solo-estelar.html"}, {"nome": "Oráculo Azul", "energia": "Intuição · Clareza · Expansão", "img": "img-produto-oraculoazul.jpg", "href": "produto-oraculo-azul.html"}, {"nome": "Prosperidade e Abundância", "energia": "Abertura de Caminhos · Fluxo", "img": "img-produto-prosperidade.jpg", "href": "produto-prosperidade.html"}, {"nome": "Amor-Próprio e Equilíbrio", "energia": "Harmonia emocional", "img": "img-produto-amor.jpg", "href": "produto-amor.html"}]}');
+var P = {
+  titulo: "Semente da Noite",
+  energia: "Introspecção · Transformação · Descanso",
+  img: "../imagens/produtos/img-produto-sementedanoite.jpg",
+  preco: "R$ 39,90",
+  peso: "Difusor pessoal · cerâmica fria · cordão de couro sintético regulável",
+  whatsapp: "#",
+  heroIntro: "No silêncio que a floresta guarda após o pôr do sol existe um tipo especial de sabedoria. É o tempo da semente que aguarda sob a terra — imóvel, mas carregada de potencial. A Semente da Noite convida você a honrar esse espaço de recolhimento onde toda transformação verdadeira começa.",
+  pqTitulo: "Para quem sabe que o descanso também é prática espiritual",
+  pqTexto: "Você sente o peso do dia mesmo depois de fechar os olhos. A mente continua ativa, processando, planejando, repassando. O que você precisa não é apenas dormir — é aprender a soltar. A Semente da Noite foi criada para esse ritual de entrega.",
+  pqLista: [
+    "Quem tem dificuldade para desacelerar ao fim do dia",
+    "Quem pratica meditação e quer um aliado aromático para aprofundar o estado",
+    "Quem está em processo de transformação interior e precisa de amparo",
+    "Quem quer criar um ritual noturno de recolhimento e cuidado",
+    "Quem busca qualidade de descanso e regeneração durante o sono"
+  ],
+  atTitulo: "O que a Semente da Noite dissolve e protege",
+  atCorpo: "<p>A noite tem função. Não é apenas ausência de dia — é o tempo em que o que foi vivido se integra, em que o que foi sofrido pode ser processado, em que o que precisa mudar encontra espaço para começar a se mover.</p><p>A Semente da Noite trabalha como <em>portal de transição</em>: ela sinaliza para o corpo e para o campo energético que é seguro soltar. Que a guarda pode ser baixada. Que a transformação pode acontecer no silêncio.</p><p>Com o cordão regulável, ela pode ser usada durante a meditação ou <strong>deixada na cabeceira</strong> para acompanhar o sono.</p>",
+  rTitulo: "O ritual de encerramento do dia",
+  rIntro: "A noite pede um gesto de entrega. Não de rendição — de confiança. Este ritual é uma forma de dizer ao corpo: pode soltar agora.",
+  rSteps: [
+    { num:"I", modo:"Prepare o ambiente", desc:"Diminua as luzes. Acenda uma vela se quiser. Pingue 2 a 3 gotas do óleo escolhido na Semente da Noite — óleos noturnos como lavanda, sândalo ou olíbano amplificam a experiência." },
+    { num:"II", modo:"Segure e respire", desc:"Com o difusor nas mãos ou ao redor do pescoço, feche os olhos e respire lentamente três vezes. A cada expiração, deixe um peso ir embora. O aroma faz o caminho." },
+    { num:"III", modo:"Durma ou medite", desc:"Deixe o difusor na cabeceira ou use como colar durante a meditação noturna. A liberação lenta do aroma continua trabalhando enquanto você descansa — mesmo quando a consciência já foi." }
+  ],
+  intFrase: "Entrego o dia com gratidão. No silêncio desta noite, me renovo. Amanhã será diferente.",
+  expTitulo: "O que nasce depois do recolhimento verdadeiro",
+  expTexto: "A transformação que acontece à noite raramente é barulhenta. Ela se revela de manhã, quando algo sutilmente mudou:",
+  expItens: [
+    { ico:"🌙", nome:"Leveza", desc:"Acordar sem o peso do dia anterior. O corpo descansou de verdade, não apenas parou." },
+    { ico:"💧", nome:"Clareza emocional", desc:"O que parecia enorme antes de dormir encontra proporção no amanhecer." },
+    { ico:"🌱", nome:"Insights", desc:"A noite processa o que o dia não conseguiu. Soluções chegam como presentes ao acordar." },
+    { ico:"🔮", nome:"Sonhos vivos", desc:"O campo onírico se aprofunda quando o sistema nervoso entra em descanso real." },
+    { ico:"🌿", nome:"Renovação", desc:"A sensação de que um ciclo foi concluído. De que é possível começar de novo." },
+    { ico:"🛡️", nome:"Proteção", desc:"A noite bem cuidada é também um escudo — o campo energético se reconstitui durante o descanso." }
+  ],
+  cuidados: "<p>Cerâmica fria é resistente, mas delicada. Evite imergir em água. Para trocar de óleo, limpe suavemente com pano seco ou levemente úmido. Não coloque na cabeceira de crianças pequenas. O cordão de couro sintético é regulável — para uso noturno como colar, ajuste de forma que fique confortável ao deitar.</p>",
+  ancTitulo: "A floresta ensina o que a noite significa",
+  ancCit: "Na floresta, o escuro não é ausência de luz. É o tempo em que a terra respira, as sementes germinam e o invisível trabalha.",
+  ancTexto: "Nas comunidades ribeirinhas da Amazônia, a noite nunca foi temida — era respeitada. Era o tempo dos encantados, dos sonhos que ensinam, da floresta que fala de outro jeito. A Semente da Noite carrega esse ensinamento: honrar o escuro é parte de crescer.",
+  ctaTitulo: "Esta peça única já foi vendida",
+  ctaTexto: "A Semente da Noite foi uma peça única e já encontrou seu lar. Se você sentiu conexão com sua energia, novas peças podem surgir em breve. Fique atenta!",
+  outros: [
+    { nome:"Solo Estelar", energia:"Fundação · Aterramento · Presença", img:"../imagens/produtos/img-produto-soloestelar.jpg", href:"../produtos/produto-solo-estelar.html" },
+    { nome:"Oráculo Azul", energia:"Intuição · Clareza · Expansão", img:"../imagens/produtos/img-produto-oraculoazul.jpg", href:"../produtos/produto-oraculo-azul.html" },
+    { nome:"Prosperidade e Abundância", energia:"Abertura de Caminhos · Fluxo", img:"../imagens/produtos/img-produto-prosperidade.jpg", href:"../produtos/produto-prosperidade.html" },
+    { nome:"Amor-Próprio e Equilíbrio", energia:"Harmonia emocional", img:"../imagens/produtos/img-produto-amor.jpg", href:"../produtos/produto-amor.html" }
+  ]
+};
 
-// ── RENDERIZAÇÃO (não editar) ────────────────────────────────
+// ── RENDERIZAÇÃO ────────────────────────────────────────────────
 function init() {
   document.title = P.titulo + " — Misticismo Verde";
   document.getElementById("heroTitulo").textContent  = P.titulo;
@@ -319,8 +375,7 @@ function init() {
   document.getElementById("prodImg").alt             = P.titulo;
   document.getElementById("preco").textContent       = P.preco;
   document.getElementById("precoDet").textContent    = P.peso;
-  document.getElementById("btnHero").href            = P.whatsapp;
-  document.getElementById("btnCta").href             = P.whatsapp;
+
 
   // Para quem é
   document.getElementById("pqTitulo").textContent = P.pqTitulo;

@@ -42,6 +42,44 @@
 .prod-btn:hover{color:#c9a84c;border-color:#c9a84c;}
 .prod-em-breve{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(13,40,24,0.6),rgba(42,90,38,0.15));border:1px dashed rgba(201,168,76,0.18);min-height:280px;cursor:default;}
 
+/* ── PRODUTO ESGOTADO ── */
+.produto-card.esgotado {
+  opacity: 0.85;
+}
+.produto-card.esgotado .prod-badge {
+  background: rgba(200, 50, 50, 0.15);
+  border-color: rgba(200, 50, 50, 0.4);
+  color: #ff6b6b;
+}
+.produto-card.esgotado .prod-img {
+  filter: brightness(0.65) saturate(0.5);
+}
+.produto-card.esgotado .prod-preco {
+  color: #ff6b6b;
+  text-decoration: line-through;
+}
+.produto-card.esgotado .prod-preco-indisponivel {
+  color: rgba(255,107,107,0.7);
+  font-size: 0.8rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+.produto-card.esgotado .prod-btn {
+  background: rgba(200, 50, 50, 0.08);
+  border-color: rgba(200, 50, 50, 0.25);
+  color: rgba(255, 107, 107, 0.7);
+}
+.produto-card.esgotado .prod-btn:hover {
+  background: rgba(200, 50, 50, 0.08);
+  color: rgba(255, 107, 107, 0.7);
+  border-color: rgba(200, 50, 50, 0.25);
+  transform: none;
+}
+.produto-card.esgotado:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,107,107,0.3);
+}
+
 .modal-tag{font-size:0.62rem;letter-spacing:0.38em;text-transform:uppercase;color:#c9a84c;margin-bottom:14px;}
 .modal-titulo{font-family:'Cinzel Decorative',serif;font-size:1.6rem;color:#f5ead8;margin-bottom:20px;line-height:1.2;}
 .modal-desc{font-size:1rem;font-style:italic;color:rgba(245,234,216,0.65);line-height:1.8;font-weight:300;}
@@ -52,6 +90,31 @@
 .modal-sec li{margin-bottom:5px;}
 .modal-cta{margin-top:32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
 .modal-preco{font-family:'Cinzel Decorative',serif;font-size:1.4rem;color:#c9a84c;}
+
+/* ── BOTÃO DE SOM ── */
+.sound-btn {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 9999;
+  background: rgba(13,40,24,0.88);
+  border: 1px solid rgba(201,168,76,0.22);
+  color: #c9a84c;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.sound-btn:hover {
+  border-color: #c9a84c;
+  transform: scale(1.08);
+}
 
 @media(max-width:900px){
   .produtos-grid{grid-template-columns:1fr;padding:0 18px 80px;}
@@ -165,16 +228,14 @@ var PRODUTOS = [
     desc:"Difusor artesanal para aterramento, equilíbrio e presença plena. Peça única.", preco:"R$ 39,90",
     tag:"✨ Equilíbrio · Presença · Aterramento", modalDesc:"Difusor pessoal artesanal em cerâmica fria focado em equilíbrio e presença. Representa a conexão entre a força da terra e o brilho do cosmos.",
     secs:{"Elemento":"Terra & Cosmos — a ancoragem entre o solo e o estelar","Propósito":"Aterramento, foco, presença e estabilidade interior","Material":"Cerâmica fria moldada à mão","Uso ideal":"Ambientes de trabalho, estudo, meditação","Óleos Sugeridos":"Copaíba, Capim-Limão, Vetiver, Cedro, Priprioca","Preço":"R$ 39,90 · Difusor pessoal · Peça única"}},
-  {id:"semente-da-noite", categoria:"difusores", href:"produtos/produto-semente-da-noite.html", img:"imagens/produtos/img-produto-sementedanoite.jpg",
-    badge:"Coleção Alquimia da Floresta · Peça Única", intencao:"🌙 Proteção e Introspecção", nome:"Semente da Noite — Difusor em Cerâmica Fria",
-    desc:"Difusor artesanal para proteção espiritual, introspecção e descanso reparador.", preco:"R$ 39,90",
-    tag:"🌙 Proteção · Introspecção · Descanso", modalDesc:"Difusor pessoal artesanal em cerâmica fria focado em proteção e introspecção. Inspirado no mistério das florestas sob o luar.",
-    secs:{"Elemento":"Noite & Terra — o silêncio que precede o renascimento","Propósito":"Proteção, introspecção e descanso profundo","Material":"Cerâmica fria com formas orgânicas","Uso ideal":"Rituais noturnos, meditação, momento de dormir","Óleos Sugeridos":"Breu Branco, Lavanda, Cedro, Camomila","Preço":"R$ 39,90 · Difusor pessoal · Peça única"}},
-  {id:"oraculo-azul", categoria:"difusores", href:"produtos/produto-oraculo-azul.html", img:"imagens/produtos/img-produto-oraculoazul.jpg",
-    badge:"Coleção Alquimia da Floresta · Peça Única", intencao:"👁️ Foco e Intuição", nome:"Oráculo Azul — Difusor em Cerâmica Fria",
-    desc:"Difusor artesanal para clareza mental, intuição e expansão da consciência.", preco:"R$ 39,90",
-    tag:"👁️ Foco · Intuição · Clareza Mental", modalDesc:"Difusor pessoal artesanal em cerâmica fria focado em foco e intuição. Inspirado na vastidão do azul cósmico.",
-    secs:{"Elemento":"Água & Ar — a fluidez das águas e a vastidão do céu","Propósito":"Foco, intuição e clareza mental","Material":"Cerâmica fria com pintura artesanal","Uso ideal":"Leitura de tarô, oráculos, meditação ativa","Óleos Sugeridos":"Alecrim, Hortelã-Pimenta, Camomila Azul, Olíbano","Preço":"R$ 39,90 · Difusor pessoal · Peça única"}},
+  {id:"semente-da-noite", categoria:"difusores", esgotado:true, href:"produtos/produto-semente-da-noite.html", img:"imagens/produtos/img-produto-sementedanoite.jpg",
+    badge:"ESGOTADO", intencao:"🌙 Proteção e Introspecção", nome:"Semente da Noite — Difusor em Cerâmica Fria",
+    desc:"Peça única — já foi vendida. Conheça sua história e energia.", preco:"R$ 39,90",
+    tag:"", modalDesc:"", secs:{}},
+  {id:"oraculo-azul", categoria:"difusores", esgotado:true, href:"produtos/produto-oraculo-azul.html", img:"imagens/produtos/img-produto-oraculoazul.jpg",
+    badge:"ESGOTADO", intencao:"👁️ Foco e Intuição", nome:"Oráculo Azul — Difusor em Cerâmica Fria",
+    desc:"Peça única — já foi vendida. Conheça sua história e energia.", preco:"R$ 39,90",
+    tag:"", modalDesc:"", secs:{}},
   {id:"difusor", categoria:"difusores", href:"produtos/produto-difusor.html", img:"imagens/produtos/img-produto-difusor-1.jpg",
     badge:"Pingente Cerâmico Artesanal", intencao:"🌸 Equilíbrio · Presença", nome:"Difusor Pessoal de Aromaterapia",
     desc:"Pingente de aromaterapia em cerâmica artesanal. Presença, bem-estar e conexão com o poder das plantas.", preco:"R$ 39,90",
@@ -191,10 +252,18 @@ function renderProdutos() {
   var html = "";
   PRODUTOS.forEach(function(p) {
     var isArtigo = p.tag === "";
-    html += '<a class="produto-card" href="' + p.href + '" data-categoria="' + (p.categoria||"outros") + '">' +
-      '<div class="prod-img-wrap"><img src="' + p.img + '" class="prod-img" alt="' + p.nome + '"><div class="prod-overlay"></div><span class="prod-badge">' + p.badge + '</span></div>' +
+    var isEsgotado = p.esgotado === true;
+    var classeExtra = isEsgotado ? 'esgotado' : '';
+    var hrefLink = p.href;
+    var badgeText = isEsgotado ? 'ESGOTADO' : p.badge;
+    var precoText = isEsgotado ? 'R$ ' + p.preco.replace('R$ ', '') : p.preco;
+    var precoIndisponivel = isEsgotado ? ' <span class="prod-preco-indisponivel">· Indisponível</span>' : '';
+    var btnText = isEsgotado ? 'Ver detalhes' : (isArtigo ? 'Ler' : 'Ver Detalhes');
+    
+    html += '<a class="produto-card ' + classeExtra + '" href="' + hrefLink + '" data-categoria="' + (p.categoria||"outros") + '">' +
+      '<div class="prod-img-wrap"><img src="' + p.img + '" class="prod-img" alt="' + p.nome + '"><div class="prod-overlay"></div><span class="prod-badge">' + badgeText + '</span></div>' +
       '<div class="prod-info"><div class="prod-intencao">' + p.intencao + '</div><h3 class="prod-nome">' + p.nome + '</h3><p class="prod-desc">' + p.desc + '</p>' +
-      '<div class="prod-footer"><span class="prod-preco">' + p.preco + '</span><span class="prod-btn">' + (isArtigo ? 'Ler' : 'Ver Detalhes') + '</span></div></div></a>';
+      '<div class="prod-footer"><span class="prod-preco">' + precoText + precoIndisponivel + '</span><span class="prod-btn">' + btnText + '</span></div></div></a>';
   });
   html += '<div class="prod-em-breve" data-categoria="todos"><div style="text-align:center;padding:36px;"><div style="font-size:1.8rem;margin-bottom:14px;opacity:0.3;">✦</div><p style="font-family:\'Cinzel Decorative\',serif;font-size:0.78rem;color:rgba(201,168,76,0.4);letter-spacing:0.1em;line-height:1.7;">Novos rituais<br>em breve</p></div></div>';
   grid.innerHTML = html;
