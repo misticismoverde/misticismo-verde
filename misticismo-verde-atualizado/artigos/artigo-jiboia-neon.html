@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiboia Neon: a planta que purifica o ar e renova as energias do lar | Misticismo Verde</title>
+  <meta name="description" content="Descubra os benefícios da Jiboia Neon: purificação do ar, renovação energética, facilidade de cultivo e como ela transforma ambientes estagnados em espaços vivos." />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --verde-fundo: #050f07;
+      --verde-escuro: #0a1a0f;
+      --verde-medio: #0d2818;
+      --verde-musgo: #1a3d1f;
+      --verde-claro: #2d5a27;
+      --dourado: #c9a84c;
+      --dourado-claro: #e8c96a;
+      --dourado-suave: #f0dfa0;
+      --creme: #f5ead8;
+      --creme-suave: rgba(245,234,216,0.75);
+      --creme-fraco: rgba(245,234,216,0.45);
+      --sombra: 0 20px 60px rgba(0,0,0,0.45);
+      --borda: 1px solid rgba(201,168,76,0.18);
+    }
+
+    body {
+      background: linear-gradient(to bottom, var(--verde-fundo), var(--verde-escuro));
+      color: var(--creme);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to bottom, rgba(5,15,7,0.96), rgba(5,15,7,0.45), transparent);
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-logo {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 0.95rem;
+      color: var(--dourado);
+      text-decoration: none;
+      letter-spacing: 0.12em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo svg { width: 26px; height: 26px; }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--creme-suave);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover { color: var(--dourado); }
+
+    .nav-cta {
+      border: 1px solid var(--dourado);
+      color: var(--dourado) !important;
+      padding: 8px 18px;
+    }
+
+    .hero {
+      min-height: 86vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 140px 24px 90px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(5,15,7,0.35), rgba(5,15,7,0.55) 35%, rgba(5,15,7,0.9) 78%, var(--verde-fundo) 100%),
+        url('../imagens/produtos/img-produto-jiboianeon.jpg') center center / cover no-repeat;
+      filter: brightness(0.35) saturate(0.95);
+      transform: scale(1.03);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(201,168,76,0.08), transparent 55%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 920px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 0.42em;
+      font-size: 0.68rem;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: 1.22;
+      color: var(--creme);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span { color: var(--dourado-suave); }
+
+    .hero-sub {
+      max-width: 760px;
+      margin: 0 auto 26px;
+      color: rgba(245,234,216,0.82);
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      line-height: 1.8;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .hero-meta {
+      color: rgba(245,234,216,0.45);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .main-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+
+    .intro-card {
+      margin: -50px auto 70px;
+      position: relative;
+      z-index: 3;
+      max-width: 980px;
+      padding: 34px 34px;
+      background: linear-gradient(135deg, rgba(13,40,24,0.95), rgba(10,26,15,0.92));
+      border: var(--borda);
+      box-shadow: var(--sombra);
+    }
+
+    .intro-card p {
+      font-size: 1.12rem;
+      line-height: 1.95;
+      color: rgba(245,234,216,0.8);
+      font-weight: 300;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 760px) minmax(260px, 320px);
+      gap: 42px;
+      align-items: start;
+    }
+
+    .article { min-width: 0; }
+
+    .section {
+      margin-bottom: 56px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      font-size: 0.66rem;
+    }
+
+    .section h2 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(1.25rem, 3vw, 1.95rem);
+      line-height: 1.35;
+      color: var(--creme);
+      margin-bottom: 18px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: rgba(245,234,216,0.78);
+      font-weight: 300;
+      margin-bottom: 18px;
+    }
+
+    .destaque {
+      font-family: 'IM Fell English', serif;
+      font-size: 1.35rem !important;
+      font-style: italic;
+      color: var(--dourado-suave) !important;
+      line-height: 1.75 !important;
+      border-left: 2px solid rgba(201,168,76,0.35);
+      padding-left: 22px;
+      margin: 24px 0 30px !important;
+    }
+
+    .image-block {
+      margin: 34px 0 40px;
+      background: linear-gradient(135deg, rgba(13,40,24,0.82), rgba(10,26,15,0.72));
+      border: var(--borda);
+      padding: 16px;
+    }
+
+    .image-block img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      filter: brightness(0.88) saturate(1.05);
+    }
+
+    .image-block figcaption {
+      margin-top: 12px;
+      color: rgba(245,234,216,0.5);
+      font-size: 0.92rem;
+      font-style: italic;
+      line-height: 1.7;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .side-card {
+      background: linear-gradient(135deg, rgba(13,40,24,0.88), rgba(10,26,15,0.88));
+      border: var(--borda);
+      padding: 26px 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.28);
+    }
+
+    .side-card h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      color: var(--dourado);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .side-card p,
+    .side-card li {
+      color: rgba(245,234,216,0.7);
+      line-height: 1.8;
+      font-size: 0.96rem;
+      font-weight: 300;
+    }
+
+    .side-card ul {
+      padding-left: 18px;
+    }
+
+    .side-card li {
+      margin-bottom: 8px;
+    }
+
+    .btn-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .btn-main,
+    .btn-sec {
+      display: inline-block;
+      text-decoration: none;
+      padding: 13px 24px;
+      font-size: 0.76rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      transition: all 0.28s ease;
+    }
+
+    .btn-main {
+      border: 1px solid var(--dourado);
+      color: var(--dourado);
+    }
+
+    .btn-main:hover {
+      background: var(--dourado);
+      color: var(--verde-fundo);
+    }
+
+    .btn-sec {
+      border: 1px solid rgba(245,234,216,0.15);
+      color: rgba(245,234,216,0.7);
+    }
+
+    .btn-sec:hover {
+      border-color: rgba(201,168,76,0.4);
+      color: var(--dourado);
+      background: rgba(201,168,76,0.05);
+    }
+
+    .produto-final {
+      margin-top: 26px;
+      padding: 30px 26px;
+      border: 1px solid rgba(201,168,76,0.24);
+      background: linear-gradient(135deg, rgba(13,40,24,0.92), rgba(10,26,15,0.92));
+    }
+
+    .produto-final .label {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      font-size: 0.64rem;
+    }
+
+    .produto-final h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.2rem;
+      color: var(--creme);
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .produto-final p {
+      font-size: 1.02rem;
+      color: rgba(245,234,216,0.76);
+      line-height: 1.9;
+      font-weight: 300;
+      margin-bottom: 18px;
+    }
+
+    .assinatura {
+      margin-top: 34px;
+      font-family: 'Cinzel Decorative', serif;
+      color: var(--dourado);
+      font-size: 0.95rem;
+    }
+
+    .assinatura span {
+      display: block;
+      margin-top: 5px;
+      font-family: 'Cormorant Garamond', serif;
+      color: rgba(201,168,76,0.45);
+      font-size: 0.76rem;
+      font-style: italic;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .ritual-strip {
+      margin: 70px 0 0;
+      padding: 90px 24px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.08);
+      border-bottom: 1px solid rgba(201,168,76,0.08);
+    }
+
+    .ritual-strip::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(5,15,7,0.88), rgba(5,15,7,0.78)),
+        url('../imagens/produtos/img-produto-jiboianeon.jpg') center / cover no-repeat;
+      filter: brightness(0.3) saturate(0.9);
+    }
+
+    .ritual-strip .inner {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .ritual-strip h2 {
+      font-family: 'IM Fell English', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-style: italic;
+      color: var(--dourado-suave);
+      line-height: 1.45;
+      margin-bottom: 18px;
+    }
+
+    .ritual-strip p {
+      color: rgba(245,234,216,0.7);
+      font-size: 1.06rem;
+      line-height: 1.85;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      padding: 36px 24px 50px;
+      text-align: center;
+      color: rgba(245,234,216,0.3);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 980px) {
+      nav {
+        padding: 16px 18px;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .hero {
+        padding-top: 180px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      .hero-sub,
+      .section p { font-size: 1rem; }
+      .intro-card { padding: 24px 20px; }
+      .section h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        <path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+        <path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        <path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+      Misticismo Verde
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="../artigos.html">Sabedoria</a></li>
+      <li><a href="../biblioteca.html">Biblioteca Viva</a></li>
+      <li><a href="../produtos/produto-jiboianeon.html" class="nav-cta">Ver a Jiboia Neon</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">✦ Plantas · Purificação · Energia ✦</span>
+      <h1>Jiboia Neon: <span>a planta que purifica o ar e renova as energias do lar</span></h1>
+      <p class="hero-sub">
+        Com suas folhas em amarelo-limão vibrante, a Jiboia Neon é muito mais que uma planta ornamental — ela é uma guardiã silenciosa que transforma o ambiente, purifica o ar e traz movimento onde há estagnação.
+      </p>
+      <div class="hero-meta">Por Misticismo Verde · Plantas · Energia do lar</div>
+    </div>
+  </section>
+
+  <main class="main-wrap">
+    <section class="intro-card">
+      <p>
+        Você já entrou em um ambiente e sentiu o ar pesado? Ou, ao contrário, já sentiu que um espaço parecia respirar sozinho? As plantas têm esse poder: elas não apenas decoram — elas transformam a qualidade do ar, da luz e até da energia que circula. A Jiboia Neon é uma das plantas que faz isso com maestria. Suas folhas vibrantes e seu crescimento vigoroso trazem movimento, cor e vitalidade para qualquer espaço. Mas seus benefícios vão muito além da estética.
+      </p>
+    </section>
+
+    <section class="article-grid">
+      <article class="article">
+
+        <div class="section">
+          <span class="section-tag">✦ Purificação do ar ✦</span>
+          <h2>Uma das plantas mais eficientes para limpar o ar</h2>
+          <p>
+            A Jiboia Neon é reconhecida cientificamente como uma das plantas mais eficientes para purificar o ar. Em um famoso estudo da NASA, a <em>Epipremnum aureum</em> (nome científico da Jiboia) foi listada entre as espécies com maior capacidade de remover toxinas como formaldeído, benzeno e monóxido de carbono do ambiente.
+          </p>
+          <p>
+            Isso significa que, além de embelezar, ela trabalha silenciosamente para melhorar a qualidade do ar que você respira — especialmente em ambientes fechados, com pouca ventilação ou com grande circulação de pessoas.
+          </p>
+          <p class="destaque">
+            “A Jiboia Neon não apenas enfeita. Ela respira por você, purifica o que você inspira e devolve ao ambiente a leveza que o dia a dia vai roubando.”
+          </p>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ Energia do ambiente ✦</span>
+          <h2>Renovação e movimento onde há estagnação</h2>
+          <p>
+            No campo energético, a Jiboia é conhecida como uma planta de <strong>absorção e transmutação</strong>. Ela não apenas neutraliza energias pesadas — ela as processa, da mesma forma que faz com as toxinas do ar. Por isso, é especialmente indicada para ambientes com muita circulação de pessoas, conflitos emocionais ou sensação de estagnação.
+          </p>
+          <p>
+            Se você sente que um cômodo da sua casa está "parado" ou pesado, a Jiboia Neon pode ser a aliada que faltava. Ela traz movimento, renovação e estimula a criatividade e o fluxo de novas ideias.
+          </p>
+        </div>
+
+        <figure class="image-block">
+          <img src="../imagens/produtos/img-produto-jiboianeon.jpg" alt="Jiboia Neon em vaso suspenso" />
+          <figcaption>
+            A Jiboia Neon é perfeita para vasos suspensos, onde seus ramos criam uma cascata de cor e vitalidade.
+          </figcaption>
+        </figure>
+
+        <div class="section">
+          <span class="section-tag">✦ Cuidados no clima do Norte ✦</span>
+          <h2>Como cultivar sua Jiboia Neon em Belém e no Pará</h2>
+          <p>
+            Uma das vantagens da Jiboia Neon é sua adaptabilidade. No clima quente e úmido da Amazônia, ela se sente em casa. Mas alguns cuidados são essenciais para que ela mantenha sua cor vibrante e sua saúde.
+          </p>
+          <p>
+            <strong>Rega:</strong> no clima paraense, o maior erro é regar demais. A alta umidade do ar já fornece boa parte da hidratação que a planta precisa. Regue apenas quando o topo do solo estiver seco — a cada 4 a 6 dias no verão, e a cada 7 a 10 dias no inverno amazônico (dezembro a março).
+          </p>
+          <p>
+            <strong>Luz:</strong> a variedade Neon precisa de mais luz do que a Jiboia comum para manter sua cor viva. Prefira luz indireta intensa ou meia-sombra. Evite sol direto do meio-dia, que pode queimar as folhas.
+          </p>
+          <p>
+            <strong>Atenção:</strong> se as folhas começarem a ficar verdes-escuras, é sinal de falta de luz. Mova-a para um local mais iluminado e as novas folhas voltarão a nascer com a cor vibrante.
+          </p>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ Onde colocar ✦</span>
+          <h2>Posicionamento e usos práticos no dia a dia</h2>
+          <p>
+            A Jiboia Neon é extremamente versátil. Pode ser cultivada em vasos suspensos, em prateleiras, em suportes de parede ou mesmo em vasos de mesa. Aqui estão algumas sugestões:
+          </p>
+          <p>
+            <strong>Ambiente de trabalho:</strong> perfeita para escritórios e home office. Ajuda a manter o foco, reduz o estresse e purifica o ar de equipamentos eletrônicos.<br>
+            <strong>Salas e quartos:</strong> em prateleiras altas ou vasos pendurados, seus ramos criam uma cascata verde que traz aconchego e vitalidade.<br>
+            <strong>Cantinho de estudos:</strong> estimula a mente criativa e ajuda na retenção de informações.<br>
+            <strong>Banheiro:</strong> tolera bem a umidade e pouca luz, sendo uma das poucas plantas que prosperam em banheiros com janela pequena.
+          </p>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ Ritual de ativação ✦</span>
+          <h2>Como ativar a energia da sua Jiboia Neon</h2>
+          <p>
+            Ao receber sua planta, você pode fazer um pequeno ritual para ativar sua energia de renovação:
+          </p>
+          <p>
+            <strong>1. Preparação:</strong> acenda uma vela verde (cor da renovação) ou branca. Coloque a planta sobre um pano limpo. Respire fundo três vezes.
+          </p>
+          <p>
+            <strong>2. Intenção:</strong> passe as mãos suavemente sobre as folhas. Mentalize o que você quer renovar no ambiente: leveza, criatividade, harmonia. Diga em voz alta: <em>"Esta planta transforma o ar pesado em leveza. Onde ela está, a energia flui, se renova, se expande."</em>
+          </p>
+          <p>
+            <strong>3. Posicionamento:</strong> coloque a planta no local escolhido. A cada folha nova que brotar, reconheça como sinal de que o movimento pedido está acontecendo.
+          </p>
+        </div>
+
+        <div class="produto-final">
+          <span class="label">✦ Indicação do Misticismo Verde ✦</span>
+          <h3>Jiboia Neon — Planta de Purificação e Renovação</h3>
+          <p>
+            Cultivada com consciência em Belém do Pará, nossa Jiboia Neon é propagada por estaquia em água ou solo, sem danificar a planta-matriz. Cada muda carrega uma intenção de renovação e purificação antes de sair do nosso viveiro.
+          </p>
+          <a href="../produtos/produto-jiboianeon.html" class="btn-main">Conhecer a Jiboia Neon →</a>
+        </div>
+
+        <div class="assinatura">
+          Misticismo Verde
+          <span>Sabedoria ancestral da floresta · Belém, Pará</span>
+        </div>
+
+      </article>
+
+      <aside class="sidebar">
+        <div class="side-card">
+          <h3>Sobre este artigo</h3>
+          <p>
+            Um guia completo sobre a Jiboia Neon: seus benefícios para o ar, para a energia do ambiente e como cultivá-la no clima do Norte do Brasil.
+          </p>
+        </div>
+
+        <div class="side-card">
+          <h3>Você pode se interessar se...</h3>
+          <ul>
+            <li>quer purificar o ar da sua casa</li>
+            <li>busca plantas de fácil cultivo</li>
+            <li>sente ambientes pesados ou estagnados</li>
+            <li>quer trazer mais vitalidade para o lar</li>
+            <li>adora plantas com cores vibrantes</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>Produto indicado</h3>
+          <p>
+            Leve a Jiboia Neon para sua casa e sinta a diferença no ar e na energia do ambiente.
+          </p>
+          <div class="btn-wrap">
+            <a href="../produtos/produto-jiboianeon.html" class="btn-main">Ver planta</a>
+            <a href="../artigos.html" class="btn-sec">Voltar aos artigos</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <section class="ritual-strip">
+    <div class="inner">
+      <h2>“Onde a Jiboia Neon está, a vida se move, se renova, se expande.”</h2>
+      <p>
+        Mais que uma planta, ela é uma presença viva que transforma o ambiente e lembra que o movimento é a essência da vida.
+      </p>
+      <a href="../produtos/produto-jiboianeon.html" class="btn-main">Ver a Jiboia Neon →</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Misticismo Verde · misticismoverde.com.br<br>
+    <span style="font-size:0.72rem; opacity:0.7;">Feito com respeito, escuta e intenção ✦</span>
+  </footer>
+
+</body>
+</html>

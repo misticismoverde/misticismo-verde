@@ -10,23 +10,110 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <style>
+/* ===== ESTILOS EXISTENTES ===== */
 .pagehero{position:relative;min-height:44vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:150px 40px 56px;}
 .pagehero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(13,40,24,0.9),transparent 70%),url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=80') center/cover no-repeat;filter:brightness(0.26) saturate(1.3);}
 .pagehero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,15,7,0.4),transparent 40%,transparent 70%,rgba(5,15,7,1));}
 .pagehero-c{position:relative;z-index:2;max-width:760px;}
 
-.artigos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1300px;margin:0 auto;padding:0 40px 100px;align-items:stretch;}
-.artigo,a.artigo{background:rgba(10,26,15,0.55);border:1px solid rgba(201,168,76,0.08);overflow:hidden;cursor:pointer;transition:all 0.4s;display:flex;flex-direction:column;text-decoration:none;color:inherit;height:100%;}
-.artigo:hover,a.artigo:hover{border-color:rgba(201,168,76,0.28);transform:translateY(-3px);}
-.artigo-img{width:100%;height:220px;object-fit:cover;filter:brightness(0.6) saturate(1.2);transition:filter 0.4s;display:block;}
-.artigo:hover .artigo-img,a.artigo:hover .artigo-img{filter:brightness(0.75) saturate(1.4);}
-.artigo-body{padding:22px;display:flex;flex-direction:column;flex:1;}
-.artigo-tag{font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px;display:block;opacity:0.8;}
-.artigo-titulo{font-family:'Cinzel Decorative',serif;font-size:0.92rem;color:#f5ead8;line-height:1.4;margin-bottom:10px;}
-.artigo-resumo{font-size:0.88rem;font-style:italic;color:rgba(245,234,216,0.5);line-height:1.7;font-weight:300;}
-.leia-mais{display:inline-block;margin-top:auto;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:#c9a84c;border-bottom:1px solid rgba(201,168,76,0.3);padding-bottom:2px;padding-top:12px;}
-.artigo-foot{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-top:1px solid rgba(201,168,76,0.07);font-size:0.72rem;color:rgba(245,234,216,0.3);}
+/* ===== GRID DE ARTIGOS ===== */
+.artigos-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;
+  max-width:1300px;
+  margin:0 auto;
+  padding:0 40px 100px;
+  align-items:stretch;
+}
 
+.artigo, a.artigo{
+  background:rgba(10,26,15,0.55);
+  border:1px solid rgba(201,168,76,0.08);
+  overflow:hidden;
+  cursor:pointer;
+  transition:all 0.4s;
+  display:flex;
+  flex-direction:column;
+  text-decoration:none;
+  color:inherit;
+  height:100%;
+}
+
+.artigo:hover, a.artigo:hover{
+  border-color:rgba(201,168,76,0.28);
+  transform:translateY(-3px);
+}
+
+.artigo-img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  filter:brightness(0.6) saturate(1.2);
+  transition:filter 0.4s;
+  display:block;
+}
+
+.artigo:hover .artigo-img, a.artigo:hover .artigo-img{
+  filter:brightness(0.75) saturate(1.4);
+}
+
+.artigo-body{
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.artigo-tag{
+  font-size:0.62rem;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  color:#c9a84c;
+  margin-bottom:8px;
+  display:block;
+  opacity:0.8;
+}
+
+.artigo-titulo{
+  font-family:'Cinzel Decorative',serif;
+  font-size:0.92rem;
+  color:#f5ead8;
+  line-height:1.4;
+  margin-bottom:10px;
+}
+
+.artigo-resumo{
+  font-size:0.88rem;
+  font-style:italic;
+  color:rgba(245,234,216,0.5);
+  line-height:1.7;
+  font-weight:300;
+}
+
+.leia-mais{
+  display:inline-block;
+  margin-top:auto;
+  font-size:0.7rem;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:#c9a84c;
+  border-bottom:1px solid rgba(201,168,76,0.3);
+  padding-bottom:2px;
+  padding-top:12px;
+}
+
+.artigo-foot{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 22px;
+  border-top:1px solid rgba(201,168,76,0.07);
+  font-size:0.72rem;
+  color:rgba(245,234,216,0.3);
+}
+
+/* ===== MODAIS (mantido) ===== */
 .artigo-modal{position:fixed;inset:0;background:rgba(5,15,7,0.96);z-index:6000;display:none;align-items:flex-start;justify-content:center;padding:100px 32px 40px;overflow-y:auto;backdrop-filter:blur(8px);}
 .artigo-modal.aberto{display:flex;}
 .artigo-modal-fechar{position:fixed;top:24px;right:32px;background:rgba(13,40,24,0.9);border:1px solid rgba(201,168,76,0.3);color:#c9a84c;width:40px;height:40px;border-radius:50%;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:6001;}
@@ -44,7 +131,7 @@
 .btn-vol{background:none;border:1px solid rgba(201,168,76,0.25);color:rgba(201,168,76,0.6);padding:13px 26px;cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;transition:all 0.3s;}
 .btn-vol:hover{color:#c9a84c;border-color:#c9a84c;}
 
-/* ── BOTÃO DE SOM ── */
+/* ===== BOTÃO DE SOM ===== */
 .sound-btn {
   position: fixed;
   bottom: 28px;
@@ -69,13 +156,7 @@
   transform: scale(1.08);
 }
 
-@media(max-width:900px){
-  .artigos-grid{grid-template-columns:1fr;padding:0 18px 80px;}
-  .artigo-modal{padding:80px 20px 40px;}
-  .artigo-modal-fechar{right:16px;}
-}
-
-/* ── DOWNLOADS ─────────────────────────────────────────────── */
+/* ===== DOWNLOADS ===== */
 #downloads{background:linear-gradient(to bottom,rgba(5,15,7,0.8),rgba(13,40,24,0.3),rgba(5,15,7,0.8));padding:40px 0 100px;}
 .download-card{max-width:900px;margin:0 auto;padding:0 24px;}
 .download-item{background:linear-gradient(135deg,rgba(13,40,24,0.85),rgba(5,15,7,0.7));border:1px solid rgba(201,168,76,0.2);border-radius:24px;overflow:hidden;transition:all 0.4s;}
@@ -93,6 +174,12 @@
 .download-footer{text-align:center;margin-top:48px;}
 .download-footer p{color:rgba(245,234,216,0.35);font-size:0.8rem;font-style:italic;}
 .download-footer .btn-hero{margin-top:20px;padding:10px 28px;font-size:0.7rem;display:inline-block;}
+
+@media(max-width:900px){
+  .artigos-grid{grid-template-columns:1fr;padding:0 18px 80px;}
+  .artigo-modal{padding:80px 20px 40px;}
+  .artigo-modal-fechar{right:16px;}
+}
 </style>
 </head>
 <body>
@@ -126,43 +213,147 @@
   </div>
 </section>
 
+<!-- ============================================================
+     ARTIGOS GRID
+     Para adicionar um novo artigo, copie o bloco dentro desta div
+     e cole no final (ou na posição desejada). Certifique-se de:
+       - manter a classe "artigo" (ou "a.artigo" se for link externo)
+       - preencher todos os campos: img, tag, titulo, resumo, leia-mais, foot
+     ============================================================ -->
 <div class="artigos-grid">
+
+  <!-- ==================== ARTIGOS COM MODAL (onclick) ==================== -->
+  <!-- 1. JUREMA -->
   <div class="artigo" onclick="abrirArtigo('jurema')">
     <img src="imagens/artigos/img-art-jurema.jpg" class="artigo-img" alt="Jurema Preta">
-    <div class="artigo-body"><span class="artigo-tag">🌿 Plantas Sagradas</span><h3 class="artigo-titulo">A Jurema e os portais que ela abre: uma jornada pela espiritualidade amazônica</h3><p class="artigo-resumo">Usada há séculos pelos povos originários do Brasil, a Jurema carrega uma sabedoria que desafia o entendimento racional.</p><span class="leia-mais">Ler artigo completo →</span></div>
+    <div class="artigo-body">
+      <span class="artigo-tag">🌿 Plantas Sagradas</span>
+      <h3 class="artigo-titulo">A Jurema e os portais que ela abre: uma jornada pela espiritualidade amazônica</h3>
+      <p class="artigo-resumo">Usada há séculos pelos povos originários do Brasil, a Jurema carrega uma sabedoria que desafia o entendimento racional.</p>
+      <span class="leia-mais">Ler artigo completo →</span>
+    </div>
     <div class="artigo-foot"><span>8 min</span><span>Plantas · Ancestralidade</span></div>
   </div>
+
+  <!-- 2. RITUAL DE LIMPEZA -->
   <div class="artigo" onclick="abrirArtigo('ritual')">
     <img src="imagens/artigos/img-art-ritual.jpg" class="artigo-img" alt="Ritual de limpeza">
-    <div class="artigo-body"><span class="artigo-tag">🔥 Rituais</span><h3 class="artigo-titulo">Como fazer um ritual de limpeza energética da sua casa</h3><p class="artigo-resumo">Passo a passo com defumação, sal grosso e intenções claras.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-body">
+      <span class="artigo-tag">🔥 Rituais</span>
+      <h3 class="artigo-titulo">Como fazer um ritual de limpeza energética da sua casa</h3>
+      <p class="artigo-resumo">Passo a passo com defumação, sal grosso e intenções claras.</p>
+      <span class="leia-mais">Ler artigo →</span>
+    </div>
     <div class="artigo-foot"><span>5 min</span><span>Ritual · Lar</span></div>
   </div>
+
+  <!-- 3. FASES DA LUA -->
   <div class="artigo" onclick="abrirArtigo('lua')">
     <img src="imagens/artigos/img-art-lua.jpg" class="artigo-img" alt="Fases da lua">
-    <div class="artigo-body"><span class="artigo-tag">🌙 Lua</span><h3 class="artigo-titulo">O poder das fases lunares na sua prática espiritual</h3><p class="artigo-resumo">Alinhe seus rituais e intenções com os ciclos da lua.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-body">
+      <span class="artigo-tag">🌙 Lua</span>
+      <h3 class="artigo-titulo">O poder das fases lunares na sua prática espiritual</h3>
+      <p class="artigo-resumo">Alinhe seus rituais e intenções com os ciclos da lua.</p>
+      <span class="leia-mais">Ler artigo →</span>
+    </div>
     <div class="artigo-foot"><span>6 min</span><span>Lua · Energia</span></div>
   </div>
+
+  <!-- 4. SINAIS DE LIMPEZA URGENTE -->
   <div class="artigo" onclick="abrirArtigo('protecao')">
     <img src="imagens/artigos/img-art-limpeza-urgente.jpg" class="artigo-img" alt="Limpeza energética urgente">
-    <div class="artigo-body"><span class="artigo-tag">🛡️ Proteção</span><h3 class="artigo-titulo">Sinais de que você precisa de uma limpeza energética urgente</h3><p class="artigo-resumo">Quando a energia fica pesada, o corpo e a alma avisam.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-body">
+      <span class="artigo-tag">🛡️ Proteção</span>
+      <h3 class="artigo-titulo">Sinais de que você precisa de uma limpeza energética urgente</h3>
+      <p class="artigo-resumo">Quando a energia fica pesada, o corpo e a alma avisam.</p>
+      <span class="leia-mais">Ler artigo →</span>
+    </div>
     <div class="artigo-foot"><span>4 min</span><span>Proteção · Cura</span></div>
   </div>
+
+  <!-- 5. ERVAS AMAZÔNICAS -->
   <div class="artigo" onclick="abrirArtigo('ervas')">
     <img src="imagens/artigos/img-art-ervas.jpg" class="artigo-img" alt="Ervas amazônicas">
-    <div class="artigo-body"><span class="artigo-tag">🌱 Ervas</span><h3 class="artigo-titulo">Cinco ervas amazônicas que mudam o campo energético</h3><p class="artigo-resumo">Da arruda ao cipó de alho: o que cada planta tem a oferecer.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-body">
+      <span class="artigo-tag">🌱 Ervas</span>
+      <h3 class="artigo-titulo">Cinco ervas amazônicas que mudam o campo energético</h3>
+      <p class="artigo-resumo">Da arruda ao cipó de alho: o que cada planta tem a oferecer.</p>
+      <span class="leia-mais">Ler artigo →</span>
+    </div>
     <div class="artigo-foot"><span>7 min</span><span>Ervas · Amazônia</span></div>
   </div>
+
+  <!-- ==================== ARTIGOS COM LINK EXTERNO (href) ==================== -->
+  <!-- 6. MUIRAQUITÃ -->
   <a class="artigo" href="artigos/artigo-muiraquita.html">
     <img src="imagens/geral/img-muiraquita-final.jpg" class="artigo-img" alt="Muiraquitã ancestral amazônico">
-    <div class="artigo-body"><span class="artigo-tag">🐸 Ancestralidade</span><h3 class="artigo-titulo">Muiraquitã: a lenda viva da Amazônia</h3><p class="artigo-resumo">Um mergulho na lenda, na força simbólica e no valor ancestral do muiraquitã.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-body">
+      <span class="artigo-tag">🐸 Ancestralidade</span>
+      <h3 class="artigo-titulo">Muiraquitã: a lenda viva da Amazônia</h3>
+      <p class="artigo-resumo">Um mergulho na lenda, na força simbólica e no valor ancestral do muiraquitã.</p>
+      <span class="leia-mais">Ler artigo →</span>
+    </div>
     <div class="artigo-foot"><span>9 min</span><span>Muiraquitã · Amazônia</span></div>
   </a>
+
+  <!-- 7. ABSORÇÃO ENERGÉTICA -->
   <a class="artigo" href="artigos/artigo-absorcao-energia.html">
     <img src="imagens/artigos/img-absorve-energia.jpg" class="artigo-img" alt="Proteção energética e equilíbrio espiritual">
-    <div class="artigo-body"><span class="artigo-tag">🛡️ Proteção Energética</span><h3 class="artigo-titulo">Como reconhecer sinais de absorção energética</h3><p class="artigo-resumo">Cansaço sem explicação, irritação repentina, peso no corpo e sensação de esgotamento podem ser sinais de que você está absorvendo energias demais.</p><span class="leia-mais">Ler artigo →</span></div>
+    <div class="artigo-body">
+      <span class="artigo-tag">🛡️ Proteção Energética</span>
+      <h3 class="artigo-titulo">Como reconhecer sinais de absorção energética</h3>
+      <p class="artigo-resumo">Cansaço sem explicação, irritação repentina, peso no corpo e sensação de esgotamento podem ser sinais de que você está absorvendo energias demais.</p>
+      <span class="leia-mais">Ler artigo →</span>
+    </div>
     <div class="artigo-foot"><span>5 min</span><span>Proteção · Energia</span></div>
   </a>
+
+  <!-- 8. DIFUSOR PESSOAL (NOVO) -->
+  <a class="artigo" href="artigos/artigo-difusor-pessoal.html">
+    <img src="imagens/produtos/img-produto-oraculoazul.jpg" class="artigo-img" alt="Difusor pessoal de aromaterapia e bem-estar">
+    <div class="artigo-body">
+      <span class="artigo-tag">🌿 Aromaterapia · Bem-estar</span>
+      <h3 class="artigo-titulo">Difusor Pessoal: o ritual de bem-estar que você pode carregar com você</h3>
+      <p class="artigo-resumo">Em um mundo acelerado, o difusor pessoal é um convite à pausa — um gesto simples que transforma o cotidiano em um ritual de autocuidado, equilíbrio e presença.</p>
+      <span class="leia-mais">Ler artigo →</span>
+    </div>
+    <div class="artigo-foot"><span>6 min</span><span>Bem-estar · Aromaterapia</span></div>
+  </a>
+
+  <!-- 9. JIBOIA NEON (NOVO) -->
+  <a class="artigo" href="artigos/artigo-jiboia-neon.html">
+    <img src="imagens/produtos/img-produto-jiboianeon.jpg" class="artigo-img" alt="Jiboia Neon purificando o ar e renovando energias">
+    <div class="artigo-body">
+      <span class="artigo-tag">🌱 Plantas · Purificação</span>
+      <h3 class="artigo-titulo">Jiboia Neon: a planta que purifica o ar e renova as energias do lar</h3>
+      <p class="artigo-resumo">Com suas folhas em amarelo-limão vibrante, a Jiboia Neon é muito mais que uma planta ornamental — ela transforma o ambiente, purifica o ar e traz movimento onde há estagnação.</p>
+      <span class="leia-mais">Ler artigo →</span>
+    </div>
+    <div class="artigo-foot"><span>7 min</span><span>Plantas · Energia do lar</span></div>
+  </a>
+
+  <!--
+    ════════════════════════════════════════════════════════════════
+    COMO ADICIONAR NOVOS ARTIGOS:
+    1. Copie o bloco abaixo (substitua pelos seus dados)
+    2. Cole dentro desta div .artigos-grid, na posição desejada
+    3. Atualize: img, tag, titulo, resumo, link, tempo e categorias
+    ════════════════════════════════════════════════════════════════
+    EXEMPLO (descomente e edite):
+    <a class="artigo" href="artigos/seu-artigo.html">
+      <img src="imagens/artigos/sua-imagem.jpg" class="artigo-img" alt="...">
+      <div class="artigo-body">
+        <span class="artigo-tag">🏷️ Categoria</span>
+        <h3 class="artigo-titulo">Título atrativo para o artigo</h3>
+        <p class="artigo-resumo">Resumo curto e impactante (máx. 140 caracteres)</p>
+        <span class="leia-mais">Ler artigo →</span>
+      </div>
+      <div class="artigo-foot"><span>X min</span><span>Palavras-chave</span></div>
+    </a>
+  -->
+
 </div>
+<!-- ===== FIM DO GRID ===== -->
 
 <!-- ─── DOWNLOADS ─── -->
 <section id="downloads">
@@ -201,7 +392,7 @@
   <a href="#top" class="foot-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Voltar ao topo</a>
 </footer>
 
-<!-- MODAIS ARTIGOS -->
+<!-- ===== MODAIS DOS 5 PRIMEIROS ARTIGOS ===== -->
 <div class="artigo-modal" id="artigoModal_jurema">
   <button class="artigo-modal-fechar" onclick="fecharArtigo('jurema')">✕</button>
   <div class="artigo-modal-inner">
@@ -226,6 +417,7 @@
     </div>
   </div>
 </div>
+
 <div class="artigo-modal" id="artigoModal_ritual">
   <button class="artigo-modal-fechar" onclick="fecharArtigo('ritual')">✕</button>
   <div class="artigo-modal-inner">
@@ -252,6 +444,7 @@
     </div>
   </div>
 </div>
+
 <div class="artigo-modal" id="artigoModal_lua">
   <button class="artigo-modal-fechar" onclick="fecharArtigo('lua')">✕</button>
   <div class="artigo-modal-inner">
@@ -277,6 +470,7 @@
     </div>
   </div>
 </div>
+
 <div class="artigo-modal" id="artigoModal_protecao">
   <button class="artigo-modal-fechar" onclick="fecharArtigo('protecao')">✕</button>
   <div class="artigo-modal-inner">
@@ -298,6 +492,7 @@
     </div>
   </div>
 </div>
+
 <div class="artigo-modal" id="artigoModal_ervas">
   <button class="artigo-modal-fechar" onclick="fecharArtigo('ervas')">✕</button>
   <div class="artigo-modal-inner">

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Difusor Pessoal: o ritual de bem-estar que você pode carregar com você | Misticismo Verde</title>
+  <meta name="description" content="Descubra a importância do difusor pessoal na atualidade: bem-estar, equilíbrio emocional, conexão com aromaterapia e um ritual de autocuidado que cabe no bolso." />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --verde-fundo: #050f07;
+      --verde-escuro: #0a1a0f;
+      --verde-medio: #0d2818;
+      --verde-musgo: #1a3d1f;
+      --verde-claro: #2d5a27;
+      --dourado: #c9a84c;
+      --dourado-claro: #e8c96a;
+      --dourado-suave: #f0dfa0;
+      --creme: #f5ead8;
+      --creme-suave: rgba(245,234,216,0.75);
+      --creme-fraco: rgba(245,234,216,0.45);
+      --sombra: 0 20px 60px rgba(0,0,0,0.45);
+      --borda: 1px solid rgba(201,168,76,0.18);
+    }
+
+    body {
+      background: linear-gradient(to bottom, var(--verde-fundo), var(--verde-escuro));
+      color: var(--creme);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to bottom, rgba(5,15,7,0.96), rgba(5,15,7,0.45), transparent);
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-logo {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 0.95rem;
+      color: var(--dourado);
+      text-decoration: none;
+      letter-spacing: 0.12em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo svg { width: 26px; height: 26px; }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--creme-suave);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover { color: var(--dourado); }
+
+    .nav-cta {
+      border: 1px solid var(--dourado);
+      color: var(--dourado) !important;
+      padding: 8px 18px;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 86vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 140px 24px 90px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(5,15,7,0.35), rgba(5,15,7,0.55) 35%, rgba(5,15,7,0.9) 78%, var(--verde-fundo) 100%),
+        url('../imagens/artigos/img-art-difusor.jpg') center center / cover no-repeat;
+      filter: brightness(0.35) saturate(0.95);
+      transform: scale(1.03);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(201,168,76,0.08), transparent 55%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 920px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 0.42em;
+      font-size: 0.68rem;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: 1.22;
+      color: var(--creme);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span { color: var(--dourado-suave); }
+
+    .hero-sub {
+      max-width: 760px;
+      margin: 0 auto 26px;
+      color: rgba(245,234,216,0.82);
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      line-height: 1.8;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .hero-meta {
+      color: rgba(245,234,216,0.45);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    /* MAIN */
+    .main-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+
+    .intro-card {
+      margin: -50px auto 70px;
+      position: relative;
+      z-index: 3;
+      max-width: 980px;
+      padding: 34px 34px;
+      background: linear-gradient(135deg, rgba(13,40,24,0.95), rgba(10,26,15,0.92));
+      border: var(--borda);
+      box-shadow: var(--sombra);
+    }
+
+    .intro-card p {
+      font-size: 1.12rem;
+      line-height: 1.95;
+      color: rgba(245,234,216,0.8);
+      font-weight: 300;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 760px) minmax(260px, 320px);
+      gap: 42px;
+      align-items: start;
+    }
+
+    .article { min-width: 0; }
+
+    .section {
+      margin-bottom: 56px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      font-size: 0.66rem;
+    }
+
+    .section h2 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(1.25rem, 3vw, 1.95rem);
+      line-height: 1.35;
+      color: var(--creme);
+      margin-bottom: 18px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: rgba(245,234,216,0.78);
+      font-weight: 300;
+      margin-bottom: 18px;
+    }
+
+    .destaque {
+      font-family: 'IM Fell English', serif;
+      font-size: 1.35rem !important;
+      font-style: italic;
+      color: var(--dourado-suave) !important;
+      line-height: 1.75 !important;
+      border-left: 2px solid rgba(201,168,76,0.35);
+      padding-left: 22px;
+      margin: 24px 0 30px !important;
+    }
+
+    .image-block {
+      margin: 34px 0 40px;
+      background: linear-gradient(135deg, rgba(13,40,24,0.82), rgba(10,26,15,0.72));
+      border: var(--borda);
+      padding: 16px;
+    }
+
+    .image-block img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      filter: brightness(0.88) saturate(1.05);
+    }
+
+    .image-block figcaption {
+      margin-top: 12px;
+      color: rgba(245,234,216,0.5);
+      font-size: 0.92rem;
+      font-style: italic;
+      line-height: 1.7;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .side-card {
+      background: linear-gradient(135deg, rgba(13,40,24,0.88), rgba(10,26,15,0.88));
+      border: var(--borda);
+      padding: 26px 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.28);
+    }
+
+    .side-card h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      color: var(--dourado);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .side-card p,
+    .side-card li {
+      color: rgba(245,234,216,0.7);
+      line-height: 1.8;
+      font-size: 0.96rem;
+      font-weight: 300;
+    }
+
+    .side-card ul {
+      padding-left: 18px;
+    }
+
+    .side-card li {
+      margin-bottom: 8px;
+    }
+
+    .btn-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .btn-main,
+    .btn-sec {
+      display: inline-block;
+      text-decoration: none;
+      padding: 13px 24px;
+      font-size: 0.76rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      transition: all 0.28s ease;
+    }
+
+    .btn-main {
+      border: 1px solid var(--dourado);
+      color: var(--dourado);
+    }
+
+    .btn-main:hover {
+      background: var(--dourado);
+      color: var(--verde-fundo);
+    }
+
+    .btn-sec {
+      border: 1px solid rgba(245,234,216,0.15);
+      color: rgba(245,234,216,0.7);
+    }
+
+    .btn-sec:hover {
+      border-color: rgba(201,168,76,0.4);
+      color: var(--dourado);
+      background: rgba(201,168,76,0.05);
+    }
+
+    .produto-final {
+      margin-top: 26px;
+      padding: 30px 26px;
+      border: 1px solid rgba(201,168,76,0.24);
+      background: linear-gradient(135deg, rgba(13,40,24,0.92), rgba(10,26,15,0.92));
+    }
+
+    .produto-final .label {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      font-size: 0.64rem;
+    }
+
+    .produto-final h3 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.2rem;
+      color: var(--creme);
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .produto-final p {
+      font-size: 1.02rem;
+      color: rgba(245,234,216,0.76);
+      line-height: 1.9;
+      font-weight: 300;
+      margin-bottom: 18px;
+    }
+
+    .assinatura {
+      margin-top: 34px;
+      font-family: 'Cinzel Decorative', serif;
+      color: var(--dourado);
+      font-size: 0.95rem;
+    }
+
+    .assinatura span {
+      display: block;
+      margin-top: 5px;
+      font-family: 'Cormorant Garamond', serif;
+      color: rgba(201,168,76,0.45);
+      font-size: 0.76rem;
+      font-style: italic;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    /* RITUAL STRIP (call to action) */
+    .ritual-strip {
+      margin: 70px 0 0;
+      padding: 90px 24px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.08);
+      border-bottom: 1px solid rgba(201,168,76,0.08);
+    }
+
+    .ritual-strip::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(5,15,7,0.88), rgba(5,15,7,0.78)),
+        url('../imagens/produtos/img-produto-difusor-1.jpg') center / cover no-repeat;
+      filter: brightness(0.3) saturate(0.9);
+    }
+
+    .ritual-strip .inner {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .ritual-strip h2 {
+      font-family: 'IM Fell English', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-style: italic;
+      color: var(--dourado-suave);
+      line-height: 1.45;
+      margin-bottom: 18px;
+    }
+
+    .ritual-strip p {
+      color: rgba(245,234,216,0.7);
+      font-size: 1.06rem;
+      line-height: 1.85;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      padding: 36px 24px 50px;
+      text-align: center;
+      color: rgba(245,234,216,0.3);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 980px) {
+      nav {
+        padding: 16px 18px;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .hero {
+        padding-top: 180px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      .hero-sub,
+      .section p { font-size: 1rem; }
+      .intro-card { padding: 24px 20px; }
+      .section h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <svg viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        <path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+        <path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        <path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+      Misticismo Verde
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="../artigos.html">Sabedoria</a></li>
+      <li><a href="../biblioteca.html">Biblioteca Viva</a></li>
+      <li><a href="../produtos/produto-difusor.html" class="nav-cta">Ver o difusor</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">✦ Aromaterapia · Bem-estar · Equilíbrio ✦</span>
+      <h1>Difusor Pessoal: <span>o ritual de bem-estar que você pode carregar com você</span></h1>
+      <p class="hero-sub">
+        Em um mundo acelerado, o difusor pessoal é um convite à pausa — um gesto simples que transforma o cotidiano em um ritual de autocuidado, equilíbrio e presença.
+      </p>
+      <div class="hero-meta">Por Misticismo Verde · Bem-estar · Aromaterapia</div>
+    </div>
+  </section>
+
+  <main class="main-wrap">
+    <section class="intro-card">
+      <p>
+        Você já sentiu que o dia inteiro passou, mas você não esteve realmente presente? Que a mente viajou, o corpo ficou tenso e a respiração ficou superficial? Em momentos assim, o que mais precisamos é de uma âncora — um lembrete suave de que podemos voltar para nós mesmos. O difusor pessoal é essa âncora. Pequeno, discreto, mas profundo em sua proposta: trazer o poder dos aromas naturais para junto do corpo, transformando a rotina em um ritual consciente.
+      </p>
+    </section>
+
+    <section class="article-grid">
+      <article class="article">
+
+        <div class="section">
+          <span class="section-tag">✦ O que é um difusor pessoal ✦</span>
+          <h2>Um objeto de presença, não apenas de perfume</h2>
+          <p>
+            Diferente de um difusor de ambiente, o difusor pessoal é feito para ser usado junto ao corpo — como um pingente, um colar ou um pequeno objeto que você carrega no bolso ou na bolsa. Sua função vai além de espalhar um aroma agradável: ele age como um <strong>lembrete sensorial</strong> para desacelerar, respirar e se reconectar com o momento presente.
+          </p>
+          <p>
+            Feito em cerâmica porosa, ele absorve o óleo essencial e o libera lentamente, criando uma bolha de tranquilidade ao seu redor. Cada vez que você sente o aroma, é um convite para voltar ao corpo, à respiração, ao aqui e agora.
+          </p>
+          <p class="destaque">
+            “O aroma não é apenas cheiro. É memória, é emoção, é um fio invisível que nos conecta ao que somos.”
+          </p>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ Por que usar um difusor pessoal hoje ✦</span>
+          <h2>O ritmo da vida moderna pede pausas sutis</h2>
+          <p>
+            Nunca estivemos tão conectados — e nunca estivemos tão dispersos. A sobrecarga de estímulos, as telas, o trabalho, as obrigações… tudo isso nos tira do centro. O difusor pessoal é uma resposta a esse cenário: uma ferramenta de <strong>autorregulação</strong> que você pode levar para qualquer lugar.
+          </p>
+          <p>
+            Seja no escritório, no transporte público, em uma reunião ou em casa, o aroma que emana do difusor é um lembrete de que você pode, a qualquer momento, fazer uma pausa. Respirar fundo. Se reconectar. Esse gesto, repetido ao longo do dia, é um treino de presença — e a presença é o antídoto para a ansiedade e o esgotamento.
+          </p>
+        </div>
+
+        <figure class="image-block">
+          <img src="../imagens/artigos/img-art-difusor1.jpg" alt="Difusor pessoal de cerâmica artesanal" />
+          <figcaption>
+            Um difusor pessoal é mais que um acessório: é um ritual de autocuidado que acompanha você onde quer que vá.
+          </figcaption>
+        </figure>
+
+        <div class="section">
+          <span class="section-tag">✦ Benefícios ✦</span>
+          <h2>O que muda quando você carrega um difusor</h2>
+          <p>
+            Os benefícios de um difusor pessoal vão além do aroma. Eles se estendem ao campo emocional, mental e energético. Cada óleo essencial tem uma vibração única, e carregá-lo junto ao corpo permite que essa vibração atue de forma contínua e sutil.
+          </p>
+          <p>
+            <strong>Calma e equilíbrio:</strong> óleos como lavanda, camomila ou olíbano ajudam a acalmar a mente e reduzir o estresse.<br>
+            <strong>Foco e clareza:</strong> alecrim, hortelã-pimenta ou limão são aliados para momentos de concentração.<br>
+            <strong>Proteção e ancoragem:</strong> breu branco, cedro ou patchouli fortalecem o campo energético e trazem presença.<br>
+            <strong>Intuição e abertura:</strong> jasmim, sândalo ou cumarú abrem a percepção e a sensibilidade.
+          </p>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ Como usar ✦</span>
+          <h2>Um ritual simples, um impacto profundo</h2>
+          <p>
+            Usar um difusor pessoal não exige tempo extra nem preparação elaborada. Basta pingar algumas gotas do óleo essencial na peça, definir uma intenção e deixar que o aroma faça o trabalho sutil ao longo do dia.
+          </p>
+          <p>
+            <strong>Pela manhã:</strong> escolha um óleo que desperte sua energia e foque suas intenções para o dia.<br>
+            <strong>Durante o trabalho:</strong> opte por aromas que mantenham a clareza e a calma.<br>
+            <strong>À noite:</strong> prefira óleos relaxantes para sinalizar ao corpo que é hora de desacelerar.
+          </p>
+          <p>
+            Cada vez que sentir o aroma, respire fundo três vezes. Esse pequeno ritual transforma o ato de usar o difusor em um momento de presença — um presente que você dá a si mesmo ao longo do dia.
+          </p>
+        </div>
+
+        <div class="section">
+          <span class="section-tag">✦ Na prática ✦</span>
+          <h2>Um aliado para o corpo, a mente e o espírito</h2>
+          <p>
+            O difusor pessoal é muito mais que um objeto bonito — ele é uma <strong>ferramenta de cuidado real</strong> que você pode carregar com você nos momentos em que mais precisa.
+          </p>
+          <p>
+            <strong>Para gripes e congestionamentos:</strong> pingue algumas gotas de <strong>hortelã-pimenta</strong> ou <strong>eucalipto</strong> no difusor. Sempre que sentir o nariz entupido ou a respiração pesada, leve o difusor próximo ao nariz e inspire profundamente por alguns segundos. O aroma refrescante desobstrui as vias respiratórias e traz alívio imediato — sem precisar de sprays ou medicamentos.
+          </p>
+          <p>
+            <strong>Para ansiedade e estresse:</strong> a <strong>lavanda</strong> é uma das essências mais estudadas para acalmar o sistema nervoso. Com o difusor junto ao corpo, o aroma suave da lavanda age como um lembrete constante de que você pode desacelerar. Em momentos de tensão, respire fundo três vezes sentindo o aroma — é um gesto simples que sinaliza ao cérebro que é seguro relaxar.
+          </p>
+          <p>
+            <strong>Para foco e concentração:</strong> o <strong>alecrim</strong> ou o <strong>limão</strong> são excelentes aliados em momentos de estudo ou trabalho. O aroma estimulante mantém a mente alerta e clara, ajudando a manter a atenção nas tarefas sem a sensação de dispersão.
+          </p>
+          <p>
+            <strong>Para proteger a energia:</strong> essências como <strong>breu branco</strong>, <strong>cedro</strong> ou <strong>arruda</strong> ajudam a fortalecer o campo energético, especialmente em ambientes com muita circulação de pessoas ou carregados emocionalmente.
+          </p>
+          <p>
+            O difusor pessoal não substitui o cuidado médico, mas é um <strong>complemento poderoso</strong> — um aliado que você pode acessar a qualquer momento, em qualquer lugar, com um gesto simples e consciente.
+          </p>
+        </div>
+
+        <div class="produto-final">
+          <span class="label">✦ Indicação do Misticismo Verde ✦</span>
+          <h3>Difusor Pessoal de Aromaterapia — Alquimia dos Aromas</h3>
+          <p>
+            Feito à mão em cerâmica, este difusor pessoal é o companheiro ideal para quem busca equilíbrio, presença e bem-estar no dia a dia. Disponível em modelos únicos, ele carrega consigo a energia do artesanal e a potência dos aromas naturais.
+          </p>
+          <a href="../produtos/produto-difusor.html" class="btn-main">Conhecer o difusor →</a>
+        </div>
+
+        <div class="assinatura">
+          Misticismo Verde
+          <span>Sabedoria ancestral da floresta · Belém, Pará</span>
+        </div>
+
+      </article>
+
+      <aside class="sidebar">
+        <div class="side-card">
+          <h3>Sobre este artigo</h3>
+          <p>
+            Um mergulho no universo dos difusores pessoais, sua importância no cotidiano e como eles podem ser aliados do equilíbrio e da presença.
+          </p>
+        </div>
+
+        <div class="side-card">
+          <h3>Você pode se identificar se...</h3>
+          <ul>
+            <li>sente que o dia passa rápido demais</li>
+            <li>busca pequenos rituais de autocuidado</li>
+            <li>quer levar a aromaterapia com você</li>
+            <li>precisa de âncoras de presença</li>
+            <li>valoriza objetos feitos à mão</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>Produto indicado</h3>
+          <p>
+            Para vivenciar na prática, o <strong>Difusor Pessoal de Aromaterapia</strong> é a escolha certa.
+          </p>
+          <div class="btn-wrap">
+            <a href="../produtos/produto-difusor.html" class="btn-main">Ver produto</a>
+            <a href="../artigos.html" class="btn-sec">Voltar aos artigos</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <section class="ritual-strip">
+    <div class="inner">
+      <h2>“O aroma é a memória da planta, e você carrega essa memória com você.”</h2>
+      <p>
+        Um difusor pessoal é mais que um objeto. É um lembrete de que o cuidado com a própria energia pode ser simples, portátil e profundamente transformador.
+      </p>
+      <a href="../produtos/produto-difusor.html" class="btn-main">Ver o difusor →</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Misticismo Verde · misticismoverde.com.br<br>
+    <span style="font-size:0.72rem; opacity:0.7;">Feito com respeito, escuta e intenção ✦</span>
+  </footer>
+
+</body>
+</html>
