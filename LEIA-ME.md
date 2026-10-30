@@ -39,4 +39,4 @@ Página inicial, Sobre, Contato, Trocas, Privacidade e as páginas feitas à mã
 - `modelos/produto.html` — modelo das páginas de produto.
 - `construir.py` — junta tudo e grava o site pronto em `site/` (pasta publicada; é refeita a cada montagem).
 
-Configuração no Cloudflare Pages: comando de build `python3 construir.py`, pasta de saída `site`, diretório raiz em branco.
+Publicação: Cloudflare Workers (projeto `wild-voice-16a6`), ligado a este repositório. Comando da build: `python3 construir.py`; comando de implantação: `npx wrangler deploy`; a pasta publicada é definida em `wrangler.jsonc` (`site/`).
