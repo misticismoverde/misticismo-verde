@@ -562,6 +562,8 @@ def main():
     montar_artigos(artigos, produtos, plantas)
     n_img = otimizar_imagens()
     n = sitemap()
+    marca = os.path.join(SAIDA, 'index.html')
+    open(marca, 'a', encoding='utf-8').write(f'\n<!-- montado em {datetime.datetime.now(datetime.timezone.utc):%Y-%m-%d %H:%M} UTC -->\n')
     # cópia em public/ para funcionar também se o Cloudflare estiver configurado com essa pasta
     copia = os.path.join(RAIZ, 'public')
     if os.path.exists(copia): shutil.rmtree(copia)
