@@ -1,0 +1,40 @@
+{
+  "nome": "Hibisco",
+  "nome_cientifico": "Hibiscus rosa-sinensis",
+  "icone": "🌺",
+  "categorias": [
+    "Amor",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "A flor que sabe que é bela e te lembra que você também é — autoestima em flor.",
+  "essencia_completa": "O hibisco é a planta da autoestima e da beleza interior. Sua cor intensa e sua forma dramática são um convite a se perceber como algo precioso. Energeticamente, ele trabalha na autoconfiança, na percepção do próprio valor e na atração de relacionamentos que respeitam quem você é.",
+  "usos": [
+    "Fortalecimento da autoestima",
+    "Autoconfiança e percepção do próprio valor",
+    "Atração de amor respeitoso",
+    "Beleza interior e exterior",
+    "Abertura do chakra do coração"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Banho",
+      "descricao": "Infusão das flores para banho de autoestima e atração. A água fica avermelhada — linda e poderosa."
+    },
+    {
+      "modo": "Cha",
+      "descricao": "Beba com intenção de reconhecimento do próprio valor."
+    },
+    {
+      "modo": "Oferenda",
+      "descricao": "Flores frescas em oferenda para atrair amor com respeito."
+    }
+  ],
+  "ritual": "Prepare um chá de hibisco em uma tarde de lua cheia. Antes de beber, olhe no espelho e diga três coisas que você admira em si mesma. Depois beba o chá visualizando essas qualidades crescendo e brilhando. O hibisco amplifica o que você já é.",
+  "cuidados": "Planta segura para uso geral. Pode ter efeito hipotensor em grandes quantidades. Gestantes devem evitar uso medicinal intenso.",
+  "conexao_ancestral": "Usada em diversas tradições africanas, caribenhas e brasileiras em rituais de amor, beleza e autoconhecimento. No Brasil, planta de quintal e de benzedura.",
+  "intencao": "Sou preciosa. Reconheço meu valor e atraio quem me vê com os olhos certos.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Fortalece a autoestima e o amor-próprio."
+}

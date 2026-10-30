@@ -1,0 +1,41 @@
+{
+  "nome": "Patchouli",
+  "nome_cientifico": "Pogostemon cablin",
+  "icone": "🌙",
+  "categorias": [
+    "Proteção",
+    "Amor",
+    "Prosperidade"
+  ],
+  "foto": "",
+  "essencia": "A terra em forma de aroma — ancora, protege, atrai e materializa.",
+  "essencia_completa": "O patchouli tem um dos aromas mais reconhecíveis da espiritualidade: terroso, profundo, quase hipnótico. Ele ancora o que está disperso, cria uma base energética sólida de proteção e ao mesmo tempo atrai amor e prosperidade. É a planta da presença plena no mundo material.",
+  "usos": [
+    "Ancoragem e proteção energética",
+    "Atração de prosperidade e riqueza",
+    "Atração de amor e relacionamentos",
+    "Manifestação no plano físico",
+    "Equilíbrio entre espiritual e material"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Óleo essencial",
+      "descricao": "Passe diluído nos pulsos para proteção, atração de amor e prosperidade."
+    },
+    {
+      "modo": "Incenso",
+      "descricao": "Queime antes de rituais de manifestação ou meditações de ancoragem."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Óleo essencial diluído no banho para ancoragem e atração."
+    }
+  ],
+  "ritual": "Numa noite de lua crescente, acenda incenso de patchouli. Escreva o que deseja manifestar. Segure o papel enquanto o aroma preenche o ambiente. Visualize seu desejo já realizado com detalhes. Diga: 'Isso já é meu. Recebo com gratidão.'",
+  "cuidados": "Óleo puro pode irritar pele sensível — sempre dilua antes de aplicar. Grávidas devem evitar uso intenso.",
+  "conexao_ancestral": "Usado em tradições orientais, africanas e das américas por séculos. Na umbanda, relacionado com orixás da riqueza e da terra. Uma das essências mais antigas em uso ritual no mundo.",
+  "intencao": "Estou ancorada na abundância. Atraio o que é meu com presença e clareza.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "prosperidade",
+  "produto_sugerido_texto": "Potencializa a manifestação."
+}

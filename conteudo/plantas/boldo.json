@@ -1,0 +1,40 @@
+{
+  "nome": "Boldo",
+  "nome_cientifico": "Plectranthus barbatus",
+  "icone": "🍃",
+  "categorias": [
+    "Cura",
+    "Limpeza"
+  ],
+  "foto": "",
+  "essencia": "A planta que limpa por dentro — dissolve o que o corpo e a alma não conseguem digerir.",
+  "essencia_completa": "O boldo não é apenas digestivo — é um purificador completo de corpo, emoções e energia. Ele limpa o fígado físico e o 'fígado energético': aquele lugar onde guardamos mágoas, ressentimentos e emoções não digeridas. Quando algo pesado fica parado dentro de você, o boldo dissolve.",
+  "usos": [
+    "Limpeza de emoções não processadas",
+    "Liberação de mágoas e ressentimentos",
+    "Purificação energética interna",
+    "Saúde do fígado físico e emocional",
+    "Renovação e leveza interior"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Cha",
+      "descricao": "Prepare com folhas frescas. Beba com intenção de liberação. Visualize o que precisa ir se dissolvendo."
+    },
+    {
+      "modo": "Banho de assento",
+      "descricao": "Infusão forte para banho de assento, liberando bloqueios da região do ventre."
+    },
+    {
+      "modo": "Defumacao leve",
+      "descricao": "Folhas secas queimadas para limpeza suave de ambientes."
+    }
+  ],
+  "ritual": "Prepare uma xícara de chá de boldo. Antes de beber, escreva em um papel algo que quer liberar — uma mágoa, um padrão antigo. Enquanto toma o chá, visualize isso sendo dissolvido. Depois queime o papel. O boldo e o fogo completam o trabalho juntos.",
+  "cuidados": "Não use por longos períodos. Contraindicado para gestantes e pessoas com doenças hepáticas graves. Consulte profissional se necessário.",
+  "conexao_ancestral": "Planta de cura popular amplamente conhecida no Brasil. Usada por benzedeiras e raizeiros para limpar o sangue, renovar o corpo e a energia há gerações.",
+  "intencao": "Libero o que não me serve mais. Meu corpo, meu coração e minha energia estão limpos e renovados.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "limpeza",
+  "produto_sugerido_texto": "Complementa a limpeza energética interna."
+}

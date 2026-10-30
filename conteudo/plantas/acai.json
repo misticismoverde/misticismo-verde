@@ -1,0 +1,41 @@
+{
+  "nome": "Açaí",
+  "nome_cientifico": "Euterpe oleracea",
+  "icone": "🌴",
+  "categorias": [
+    "Amazônica",
+    "Cura",
+    "Prosperidade"
+  ],
+  "foto": "",
+  "essencia": "O fruto sagrado que sustenta a floresta e quem nela vive — ancestral e abundante.",
+  "essencia_completa": "O açaí é muito mais que um superalimento — é a coluna vertebral de inúmeras culturas amazônicas. Para os povos ribeirinhos, o açaizeiro é símbolo de fartura, resistência e identidade. Energeticamente, ele fortalece o campo vital, conecta com a abundância da terra e nutre tanto o corpo quanto o espírito.",
+  "usos": [
+    "Fortalecimento e nutrição do campo vital",
+    "Conexão com a abundância da floresta",
+    "Cura do esgotamento",
+    "Enraizamento e fortalecimento",
+    "Gratidão e celebração da vida"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Alimentação ritual",
+      "descricao": "Consuma o açaí com gratidão e intenção — a intenção transforma qualquer alimento em medicina."
+    },
+    {
+      "modo": "Ritual de gratidão",
+      "descricao": "Use o açaí como oferenda de gratidão pela fartura que a floresta oferece."
+    },
+    {
+      "modo": "Meditação",
+      "descricao": "Contemple o açaizeiro como símbolo de resistência e generosidade — ele dá seus frutos repetidamente."
+    }
+  ],
+  "ritual": "Num café da manhã especial, prepare açaí com consciência. Antes de comer, agradeça pela floresta que o produziu, pelos povos que o cultivaram, pela terra que o sustentou. Coma devagar, sentindo a nutrição da Amazônia entrando no seu corpo.",
+  "cuidados": "Alimento seguro para a maioria das pessoas. Verificar origem — prefira açaí produzido de forma sustentável e justa para as comunidades ribeirinhas.",
+  "conexao_ancestral": "Alimento sagrado para os povos ribeirinhos da Amazônia. O açaizeiro é considerado planta-mãe em muitas comunidades — sua fartura sustenta gerações. Presente em rituais de celebração e gratidão pela floresta.",
+  "intencao": "Sou nutrida pela fartura da terra. A floresta me sustenta e eu a honro.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "forca",
+  "produto_sugerido_texto": "Revigora e fortalece a energia vital."
+}

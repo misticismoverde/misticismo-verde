@@ -1,0 +1,39 @@
+{
+  "nome": "Cipó-cruz",
+  "nome_cientifico": "Chiococca alba",
+  "icone": "🌿",
+  "categorias": [
+    "Proteção",
+    "Limpeza"
+  ],
+  "foto": "",
+  "essencia": "A planta que forma cruzes de proteção invisíveis onde é colocada.",
+  "essencia_completa": "O Cipó-cruz é uma planta de proteção e limpeza muito utilizada nas tradições populares do Norte e Nordeste do Brasil. Seu nome deriva do formato de suas hastes, que naturalmente formam cruzamentos — símbolo universal de proteção e interseção entre mundos. Ela limpa e protege simultaneamente.",
+  "usos": [
+    "Proteção de espaços e pessoas",
+    "Limpeza de energias negativas acumuladas",
+    "Criação de barreiras energéticas",
+    "Afastamento de influências densas"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Defumação",
+      "descricao": "Queime galhos secos para limpeza e proteção de ambientes."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão para banho de descarrego e proteção."
+    },
+    {
+      "modo": "Posicionamento",
+      "descricao": "Coloque galhos secos nas entradas e cantos da casa como proteção permanente."
+    }
+  ],
+  "ritual": "Coloque galhos de cipó-cruz em forma de X nas entradas da sua casa. Ao fazê-lo, visualize uma barreira de luz dourada se formando. Diga: 'Este cruzamento sela minha proteção. Nenhuma energia negativa cruza este limiar.'",
+  "cuidados": "Planta segura para uso externo. Não indicada para ingestão sem orientação especializada.",
+  "conexao_ancestral": "Amplamente usada nas tradições populares do Norte e Nordeste brasileiro em rituais de proteção e cura. Planta de benzedeiras e raizeiros da Amazônia.",
+  "intencao": "Estou cruzada de proteção. Nenhum mal me alcança.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "protecao",
+  "produto_sugerido_texto": "Fortalece sua blindagem."
+}

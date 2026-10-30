@@ -1,0 +1,41 @@
+{
+  "nome": "Manjericão",
+  "nome_cientifico": "Ocimum basilicum",
+  "icone": "🌱",
+  "categorias": [
+    "Limpeza",
+    "Amor",
+    "Prosperidade"
+  ],
+  "foto": "",
+  "essencia": "A planta da alegria — limpa, ama e atrai com o mesmo sorriso aberto.",
+  "essencia_completa": "O manjericão faz três coisas com maestria: limpa energias pesadas, abre o coração para o amor e atrai prosperidade. É a planta da alegria de viver — seu aroma doce e fresco transforma qualquer ambiente em lugar de acolhimento e leveza.",
+  "usos": [
+    "Limpeza de energias densas",
+    "Atração de amor e harmonia",
+    "Prosperidade e boas oportunidades",
+    "Alegria e bem-estar",
+    "Harmonia em relacionamentos e no lar"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Planta viva",
+      "descricao": "Mantenha na cozinha — centro energético do lar. Presença constante de limpeza e atração."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão das folhas para banho de abertura e alegria."
+    },
+    {
+      "modo": "Chá",
+      "descricao": "Beba com intenção de amor e prosperidade. Doce e benevolente."
+    }
+  ],
+  "ritual": "Toda manhã de segunda-feira, passe levemente as mãos pelas folhas do manjericão e respire o aroma. Visualize a semana se abrindo com oportunidades, amor e alegria. O manjericão é gentil — trabalha com quem o cuida.",
+  "cuidados": "Planta segura para uso geral. Evite excesso medicinal durante a gravidez. Para uso energético cotidiano, é completamente seguro.",
+  "conexao_ancestral": "Sagrado em diversas culturas: na Grécia Antiga era planta de reis, na Índia é sagrado a Vishnu. No Brasil, integrado às práticas populares de atração e proteção do lar.",
+  "intencao": "Meu lar está limpo e cheio de amor. A prosperidade e a alegria habitam este espaço.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "prosperidade",
+  "produto_sugerido_texto": "Ativa o fluxo de abundância."
+}

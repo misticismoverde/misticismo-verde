@@ -1,0 +1,41 @@
+{
+  "nome": "Sangue-de-dragão",
+  "nome_cientifico": "Croton lechleri",
+  "icone": "🩸",
+  "categorias": [
+    "Amazônica",
+    "Cura",
+    "Proteção"
+  ],
+  "foto": "",
+  "essencia": "A resina vermelha da floresta — cura as feridas que o tempo não conseguiu fechar.",
+  "essencia_completa": "O Sangue-de-dragão é uma das resinas mais impressionantes da Amazônia. Seu nome vem da cor avermelhada que escorre do tronco quando cortado. Energeticamente, ele cura feridas — físicas e emocionais — que parecem não querer fechar. É a planta da cicatrização profunda, do selamento de processos dolorosos.",
+  "usos": [
+    "Cicatrização de feridas físicas e emocionais",
+    "Cura de traumas antigos que não fecharam",
+    "Proteção de feridas energéticas",
+    "Fortalecimento após períodos de dor",
+    "Selamento de processos de cura"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Resina diluída",
+      "descricao": "Aplique a resina diluída sobre feridas físicas ou pontos do corpo que precisam de cura."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Algumas gotas da resina no banho para cura de feridas energéticas."
+    },
+    {
+      "modo": "Ritual de fechamento",
+      "descricao": "Use a resina para simbolicamente selar um processo de dor que precisa ser encerrado."
+    }
+  ],
+  "ritual": "Segure o frasco de sangue-de-dragão. Visualize todas as feridas ainda abertas — físicas, emocionais, espirituais. Aplique a resina diluída sobre o coração. Diga: Esta ferida está sendo curada. Este processo está sendo selado. Estou inteira. O sangue-de-dragão sela.",
+  "cuidados": "Para uso externo. Consulte um profissional antes de usar internamente. Compre de fontes certificadas. Evite durante a gravidez.",
+  "conexao_ancestral": "Usada por povos indígenas da Amazônia peruana e brasileira há milênios em rituais de cura e proteção. Considerada um dos maiores presentes medicinais da floresta pela sua capacidade de cicatrizar.",
+  "intencao": "Minhas feridas estão sendo curadas. Sou inteira. O passado está selado com amor.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "limpeza",
+  "produto_sugerido_texto": "Aprofunda a limpeza e regeneração do campo."
+}

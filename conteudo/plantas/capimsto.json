@@ -1,0 +1,40 @@
+{
+  "nome": "Capim-santo",
+  "nome_cientifico": "Cymbopogon citratus",
+  "icone": "🌾",
+  "categorias": [
+    "Limpeza",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "Leveza em forma de cheiro — dissolve a energia densa com suavidade e alegria.",
+  "essencia_completa": "O capim-santo, também conhecido como capim-limão, tem um aroma cítrico e fresco que imediatamente transforma o ambiente. Ele limpa sem esforço — como uma brisa que passa e leva embora o que estava parado. É a planta da leveza, do alívio e da renovação gentil.",
+  "usos": [
+    "Limpeza energética suave e contínua",
+    "Dissolução de energias estagnadas",
+    "Alegria e leveza para ambientes",
+    "Equilíbrio emocional",
+    "Relaxamento e paz"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Banho",
+      "descricao": "Infusão para banho de limpeza leve e renovação. Excelente para uso frequente."
+    },
+    {
+      "modo": "Chá ritual",
+      "descricao": "Beba com intenção de alegria e leveza. Ótimo antes de meditações."
+    },
+    {
+      "modo": "Defumação",
+      "descricao": "Folhas frescas queimadas rapidamente para limpeza rápida de ambientes."
+    }
+  ],
+  "ritual": "Prepare um chá de capim-santo numa tarde tranquila. Enquanto bebe, visualize cada sip dissolvendo uma camada de tensão ou energia densa. Ao terminar, respire fundo e note a leveza. O capim-santo trabalha com gentileza — mas é profundo.",
+  "cuidados": "Planta segura para uso geral. Evite uso excessivo durante a gravidez. Para uso em banhos e chás esporádicos, é completamente seguro.",
+  "conexao_ancestral": "Amplamente usada na medicina popular e espiritual brasileira. Presente em comunidades ribeirinhas e indígenas como planta de cura e bem-estar cotidiano.",
+  "intencao": "Estou leve. Cada respiração dissolve o que não me serve mais.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "limpeza",
+  "produto_sugerido_texto": "Aprofunda a renovação energética."
+}

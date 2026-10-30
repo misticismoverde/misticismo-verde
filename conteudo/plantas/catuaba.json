@@ -1,0 +1,41 @@
+{
+  "nome": "Catuaba",
+  "nome_cientifico": "Erythroxylum vacciniifolium",
+  "icone": "🌳",
+  "categorias": [
+    "Amazônica",
+    "Amor",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "A planta do prazer de existir — desperta os sentidos adormecidos pela rotina.",
+  "essencia_completa": "A Catuaba desperta o prazer de existir. Em tempos em que a rotina apaga os sentidos, a catuaba os acende novamente — o prazer do toque, a alegria do corpo, a vontade de se conectar com o outro e consigo mesmo. É a planta que devolve o entusiasmo que o cotidiano foi roubando.",
+  "usos": [
+    "Despertar dos sentidos e do prazer de viver",
+    "Fortalecimento da autoconfiança",
+    "Cura da inibição e do bloqueio emocional",
+    "Reconexão com o corpo",
+    "Atração de amor com presença plena"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Chá da casca",
+      "descricao": "Prepare com a casca. Beba com intenção de despertar sua presença e vitalidade."
+    },
+    {
+      "modo": "Tintura",
+      "descricao": "Tintura para uso moderado — consulte dosagem com profissional."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão para banho de despertar dos sentidos e confiança corporal."
+    }
+  ],
+  "ritual": "Prepare um chá de catuaba numa tarde de descanso. Enquanto bebe, coloque música que você ama, dance um pouco, sinta seu corpo. A catuaba trabalha melhor quando convidada com alegria — ela é a planta do prazer, não da seriedade.",
+  "cuidados": "Uso moderado. Evite em excesso. Gestantes e pessoas com histórico de convulsões devem evitar. Consulte profissional para uso contínuo.",
+  "conexao_ancestral": "Planta nativa do cerrado e da Amazônia, usada pelos povos Tupi como tônico e planta cerimonial de celebração da vida. Seu nome em Tupi significa o que fortalece o índio.",
+  "intencao": "Celebro minha presença no mundo. Meu corpo é sagrado e meus sentidos são dons.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Fortalece a autoestima e o amor ao próprio corpo."
+}

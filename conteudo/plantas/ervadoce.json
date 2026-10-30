@@ -1,0 +1,40 @@
+{
+  "nome": "Erva-doce",
+  "nome_cientifico": "Pimpinella anisum",
+  "icone": "🌿",
+  "categorias": [
+    "Amor",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "Suave como um abraço de avó — cura com amor e traz doçura onde havia amargura.",
+  "essencia_completa": "A erva-doce tem a energia do amor gentil e incondicional — aquele que cura sem exigir, que acolhe sem julgar. Ela transforma a amargura em doçura, o ressentimento em compreensão e a solidão em conexão. É a planta perfeita para quem precisa se reconciliar com o amor após decepções.",
+  "usos": [
+    "Cura de decepções amorosas",
+    "Transformação de amargura em doçura",
+    "Atração de amor gentil",
+    "Reconciliação com relacionamentos",
+    "Paz interior e acolhimento"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Chá ritual",
+      "descricao": "Beba com intenção de curar a memória de dores antigas no amor."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão para banho de renovação emocional após término ou decepção."
+    },
+    {
+      "modo": "Aroma no lar",
+      "descricao": "Sementes num sachê para criar atmosfera de doçura e acolhimento."
+    }
+  ],
+  "ritual": "Prepare um chá de erva-doce após uma situação difícil no amor. Enquanto bebe, permita-se sentir a dor — e depois deixe ela ir com cada gole. A erva-doce não apaga o que aconteceu: ela transforma o que sobrou.",
+  "cuidados": "Planta segura para uso geral. Evite excesso durante a gravidez. Para uso cotidiano em chás e aromas, é completamente seguro.",
+  "conexao_ancestral": "Presente na medicina popular e espiritual brasileira e europeia. Usada por gerações em remédios de avó para curar o corpo e confortar a alma.",
+  "intencao": "Me reconcilio com o amor. A doçura é minha natureza e o afeto é meu direito.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Promove cura emocional e harmonia."
+}

@@ -1,0 +1,41 @@
+{
+  "nome": "Jurema Preta",
+  "nome_cientifico": "Mimosa tenuiflora",
+  "icone": "🌾",
+  "categorias": [
+    "Proteção",
+    "Limpeza",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "Guardiã dos portais entre mundos — protege, purifica e revela o que está oculto.",
+  "essencia_completa": "A Jurema Preta é uma das plantas mais sagradas do Brasil. Usada há milênios pelos povos originários do Nordeste e da Amazônia, ela não é apenas uma planta — é uma entidade. Uma mãe ancestral que guarda os mistérios entre o visível e o invisível, que protege com força ancestral e limpa com profundidade que poucos vegetais alcançam.",
+  "usos": [
+    "Proteção profunda do campo energético",
+    "Limpeza de memórias energéticas densas",
+    "Abertura de portais espirituais",
+    "Comunicação com ancestrais",
+    "Cura de padrões emocionais antigos"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Defumação",
+      "descricao": "Queime cascas secas em brasa. Passe a fumaça ao redor do corpo e pelos ambientes."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão com folhas secas. Use do pescoço para baixo com intenção de renovação."
+    },
+    {
+      "modo": "Amuleto",
+      "descricao": "Pequeno pedaço de casca envolto em pano natural próximo ao corpo."
+    }
+  ],
+  "ritual": "Acenda uma vela branca ao anoitecer. Segure um pedaço de casca de Jurema nas mãos. Respire três vezes fundo. Visualize uma luz verde-dourada envolvendo seu corpo. Diga: 'Que a sabedoria da Jurema me proteja, me guie e me cure.' Permaneça em silêncio, recebendo.",
+  "cuidados": "Use com respeito e intenção. Para consumo cerimonial, somente com orientação experiente. Respeite os contextos tradicionais indígenas.",
+  "conexao_ancestral": "Sagrada para os povos Pankararu, Fulni-ô, Kariri e outros indígenas nordestinos. Presente na Umbanda através da Linha da Jurema com seus mestres e caboclos.",
+  "intencao": "Abro meu coração para a sabedoria da floresta. Estou protegida, guiada e em paz.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "limpeza",
+  "produto_sugerido_texto": "Potencializa a limpeza do campo espiritual."
+}

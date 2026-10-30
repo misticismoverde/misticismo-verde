@@ -1,0 +1,39 @@
+{
+  "nome": "Unha-de-gato",
+  "nome_cientifico": "Uncaria tomentosa",
+  "icone": "🌿",
+  "categorias": [
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "A planta que agarra e não larga — persiste na cura até o fim.",
+  "essencia_completa": "A Unha-de-gato, com seus espinhos em forma de garra, é uma das plantas de cura mais potentes da Amazônia. Sua energia espiritual reflete sua forma física: ela agarra o que precisa ser curado e não larga. É a planta para as curas que pedem persistência, para as condições que precisam de força e constância.",
+  "usos": [
+    "Cura de condições persistentes e crônicas",
+    "Fortalecimento do sistema imunológico energético",
+    "Persistência em processos de cura",
+    "Fortalecimento geral",
+    "Anti-inflamatório físico e espiritual profundo"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Cha da casca",
+      "descricao": "Prepare com a casca e beba com intenção de cura persistente e fortalecimento."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão para banho de fortalecimento e cura profunda."
+    },
+    {
+      "modo": "Meditacao",
+      "descricao": "Visualize as garras da planta segurando firmemente tudo que tenta enfraquecer você."
+    }
+  ],
+  "ritual": "Prepare um chá de unha-de-gato e beba em silêncio. Visualize a planta com suas garras segurando firme aquilo que você está tentando curar ou transformar. Sinta que você não está sozinha nesse processo — a planta está junto, persistindo com você.",
+  "cuidados": "Contraindicado para gestantes, crianças pequenas e pessoas com doenças autoimunes sem orientação médica. Não combine com anticoagulantes. Sempre consulte um profissional antes do uso medicinal.",
+  "conexao_ancestral": "Planta sagrada para os povos Asháninka do Peru e outros povos amazônicos. Considerada uma das plantas de cura mais poderosas da farmacopeia indígena amazônica. Pesquisada mundialmente pela ciência.",
+  "intencao": "A cura que preciso está acontecendo. Sou persistente e o processo me fortalece.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "forca",
+  "produto_sugerido_texto": "Fortalece e revigora o campo vital."
+}

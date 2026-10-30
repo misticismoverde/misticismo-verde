@@ -1,0 +1,86 @@
+{
+  "nome": "Sal 3 em 1 — Amor-Próprio & Equilíbrio",
+  "ordem": 5,
+  "categoria": "Sais Rituais",
+  "preco": 20.0,
+  "esgotado": false,
+  "imagem": "/imagens/produtos/img-produto-amor.jpg",
+  "loja_selo": "Equilíbrio",
+  "loja_intencao": "❋ Harmonia Emocional",
+  "loja_resumo": "Harmoniza o emocional e fortalece a autoestima.",
+  "seo_titulo": "Sal 3 em 1 Amor-Próprio e Equilíbrio: banho e escalda-pés",
+  "seo_descricao": "Sal de ervas artesanal para banho, escalda-pés e defumação (180 a 200 g), pensado para rituais de amor-próprio e acolhimento. R$ 20,00. Belém (PA).",
+  "pagina_propria": false,
+  "titulo_pagina": "Sal 3 em 1 — Amor-Próprio e Equilíbrio",
+  "energia": "Autoestima · Harmonia Interior · Acolhimento",
+  "detalhes": "180g a 200g · banho · escalda-pés · defumação",
+  "introducao": "Existe um tipo de cansaço que vem de passar muito tempo sem se ver com gentileza. De se cobrar mais do que se cuida, de se criticar mais do que se acolhe. Este sal foi criado para esse cansaço — o da alma que precisa voltar para si mesma com amor. Não como luxo. Como necessidade.",
+  "para_quem_titulo": "Para quem cuida de todo mundo, mas esqueceu de cuidar de si",
+  "para_quem_texto": "Você sabe se dedicar. Sabe cuidar, proteger, apoiar. Mas quando foi a última vez que se olhou com a mesma generosidade que olha para os outros? O amor-próprio não é egoísmo — é o fundamento. É o que torna possível tudo o mais.",
+  "para_quem_lista": [
+    "Quem está em um momento de autocrítica intensa e julgamento interno",
+    "Quem saiu de relacionamentos ou situações que abalaram a autoestima",
+    "Quem sente dificuldade de colocar limites ou priorizar as próprias necessidades",
+    "Quem quer fortalecer o relacionamento com a própria imagem e valor",
+    "Quem está em um processo de reconexão consigo mesma"
+  ],
+  "atuacao_titulo": "O que este sal suaviza, fortalece e reconecta dentro de você",
+  "atuacao_texto": "<p>O Sal 3 em 1 — Amor-Próprio e Equilíbrio trabalha nas camadas mais sensíveis do campo emocional. Ele <em>suaviza</em> a dureza que a gente constrói sobre si mesma — aquela armadura que protege, mas também aprisiona. E ao suavizar, ele abre espaço para a <em>reconexão real</em>: com o próprio valor, com a própria presença.</p><p>Ele atua sobre <strong>feridas de autoestima</strong> — o que ficou de relações que diminuíram, de comparações que machucaram. Sobre <strong>desequilíbrios emocionais</strong> — aquela oscilação entre a exigência excessiva e o colapso.</p><p>E ao equilibrar, ele restaura o <strong>amor que é seu por natureza</strong>. O que você é quando para de se comparar, de se cobrar, de se diminuir.</p>",
+  "ritual_titulo": "Um ritual que é só seu — feito por você, para você",
+  "ritual_introducao": "Antes de começar, olhe-se no espelho por alguns segundos. Sem julgamento. Apenas vendo. Esse olhar já é parte do ritual.",
+  "ritual_passos": [
+    {
+      "modo": "Banho de acolhimento",
+      "descricao": "Dissolva em água morna e suave. Antes de entrar, diga em voz baixa: Me recebo com gentileza. Aplique do pescoço para baixo com toque lento e consciente — como se estivesse cuidando de alguém que você ama. Porque está."
+    },
+    {
+      "modo": "Escalda-pés meditativo",
+      "descricao": "Dissolva em água morna. Mergulhe os pés e fique em silêncio por 15 minutos. Sem telefone, sem distração. Apenas você e o momento. Sinta o calor, sinta os pés — que te carregam todos os dias sem você notar. Agradeça por eles."
+    },
+    {
+      "modo": "Defumação de equilíbrio",
+      "descricao": "Queime em brasa no seu espaço pessoal. Passe a fumaça ao redor do próprio corpo com movimentos suaves e circulares. Visualize o campo se harmonizando, os extremos se equilibrando, o centro sendo restabelecido."
+    }
+  ],
+  "intencao_frase": "Me recebo com amor. Sou suficiente. Mereço o cuidado que ofereço aos outros.",
+  "experiencia_titulo": "O que muda quando você começa a se olhar com amor",
+  "experiencia_texto": "O amor-próprio não chega de uma vez. Ele vai se instalando — em gestos pequenos, em pensamentos que mudam de direção, em escolhas diferentes:",
+  "experiencia_itens": [
+    {
+      "icone": "🌸",
+      "nome": "Suavidade",
+      "descricao": "O tom interno muda. A voz que antes criticava começa a perguntar, a entender, a acolher."
+    },
+    {
+      "icone": "⚖️",
+      "nome": "Equilíbrio",
+      "descricao": "As oscilações emocionais diminuem. Há um centro que começa a se firmar."
+    },
+    {
+      "icone": "💗",
+      "nome": "Autoestima",
+      "descricao": "Não como arrogância — como reconhecimento. A sensação de que você tem valor, simplesmente por existir."
+    },
+    {
+      "icone": "🌿",
+      "nome": "Presença",
+      "descricao": "Você começa a ocupar mais espaço — não por imposição, mas por direito."
+    },
+    {
+      "icone": "🔓",
+      "nome": "Abertura",
+      "descricao": "Com amor-próprio vem a capacidade de se relacionar de forma mais saudável."
+    },
+    {
+      "icone": "✨",
+      "nome": "Brilho próprio",
+      "descricao": "Há um brilho que vem de dentro quando a pessoa está em paz consigo mesma. E ele aparece."
+    }
+  ],
+  "cuidados": "<p>Este sal é gentil — pode ser usado com mais frequência. Até três vezes por semana em períodos de maior necessidade emocional. Evite uso interno. Gestantes devem preferir a defumação ao banho. Em momentos de crise emocional intensa, considere também buscar apoio humano — o ritual complementa, não substitui.</p>",
+  "conexao_titulo": "O amor a si mesma é o mais antigo dos saberes",
+  "conexao_citacao": "Antes de qualquer ritual, qualquer erva, qualquer fórmula — existe a intenção de quem cuida. E cuidar de si é o ato mais sagrado que existe.",
+  "conexao_texto": "As tradições de cura que inspiram este sal sempre souberam que o equilíbrio começa por dentro. As ervas escolhidas têm história de uso em práticas de harmonização emocional e fortalecimento do feminino — saberes guardados por mulheres que entenderam que a cura começa no autoconhecimento.",
+  "chamada_titulo": "Você merece de si mesma o que não cansa de oferecer aos outros",
+  "chamada_texto": "Se algo nessas palavras tocou em você, é porque uma parte de você já sabe que chegou a hora. De voltar para si. De se receber. De cuidar de você mesma, primeiro."
+}

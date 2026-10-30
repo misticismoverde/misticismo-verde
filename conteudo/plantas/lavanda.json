@@ -1,0 +1,41 @@
+{
+  "nome": "Lavanda",
+  "nome_cientifico": "Lavandula angustifolia",
+  "icone": "💜",
+  "categorias": [
+    "Amor",
+    "Limpeza",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "Onde a lavanda está, o amor tranquilo e a paz profunda habitam.",
+  "essencia_completa": "A lavanda trabalha no amor pela via da paz. Ela não atrai com sedução — ela cria um campo de tranquilidade e harmonia onde o amor verdadeiro pode florescer sem o ruído do medo e da ansiedade. É a planta do amor maduro, calmo e duradouro.",
+  "usos": [
+    "Criação de campo de paz para o amor",
+    "Harmonia em relacionamentos",
+    "Cura emocional suave",
+    "Limpeza energética delicada",
+    "Sono restaurador e proteção"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Sachê",
+      "descricao": "Flores secas em sachê no quarto para harmonia e paz nos relacionamentos."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Para relaxamento profundo e abertura emocional gentil."
+    },
+    {
+      "modo": "Difusor",
+      "descricao": "Óleo essencial em difusor para criar ambiente de harmonia e paz."
+    }
+  ],
+  "ritual": "Antes de uma conversa importante num relacionamento, diffuse lavanda no ambiente. O aroma cria um campo de paz que facilita a comunicação honesta e o amor. A lavanda não resolve — ela cria o espaço onde as coisas podem se resolver.",
+  "cuidados": "Planta segura para uso geral. Evite uso interno intenso durante a gravidez.",
+  "conexao_ancestral": "Uma das plantas mais antigas em uso medicinal e espiritual no mundo mediterrâneo. Usada em rituais de purificação e amor por séculos em diversas tradições.",
+  "intencao": "Estou em paz comigo e nas minhas relações. O amor tranquilo é o que me nutre.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Promove equilíbrio e paz interior."
+}

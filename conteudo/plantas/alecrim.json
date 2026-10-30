@@ -1,0 +1,41 @@
+{
+  "nome": "Alecrim",
+  "nome_cientifico": "Rosmarinus officinalis",
+  "icone": "🌿",
+  "categorias": [
+    "Proteção",
+    "Limpeza",
+    "Prosperidade"
+  ],
+  "foto": "",
+  "essencia": "Aroma de clareza e força — limpa, protege e abre caminhos ao mesmo tempo.",
+  "essencia_completa": "O alecrim é uma das plantas mais versáteis do mundo espiritual. Seu aroma vigoroso e limpo faz três coisas ao mesmo tempo: limpa o que é negativo, protege o que é seu e abre espaço para a prosperidade entrar. Na tradição europeia é símbolo de memória e fidelidade; no Brasil, planta de terreiro e benzedura.",
+  "usos": [
+    "Limpeza e proteção simultâneas",
+    "Abertura de caminhos para prosperidade",
+    "Memória e clareza mental",
+    "Fortalecimento do campo energético",
+    "Purificação de ambientes"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Defumação",
+      "descricao": "Galhos secos queimados para limpeza e proteção de ambientes. Aroma poderoso e imediato."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão das folhas para banho de limpeza, proteção e abertura de caminhos."
+    },
+    {
+      "modo": "Óleo essencial",
+      "descricao": "Algumas gotas em difusor ou nos pulsos diluído para proteção e clareza."
+    }
+  ],
+  "ritual": "Prepare um banho com alecrim fresco numa sexta-feira de manhã. Enquanto o aroma preenche o banheiro, visualize caminhos se abrindo à sua frente — trabalho, amor, saúde. O alecrim trabalha nos três campos ao mesmo tempo.",
+  "cuidados": "Evite ingerir em grande quantidade. Gestantes devem evitar uso medicinal intenso. Para uso energético em banhos e defumações, é seguro.",
+  "conexao_ancestral": "Uma das plantas mais antigas em uso ritual no mundo — presente desde o Egito Antigo até as tradições europeias medievais. No Brasil, integrado à prática das benzedeiras e terreiros.",
+  "intencao": "Meu caminho está limpo, protegido e aberto. O que é meu por direito vem até mim.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "protecao",
+  "produto_sugerido_texto": "Reforça a limpeza e proteção."
+}

@@ -1,0 +1,41 @@
+{
+  "nome": "Alfazema",
+  "nome_cientifico": "Lavandula angustifolia",
+  "icone": "💜",
+  "categorias": [
+    "Limpeza",
+    "Amor",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "A paz em forma de planta — limpa com suavidade e cura o que doeu.",
+  "essencia_completa": "A alfazema, ou lavanda, é a planta da cura emocional. Seu aroma delicado e inconfundível limpa as camadas emocionais com suavidade — sem o vigor do guiné ou a força da arruda, mas com uma profundidade que chega onde as outras não chegam: no coração cansado, na ansiedade, no medo.",
+  "usos": [
+    "Limpeza emocional suave",
+    "Cura da ansiedade e estresse",
+    "Abertura do coração para o amor",
+    "Paz e tranquilidade",
+    "Sono restaurador e proteção durante o sono"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Banho",
+      "descricao": "Infusão ou óleo essencial diluído no banho para paz e cura emocional."
+    },
+    {
+      "modo": "Ambiente",
+      "descricao": "Sachês de flores secas nos ambientes e no travesseiro para paz e sono tranquilo."
+    },
+    {
+      "modo": "Óleo essencial",
+      "descricao": "Uma gota no pulso e nas têmporas para acalmar e equilibrar."
+    }
+  ],
+  "ritual": "Antes de dormir, prepare um banho com alfazema. Enquanto a água quente libera o aroma, respire fundo e solte a tensão do dia. Visualize cada preocupação se dissolvendo na água. Saia do banho leve. Deixe um sachê de alfazema sob o travesseiro — ela continua trabalhando durante o sono.",
+  "cuidados": "Planta segura para uso geral. Óleo essencial diluído é seguro. Evite uso intenso durante a gravidez.",
+  "conexao_ancestral": "Uma das plantas medicinais e espirituais mais antigas do mundo mediterrâneo. Usada por séculos em rituais de purificação, amor e proteção em diversas culturas.",
+  "intencao": "Estou em paz. Meu coração está curado e tranquilo.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Harmoniza e aprofunda o equilíbrio emocional."
+}

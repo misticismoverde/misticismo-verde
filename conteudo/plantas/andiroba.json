@@ -1,0 +1,40 @@
+{
+  "nome": "Andiroba",
+  "nome_cientifico": "Carapa guianensis",
+  "icone": "🌿",
+  "categorias": [
+    "Cura",
+    "Amazônica"
+  ],
+  "foto": "",
+  "essencia": "O óleo sagrado da floresta — cura por dentro e protege por fora simultaneamente.",
+  "essencia_completa": "A andiroba é uma das plantas sagradas mais importantes da Amazônia. Seu óleo, extraído das sementes, é usado há séculos pelos povos indígenas para cura física e espiritual. Energeticamente, ela cria uma camada de proteção na pele e no campo áurico, curando enquanto protege — dois presentes em um.",
+  "usos": [
+    "Cura de inflamações físicas e energéticas",
+    "Proteção da pele e do campo áurico",
+    "Anti-inflamatório físico e espiritual",
+    "Fortalecimento das defesas energéticas",
+    "Cura de trauma físico e emocional"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Óleo",
+      "descricao": "Aplique o óleo com intenção de cura e proteção. Massageie nas áreas que precisam de atenção."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Adicione algumas gotas de óleo ao banho para cura e proteção combinadas."
+    },
+    {
+      "modo": "Meditação",
+      "descricao": "Visualize o óleo criando uma camada protetora ao redor de todo o seu corpo."
+    }
+  ],
+  "ritual": "Após o banho, aplique óleo de andiroba em todo o corpo, começando pelos pés. Enquanto massageia cada área, diga: Curo, protejo e fortaleço. Sinta a planta trabalhando — ela é viva e consciente de sua função.",
+  "cuidados": "Planta segura para uso externo. Para uso interno, consulte um profissional. Compre de fontes que fazem extrativismo de forma sustentável.",
+  "conexao_ancestral": "Planta sagrada para os povos indígenas da Amazônia, especialmente os Tikuna, Yanomami e outros. Usada em rituais de cura e proteção há milênios. Símbolo do conhecimento médico da floresta.",
+  "intencao": "Estou curada e protegida. A floresta me oferece sua medicina e eu a recebo com gratidão.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "forca",
+  "produto_sugerido_texto": "Complementa a cura e fortalecimento."
+}

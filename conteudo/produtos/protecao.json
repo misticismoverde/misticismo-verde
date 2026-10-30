@@ -1,0 +1,86 @@
+{
+  "nome": "Sal 3 em 1 — Proteção dos Caminhos",
+  "ordem": 2,
+  "categoria": "Sais Rituais",
+  "preco": 20.0,
+  "esgotado": false,
+  "imagem": "/imagens/produtos/img-produto-protecao.jpg",
+  "loja_selo": "Proteção",
+  "loja_intencao": "⊛ Blindagem Energética",
+  "loja_resumo": "Proteção ativa e abertura de caminhos seguros.",
+  "seo_titulo": "Sal 3 em 1 Proteção dos Caminhos: banho, escalda-pés e defumação",
+  "seo_descricao": "Sal de ervas artesanal para banho, escalda-pés e defumação (180 a 200 g), pensado para rituais de proteção e abertura de caminhos. R$ 20,00. Belém (PA).",
+  "pagina_propria": false,
+  "titulo_pagina": "Sal 3 em 1 — Proteção dos Caminhos",
+  "energia": "Blindagem · Proteção · Abertura de Caminhos",
+  "detalhes": "180g a 200g · banho · escalda-pés · defumação",
+  "introducao": "Existem dias em que parece que algo invisível está te pesando — uma sensação de que onde quer que você vá, algo tenta entrar sem ser chamado. Este sal foi criado para esses dias. Para quem precisa de uma barreira que proteja de verdade, e de caminhos que se abram com segurança.",
+  "para_quem_titulo": "Para quem sente que o campo ao redor precisa de uma armadura",
+  "para_quem_texto": "Você sente quando as energias ao redor não são suas. Quando sai de certos lugares ou de certas conversas diferente de como entrou — mais pesada, mais cansada, menos você. Há momentos em que o campo energético precisa não apenas ser limpo, mas blindado. Protegido de dentro para fora.",
+  "para_quem_lista": [
+    "Quem trabalha com o público e absorve a energia de muitas pessoas",
+    "Quem sente que atrai situações de conflito ou inveja com frequência",
+    "Quem está em um momento de mudança e precisa de caminhos seguros",
+    "Quem percebe que certos ambientes ou pessoas te deixam esgotada",
+    "Quem quer fortalecer o campo espiritual antes de decisões importantes"
+  ],
+  "atuacao_titulo": "O que este sal cria, fortalece e abre ao redor de você",
+  "atuacao_texto": "<p>O Sal 3 em 1 — Proteção dos Caminhos age em duas frentes: <em>cria uma blindagem</em> ao redor do campo energético e <em>abre passagem</em> para o que é de bem circular livremente. Proteção real não é fechamento — é discernimento.</p><p>Ele atua sobre <strong>influências externas</strong> que se instalam sem permissão — a energia de quem te olha com inveja, de ambientes que carregam histórias pesadas, de situações que tentam drenar o que é seu.</p><p>E ao mesmo tempo que protege, ele <strong>abre caminhos</strong>. Porque quando você está protegida, o que é seu consegue chegar até você sem obstáculos.</p>",
+  "ritual_titulo": "Prepare seu campo como se preparasse um espaço sagrado",
+  "ritual_introducao": "Antes de começar, respire fundo. Sinta seus pés no chão. Este ritual pede presença — não apenas o corpo, mas a intenção de quem quer se proteger de verdade.",
+  "ritual_passos": [
+    {
+      "modo": "Banho de proteção",
+      "descricao": "Dissolva em água morna. Declare em voz firme: Protejo meu campo. Só o que é de bem pode me tocar. Aplique do pescoço para baixo com movimentos lentos e intencionais, como se estivesse colocando uma armadura invisível."
+    },
+    {
+      "modo": "Escalda-pés",
+      "descricao": "Dissolva em água quente. Mergulhe os pés por 15 minutos. Visualize raízes saindo dos seus pés e entrando na terra — firmes, sólidas, inatingíveis. Sinta o chão te sustentando e protegendo por baixo."
+    },
+    {
+      "modo": "Defumação protetora",
+      "descricao": "Queime em brasa e circule os cômodos no sentido horário. Comece pela porta de entrada, passe pelas janelas e pelos cantos. Enquanto a fumaça circula, visualize uma luz dourada formando uma barreira ao redor de tudo."
+    }
+  ],
+  "intencao_frase": "Meu campo está protegido. O que é meu fica. O que não é meu não entra.",
+  "experiencia_titulo": "O que você pode sentir depois",
+  "experiencia_texto": "A proteção verdadeira se sente — não como tensão, mas como firmeza. Como se você finalmente se sentisse em casa dentro de si mesma:",
+  "experiencia_itens": [
+    {
+      "icone": "🛡️",
+      "nome": "Firmeza",
+      "descricao": "Uma sensação de estar mais sólida. Como se nada pudesse te mover sem sua permissão."
+    },
+    {
+      "icone": "🌿",
+      "nome": "Leveza",
+      "descricao": "Paradoxalmente, a proteção também libera. Você para de carregar o que não é seu."
+    },
+    {
+      "icone": "✨",
+      "nome": "Clareza",
+      "descricao": "Com o campo protegido, fica mais fácil distinguir o que é seu e o que é do ambiente."
+    },
+    {
+      "icone": "🚶",
+      "nome": "Confiança",
+      "descricao": "Você se move pelo mundo de forma diferente — mais firme, mais consciente."
+    },
+    {
+      "icone": "🌙",
+      "nome": "Sono protegido",
+      "descricao": "Muitas pessoas dormem mais profundamente após um ritual de proteção."
+    },
+    {
+      "icone": "🌳",
+      "nome": "Enraizamento",
+      "descricao": "Uma sensação de estar mais presente no próprio corpo e no próprio espaço."
+    }
+  ],
+  "cuidados": "<p>Use com intenção clara. Uma vez por semana é suficiente para manter o campo blindado. Evite uso interno. Gestantes devem preferir a defumação ao banho. Se sentir reação na pele, dilua mais.</p>",
+  "conexao_titulo": "A arte de proteger vem de muito antes de nós",
+  "conexao_citacao": "Toda tradição que respeita a vida sabe que o campo espiritual precisa ser cuidado como o corpo — com regularidade, com intenção e com os aliados certos.",
+  "conexao_texto": "As plantas que compõem este sal foram escolhidas dentro de saberes que têm raízes nas tradições de proteção do Norte do Brasil — onde a floresta sempre foi aliada, onde cada planta tem um nome e um propósito. Essa sabedoria foi passada de mão em mão, de geração em geração.",
+  "chamada_titulo": "Se você sentiu que precisa disso, seu campo já está pedindo",
+  "chamada_texto": "Proteção não é medo — é cuidado. É escolher conscientemente o que entra no seu espaço e o que não entra. Se esse ritual te chamou, talvez seja o momento de responder."
+}

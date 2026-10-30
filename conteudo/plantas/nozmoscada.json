@@ -1,0 +1,40 @@
+{
+  "nome": "Noz-moscada",
+  "nome_cientifico": "Myristica fragrans",
+  "icone": "🟤",
+  "categorias": [
+    "Prosperidade",
+    "Proteção"
+  ],
+  "foto": "",
+  "essencia": "Uma das especiarias mais valiosas da história — ela sabe o que vale.",
+  "essencia_completa": "A noz-moscada foi tão valiosa historicamente que guerras foram travadas por ela. Essa história de valor e poder está gravada em sua energia: ela atrai prosperidade com a força de quem sabe seu próprio preço. Espiritualmente, é usada para atrair dinheiro, sorte e proteção em negócios.",
+  "usos": [
+    "Atração de dinheiro e riqueza",
+    "Prosperidade em negócios",
+    "Proteção financeira",
+    "Sorte e boas oportunidades",
+    "Amplificação de outras intenções"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Amuleto",
+      "descricao": "Carregue uma noz-moscada inteira na carteira ou bolso para atrair prosperidade."
+    },
+    {
+      "modo": "Pó em rituais",
+      "descricao": "Polvilhe um pouco de pó na carteira, no caixa do negócio ou em rituais de prosperidade."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Adicione em banhos de prosperidade para amplificar a intenção."
+    }
+  ],
+  "ritual": "Segure uma noz-moscada inteira na mão direita. Visualize seu negócio, trabalho ou situação financeira florescendo com abundância. Sinta o calor da especiaria em sua mão. Coloque-a depois na carteira ou no caixa do seu negócio. Renove este ritual a cada lua nova.",
+  "cuidados": "Em doses medicinais altas pode ser tóxica — use apenas como amuleto ou em pequenas quantidades em banhos. Não ingira em quantidade.",
+  "conexao_ancestral": "Uma das especiarias mais valiosas do comércio medieval. Usada em rituais de prosperidade em terreiros afro-brasileiros e em tradições populares europeias por séculos.",
+  "intencao": "Sei o meu valor. A prosperidade me reconhece e vem ao meu encontro.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "prosperidade",
+  "produto_sugerido_texto": "Amplifica a atração de prosperidade."
+}

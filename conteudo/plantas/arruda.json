@@ -1,0 +1,40 @@
+{
+  "nome": "Arruda",
+  "nome_cientifico": "Ruta graveolens",
+  "icone": "🌿",
+  "categorias": [
+    "Proteção",
+    "Limpeza"
+  ],
+  "foto": "",
+  "essencia": "A guardiã dos quintais brasileiros — protege, limpa e não pede licença ao negativo.",
+  "essencia_completa": "A arruda é talvez a planta de proteção mais conhecida do Brasil. Cresce em qualquer quintal, cheira forte e protege com a intensidade de quem não tem medo. Ela não apenas afasta energias negativas — ela limpa o campo onde passou, renovando a vibração de tudo que toca. Planta de múltiplas camadas: protege, purifica e fortalece.",
+  "usos": [
+    "Proteção contra mau-olhado e inveja",
+    "Quebra de feitiços e energias negativas",
+    "Limpeza profunda do campo energético",
+    "Fortalecimento da aura",
+    "Proteção de crianças e lares"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Galho no corpo",
+      "descricao": "Passe um galho fresco de cima para baixo com intenção de limpeza. Descarte fora de casa."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão de folhas frescas para banho de limpeza e proteção. Excelente nas viradas de semana."
+    },
+    {
+      "modo": "Planta viva",
+      "descricao": "Um vaso na entrada da casa cria proteção permanente e contínua."
+    }
+  ],
+  "ritual": "Numa sexta-feira, pegue um galho de arruda fresco. Esfregue suavemente ao longo do seu corpo de cima para baixo, visualizando toda energia negativa sendo absorvida pela planta. Descarte em encruzilhada ou no lixo da rua. Agradeça. A arruda protege, mas também limpa e fortalece — confie nela.",
+  "cuidados": "Não ingerir. Pode causar irritação em pele sensível. Gestantes devem evitar contato direto. Cuidado com crianças pequenas.",
+  "conexao_ancestral": "Patrimônio imaterial da cura popular brasileira. Usada por benzedeiras, terreiros, parteiras e avós há séculos em todas as regiões do Brasil.",
+  "intencao": "Estou protegida. O que não é meu não tem poder sobre mim.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "protecao",
+  "produto_sugerido_texto": "Amplifica a blindagem energética."
+}

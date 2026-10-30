@@ -1,0 +1,86 @@
+{
+  "nome": "Sal 3 em 1 — Força & Vitalidade",
+  "ordem": 4,
+  "categoria": "Sais Rituais",
+  "preco": 20.0,
+  "esgotado": false,
+  "imagem": "/imagens/produtos/img-produto-forca.jpg",
+  "loja_selo": "Vitalidade",
+  "loja_intencao": "◈ Energia Interior",
+  "loja_resumo": "Revigora corpo e energia. Voltada à força interior e renovação.",
+  "seo_titulo": "Sal 3 em 1 Força e Vitalidade: banho, escalda-pés e defumação",
+  "seo_descricao": "Sal de ervas artesanal para banho, escalda-pés e defumação (180 a 200 g), pensado para rituais de força interior e foco. R$ 20,00. Feito em Belém (PA).",
+  "pagina_propria": false,
+  "titulo_pagina": "Sal 3 em 1 — Força e Vitalidade",
+  "energia": "Energia Interior · Renovação · Foco",
+  "detalhes": "180g a 200g · banho · escalda-pés · defumação",
+  "introducao": "Não é fraqueza. É o esgotamento de quem deu demais de si por tempo demais. Existe uma diferença entre cansaço que o sono resolve e aquele que vai fundo — no espírito, na vontade, na capacidade de continuar. Este sal foi criado para esse segundo tipo. Para despertar o que não sumiu, apenas adormeceu.",
+  "para_quem_titulo": "Para quem se perdeu no meio do caminho e quer se reencontrar",
+  "para_quem_texto": "Você lembra de quando se sentia inteira, com energia, com vontade de estar presente em tudo. Esse estado não desapareceu — ele foi sendo consumido. Pelas demandas, pelos ciclos difíceis, pelo hábito de colocar todo mundo na frente de si mesma. Este sal não vai te dar energia artificial. Vai te ajudar a reconectar com a que sempre foi sua.",
+  "para_quem_lista": [
+    "Quem está em um período de exaustão que vai além do físico",
+    "Quem perdeu o entusiasmo pelas coisas que antes faziam sentido",
+    "Quem precisa de foco e clareza para retomar projetos e decisões",
+    "Quem está saindo de um período difícil e quer se fortalecer para o que vem",
+    "Quem quer começar um novo ciclo com o campo vital renovado"
+  ],
+  "atuacao_titulo": "O que este sal desperta, restaura e coloca de volta em movimento",
+  "atuacao_texto": "<p>O Sal 3 em 1 — Força e Vitalidade trabalha na camada mais profunda do esgotamento: a <em>energética</em>. Ele não estimula — ele <em>restaura</em>. Há uma diferença entre forçar o corpo a se movimentar e devolver ao campo a energia que ele precisa para querer se mover sozinho.</p><p>Ele atua sobre <strong>vitalidade drenada</strong> por excesso de entrega, por situações que consumiram mais do que havia disponível. Sobre <strong>foco disperso</strong> — aquela sensação de estar em tudo e em nada ao mesmo tempo.</p><p>E desperta o que estava adormecido: a <strong>vontade de estar presente</strong>, o prazer de existir, a energia que é só sua.</p>",
+  "ritual_titulo": "Um ritual para acordar o que estava dormindo dentro de você",
+  "ritual_introducao": "Esse ritual é melhor feito pela manhã — antes que o dia tome conta. Como um ato de declarar que hoje você começa de dentro para fora.",
+  "ritual_passos": [
+    {
+      "modo": "Banho de ativação",
+      "descricao": "Dissolva em água morna-quente. Antes de entrar, coloque as mãos no peito e sinta o ritmo do próprio coração. Aplique do pescoço para baixo com movimentos firmes e ascendentes. Visualize luz subindo pelos seus pés até o alto da cabeça, recarregando cada ponto do campo."
+    },
+    {
+      "modo": "Escalda-pés",
+      "descricao": "Use ao final de dias longos que consumiram muito de você. Dissolva em água bem quente. Enquanto os pés mergulham, imagine toda a energia gasta no dia sendo devolvida para você — transformada, limpa, disponível novamente."
+    },
+    {
+      "modo": "Defumação de presença",
+      "descricao": "Queime antes de atividades que pedem toda a sua presença. Passe a fumaça ao redor de si mesma com movimentos ascendentes e diga: Estou presente. Estou inteira. Estou pronta."
+    }
+  ],
+  "intencao_frase": "Minha energia é minha. Estou inteira, presente e pronta para o que é meu.",
+  "experiencia_titulo": "O que volta quando a vitalidade retorna",
+  "experiencia_texto": "A restauração da força vital tem uma qualidade específica — não é agitação, é presença. É saber que você está de volta:",
+  "experiencia_itens": [
+    {
+      "icone": "🔥",
+      "nome": "Vontade",
+      "descricao": "O desejo de fazer, criar e estar presente volta — não como obrigação, mas como impulso natural."
+    },
+    {
+      "icone": "🎯",
+      "nome": "Foco",
+      "descricao": "A mente se clareia. Fica mais fácil terminar o que começa e começar o que importa."
+    },
+    {
+      "icone": "💪",
+      "nome": "Firmeza",
+      "descricao": "Uma sensação de estar dentro do próprio corpo de verdade — sólida, presente, real."
+    },
+    {
+      "icone": "✨",
+      "nome": "Brilho",
+      "descricao": "Pessoas ao redor percebem quando você está de volta. Há algo diferente no olhar, na postura."
+    },
+    {
+      "icone": "🌿",
+      "nome": "Leveza ativa",
+      "descricao": "Diferente da leveza da limpeza — esta é dinâmica. É a energia que quer se mover."
+    },
+    {
+      "icone": "🌅",
+      "nome": "Novo começo",
+      "descricao": "Uma sensação genuína de que algo recomeça. Não só esperança — certeza."
+    }
+  ],
+  "cuidados": "<p>Este sal restaura — mas o corpo também precisa de sono, água e descanso real. Use o ritual como aliado, não como substituto do cuidado físico. Uma vez por semana ou em momentos de necessidade intensa. Evite uso interno. Gestantes devem preferir a defumação.</p>",
+  "conexao_titulo": "A vitalidade que a floresta conhece bem",
+  "conexao_citacao": "A árvore não pede permissão para crescer. Ela simplesmente canaliza o que a terra oferece e cresce em direção à luz. Nós aprendemos isso com ela.",
+  "conexao_texto": "As plantas escolhidas para este sal foram selecionadas dentro da tradição do Norte do Brasil — ervas conhecidas por sua capacidade de restaurar a energia vital, de fortalecer o campo espiritual e de despertar o que estava adormecido.",
+  "chamada_titulo": "Você não perdeu sua força. Ela só está esperando ser chamada de volta",
+  "chamada_texto": "Se você chegou até aqui com a sensação de que precisa de um recomeço, essa sensação já é o primeiro sinal de que algo em você ainda quer. Permita-se esse ritual."
+}

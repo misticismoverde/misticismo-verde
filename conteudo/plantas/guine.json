@@ -1,0 +1,39 @@
+{
+  "nome": "Guiné",
+  "nome_cientifico": "Petiveria alliacea",
+  "icone": "🌱",
+  "categorias": [
+    "Proteção",
+    "Limpeza"
+  ],
+  "foto": "",
+  "essencia": "A planta que limpa antes de proteger — entra fundo onde a arruda não chega.",
+  "essencia_completa": "O guiné é uma das plantas de trabalho espiritual mais respeitadas do Brasil. Seu aroma forte e penetrante é sinal de sua potência: ele entra fundo no campo energético, dissolvendo o que foi plantado com má intenção e criando uma barreira de difícil penetração. Na umbanda, é planta de caboclos e entidades guerreiras.",
+  "usos": [
+    "Proteção contra trabalhos e feitiços",
+    "Limpeza de energias intencionalmente negativas",
+    "Desobstrução de campos energéticos bloqueados",
+    "Fortalecimento espiritual intenso"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Banho",
+      "descricao": "Infusão forte das folhas para banho de descarrego. Use em momentos de vulnerabilidade intensa."
+    },
+    {
+      "modo": "Defumação",
+      "descricao": "Folhas secas queimadas para limpeza de ambientes pesados."
+    },
+    {
+      "modo": "Amuleto",
+      "descricao": "Folhas secas num sachê para proteção contínua."
+    }
+  ],
+  "ritual": "Em dia de lua minguante, prepare um banho forte de guiné. Antes de entrar no banho, declare em voz alta o que deseja afastar. Entre no banho do pescoço para baixo, sentindo a energia densa sendo dissolvida. Depois, descanse — o trabalho do guiné continua agindo por horas.",
+  "cuidados": "Planta de ação intensa — não use em excesso. Grávidas devem evitar. Crianças pequenas, consulte antes de usar.",
+  "conexao_ancestral": "Amplamente usada nos cultos afro-brasileiros, especialmente em terreiros de umbanda e candomblé. Considerada planta de proteção guerreira, ligada a Ogum e Exu.",
+  "intencao": "Nenhuma energia negativa atravessa meu campo. Estou blindada.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "protecao",
+  "produto_sugerido_texto": "Reforça a blindagem energética."
+}

@@ -1,0 +1,40 @@
+{
+  "nome": "Camomila",
+  "nome_cientifico": "Matricaria chamomilla",
+  "icone": "🌼",
+  "categorias": [
+    "Cura",
+    "Amor"
+  ],
+  "foto": "",
+  "essencia": "A flor do cuidado — cura com a delicadeza de quem nunca machuca.",
+  "essencia_completa": "A camomila é a planta do cuidado gentil. Seu aroma suave e seu sabor delicado são a tradução botânica do que significa ser tratado com carinho. Ela cura as inflamações físicas e emocionais — aquele nó no estômago, a raiva que ferve por baixo, a irritação que não tem nome — com uma suavidade que desarma.",
+  "usos": [
+    "Cura de inflamações físicas e emocionais",
+    "Equilíbrio do sistema digestivo e emocional",
+    "Paz e gentileza",
+    "Cura de relacionamentos tensos",
+    "Acolhimento emocional"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Cha",
+      "descricao": "Para cura interna — física e emocional. Beba com intenção de cuidado consigo."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão para banho de cura e acolhimento emocional."
+    },
+    {
+      "modo": "Compressa",
+      "descricao": "Panos embebidos em chá para inflamações físicas e emocionais localizadas."
+    }
+  ],
+  "ritual": "Prepare um banho de camomila numa tarde de descanso. Enquanto se banha, fale consigo mesmo como falaria com uma criança que você ama: com gentileza, sem julgamento. A camomila cria o campo seguro para esse encontro interno.",
+  "cuidados": "Planta muito segura para uso geral, inclusive crianças. Possível alergia em pessoas alérgicas à família Asteraceae. Verifique se houver dúvida.",
+  "conexao_ancestral": "Uma das plantas de cura mais antigas do mundo. Presente no Egito Antigo, na medicina medieval europeia e nas receitas de avó de todo o Brasil. Símbolo universal do cuidado.",
+  "intencao": "Me cuido com gentileza. Mereço o mesmo cuidado que ofereço aos outros.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Promove cura e equilíbrio emocional."
+}

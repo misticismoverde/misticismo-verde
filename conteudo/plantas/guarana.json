@@ -1,0 +1,41 @@
+{
+  "nome": "Guaraná",
+  "nome_cientifico": "Paullinia cupana",
+  "icone": "🌿",
+  "categorias": [
+    "Amazônica",
+    "Prosperidade",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "Os olhos da floresta — vê o que outros não veem e vai onde outros não chegam.",
+  "essencia_completa": "O guaraná carrega uma mitologia única. Para os Sateré-Mawé, povo que o cultivou por séculos, o guaraná nasceu dos olhos de uma criança sagrada — e por isso seus frutos têm a forma de um olho. Energeticamente, ele amplia a percepção, aguça a visão espiritual e dá força para percorrer caminhos longos.",
+  "usos": [
+    "Ampliação da percepção e visão espiritual",
+    "Força e resistência em jornadas longas",
+    "Foco e clareza de propósito",
+    "Energia para manifestar objetivos",
+    "Conexão com a visão além do óbvio"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Pó natural",
+      "descricao": "Uma colher do pó natural em água com intenção de clareza e foco para o dia."
+    },
+    {
+      "modo": "Ritual de visão",
+      "descricao": "Prepare o guaraná antes de meditações de visão ou tomadas de decisão importantes."
+    },
+    {
+      "modo": "Amuleto",
+      "descricao": "Sementes secas carregadas como amuleto de percepção e força."
+    }
+  ],
+  "ritual": "Numa manhã importante, prepare o guaraná com água e intenção. Antes de beber, feche os olhos e peça clareza sobre um caminho, uma decisão, um desafio. O guaraná não diz o que você quer ouvir; ele amplia sua capacidade de ver o que já está lá.",
+  "cuidados": "Contém cafeína — evite à noite e em excesso. Cuidado com pessoas sensíveis à cafeína, cardíacos e gestantes. Prefira o pó natural sem aditivos.",
+  "conexao_ancestral": "Cultivado exclusivamente pelo povo Sateré-Mawé da Amazônia por séculos. Considerado planta sagrada, ligada à criação do mundo e à visão espiritual. Hoje símbolo da Amazônia no mundo inteiro.",
+  "intencao": "Minha visão é clara. Vejo além do óbvio e caminho com força e propósito.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "forca",
+  "produto_sugerido_texto": "Amplifica a energia e o foco."
+}

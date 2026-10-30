@@ -1,0 +1,40 @@
+{
+  "nome": "Eucalipto",
+  "nome_cientifico": "Eucalyptus globulus",
+  "icone": "🌿",
+  "categorias": [
+    "Limpeza",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "O aroma que limpa o ar e o campo energético com a mesma eficiência.",
+  "essencia_completa": "O eucalipto age em múltiplas dimensões: limpa o ar fisicamente (comprovado cientificamente) e limpa o campo energético com a mesma eficiência. Seu aroma forte e mentolado dissolve energias densas, desobstrui o que está fechado e traz clareza onde havia confusão.",
+  "usos": [
+    "Limpeza profunda de ambientes",
+    "Desobstrução energética e respiratory",
+    "Clareza mental e espiritual",
+    "Renovação do campo energético",
+    "Cura de vias respiratórias e emocionais"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Defumação",
+      "descricao": "Folhas secas ou óleo essencial no difusor para limpeza intensa de ambientes."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão das folhas para banho de limpeza e renovação. Sensação imediata de frescor."
+    },
+    {
+      "modo": "Vaporizacao",
+      "descricao": "Adicione folhas numa tigela de água quente. Inale o vapor com intenção de limpeza."
+    }
+  ],
+  "ritual": "No primeiro dia do mês, defume todos os cômodos da sua casa com eucalipto. Abra as janelas. Enquanto a fumaça circula, diga: 'Tudo que é velho, pesado ou desnecessário sai agora. Renovo este espaço com luz e leveza.' Deixe o ar fresco entrar.",
+  "cuidados": "Evite uso em crianças menores de 6 anos. Óleo essencial puro pode causar irritação. Sempre dilua antes de aplicar na pele.",
+  "conexao_ancestral": "Embora originário da Austrália, o eucalipto foi completamente incorporado à tradição popular de cura brasileira. Presente em benzeduras, remédios caseiros e práticas de limpeza espiritual por gerações.",
+  "intencao": "Meu campo está limpo e desobstruído. Respiro com liberdade.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "limpeza",
+  "produto_sugerido_texto": "Complementa a limpeza energética."
+}

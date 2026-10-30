@@ -1,0 +1,141 @@
+# Painel de edição do site Misticismo Verde (Pages CMS — https://app.pagescms.org)
+# Cada item abaixo vira uma seção no menu do painel.
+
+media:
+  input: site/imagens
+  output: /imagens
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  # ─────────────────────────── PRODUTOS ───────────────────────────
+  - name: produtos
+    label: Produtos
+    type: collection
+    path: conteudo/produtos
+    format: json
+    filename: "{primary}.json"
+    view:
+      fields: [nome, preco, esgotado, ordem]
+      primary: nome
+      sort: [ordem, nome]
+    fields:
+      - { name: nome, label: Nome na loja, type: string, required: true, description: "Ex.: Sal 3 em 1 — Limpeza Profunda" }
+      - { name: preco, label: Preço (R$), type: number, required: true, description: "Use ponto para os centavos. Ex.: 39.90" }
+      - { name: esgotado, label: Esgotado / vendido, type: boolean, description: "Marque quando acabar. A página continua no ar, com o aviso de peça vendida." }
+      - name: categoria
+        label: Categoria
+        type: select
+        required: true
+        options: { values: [Sais Rituais, Amuletos, Plantas Vivas, Difusores] }
+      - { name: ordem, label: Posição na loja, type: number, description: "1 aparece primeiro." }
+      - { name: imagem, label: Foto principal, type: image, options: { path: site/imagens/produtos } }
+      - { name: loja_selo, label: "Loja: selo sobre a foto", type: string, description: "Ex.: Limpeza, Artesanal · Único" }
+      - { name: loja_intencao, label: "Loja: linha de intenção", type: string, description: "Ex.: ❋ Purificação Profunda" }
+      - { name: loja_resumo, label: "Loja: resumo curto", type: text }
+      - { name: seo_titulo, label: "Google: título", type: string, description: "Até ~60 caracteres. Diga o que é o produto. Se ficar vazio, usa o nome." }
+      - { name: seo_descricao, label: "Google: descrição", type: text, description: "Até ~155 caracteres. Aparece embaixo do título no Google. Evite prometer cura ou tratamento." }
+      - { name: pagina_propria, label: Página feita à mão, type: boolean, readonly: true, description: "Produtos antigos com layout próprio (muiraquitã, coruja, difusor, jiboia, espada). Neles o painel muda só preço, foto da loja e textos do Google. Produtos novos usam o modelo abaixo." }
+      - { name: titulo_pagina, label: "Página: título", type: string }
+      - { name: energia, label: "Página: palavras de energia", type: string, description: "Ex.: Purificação · Renovação · Leveza" }
+      - { name: detalhes, label: "Página: detalhes abaixo do preço", type: string, description: "Ex.: 180g a 200g · banho · escalda-pés · defumação" }
+      - { name: introducao, label: "Página: texto de abertura", type: text }
+      - { name: para_quem_titulo, label: "Para quem é: título", type: string }
+      - { name: para_quem_texto, label: "Para quem é: texto", type: text }
+      - { name: para_quem_lista, label: "Para quem é: lista", type: string, list: true }
+      - { name: atuacao_titulo, label: "O que ele atua: título", type: string }
+      - { name: atuacao_texto, label: "O que ele atua: texto", type: rich-text, options: { format: html } }
+      - { name: ritual_titulo, label: "Como usar: título", type: string }
+      - { name: ritual_introducao, label: "Como usar: introdução", type: text }
+      - name: ritual_passos
+        label: "Como usar: passos"
+        type: object
+        list: true
+        fields:
+          - { name: modo, label: Modo, type: string }
+          - { name: descricao, label: Descrição, type: text }
+      - { name: intencao_frase, label: Intenção sugerida, type: text }
+      - { name: experiencia_titulo, label: "Experiência: título", type: string }
+      - { name: experiencia_texto, label: "Experiência: texto", type: text }
+      - name: experiencia_itens
+        label: "Experiência: itens"
+        type: object
+        list: true
+        fields:
+          - { name: icone, label: Ícone (emoji), type: string }
+          - { name: nome, label: Nome, type: string }
+          - { name: descricao, label: Descrição, type: text }
+      - { name: cuidados, label: Cuidados, type: rich-text, options: { format: html } }
+      - { name: conexao_titulo, label: "Conexão com a natureza: título", type: string }
+      - { name: conexao_citacao, label: "Conexão com a natureza: citação", type: text }
+      - { name: conexao_texto, label: "Conexão com a natureza: texto", type: text }
+      - { name: chamada_titulo, label: "Chamada final: título", type: string }
+      - { name: chamada_texto, label: "Chamada final: texto", type: text }
+
+  # ─────────────────────────── PLANTAS ───────────────────────────
+  - name: plantas
+    label: Biblioteca Viva (plantas)
+    type: collection
+    path: conteudo/plantas
+    format: json
+    filename: "{primary}.json"
+    view:
+      fields: [nome, nome_cientifico]
+      primary: nome
+      sort: [nome]
+    fields:
+      - { name: nome, label: Nome popular, type: string, required: true }
+      - { name: nome_cientifico, label: Nome científico, type: string, required: true, description: "Ex.: Carapa guianensis" }
+      - { name: icone, label: Ícone (emoji), type: string }
+      - name: categorias
+        label: Intenções
+        type: select
+        options: { values: [Proteção, Limpeza, Amor, Prosperidade, Cura, Amazônica], multiple: true }
+      - { name: foto, label: Foto da planta, type: image, options: { path: site/imagens/plantas }, description: "Opcional, mas ajuda muito no Google Imagens." }
+      - { name: essencia, label: Essência (uma frase), type: text }
+      - { name: essencia_completa, label: Essência espiritual (texto), type: text }
+      - { name: o_que_a_ciencia_diz, label: O que a ciência diz, type: rich-text, options: { format: html }, description: "Opcional. Compostos, estudos e fontes. Só aparece se for preenchido." }
+      - { name: usos, label: Usos na tradição, type: string, list: true, description: "Escreva como uso tradicional, sem prometer cura." }
+      - name: modos_de_uso
+        label: Como usar
+        type: object
+        list: true
+        fields:
+          - { name: modo, label: Modo, type: string }
+          - { name: descricao, label: Descrição, type: text }
+      - { name: ritual, label: Ritual simples, type: text }
+      - { name: cuidados, label: Cuidados, type: text }
+      - { name: conexao_ancestral, label: Conexão ancestral, type: text }
+      - { name: intencao, label: Intenção guiada, type: text }
+      - { name: produto_sugerido, label: Produto sugerido, type: reference, options: { collection: produtos } }
+      - { name: produto_sugerido_texto, label: Frase do produto sugerido, type: string }
+      - { name: seo_titulo, label: "Google: título (opcional)", type: string }
+      - { name: seo_descricao, label: "Google: descrição (opcional)", type: text }
+
+  # ─────────────────────────── ARTIGOS ───────────────────────────
+  - name: artigos
+    label: Artigos
+    type: collection
+    path: conteudo/artigos
+    format: json
+    filename: "artigo-{primary}.json"
+    view:
+      fields: [titulo, data]
+      primary: titulo
+      sort: [data, titulo]
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - { name: data, label: Data de publicação, type: date }
+      - { name: categoria, label: Categoria (com emoji), type: string, description: "Ex.: 🌿 Plantas Sagradas" }
+      - { name: resumo, label: Resumo do cartão, type: text, description: "Até ~140 caracteres." }
+      - { name: imagem, label: Imagem de capa, type: image, options: { path: site/imagens/artigos } }
+      - { name: corpo, label: Texto do artigo, type: rich-text, options: { format: html } }
+      - { name: nota, label: Nota de cuidado (opcional), type: text }
+      - { name: tempo_leitura, label: Tempo de leitura (minutos), type: number }
+      - { name: palavras_chave, label: "Rodapé do cartão", type: string, description: "Ex.: Plantas · Ancestralidade" }
+      - { name: temas, label: Temas, type: string }
+      - { name: plantas_relacionadas, label: Plantas citadas, type: reference, options: { collection: plantas, multiple: true } }
+      - { name: produtos_relacionados, label: Produtos citados, type: reference, options: { collection: produtos, multiple: true } }
+      - { name: ordem, label: Ordem (artigos sem data), type: number }
+      - { name: seo_titulo, label: "Google: título", type: string }
+      - { name: seo_descricao, label: "Google: descrição", type: text }
+      - { name: rascunho, label: Rascunho (não publicar), type: boolean }

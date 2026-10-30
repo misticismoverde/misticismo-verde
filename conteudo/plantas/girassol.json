@@ -1,0 +1,40 @@
+{
+  "nome": "Girassol",
+  "nome_cientifico": "Helianthus annuus",
+  "icone": "🌻",
+  "categorias": [
+    "Prosperidade",
+    "Amor"
+  ],
+  "foto": "",
+  "essencia": "A planta que olha para o sol e nos lembra: siga sempre a luz.",
+  "essencia_completa": "O girassol é a planta da expansão, da alegria e da abundância solar. Ele não apenas atrai prosperidade — ele transforma a perspectiva, ajudando a ver oportunidades onde antes só havia obstáculos. É a planta de quem quer crescer, brilhar e atrair tudo de bom que a vida tem para oferecer.",
+  "usos": [
+    "Atração de prosperidade e abundância",
+    "Expansão de perspectivas e oportunidades",
+    "Alegria e otimismo",
+    "Confiança no futuro",
+    "Fortalecimento da autoconfiança"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Planta viva ou flores",
+      "descricao": "Girassóis no lar atraem energia solar de prosperidade e alegria."
+    },
+    {
+      "modo": "Sementes",
+      "descricao": "Carregue sementes de girassol como amuleto de prosperidade."
+    },
+    {
+      "modo": "Banho de flores",
+      "descricao": "Pétalas frescas no banho para renovar a perspectiva e atrair a luz."
+    }
+  ],
+  "ritual": "Numa manhã ensolarada, sente-se diante de um girassol (ou de sua imagem). Feche os olhos e sinta o calor do sol em você. Visualize sua vida se expandindo na direção da luz — novos caminhos, novas oportunidades, nova versão de você. O girassol sabe o caminho.",
+  "cuidados": "Planta segura para uso geral. Sementes são comestíveis. Para uso espiritual, não há restrições.",
+  "conexao_ancestral": "Planta solar sagrada para diversas culturas indígenas das Américas. Símbolo de adoração ao sol, de crescimento e de volta constante para a luz. Presente em rituais de prosperidade em muitas tradições.",
+  "intencao": "Viro meu rosto para a luz. Crescimento, expansão e abundância são meu caminho natural.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "prosperidade",
+  "produto_sugerido_texto": "Ativa o fluxo solar de abundância."
+}

@@ -1,0 +1,39 @@
+{
+  "nome": "Jucá",
+  "nome_cientifico": "Libidibia ferrea",
+  "icone": "🌳",
+  "categorias": [
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "A árvore de ferro da Amazônia — cura o que parecia incurável com a força da floresta.",
+  "essencia_completa": "O Jucá, ou pau-ferro, é uma das árvores de cura mais respeitadas da Amazônia e do Nordeste brasileiro. Seu nome popular 'pau-ferro' diz tudo sobre sua energia: é dura, resistente, inquebrável. Energeticamente, ela fortalece o que está fraco, reconstrói o que foi destruído e dá persistência para continuar.",
+  "usos": [
+    "Cura de enfermidades persistentes",
+    "Fortalecimento do organismo físico e energético",
+    "Reconstrução de campos enfraquecidos",
+    "Resistência e persistência espiritual",
+    "Cura de ossos e estrutura energética"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Cha da casca",
+      "descricao": "Prepare com a casca. Beba com intenção de fortalecimento e cura profunda."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão da casca para banho de fortalecimento estrutural."
+    },
+    {
+      "modo": "Meditacao",
+      "descricao": "Visualize as raízes desta árvore de ferro se conectando ao seu próprio sistema de cura."
+    }
+  ],
+  "ritual": "Prepare um chá de jucá numa manhã difícil. Segure a xícara e sinta o calor da casca milenar. Visualize a árvore — firme, alta, de madeira de ferro — como símbolo da sua própria resistência. Beba com a consciência de que você é mais forte do que imagina.",
+  "cuidados": "Uso moderado. Consulte um profissional de saúde antes de usar medicialmente para condições específicas. Não indicado para uso prolongado sem orientação.",
+  "conexao_ancestral": "Sagrada na medicina tradicional amazônica e do Nordeste brasileiro. Usada por curandeiros, benzedeiras e raizeiros para fortalecer o corpo e o espírito. Patrimônio vivo da medicina popular.",
+  "intencao": "Tenho a resistência da árvore de ferro. Me curo com força e me ergo com dignidade.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "forca",
+  "produto_sugerido_texto": "Revigora e fortalece a energia vital."
+}

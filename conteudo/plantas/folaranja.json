@@ -1,0 +1,40 @@
+{
+  "nome": "Folha de Laranja",
+  "nome_cientifico": "Citrus sinensis",
+  "icone": "🍊",
+  "categorias": [
+    "Limpeza",
+    "Prosperidade"
+  ],
+  "foto": "",
+  "essencia": "Alegria solar em forma de folha — limpa com leveza e abre portas com sorriso.",
+  "essencia_completa": "As folhas de laranjeira carregam a energia do sol — quente, alegre, expansiva. Elas limpam energias pesadas com leveza, sem o peso de plants mais densas, e ao mesmo tempo trazem a vibração da prosperidade e das boas oportunidades. É a planta da alegria que abre caminhos.",
+  "usos": [
+    "Limpeza energética leve e alegre",
+    "Abertura de caminhos de prosperidade",
+    "Atração de boas oportunidades",
+    "Alegria e otimismo",
+    "Harmonia e leveza no ambiente"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Banho",
+      "descricao": "Infusão das folhas para banho de limpeza e alegria. Ótimo para começar novos ciclos."
+    },
+    {
+      "modo": "Defumação",
+      "descricao": "Folhas secas queimadas para limpeza suave e alegre de ambientes."
+    },
+    {
+      "modo": "Chá",
+      "descricao": "Beba com intenção de abertura e gratidão pelas bênçãos já presentes."
+    }
+  ],
+  "ritual": "Na virada de mês, prepare um banho com folhas de laranjeira e uma casca de laranja. Enquanto se banha, visualize o mês anterior sendo lavado embora — com gratidão pelo que veio — e o novo mês se abrindo cheio de luz e oportunidades. A laranjeira transforma.",
+  "cuidados": "Planta segura para uso geral. Certifique-se que as folhas não foram tratadas com agrotóxicos antes de usar em banho ou chá.",
+  "conexao_ancestral": "Presente nas tradições populares brasileiras em banhos de abertura e prosperidade. A laranjeira é símbolo de abundância e alegria em muitas culturas ao redor do mundo.",
+  "intencao": "A alegria é minha vibração natural. Abro o novo ciclo com gratidão e expectativa.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "prosperidade",
+  "produto_sugerido_texto": "Potencializa a abertura de caminhos."
+}

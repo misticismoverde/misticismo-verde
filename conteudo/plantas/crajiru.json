@@ -1,0 +1,41 @@
+{
+  "nome": "Crajiru",
+  "nome_cientifico": "Arrabidaea chica",
+  "icone": "🌿",
+  "categorias": [
+    "Amazônica",
+    "Cura",
+    "Limpeza"
+  ],
+  "foto": "",
+  "essencia": "A tinta sagrada da floresta — colore o campo energético com a vibração da cura.",
+  "essencia_completa": "O Crajiru é uma das plantas mais peculiares e sagradas da Amazônia. Suas folhas produzem uma tinta avermelhada usada pelos povos indígenas tanto para pintura corporal ritual quanto para medicina. Energeticamente, essa cor vermelha representa o sangue da terra — a força vital que cura, fortalece e reconecta.",
+  "usos": [
+    "Cura de inflamações físicas e energéticas",
+    "Limpeza profunda do campo energético",
+    "Fortalecimento do sistema energético feminino",
+    "Reconexão com a força vital",
+    "Rituais de pintura e proteção corporal"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Chá",
+      "descricao": "Prepare com as folhas secas. Beba com intenção de cura e fortalecimento."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "A infusão tingirá levemente a água. Deixe esse vermelho sagrado purificar seu campo."
+    },
+    {
+      "modo": "Defumação",
+      "descricao": "Folhas secas queimadas para limpeza e fortalecimento energético."
+    }
+  ],
+  "ritual": "Prepare um banho de crajiru. Enquanto o balde se tinge de vermelho suave, visualize essa cor como o sangue da floresta — vivo, purificador, ancestral. Banhe-se sentindo a tinta sagrada renovar cada célula do seu campo energético.",
+  "cuidados": "Planta segura para uso externo. O chá pode tingir temporariamente a boca e urina — é normal. Para uso medicinal interno contínuo, consulte um profissional.",
+  "conexao_ancestral": "Sagrada para os povos Tikuna, Yanomami, Kayapó e outros povos amazônicos. Usada em rituais de iniciação, proteção e cura. A pintura corporal com crajiru é um ato ritual de conexão com a força vital da floresta.",
+  "intencao": "A força vital da floresta flui em mim. Estou curada, renovada e conectada.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "limpeza",
+  "produto_sugerido_texto": "Complementa a renovação energética profunda."
+}

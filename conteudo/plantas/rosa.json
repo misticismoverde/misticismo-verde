@@ -1,0 +1,40 @@
+{
+  "nome": "Rosa Vermelha",
+  "nome_cientifico": "Rosa centifolia",
+  "icone": "🌹",
+  "categorias": [
+    "Amor",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "O amor em forma de flor — cura o coração que se fechou por medo.",
+  "essencia_completa": "A rosa vermelha é o símbolo universal do amor, mas sua dimensão espiritual vai muito além do romance. Ela cura o coração — o que se fechou por dor, o que se endureceu por medo, o que esqueceu como é se abrir. A rosa não apenas atrai amor: ela restaura a capacidade de amar e ser amado.",
+  "usos": [
+    "Cura emocional profunda do coração",
+    "Atração de amor verdadeiro e duradouro",
+    "Abertura para receber afeto",
+    "Autoamor e autoestima",
+    "Harmonia em relacionamentos"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Banho de pétalas",
+      "descricao": "Pétalas frescas no banho para cura emocional e abertura do coração."
+    },
+    {
+      "modo": "Agua de rosas",
+      "descricao": "Hidrolato de rosa no rosto e corpo para elevar a vibração de amor."
+    },
+    {
+      "modo": "Oferenda",
+      "descricao": "Pétalas em oferenda a divindades do amor com intenção clara e coração aberto."
+    }
+  ],
+  "ritual": "Encha uma bacia com água morna e adicione pétalas de rosa vermelha. Enquanto se banha, visualize seu coração se abrindo como uma rosa em flor. Permita que qualquer dor antiga se dissolva na água. Diga com convicção: 'Meu coração está aberto. Mereço amor e dou amor com alegria.'",
+  "cuidados": "Planta segura para uso geral. Certifique-se que as rosas não foram tratadas com agrotóxicos antes de usar em banho ou chá.",
+  "conexao_ancestral": "Sagrada em diversas tradições: oferenda a Afrodite na Grécia antiga, usada em terreiros de candomblé e umbanda em oferendas a Oxum, rainha do amor e das águas doces.",
+  "intencao": "Meu coração está aberto e curado. Mereço ser amada e amo plenamente.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Harmoniza e fortalece o amor-próprio."
+}

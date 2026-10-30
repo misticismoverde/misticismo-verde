@@ -1,0 +1,41 @@
+{
+  "nome": "Pau-d'arco",
+  "nome_cientifico": "Tabebuia impetiginosa",
+  "icone": "🌳",
+  "categorias": [
+    "Proteção",
+    "Cura",
+    "Amazônica"
+  ],
+  "foto": "",
+  "essencia": "A árvore-guerreira da Amazônia — cura com força e protege com raízes de séculos.",
+  "essencia_completa": "O Pau-d'arco é uma das árvores sagradas da Amazônia. Sua casca interna, de cor avermelhada, é usada há milênios pelos povos indígenas para cura física e espiritual. Energeticamente, ela representa força, resistência e proteção profunda — como uma raiz que nada consegue arrancar.",
+  "usos": [
+    "Proteção espiritual de longa duração",
+    "Fortalecimento do sistema imune energético",
+    "Cura de enfermidades físicas e espirituais",
+    "Conexão com a força ancestral da floresta",
+    "Resistência em períodos difíceis"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Chá da casca",
+      "descricao": "Prepare com a casca interna. Beba com intenção de fortalecimento e cura."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão da casca para banho de fortalecimento e proteção."
+    },
+    {
+      "modo": "Defumação",
+      "descricao": "Pequenos pedaços de casca seca queimados para proteção do ambiente."
+    }
+  ],
+  "ritual": "Prepare um chá de pau-d'arco ao amanhecer. Segure a xícara com as duas mãos. Visualize as raízes profundas desta árvore milenar se conectando às suas. Sinta a força da floresta entrando no seu corpo. Beba devagar, recebendo cada gole como uma bênção de fortaleza.",
+  "cuidados": "Evite uso prolongado sem orientação. Contraindicado para gestantes. Consulte profissional de saúde antes de usar medicinalmente. Não use em excesso.",
+  "conexao_ancestral": "Sagrado para os povos Quéchua, Tupi-Guarani e outros povos indígenas sul-americanos. Usado em rituais de cura e fortalecimento há milênios. Considerado árvore de poder pela medicina tradicional amazônica.",
+  "intencao": "Tenho a força das raízes da floresta. Nada me dobra, nada me derruba.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "protecao",
+  "produto_sugerido_texto": "Fortalece e protege o campo energético."
+}

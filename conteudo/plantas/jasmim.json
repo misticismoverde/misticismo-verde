@@ -1,0 +1,40 @@
+{
+  "nome": "Jasmim",
+  "nome_cientifico": "Jasminum officinale",
+  "icone": "🌸",
+  "categorias": [
+    "Amor",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "O amor que chega no ar antes de ser visto — suave, irresistível e transformador.",
+  "essencia_completa": "O jasmim é a planta do amor romântico e da sedução espiritual. Seu aroma noturno e envolvente desperta a sensibilidade, abre o coração para experiências profundas de amor e cria uma aura de magnetismo natural. Ele atrai amor verdadeiro pela via da essência, não da aparência.",
+  "usos": [
+    "Atração de amor romântico",
+    "Magnetismo e sensualidade espiritual",
+    "Abertura emocional profunda",
+    "Confiança em relações íntimas",
+    "Cura de decepções amorosas"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Perfume natural",
+      "descricao": "Óleo essencial de jasmim como perfume espiritual. Atrai por vibração."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão das flores para banho de atração e abertura amorosa."
+    },
+    {
+      "modo": "Ambiente noturno",
+      "descricao": "Planta viva no quarto libera aroma à noite, trabalhando durante o sono."
+    }
+  ],
+  "ritual": "Numa sexta-feira à noite, acenda uma vela rosa e coloque flores ou óleo de jasmim próximo. Escreva as qualidades que você busca num relacionamento. Leia em voz alta. Queime o papel. O jasmim transmite sua intenção às esferas do amor.",
+  "cuidados": "Planta segura para uso geral. Óleo essencial puro pode causar sensibilização — sempre dilua. Evite uso interno sem orientação.",
+  "conexao_ancestral": "Sagrado em culturas árabes, indianas e chinesas em rituais de amor e devoção espiritual. Na Índia, presente em cerimônias de casamento e cultos a divindades do amor.",
+  "intencao": "Sou magnética. O amor verdadeiro me encontra porque minha essência o chama.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Harmoniza e abre o coração."
+}

@@ -1,0 +1,39 @@
+{
+  "nome": "Espada-de-São-Jorge",
+  "nome_cientifico": "Sansevieria trifasciata",
+  "icone": "⚔️",
+  "categorias": [
+    "Proteção"
+  ],
+  "foto": "",
+  "essencia": "Ereta e firme como um guerreiro — corta o que é negativo antes que chegue a você.",
+  "essencia_completa": "A Espada-de-São-Jorge é uma das plantas de proteção mais poderosas do mundo espiritual brasileiro. Sua forma — folhas longas e pontiagudas como espadas — não é coincidência: ela literalmente corta energias negativas antes que se instalem. Associada a Ogum e ao Arcanjo Miguel, ela é presença obrigatória em qualquer lar que busca proteção.",
+  "usos": [
+    "Corte de energias negativas e inveja",
+    "Proteção permanente de ambientes",
+    "Blindagem espiritual do lar",
+    "Afastamento de influências maléficas",
+    "Fortalecimento do campo de proteção"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Planta viva",
+      "descricao": "Mantenha na entrada da casa, nos cantos e próxima à porta de acesso. Cada folha é uma espada de proteção."
+    },
+    {
+      "modo": "Banho de folhas",
+      "descricao": "Infusão das folhas para banho de proteção intensa."
+    },
+    {
+      "modo": "Defumação",
+      "descricao": "Folhas secas queimadas para limpar e proteger ambientes."
+    }
+  ],
+  "ritual": "Posicione uma espada-de-São-Jorge na entrada da sua casa. Ao regá-la, visualize as folhas crescendo como escudos ao redor do seu lar. Diga: 'São Jorge guerreiro, protege este espaço e todos que aqui habitam.' Regue com gratidão e intenção.",
+  "cuidados": "Planta mildemente tóxica se ingerida — mantenha longe de animais e crianças pequenas. Para uso energético externo, é completamente segura.",
+  "conexao_ancestral": "Sagrada em diversas tradições afro-brasileiras. Associada a Ogum — orixá da guerra, dos caminhos e da proteção. Considerada guardiã espiritual do lar em toda a cultura popular brasileira.",
+  "intencao": "Meu espaço está protegido. Nenhuma energia negativa entra onde eu habito.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "protecao",
+  "produto_sugerido_texto": "Potencializa a proteção do seu campo."
+}

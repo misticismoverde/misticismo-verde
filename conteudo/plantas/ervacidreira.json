@@ -1,0 +1,40 @@
+{
+  "nome": "Erva-cidreira",
+  "nome_cientifico": "Melissa officinalis",
+  "icone": "🌿",
+  "categorias": [
+    "Cura",
+    "Limpeza"
+  ],
+  "foto": "",
+  "essencia": "A mãe gentil das plantas de cura — cuida do sistema nervoso e da alma ansiosa.",
+  "essencia_completa": "A erva-cidreira é a planta da cura gentil do sistema nervoso. Em tempos de ansiedade e aceleração, ela oferece o que mais precisamos: calma real. Seu aroma suave e seu sabor delicado chegam direto onde a tensão mora — nos ombros, no peito, na mente acelerada — e dissolve com cuidado de mãe.",
+  "usos": [
+    "Cura da ansiedade e nervosismo",
+    "Equilíbrio do sistema nervoso",
+    "Limpeza emocional suave",
+    "Paz e tranquilidade",
+    "Sono profundo e restaurador"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Cha",
+      "descricao": "Prepare com folhas frescas. Beba com intenção de calma e cura nervosa."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão para banho de cura emocional. Perfeito após dias difíceis."
+    },
+    {
+      "modo": "Compressa",
+      "descricao": "Panos embebidos em chá forte aplicados na testa para dores de cabeça tensionais."
+    }
+  ],
+  "ritual": "Num momento de ansiedade intensa, prepare um chá de erva-cidreira. Antes de beber, segure a xícara quente nas mãos e sinta o calor se espalhando. Respire o aroma. Beba devagar, com atenção plena em cada gole. A erva-cidreira pede que você desacelere — e cura nesse espaço.",
+  "cuidados": "Planta muito segura para uso geral. Pode haver interação com medicamentos sedativos — consulte um profissional se usar medicamentos. Evite uso excessivo durante a gravidez.",
+  "conexao_ancestral": "Uma das plantas de cura mais antigas da medicina popular europeia e brasileira. Presente nas receitas de benzedeiras, raizeiros e na medicina popular de todas as regiões do Brasil.",
+  "intencao": "Meu sistema nervoso está em paz. Sou calma, centrada e inteira.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "forca",
+  "produto_sugerido_texto": "Revigora e restaura a energia vital."
+}

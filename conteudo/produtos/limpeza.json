@@ -1,0 +1,86 @@
+{
+  "nome": "Sal 3 em 1 — Limpeza Profunda",
+  "ordem": 1,
+  "categoria": "Sais Rituais",
+  "preco": 20.0,
+  "esgotado": false,
+  "imagem": "/imagens/produtos/img-produto-limpeza.jpg",
+  "loja_selo": "Limpeza",
+  "loja_intencao": "❋ Purificação Profunda",
+  "loja_resumo": "Remove energias indesejadas e renova o campo espiritual.",
+  "seo_titulo": "Sal 3 em 1 Limpeza Profunda: banho, escalda-pés e defumação",
+  "seo_descricao": "Sal de ervas artesanal para banho, escalda-pés e defumação (180 a 200 g), pensado para rituais de limpeza e renovação. R$ 20,00. Feito em Belém (PA).",
+  "pagina_propria": false,
+  "titulo_pagina": "Sal 3 em 1 — Limpeza Profunda",
+  "energia": "Purificação · Renovação · Leveza",
+  "detalhes": "180g a 200g · banho · escalda-pés · defumação",
+  "introducao": "Existe um peso que não vem do corpo. Uma exaustão que o sono não resolve, uma sensação de que algo está parado, acumulado. Este sal foi criado para esse momento — quando você precisa começar de novo, de dentro para fora.",
+  "para_quem_titulo": "Para quem chegou até aqui carregando mais do que deveria",
+  "para_quem_texto": "Você reconhece essa sensação: acordar cansada mesmo depois de dormir, sentir o ambiente de casa pesado sem saber explicar por quê, carregar pensamentos que não são seus. Há momentos em que o campo energético pede limpeza — não como obrigação, mas como cuidado. Como um respirar fundo que limpa tudo o que ficou parado.",
+  "para_quem_lista": [
+    "Quem sente um peso inexplicável no corpo ou nas emoções",
+    "Quem passou por períodos de estresse, conflito ou luto recente",
+    "Quem recebe muitas pessoas em casa e sente o ambiente carregado",
+    "Quem quer iniciar um novo ciclo com o campo energético limpo",
+    "Quem simplesmente sente que chegou a hora de renovar"
+  ],
+  "atuacao_titulo": "O que este sal dissolve, limpa e transforma",
+  "atuacao_texto": "<p>O Sal 3 em 1 — Limpeza Profunda não apenas higieniza — ele <em>dissolve camadas</em>. Energias densas que se acumulam nos ambientes com o tempo, nos pontos do corpo que carregam tensão crônica, nos campos sutis que absorvem o que entra em contato com você ao longo dos dias.</p><p>Ele atua sobre <strong>energias herdadas de ambientes</strong> — o que ficou na sua casa de outras pessoas, outras situações, outros tempos. Sobre <strong>emoções acumuladas</strong> que o corpo guarda sem conseguir processar. Sobre <strong>influências externas</strong> que chegam sem você perceber e vão deixando um rastro de cansaço.</p><p>A transformação não é agressiva. É como uma chuva depois de muito calor: algo suaviza, alivia, dá espaço. E nesse espaço, o novo pode entrar.</p>",
+  "ritual_titulo": "Transforme o uso em um momento só seu",
+  "ritual_introducao": "Escolha um momento com calma — não quando estiver com pressa. Deixe o telefone de lado. Acenda uma vela se quiser. Quanto mais intenção você colocar, mais profundo o ritual será.",
+  "ritual_passos": [
+    {
+      "modo": "Banho de limpeza",
+      "descricao": "Dissolva uma porção generosa em água morna. Antes de entrar, respire fundo e declare em voz baixa o que deseja liberar. Aplique do pescoço para baixo, de forma lenta e consciente. Sinta a água levando embora tudo que não é seu."
+    },
+    {
+      "modo": "Escalda-pés",
+      "descricao": "Dissolva em água quente numa bacia funda. Mergulhe os pés por 15 a 20 minutos. Os pés carregam muito do peso energético do dia. Enquanto descansa, visualize essa energia saindo pelos pés e se dissolvendo na água."
+    },
+    {
+      "modo": "Defumação",
+      "descricao": "Coloque uma pequena porção sobre brasa ou numa peneira sobre vela. Passe a fumaça pelos cantos dos cômodos no sentido anti-horário, começando pela porta de entrada. Deixe as janelas entreabertas — o que for denso precisa ter por onde sair."
+    }
+  ],
+  "intencao_frase": "Eu libero o que pesa. Abro espaço para o que é leve, novo e meu.",
+  "experiencia_titulo": "O que pode acontecer depois",
+  "experiencia_texto": "Cada pessoa sente de um jeito. Não existe uma experiência única — existe a sua. Mas há sensações que costumam aparecer:",
+  "experiencia_itens": [
+    {
+      "icone": "🌬️",
+      "nome": "Leveza",
+      "descricao": "Uma sensação de que algo que estava pesando simplesmente não está mais lá."
+    },
+    {
+      "icone": "🌿",
+      "nome": "Clareza",
+      "descricao": "Pensamentos mais limpos, decisões que parecem menos difíceis de tomar."
+    },
+    {
+      "icone": "😮‍💨",
+      "nome": "Alívio",
+      "descricao": "Especialmente no peito. Como se um nó que você nem sabia que tinha tivesse se soltado."
+    },
+    {
+      "icone": "✨",
+      "nome": "Renovação",
+      "descricao": "A sensação de que algo foi limpo de verdade — não só o corpo, mas o campo ao redor."
+    },
+    {
+      "icone": "🛡️",
+      "nome": "Proteção",
+      "descricao": "Uma percepção de que você saiu do banho diferente de como entrou. Mais firme, mais inteira."
+    },
+    {
+      "icone": "🌙",
+      "nome": "Sono profundo",
+      "descricao": "Muitas pessoas relatam dormir de forma mais profunda após o ritual de limpeza."
+    }
+  ],
+  "cuidados": "<p>Este sal foi criado para uso consciente, não compulsivo. Uma limpeza profunda por semana é suficiente — o campo energético precisa de tempo para integrar o que foi liberado. Evite uso interno. Se você estiver grávida ou amamentando, prefira a defumação ao banho. Em caso de pele sensível, faça um teste antes.</p>",
+  "conexao_titulo": "Herdado da floresta, guardado por gerações",
+  "conexao_citacao": "O sal já era sagrado muito antes de ser tempero. Ele purifica, preserva e protege — na cozinha, na mesa e no campo energético.",
+  "conexao_texto": "As ervas que compõem este sal foram escolhidas a partir dos saberes das tradições de cura do Norte do Brasil — plantas que passaram por gerações de conhecimento, de mãos que cultivaram, de vozes que ensinaram como usar cada folha com respeito. Não é apenas um produto. É uma fórmula que carrega memória.",
+  "chamada_titulo": "Se esse sal te chamou, talvez seja porque ele já sabe o que você precisa",
+  "chamada_texto": "Não precisa de um motivo específico para começar um ritual de limpeza. Às vezes, o sinal é exatamente esse: uma sensação de que chegou a hora. Se sentir que esse é o momento, permita-se viver essa experiência."
+}

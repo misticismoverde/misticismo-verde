@@ -1,0 +1,40 @@
+{
+  "nome": "Copaíba",
+  "nome_cientifico": "Copaifera langsdorffii",
+  "icone": "🌿",
+  "categorias": [
+    "Cura",
+    "Amazônica"
+  ],
+  "foto": "",
+  "essencia": "A resina dourada que cura sem pressa — profunda, persistente e sábia.",
+  "essencia_completa": "A copaíba é uma das resinas mais preciosas da Amazônia. Seu óleo dourado, extraído do tronco da árvore, carrega a inteligência de séculos de existência na floresta. Energeticamente, ela cura com profundidade — não a cura rápida e superficial, mas aquela que transforma a estrutura energética.",
+  "usos": [
+    "Cura profunda de traumas físicos e emocionais",
+    "Anti-inflamatório físico e energético",
+    "Fortalecimento das estruturas energéticas",
+    "Cura de feridas antigas",
+    "Conexão com a sabedoria ancestral da floresta"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Oleo",
+      "descricao": "Use o óleo com intenção de cura profunda — seja física (aplicado na pele) ou energética (algumas gotas no banho)."
+    },
+    {
+      "modo": "Defumacao",
+      "descricao": "A resina queimada em brasa purifica e cura o ambiente com profundidade."
+    },
+    {
+      "modo": "Meditacao",
+      "descricao": "Segure um frasco de óleo de copaíba durante a meditação e visualize cura profunda."
+    }
+  ],
+  "ritual": "Numa lua minguante, aplique óleo de copaíba no plexo solar enquanto visualiza tudo que precisa ser curado — seja físico, emocional ou espiritual. A copaíba trabalha em camadas, como a floresta: lentamente, profundamente, sem pressa.",
+  "cuidados": "Para uso interno, somente com orientação profissional. Para uso externo em banhos e meditações, é seguro. Respeite a origem — compre de fontes que extraem de forma sustentável.",
+  "conexao_ancestral": "Planta sagrada para inúmeros povos amazônicos, usada há milênios em rituais de cura e como remédio universal. Mencionada nas primeiras crônicas dos colonizadores como a medicina mais poderosa da floresta.",
+  "intencao": "Me curo em profundidade. Cada camada que precisa de atenção recebe a medicina da floresta.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "limpeza",
+  "produto_sugerido_texto": "Aprofunda a limpeza e renovação energética."
+}

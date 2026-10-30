@@ -1,0 +1,40 @@
+{
+  "nome": "Abuta",
+  "nome_cientifico": "Abuta grandifolia",
+  "icone": "🌿",
+  "categorias": [
+    "Amazônica",
+    "Cura"
+  ],
+  "foto": "",
+  "essencia": "A planta das mulheres da floresta — honra o ciclo feminino com sabedoria ancestral.",
+  "essencia_completa": "A Abuta é conhecida como planta das mulheres na tradição indígena amazônica. Ela cuida do ciclo feminino em sua totalidade — não apenas o físico, mas o energético: os ciclos de criação e entrega, os ritmos de expansão e recolhimento, a sabedoria que só quem vive em ciclos conhece.",
+  "usos": [
+    "Cura e equilíbrio do ciclo feminino energético",
+    "Honrar e fortalecer o feminino sagrado",
+    "Equilíbrio hormonal físico e energético",
+    "Cura de traumas do feminino",
+    "Conexão com os próprios ciclos e ritmos"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Chá da casca",
+      "descricao": "Prepare com a casca. Beba com intenção de honrar e curar seu ciclo feminino."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão para banho de cura e honra do feminino sagrado."
+    },
+    {
+      "modo": "Meditação de ciclo",
+      "descricao": "Durante seu período, medite com a abuta como símbolo de honra ao seu próprio ritmo."
+    }
+  ],
+  "ritual": "No início do seu ciclo menstrual, prepare um chá de abuta. Enquanto bebe, permita-se honrar seu ciclo — não como inconveniência, mas como sabedoria. A abuta lembra: você é lunar por natureza.",
+  "cuidados": "Contraindicada para gestantes. Para uso medicinal do ciclo, consulte um profissional de saúde. Para uso espiritual e energético, é gentil e segura.",
+  "conexao_ancestral": "Planta sagrada para os povos indígenas amazônicos, especialmente usada por parteiras, curandeiras e líderes espirituais femininas. Símbolo do cuidado com o feminino na medicina tradicional amazônica.",
+  "intencao": "Honro meu ciclo e minha natureza feminina. Sou lunar, poderosa e sagrada.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "amor",
+  "produto_sugerido_texto": "Harmoniza e fortalece o feminino."
+}

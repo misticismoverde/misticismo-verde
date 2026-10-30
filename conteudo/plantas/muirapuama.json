@@ -1,0 +1,41 @@
+{
+  "nome": "Muirapuama",
+  "nome_cientifico": "Ptychopetalum olacoides",
+  "icone": "🌳",
+  "categorias": [
+    "Amazônica",
+    "Cura",
+    "Prosperidade"
+  ],
+  "foto": "",
+  "essencia": "A raiz da vitalidade amazônica — desperta o que estava adormecido dentro de você.",
+  "essencia_completa": "A Muirapuama, conhecida como pau de potência, é uma das plantas mais poderosas da farmacopeia amazônica. Sua energia é de despertar — ela não cria força onde não existe, ela revela a força que sempre esteve lá, mas que o cansaço, o estresse ou os traumas esconderam. É a planta do renascimento da vitalidade.",
+  "usos": [
+    "Despertar da vitalidade física e espiritual",
+    "Renovação da força vital",
+    "Cura do esgotamento profundo",
+    "Fortalecimento da memória e clareza",
+    "Conexão com o próprio poder interior"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Chá da raiz",
+      "descricao": "Prepare com a raiz seca. Beba com intenção de despertar a vitalidade adormecida."
+    },
+    {
+      "modo": "Tintura",
+      "descricao": "Tintura da raiz como suplemento energético — consulte um profissional para dosagem."
+    },
+    {
+      "modo": "Meditação",
+      "descricao": "Segure um pedaço da raiz durante meditação e visualize sua vitalidade sendo restaurada."
+    }
+  ],
+  "ritual": "Pela manhã, prepare um chá de muirapuama. Antes de beber, de pé, respire fundo três vezes. Visualize uma raiz profunda saindo dos seus pés e entrando na terra da Amazônia. Sinta a força subir por essas raízes até o seu corpo. Beba o chá recebendo essa energia de despertar.",
+  "cuidados": "Não use durante gravidez ou amamentação. Pode interagir com medicamentos para pressão. Consulte um profissional antes do uso medicinal contínuo. Prefira fontes de extrativismo sustentável.",
+  "conexao_ancestral": "Usada pelos povos indígenas da Amazônia há séculos como tônico de vitalidade e planta cerimonial de fortalecimento. Considerada uma das plantas medicinais mais valiosas da região.",
+  "intencao": "Desperto minha força. O poder que sempre esteve em mim se revela agora.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "forca",
+  "produto_sugerido_texto": "Revigora e amplifica a energia vital."
+}

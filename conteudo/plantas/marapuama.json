@@ -1,0 +1,41 @@
+{
+  "nome": "Marapuama",
+  "nome_cientifico": "Liriosma ovata",
+  "icone": "🌿",
+  "categorias": [
+    "Amazônica",
+    "Cura",
+    "Amor"
+  ],
+  "foto": "",
+  "essencia": "A planta que reacende o brilho — quando o mundo tirou seu entusiasmo, ela devolve.",
+  "essencia_completa": "A Marapuama trabalha na dimensão mais sutil da cura: a alegria de existir. Quando a vida pesa tanto que o brilho some, quando o corpo cansa de verdade e o espírito perde o entusiasmo, a marapuama acende uma luz. Suave, mas real. É a planta para quem precisa lembrar por que vale a pena.",
+  "usos": [
+    "Restauração da alegria e entusiasmo pela vida",
+    "Cura do esgotamento profundo",
+    "Fortalecimento da vitalidade espiritual",
+    "Reconexão com o prazer de existir",
+    "Cura da melancolia e do apagamento emocional"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Chá da casca",
+      "descricao": "Prepare com a casca seca. Beba com intenção de reconectar com o prazer de viver."
+    },
+    {
+      "modo": "Tintura",
+      "descricao": "Tintura em doses moderadas — consulte dosagem com profissional."
+    },
+    {
+      "modo": "Meditação",
+      "descricao": "Segure um pedaço da casca e visualize seu entusiasmo sendo reacendido."
+    }
+  ],
+  "ritual": "Prepare um chá de marapuama numa tarde tranquila. Antes de beber, escreva três coisas que já fizeram você genuinamente feliz na vida — não o que deveria fazer feliz, o que realmente fez. Beba o chá pensando nessas memórias. A marapuama amplifica o que já existe de bom.",
+  "cuidados": "Uso moderado. Evite durante gravidez e amamentação. Pode interagir com medicamentos. Consulte um profissional para uso contínuo.",
+  "conexao_ancestral": "Planta nativa da Amazônia usada pelos povos indígenas como tônico de vitalidade e bem-estar. Considerada um dos maiores presentes da farmacopeia amazônica para a saúde do espírito.",
+  "intencao": "A alegria de viver é minha. Meu brilho está sendo restaurado agora.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "forca",
+  "produto_sugerido_texto": "Revigora e restaura o entusiasmo vital."
+}

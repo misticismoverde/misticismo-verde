@@ -1,0 +1,40 @@
+{
+  "nome": "Canela",
+  "nome_cientifico": "Cinnamomum verum",
+  "icone": "🟤",
+  "categorias": [
+    "Amor",
+    "Prosperidade"
+  ],
+  "foto": "",
+  "essencia": "Quente como o amor que transforma e doce como a prosperidade que chega.",
+  "essencia_completa": "A canela é a planta do calor — no amor e na prosperidade. Ela aquece o que estava frio, acelera o que estava parado e transforma situações estagnadas. No amor, desperta paixão e confiança. Na prosperidade, acelera o fluxo de dinheiro e oportunidades.",
+  "usos": [
+    "Atração de amor apaixonado",
+    "Aceleração de prosperidade",
+    "Aquecimento de relacionamentos esfriados",
+    "Confiança e coragem",
+    "Aceleração de manifestações"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Defumacao",
+      "descricao": "Paus de canela queimados ou aroma para aquecer e acelerar manifestações."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão com paus ou pó de canela para atração de amor e prosperidade."
+    },
+    {
+      "modo": "Ritual de prosperidade",
+      "descricao": "Sopre canela em pó pela porta de entrada na lua nova para atrair prosperidade."
+    }
+  ],
+  "ritual": "Na lua nova, sopre uma colher de canela em pó pela porta principal da sua casa. Enquanto faz isso, diga: 'Que a prosperidade e o amor entrem por esta porta e fiquem.' Repita todo mês.",
+  "cuidados": "Evite contato direto com a pele em concentrações altas. Não use em excesso internamente. Alergia à canela é possível — teste antes.",
+  "conexao_ancestral": "Uma das especiarias mais valiosas da história humana, usada em rituais sagrados do Oriente Médio, Egito Antigo e em terreiros brasileiros em trabalhos de atração e prosperidade.",
+  "intencao": "O amor e a prosperidade me encontram. O que desejo se aquece e se materializa.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "prosperidade",
+  "produto_sugerido_texto": "Acelera o fluxo de prosperidade."
+}

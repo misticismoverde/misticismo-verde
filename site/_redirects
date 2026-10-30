@@ -1,0 +1,11 @@
+# ─────────────────────────────────────────────────────────────
+# REDIRECIONAMENTOS (Cloudflare)
+# Cada linha: endereço-antigo   endereço-novo   301
+# Serve para levar quem chega por um link antigo (e o Google)
+# para a página nova, sem cair em "Página não encontrada".
+#
+# As linhas dos 40 endereços antigos (erro 404 no Search Console)
+# serão adicionadas aqui assim que a lista for exportada.
+# Exemplo:
+# /produto-limpeza.html   /produtos/produto-limpeza   301
+# ─────────────────────────────────────────────────────────────

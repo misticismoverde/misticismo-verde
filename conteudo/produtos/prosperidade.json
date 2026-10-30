@@ -1,0 +1,86 @@
+{
+  "nome": "Sal 3 em 1 — Prosperidade & Abundância",
+  "ordem": 3,
+  "categoria": "Sais Rituais",
+  "preco": 20.0,
+  "esgotado": false,
+  "imagem": "/imagens/produtos/img-produto-prosperidade.jpg",
+  "loja_selo": "Abundância",
+  "loja_intencao": "✦ Fluxo de Prosperidade",
+  "loja_resumo": "Atrai boas oportunidades e ativa o fluxo de prosperidade.",
+  "seo_titulo": "Sal 3 em 1 Prosperidade e Abundância: banho e defumação",
+  "seo_descricao": "Sal de ervas artesanal para banho, escalda-pés e defumação (180 a 200 g), pensado para rituais de prosperidade e novos começos. R$ 20,00. Belém (PA).",
+  "pagina_propria": false,
+  "titulo_pagina": "Sal 3 em 1 — Prosperidade e Abundância",
+  "energia": "Abertura de Caminhos · Fluxo · Manifestação",
+  "detalhes": "180g a 200g · banho · escalda-pés · defumação",
+  "introducao": "Às vezes não é falta de esforço. É falta de fluxo. Algo que bloqueou o caminho, que fechou a passagem para o que deveria chegar até você. Este sal foi criado para desobstruir, para aquecer o que esfriou e para lembrar ao universo que a abundância é o seu estado natural.",
+  "para_quem_titulo": "Para quem trabalha, semeia e ainda sente que a colheita não vem",
+  "para_quem_texto": "Você faz sua parte. Se esforça, se dedica, planta com cuidado. E mesmo assim, às vezes parece que o resultado fica travado no meio do caminho — como se houvesse um vidro entre você e o que você merece. Essa sensação de bloqueio muitas vezes tem raízes energéticas que nenhum planejamento alcança sozinho.",
+  "para_quem_lista": [
+    "Quem sente que trabalha muito mas os resultados não chegam como deveriam",
+    "Quem está iniciando um novo projeto e quer abrir o campo para a manifestação",
+    "Quem percebe que oportunidades aparecem mas não se concretizam",
+    "Quem quer alinhar o esforço físico com o campo energético favorável",
+    "Quem está em um ciclo novo e quer começar com o fluxo de abundância ativo"
+  ],
+  "atuacao_titulo": "O que este sal desobstrui, aquece e coloca em movimento",
+  "atuacao_texto": "<p>A prosperidade tem dois inimigos: o bloqueio e o frio. O Sal 3 em 1 — Prosperidade e Abundância age sobre os dois. Ele <em>dissolve bloqueios energéticos</em> que se instalam nos caminhos — aquelas situações em que a oportunidade chega mas some, em que o dinheiro entra mas escorre.</p><p>E ele <em>aquece o campo</em>. Porque a prosperidade precisa de calor para se mover. Ele desperta a vibração de quem sabe que merece, de quem está aberta para receber.</p><p>Não é sobre atrair o que não é seu. É sobre <strong>desobstruir o caminho para o que já é</strong>.</p>",
+  "ritual_titulo": "Um ritual para quem está pronta para receber",
+  "ritual_introducao": "Antes de começar, coloque a mão no coração e diga em silêncio: estou aberta. Não precisa acreditar completamente — basta estar disposta. O sal faz o resto.",
+  "ritual_passos": [
+    {
+      "modo": "Banho de abertura",
+      "descricao": "Dissolva em água morna. Enquanto prepara o banho, pense com gratidão em algo que deseja manifestar — com a confiança de quem sabe que está a caminho. Aplique do pescoço para baixo com movimentos ascendentes."
+    },
+    {
+      "modo": "Escalda-pés",
+      "descricao": "Os pés são os primeiros a abrir o caminho energeticamente. Dissolva em água quente e mergulhe por 15 minutos. Visualize caminhos se abrindo sob seus pés, cada passo levando para onde você quer chegar."
+    },
+    {
+      "modo": "Defumação no trabalho",
+      "descricao": "Queime em brasa no ambiente onde você trabalha ou toma decisões importantes. Passe a fumaça pelo espaço no sentido horário, ativando o fluxo. Faça isso preferencialmente na lua nova ou crescente."
+    }
+  ],
+  "intencao_frase": "O que é meu por direito está a caminho. Estou aberta, merecedora e pronta para receber.",
+  "experiencia_titulo": "O que começa a se mover depois",
+  "experiencia_texto": "A prosperidade nem sempre chega de uma vez. Às vezes ela avisa antes — através de sensações que indicam que o campo mudou:",
+  "experiencia_itens": [
+    {
+      "icone": "🌅",
+      "nome": "Otimismo",
+      "descricao": "Uma sensação de que o futuro tem espaço — que as coisas podem se reorganizar a seu favor."
+    },
+    {
+      "icone": "✨",
+      "nome": "Clareza",
+      "descricao": "Ideias que chegam com mais facilidade. Percepção de oportunidades que antes passavam despercebidas."
+    },
+    {
+      "icone": "🔥",
+      "nome": "Motivação",
+      "descricao": "O desejo de agir volta — não pela ansiedade, mas por uma confiança renovada."
+    },
+    {
+      "icone": "🌿",
+      "nome": "Leveza",
+      "descricao": "A tensão do bloqueio vai embora. Fica um espaço que convida em vez de pressionar."
+    },
+    {
+      "icone": "💫",
+      "nome": "Sincronicidades",
+      "descricao": "Coisas começam a se alinhar de formas que não parecem coincidência."
+    },
+    {
+      "icone": "🌳",
+      "nome": "Raízes firmes",
+      "descricao": "A prosperidade que vem depois deste ritual costuma ser sólida e enraizada, não passageira."
+    }
+  ],
+  "cuidados": "<p>Este sal ativa o fluxo — mas a prosperidade real vem do equilíbrio entre o campo energético e a ação prática. Use para alinhar, não para substituir o movimento. Uma vez por semana é suficiente. Evite uso interno. Gestantes devem preferir a defumação.</p>",
+  "conexao_titulo": "A fartura sempre foi ensinada pela natureza",
+  "conexao_citacao": "A floresta não guarda para si — ela distribui, floresce, alimenta. A abundância é o estado natural de quem está em harmonia com os próprios ciclos.",
+  "conexao_texto": "As plantas escolhidas para este sal carregam em si a memória da fartura. Espécies usadas nos saberes populares do Norte do Brasil para atrair prosperidade, abrir caminhos e fortalecer o campo de quem planta com intenção.",
+  "chamada_titulo": "Talvez o que falta não seja mais esforço — mas um caminho desobstruído",
+  "chamada_texto": "Se você chegou até aqui, é porque uma parte de você sabe que algo precisa mudar no campo. Não como alternativa à ação — mas como aliado. Se sentir que esse é o momento, a prosperidade já começou."
+}

@@ -1,0 +1,40 @@
+{
+  "nome": "Louro",
+  "nome_cientifico": "Laurus nobilis",
+  "icone": "🌿",
+  "categorias": [
+    "Prosperidade",
+    "Proteção"
+  ],
+  "foto": "",
+  "essencia": "A planta das vitórias — foi usada para coroar reis, pode abrir seus caminhos.",
+  "essencia_completa": "O louro é a planta da vitória, do reconhecimento e da prosperidade merecida. Sua história atravessa a Grécia Antiga, onde coroava os vitoriosos, até as tradições populares brasileiras onde abre caminhos e atrai o sucesso. É a planta de quem trabalha com dedicação e merece colher os frutos.",
+  "usos": [
+    "Atração de sucesso e reconhecimento",
+    "Abertura de caminhos profissionais",
+    "Prosperidade e abundância",
+    "Vitória em objetivos",
+    "Proteção durante conquistas"
+  ],
+  "modos_de_uso": [
+    {
+      "modo": "Folha na carteira",
+      "descricao": "Coloque uma folha de louro seca na carteira para atrair prosperidade contínua."
+    },
+    {
+      "modo": "Ritual de pedido",
+      "descricao": "Escreva seu desejo em uma folha de louro e queime para enviar ao universo."
+    },
+    {
+      "modo": "Banho",
+      "descricao": "Infusão de folhas para banho de abertura de caminhos e sucesso."
+    }
+  ],
+  "ritual": "Escreva três objetivos que deseja conquistar em três folhas de louro secas. Queime uma de cada vez enquanto visualiza cada objetivo sendo alcançado. O fumo que sobe leva sua intenção. O louro é direto — ele entrega.",
+  "cuidados": "Planta segura para uso geral. Certifique-se de usar louro verdadeiro (Laurus nobilis) e não confundir com plantas parecidas.",
+  "conexao_ancestral": "Sagrado na Grécia Antiga — coroava poetas, atletas e generais vitoriosos. Considerado planta de Apolo, deus das artes e do sucesso. Atravessou séculos mantendo sua reputação de planta da vitória.",
+  "intencao": "O sucesso e o reconhecimento que mereço chegam até mim. Sou vitoriosa.",
+  "o_que_a_ciencia_diz": "",
+  "produto_sugerido": "prosperidade",
+  "produto_sugerido_texto": "Abre e ativa o fluxo de prosperidade."
+}
