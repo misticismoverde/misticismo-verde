@@ -562,6 +562,10 @@ def main():
     montar_artigos(artigos, produtos, plantas)
     n_img = otimizar_imagens()
     n = sitemap()
+    # cópia em public/ para funcionar também se o Cloudflare estiver configurado com essa pasta
+    copia = os.path.join(RAIZ, 'public')
+    if os.path.exists(copia): shutil.rmtree(copia)
+    shutil.copytree(SAIDA, copia)
     print(f'Site montado: {n} páginas ({len(produtos)} produtos, {len(plantas)} plantas, {len(artigos)} artigos do painel). Imagens otimizadas: {n_img}.')
     for av in AVISOS: print('AVISO:', av)
 
