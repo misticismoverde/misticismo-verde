@@ -2,7 +2,7 @@
 # Cada item abaixo vira uma seção no menu do painel.
 
 media:
-  input: site/imagens
+  input: fonte/imagens
   output: /imagens
   extensions: [jpg, jpeg, png, webp]
 
@@ -28,7 +28,7 @@ content:
         required: true
         options: { values: [Sais Rituais, Amuletos, Plantas Vivas, Difusores] }
       - { name: ordem, label: Posição na loja, type: number, description: "1 aparece primeiro." }
-      - { name: imagem, label: Foto principal, type: image, options: { path: site/imagens/produtos } }
+      - { name: imagem, label: Foto principal, type: image, options: { path: fonte/imagens/produtos } }
       - { name: loja_selo, label: "Loja: selo sobre a foto", type: string, description: "Ex.: Limpeza, Artesanal · Único" }
       - { name: loja_intencao, label: "Loja: linha de intenção", type: string, description: "Ex.: ❋ Purificação Profunda" }
       - { name: loja_resumo, label: "Loja: resumo curto", type: text }
@@ -90,7 +90,7 @@ content:
         label: Intenções
         type: select
         options: { values: [Proteção, Limpeza, Amor, Prosperidade, Cura, Amazônica], multiple: true }
-      - { name: foto, label: Foto da planta, type: image, options: { path: site/imagens/plantas }, description: "Opcional, mas ajuda muito no Google Imagens." }
+      - { name: foto, label: Foto da planta, type: image, options: { path: fonte/imagens/plantas }, description: "Opcional, mas ajuda muito no Google Imagens." }
       - { name: essencia, label: Essência (uma frase), type: text }
       - { name: essencia_completa, label: Essência espiritual (texto), type: text }
       - { name: o_que_a_ciencia_diz, label: O que a ciência diz, type: rich-text, options: { format: html }, description: "Opcional. Compostos, estudos e fontes. Só aparece se for preenchido." }
@@ -127,7 +127,7 @@ content:
       - { name: data, label: Data de publicação, type: date }
       - { name: categoria, label: Categoria (com emoji), type: string, description: "Ex.: 🌿 Plantas Sagradas" }
       - { name: resumo, label: Resumo do cartão, type: text, description: "Até ~140 caracteres." }
-      - { name: imagem, label: Imagem de capa, type: image, options: { path: site/imagens/artigos } }
+      - { name: imagem, label: Imagem de capa, type: image, options: { path: fonte/imagens/artigos } }
       - { name: corpo, label: Texto do artigo, type: rich-text, options: { format: html } }
       - { name: nota, label: Nota de cuidado (opcional), type: text }
       - { name: tempo_leitura, label: Tempo de leitura (minutos), type: number }

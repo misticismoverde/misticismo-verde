@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://misticismoverde.com.br/sitemap.xml

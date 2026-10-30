@@ -30,13 +30,13 @@ Fotos podem ser enviadas direto do celular: o site reduz o tamanho automaticamen
 
 ## O que NÃO se edita pelo painel
 
-Página inicial, Sobre, Contato, Trocas, Privacidade e as páginas feitas à mão (muiraquitã, coruja, difusor, jiboia, espada e 5 artigos) ficam na pasta `site/`. Para mudar algo nelas, peça ajuda.
+Página inicial, Sobre, Contato, Trocas, Privacidade e as páginas feitas à mão (muiraquitã, coruja, difusor, jiboia, espada e 5 artigos) ficam na pasta `fonte/`. Para mudar algo nelas, peça ajuda.
 
 ## Como o site é montado (parte técnica)
 
-- `site/` — páginas fixas, imagens, estilos.
+- `fonte/` — páginas fixas, imagens, estilos (edite aqui, nunca em `site/`).
 - `conteudo/` — produtos, plantas e artigos (o que o painel edita).
 - `modelos/produto.html` — modelo das páginas de produto.
-- `construir.py` — junta tudo e grava o site pronto em `public/`.
+- `construir.py` — junta tudo e grava o site pronto em `site/` (pasta publicada; é refeita a cada montagem).
 
-Configuração no Cloudflare Pages: comando de build `python3 construir.py`, pasta de saída `public`.
+Configuração no Cloudflare Pages: comando de build `python3 construir.py`, pasta de saída `site`, diretório raiz em branco.

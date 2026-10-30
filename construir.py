@@ -2,8 +2,8 @@
 MONTAGEM DO SITE MISTICISMO VERDE
 =================================
 O Cloudflare roda este arquivo a cada alteração salva no painel.
-Ele junta as páginas fixas (pasta site/) com o conteúdo editável (pasta conteudo/)
-e grava o site pronto na pasta public/.
+Ele junta as páginas fixas (pasta fonte/) com o conteúdo editável (pasta conteudo/)
+e grava o site pronto na pasta site/ (que é a pasta publicada).
 
 Para testar no computador:  python3 construir.py
 Não é preciso mexer aqui para editar produtos, plantas ou artigos: use o painel.
@@ -13,7 +13,7 @@ from html import escape
 from urllib.parse import quote
 
 RAIZ = os.path.dirname(os.path.abspath(__file__))
-SITE_DIR, CONTEUDO, SAIDA = (os.path.join(RAIZ, p) for p in ('site', 'conteudo', 'public'))
+SITE_DIR, CONTEUDO, SAIDA = (os.path.join(RAIZ, p) for p in ('fonte', 'conteudo', 'site'))
 SITE = 'https://misticismoverde.com.br'
 WHATS = '5591996324631'
 CNPJ = '63.040.689/0001-06'
@@ -67,7 +67,7 @@ def img(caminho, prefixo):
     if not c: return ''
     if c.startswith('http'): return c
     c = re.sub(r'^(\.\./)+', '', c)
-    c = re.sub(r'^/?site/', '', c)
+    c = re.sub(r'^/?(site|fonte)/', '', c)
     return prefixo + c.lstrip('/')
 
 def img_abs(caminho):
@@ -255,7 +255,7 @@ def montar_produtos(produtos):
         if p.get('pagina_propria'):
             caminho = os.path.join(SAIDA, rel)
             if not os.path.exists(caminho):
-                AVISOS.append(f'"{p.get("nome")}" está marcado como página própria, mas {rel} não existe na pasta site/. Desmarque a opção para usar o modelo.')
+                AVISOS.append(f'"{p.get("nome")}" está marcado como página própria, mas {rel} não existe na pasta fonte/. Desmarque a opção para usar o modelo.')
                 continue
             h = ler(caminho)
             h = re.sub(r'(<span data-mv="preco">)(.*?)(</span>)', lambda m: m.group(1) + p['_preco'] + m.group(3), h)
