@@ -7,7 +7,7 @@
 <meta name="description" content="Sais de ervas 3 em 1 para banho, escalda-pés e defumação, muiraquitãs artesanais, difusores em cerâmica fria e plantas vivas. Feitos à mão em Belém, Pará.">
 <link rel="canonical" href="https://misticismoverde.com.br/loja">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#050f07">
+<meta name="theme-color" content="#101A13">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Misticismo Verde">
 <meta property="og:type" content="website">
@@ -19,234 +19,70 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://misticismoverde.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Loja", "item": "https://misticismoverde.com.br/loja"}]}]}</script>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
-<style>
-.pagehero{position:relative;min-height:44vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:150px 40px 56px;}
-.pagehero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(13,40,24,0.9),transparent 70%),url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=80') center/cover no-repeat;filter:brightness(0.26) saturate(1.3);}
-.pagehero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,15,7,0.4),transparent 40%,transparent 70%,rgba(5,15,7,1));}
-.pagehero-c{position:relative;z-index:2;max-width:760px;}
-
-.loja-categorias{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:0 40px 48px;position:relative;z-index:2;}
-.cat-btn{background:transparent;border:1px solid rgba(201,168,76,0.22);color:rgba(245,234,216,0.5);padding:10px 26px;font-family:'Cormorant Garamond',serif;font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;}
-.cat-btn:hover{color:var(--dourado);border-color:rgba(201,168,76,0.45);}
-.cat-btn.ativo{color:#c9a84c;border-color:rgba(201,168,76,0.55);background:rgba(201,168,76,0.07);}
-.cat-contador{display:inline-block;background:rgba(201,168,76,0.12);color:rgba(201,168,76,0.65);font-size:0.65rem;padding:1px 8px;border-radius:10px;margin-left:6px;letter-spacing:0.05em;}
-.produto-card.oculto{display:none!important;}
-.prod-em-breve.oculto{display:none!important;}
-.cat-vazio{grid-column:1/-1;text-align:center;padding:60px 20px;color:rgba(245,234,216,0.3);font-style:italic;}
-
-.produtos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1300px;margin:0 auto;padding:0 40px 100px;}
-.produto-card{background:rgba(13,40,24,0.5);border:1px solid rgba(201,168,76,0.1);overflow:hidden;cursor:pointer;transition:all 0.4s;text-decoration:none;display:block;color:inherit;}
-.produto-card:hover{border-color:rgba(201,168,76,0.4);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,0.5);}
-.prod-img-wrap{position:relative;overflow:hidden;aspect-ratio:4/3;background:#0a1a0f;}
-.prod-img{width:100%;height:100%;object-fit:cover;filter:brightness(0.72) saturate(1.2);transition:transform 0.7s,filter 0.4s;display:block;}
-.produto-card:hover .prod-img{transform:scale(1.07);filter:brightness(0.82) saturate(1.4);}
-.prod-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,15,7,0.85) 0%,transparent 55%);}
-.prod-badge{position:absolute;top:14px;left:14px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.4);color:#c9a84c;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;padding:3px 10px;}
-.prod-info{padding:24px 24px 28px;}
-.prod-intencao{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px;opacity:0.8;}
-.prod-nome{font-family:'Cinzel Decorative',serif;font-size:0.95rem;color:#f5ead8;margin-bottom:10px;line-height:1.35;}
-.prod-desc{font-size:0.9rem;font-style:italic;color:rgba(245,234,216,0.6);line-height:1.7;margin-bottom:20px;font-weight:300;}
-.prod-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(201,168,76,0.1);padding-top:18px;}
-.prod-preco{font-family:'Cinzel Decorative',serif;font-size:1.1rem;color:#c9a84c;}
-.prod-btn{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,234,216,0.45);border:1px solid rgba(245,234,216,0.18);padding:7px 16px;background:none;cursor:pointer;transition:all 0.3s;font-family:'Cormorant Garamond',serif;}
-.prod-btn:hover{color:#c9a84c;border-color:#c9a84c;}
-.prod-em-breve{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(13,40,24,0.6),rgba(42,90,38,0.15));border:1px dashed rgba(201,168,76,0.18);min-height:280px;cursor:default;}
-
-/* ── PRODUTO ESGOTADO ── */
-.produto-card.esgotado {
-  opacity: 0.85;
-}
-.produto-card.esgotado .prod-badge {
-  background: rgba(200, 50, 50, 0.15);
-  border-color: rgba(200, 50, 50, 0.4);
-  color: #ff6b6b;
-}
-.produto-card.esgotado .prod-img {
-  filter: brightness(0.65) saturate(0.5);
-}
-.produto-card.esgotado .prod-preco {
-  color: #ff6b6b;
-  text-decoration: line-through;
-}
-.produto-card.esgotado .prod-preco-indisponivel {
-  color: rgba(255,107,107,0.7);
-  font-size: 0.8rem;
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-}
-.produto-card.esgotado .prod-btn {
-  background: rgba(200, 50, 50, 0.08);
-  border-color: rgba(200, 50, 50, 0.25);
-  color: rgba(255, 107, 107, 0.7);
-}
-.produto-card.esgotado .prod-btn:hover {
-  background: rgba(200, 50, 50, 0.08);
-  color: rgba(255, 107, 107, 0.7);
-  border-color: rgba(200, 50, 50, 0.25);
-  transform: none;
-}
-.produto-card.esgotado:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255,107,107,0.3);
-}
-
-.modal-tag{font-size:0.62rem;letter-spacing:0.38em;text-transform:uppercase;color:#c9a84c;margin-bottom:14px;}
-.modal-titulo{font-family:'Cinzel Decorative',serif;font-size:1.6rem;color:#f5ead8;margin-bottom:20px;line-height:1.2;}
-.modal-desc{font-size:1rem;font-style:italic;color:rgba(245,234,216,0.65);line-height:1.8;font-weight:300;}
-.modal-secs{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px;}
-.modal-sec h4{font-family:'Cinzel Decorative',serif;font-size:0.7rem;color:#c9a84c;letter-spacing:0.18em;margin-bottom:8px;text-transform:uppercase;}
-.modal-sec p,.modal-sec ul{font-size:0.92rem;line-height:1.8;color:rgba(245,234,216,0.65);font-weight:300;}
-.modal-sec ul{padding-left:16px;}
-.modal-sec li{margin-bottom:5px;}
-.modal-cta{margin-top:32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
-.modal-preco{font-family:'Cinzel Decorative',serif;font-size:1.4rem;color:#c9a84c;}
-
-/* ── BOTÃO DE SOM ── */
-.sound-btn {
-  position: fixed;
-  bottom: 28px;
-  left: 28px;
-  z-index: 9999;
-  background: rgba(13,40,24,0.88);
-  border: 1px solid rgba(201,168,76,0.22);
-  color: #c9a84c;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 0.95rem;
-  transition: all 0.3s;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-}
-.sound-btn:hover {
-  border-color: #c9a84c;
-  transform: scale(1.08);
-}
-
-@media(max-width:900px){
-  .produtos-grid{grid-template-columns:1fr;padding:0 18px 80px;}
-  .modal-secs{grid-template-columns:1fr;}
-  .loja-categorias{padding:0 18px 36px;}
-}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/mv.css">
 </head>
 <body>
-
-<button class="sound-btn" id="soundBtn" title="Sons da floresta">🌿</button>
 <audio id="florestAudio" loop preload="none" src="assets/floresta.mp3"></audio>
+<div hidden><span id="soundBtn"></span><span id="hamburger"></span><span id="nav"></span><span id="navbar"></span><span id="navLinks"></span></div>
+<div class="mv-topo" role="banner"><div class="mv-topo-in">
+  <a class="mv-marca" href="index.html"><img src="imagens/geral/logo-mv-160.png" alt="" width="52" height="52"><span>Misticismo Verde</span></a>
+  <button type="button" class="mv-menu-btn" id="mvMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mvMenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <div class="mv-menu" id="mvMenu" role="navigation" aria-label="Menu principal"><a href="biblioteca.html">Biblioteca Viva</a><a href="loja.html" class="ativo" aria-current="page">Loja</a><a href="artigos.html">Artigos</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a>
+    <button type="button" class="mv-som" id="mvSom" aria-label="Ligar sons da floresta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg><span>Sons da floresta</span></button>
+  </div>
+</div></div>
 
-<nav id="navbar">
-  <a href="index.html" class="nav-logo">
-    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/><path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
-    Misticismo Verde
-  </a>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Início</a></li>
-    <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="loja.html" class="ativo">Loja</a></li>
-    <li><a href="artigos.html">Artigos</a></li>
-    <li><a href="biblioteca.html">Biblioteca Viva</a></li>
-    <li><a href="contato.html" class="nav-cta">Contato</a></li>
-  </ul>
-</nav>
-
-<section class="pagehero">
-  <div class="pagehero-bg"></div>
-  <div class="pagehero-ov"></div>
-  <div class="pagehero-c">
-    <span class="tag">✦ Portal da Loja ✦</span>
-    <h1 class="sec-title">Produtos para sua casa, corpo e alma</h1>
-    <p class="sec-sub">Cada produto criado com intenção e sabedoria ancestral. Filtre por categoria e encontre o que faz sentido para você agora.</p>
+<section class="mv-banda">
+  <img src="imagens/geral/banda-espada.jpg" alt="" aria-hidden="true">
+  <div class="veu" aria-hidden="true"></div>
+  <div class="txt">
+    <p style="margin:0 0 6px;font-size:14px;color:#CFC9B9"><a href="index.html" style="color:#A9D46E">Início</a> / Loja</p>
+    <h1>Loja</h1>
+    <p>Feito à mão em Belém, em pequenas quantidades. Compra e dúvidas direto pelo WhatsApp.</p>
   </div>
 </section>
 
-<div class="loja-categorias">
-  <button class="cat-btn ativo" onclick="filtrarCategoria('todos', this)">Todos <span class="cat-contador" id="cnt-todos">14</span></button>
-  <button class="cat-btn" onclick="filtrarCategoria('sais', this)">🧂 Sais Rituais <span class="cat-contador" id="cnt-sais">5</span></button>
-  <button class="cat-btn" onclick="filtrarCategoria('amuletos', this)">🐸 Amuletos <span class="cat-contador" id="cnt-amuletos">3</span></button>
-  <button class="cat-btn" onclick="filtrarCategoria('plantas', this)">🌱 Plantas Vivas <span class="cat-contador" id="cnt-plantas">2</span></button>
-  <button class="cat-btn" onclick="filtrarCategoria('difusores', this)">🌿 Difusores <span class="cat-contador" id="cnt-difusores">4</span></button>
-</div>
+<main class="mv-loja">
+  <div class="loja-categorias" role="group" aria-label="Filtrar por categoria">
+    <button type="button" class="cat-btn ativo" onclick="filtrarCategoria('todos', this)">Todos <span class="cat-contador" id="cnt-todos">13</span></button>
+    <button type="button" class="cat-btn" onclick="filtrarCategoria('sais', this)">Sais rituais <span class="cat-contador" id="cnt-sais">5</span></button>
+    <button type="button" class="cat-btn" onclick="filtrarCategoria('amuletos', this)">Amuletos <span class="cat-contador" id="cnt-amuletos">2</span></button>
+    <button type="button" class="cat-btn" onclick="filtrarCategoria('plantas', this)">Plantas vivas <span class="cat-contador" id="cnt-plantas">2</span></button>
+    <button type="button" class="cat-btn" onclick="filtrarCategoria('difusores', this)">Difusores <span class="cat-contador" id="cnt-difusores">4</span></button>
+  </div>
+  <div class="mv-grade" id="gridProdutos"><article class="mv-card produto-card" data-categoria="sais"><a class="foto" href="produtos/produto-limpeza.html"><img src="imagens/produtos/img-produto-limpeza.jpg" alt="Sal 3 em 1 — Limpeza Profunda" loading="lazy" decoding="async"><span class="selo">Limpeza</span></a><p class="cat">Sais Rituais</p><h3><a href="produtos/produto-limpeza.html">Sal 3 em 1 — Limpeza Profunda</a></h3><p class="desc">Remove energias indesejadas e renova o campo espiritual.</p><p class="preco">R$ 20,00</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Sal%203%20em%201%20%E2%80%94%20Limpeza%20Profunda." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-limpeza.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="sais"><a class="foto" href="produtos/produto-protecao.html"><img src="imagens/produtos/img-produto-protecao.jpg" alt="Sal 3 em 1 — Proteção dos Caminhos" loading="lazy" decoding="async"><span class="selo">Proteção</span></a><p class="cat">Sais Rituais</p><h3><a href="produtos/produto-protecao.html">Sal 3 em 1 — Proteção dos Caminhos</a></h3><p class="desc">Proteção ativa e abertura de caminhos seguros.</p><p class="preco">R$ 20,00</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Sal%203%20em%201%20%E2%80%94%20Prote%C3%A7%C3%A3o%20dos%20Caminhos." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-protecao.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="sais"><a class="foto" href="produtos/produto-prosperidade.html"><img src="imagens/produtos/img-produto-prosperidade.jpg" alt="Sal 3 em 1 — Prosperidade &amp; Abundância" loading="lazy" decoding="async"><span class="selo">Abundância</span></a><p class="cat">Sais Rituais</p><h3><a href="produtos/produto-prosperidade.html">Sal 3 em 1 — Prosperidade &amp; Abundância</a></h3><p class="desc">Atrai boas oportunidades e ativa o fluxo de prosperidade.</p><p class="preco">R$ 20,00</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Sal%203%20em%201%20%E2%80%94%20Prosperidade%20e%20Abund%C3%A2ncia." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-prosperidade.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="sais"><a class="foto" href="produtos/produto-forca.html"><img src="imagens/produtos/img-produto-forca.jpg" alt="Sal 3 em 1 — Força &amp; Vitalidade" loading="lazy" decoding="async"><span class="selo">Vitalidade</span></a><p class="cat">Sais Rituais</p><h3><a href="produtos/produto-forca.html">Sal 3 em 1 — Força &amp; Vitalidade</a></h3><p class="desc">Revigora corpo e energia. Voltada à força interior e renovação.</p><p class="preco">R$ 20,00</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Sal%203%20em%201%20%E2%80%94%20For%C3%A7a%20e%20Vitalidade." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-forca.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="sais"><a class="foto" href="produtos/produto-amor.html"><img src="imagens/produtos/img-produto-amor.jpg" alt="Sal 3 em 1 — Amor-Próprio &amp; Equilíbrio" loading="lazy" decoding="async"><span class="selo">Equilíbrio</span></a><p class="cat">Sais Rituais</p><h3><a href="produtos/produto-amor.html">Sal 3 em 1 — Amor-Próprio &amp; Equilíbrio</a></h3><p class="desc">Harmoniza o emocional e fortalece a autoestima.</p><p class="preco">R$ 20,00</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Sal%203%20em%201%20%E2%80%94%20Amor-Pr%C3%B3prio%20e%20Equil%C3%ADbrio." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-amor.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="amuletos"><a class="foto" href="produtos/produto-muiraquita.html"><img src="imagens/produtos/img-produto-muiraquita-prod.jpg" alt="Muiraquitã — Amuleto Ancestral" loading="lazy" decoding="async"><span class="selo">Artesanal · Único</span></a><p class="cat">Amuletos</p><h3><a href="produtos/produto-muiraquita.html">Muiraquitã — Amuleto Ancestral</a></h3><p class="desc">Proteção, sorte e ancestralidade amazônica. Cada peça é única, feita à mão.</p><p class="preco">R$ 39,90</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Muiraquit%C3%A3%20%E2%80%94%20Amuleto%20Ancestral." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-muiraquita.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="amuletos"><a class="foto" href="produtos/produto-coruja.html"><img src="imagens/produtos/img-produto-coruja-1.jpg" alt="Cordão de Coruja — Amuleto de Proteção e Sabedoria" loading="lazy" decoding="async"><span class="selo">Artesanal · Único</span></a><p class="cat">Amuletos</p><h3><a href="produtos/produto-coruja.html">Cordão de Coruja — Amuleto de Proteção e Sabedoria</a></h3><p class="desc">Amuleto artesanal para proteção energética, clareza nos caminhos e fortalecimento da intuição.</p><p class="preco">R$ 39,90</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Cord%C3%A3o%20de%20Coruja%20%E2%80%94%20Amuleto%20de%20Prote%C3%A7%C3%A3o%20e%20Sabedoria." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-coruja.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="plantas"><a class="foto" href="produtos/produto-jiboianeon.html"><img src="imagens/produtos/img-produto-jiboianeon.jpg" alt="Jiboia Neon" loading="lazy" decoding="async"><span class="selo">Planta Viva · Purificação</span></a><p class="cat">Plantas Vivas</p><h3><a href="produtos/produto-jiboianeon.html">Jiboia Neon</a></h3><p class="desc">Purifica o ar, renova as energias e traz vitalidade para o ambiente.</p><p class="preco">R$ 34,90</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Jiboia%20Neon." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-jiboianeon.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="plantas"><a class="foto" href="produtos/produto-miniespada.html"><img src="imagens/produtos/img-produto-miniespada.jpg" alt="Espada Mini de São Jorge" loading="lazy" decoding="async"><span class="selo">Planta Viva · Proteção</span></a><p class="cat">Plantas Vivas</p><h3><a href="produtos/produto-miniespada.html">Espada Mini de São Jorge</a></h3><p class="desc">Protege a entrada da casa, corta inveja e purifica o ambiente. Suculenta anã de fácil cultivo.</p><p class="preco">R$ 29,90</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Espada%20Mini%20de%20S%C3%A3o%20Jorge." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-miniespada.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card" data-categoria="difusores"><a class="foto" href="produtos/produto-solo-estelar.html"><img src="imagens/produtos/img-produto-soloestelar.jpg" alt="Solo Estelar — Difusor em Cerâmica Fria" loading="lazy" decoding="async"><span class="selo">Coleção Alquimia da Floresta · Peça Única</span></a><p class="cat">Difusores</p><h3><a href="produtos/produto-solo-estelar.html">Solo Estelar — Difusor em Cerâmica Fria</a></h3><p class="desc">Difusor artesanal para aterramento, equilíbrio e presença plena. Peça única.</p><p class="preco">R$ 39,90</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Solo%20Estelar." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-solo-estelar.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article><article class="mv-card produto-card esgotado" data-categoria="difusores"><a class="foto" href="produtos/produto-semente-da-noite.html"><img src="imagens/produtos/img-produto-sementedanoite.jpg" alt="Semente da Noite — Difusor em Cerâmica Fria" loading="lazy" decoding="async"><span class="selo">Peça vendida</span></a><p class="cat">Difusores</p><h3><a href="produtos/produto-semente-da-noite.html">Semente da Noite — Difusor em Cerâmica Fria</a></h3><p class="desc">Peça única — já foi vendida. Conheça sua história e energia.</p><p class="preco">R$ 39,90</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Vi%20a%20pe%C3%A7a%20Semente%20da%20Noite%20%E2%80%94%20Difusor%20em%20Cer%C3%A2mica%20Fria%2C%20que%20j%C3%A1%20foi%20vendida.%20Gostaria%20de%20encomendar%20uma%20parecida." class="mv-btn mv-btn-linha" target="_blank" rel="noopener">Encomendar parecida</a></div></article><article class="mv-card produto-card esgotado" data-categoria="difusores"><a class="foto" href="produtos/produto-oraculo-azul.html"><img src="imagens/produtos/img-produto-oraculoazul.jpg" alt="Oráculo Azul — Difusor em Cerâmica Fria" loading="lazy" decoding="async"><span class="selo">Peça vendida</span></a><p class="cat">Difusores</p><h3><a href="produtos/produto-oraculo-azul.html">Oráculo Azul — Difusor em Cerâmica Fria</a></h3><p class="desc">Peça única — já foi vendida. Conheça sua história e energia.</p><p class="preco">R$ 39,90</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Vi%20a%20pe%C3%A7a%20Or%C3%A1culo%20Azul%20%E2%80%94%20Difusor%20em%20Cer%C3%A2mica%20Fria%2C%20que%20j%C3%A1%20foi%20vendida.%20Gostaria%20de%20encomendar%20uma%20parecida." class="mv-btn mv-btn-linha" target="_blank" rel="noopener">Encomendar parecida</a></div></article><article class="mv-card produto-card" data-categoria="difusores"><a class="foto" href="produtos/produto-difusor.html"><img src="imagens/produtos/img-produto-difusor-2.jpg" alt="Difusor Pessoal de Aromaterapia" loading="lazy" decoding="async"><span class="selo">Pingente Cerâmico Artesanal</span></a><p class="cat">Difusores</p><h3><a href="produtos/produto-difusor.html">Difusor Pessoal de Aromaterapia</a></h3><p class="desc">Pingente de aromaterapia em cerâmica artesanal. Presença, bem-estar e conexão com o poder das plantas.</p><p class="preco">R$ 39,90</p><div class="acoes"><a href="https://wa.me/5591996324631?text=Ol%C3%A1%20Thais%21%20Gostaria%20de%20adquirir%20o%20Difusor%20Pessoal%20de%20Aromaterapia." class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="produtos/produto-difusor.html" class="mv-btn mv-btn-linha">Detalhes</a></div></article></div>
+</main>
 
-<div class="produtos-grid" id="gridProdutos"><a class="produto-card " href="produtos/produto-limpeza.html" data-categoria="sais"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-limpeza.jpg" class="prod-img" alt="Sal 3 em 1 — Limpeza Profunda" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Limpeza</span></div><div class="prod-info"><div class="prod-intencao">❋ Purificação Profunda</div><h3 class="prod-nome">Sal 3 em 1 — Limpeza Profunda</h3><p class="prod-desc">Remove energias indesejadas e renova o campo espiritual.</p><div class="prod-footer"><span class="prod-preco">R$ 20,00</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-protecao.html" data-categoria="sais"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-protecao.jpg" class="prod-img" alt="Sal 3 em 1 — Proteção dos Caminhos" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Proteção</span></div><div class="prod-info"><div class="prod-intencao">⊛ Blindagem Energética</div><h3 class="prod-nome">Sal 3 em 1 — Proteção dos Caminhos</h3><p class="prod-desc">Proteção ativa e abertura de caminhos seguros.</p><div class="prod-footer"><span class="prod-preco">R$ 20,00</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-prosperidade.html" data-categoria="sais"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-prosperidade.jpg" class="prod-img" alt="Sal 3 em 1 — Prosperidade &amp; Abundância" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Abundância</span></div><div class="prod-info"><div class="prod-intencao">✦ Fluxo de Prosperidade</div><h3 class="prod-nome">Sal 3 em 1 — Prosperidade &amp; Abundância</h3><p class="prod-desc">Atrai boas oportunidades e ativa o fluxo de prosperidade.</p><div class="prod-footer"><span class="prod-preco">R$ 20,00</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-forca.html" data-categoria="sais"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-forca.jpg" class="prod-img" alt="Sal 3 em 1 — Força &amp; Vitalidade" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Vitalidade</span></div><div class="prod-info"><div class="prod-intencao">◈ Energia Interior</div><h3 class="prod-nome">Sal 3 em 1 — Força &amp; Vitalidade</h3><p class="prod-desc">Revigora corpo e energia. Voltada à força interior e renovação.</p><div class="prod-footer"><span class="prod-preco">R$ 20,00</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-amor.html" data-categoria="sais"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-amor.jpg" class="prod-img" alt="Sal 3 em 1 — Amor-Próprio &amp; Equilíbrio" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Equilíbrio</span></div><div class="prod-info"><div class="prod-intencao">❋ Harmonia Emocional</div><h3 class="prod-nome">Sal 3 em 1 — Amor-Próprio &amp; Equilíbrio</h3><p class="prod-desc">Harmoniza o emocional e fortalece a autoestima.</p><div class="prod-footer"><span class="prod-preco">R$ 20,00</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-muiraquita.html" data-categoria="amuletos"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-muiraquita-prod.jpg" class="prod-img" alt="Muiraquitã — Amuleto Ancestral" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Artesanal · Único</span></div><div class="prod-info"><div class="prod-intencao">🐸 Amuleto Ancestral</div><h3 class="prod-nome">Muiraquitã — Amuleto Ancestral</h3><p class="prod-desc">Proteção, sorte e ancestralidade amazônica. Cada peça é única, feita à mão.</p><div class="prod-footer"><span class="prod-preco">R$ 39,90</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-coruja.html" data-categoria="amuletos"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-coruja-1.jpg" class="prod-img" alt="Cordão de Coruja — Amuleto de Proteção e Sabedoria" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Artesanal · Único</span></div><div class="prod-info"><div class="prod-intencao">🦉 Proteção e Sabedoria</div><h3 class="prod-nome">Cordão de Coruja — Amuleto de Proteção e Sabedoria</h3><p class="prod-desc">Amuleto artesanal para proteção energética, clareza nos caminhos e fortalecimento da intuição.</p><div class="prod-footer"><span class="prod-preco">R$ 39,90</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-jiboianeon.html" data-categoria="plantas"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-jiboianeon.jpg" class="prod-img" alt="Jiboia Neon" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Planta Viva · Purificação</span></div><div class="prod-info"><div class="prod-intencao">🍃 Purificação e Renovação</div><h3 class="prod-nome">Jiboia Neon</h3><p class="prod-desc">Purifica o ar, renova as energias e traz vitalidade para o ambiente.</p><div class="prod-footer"><span class="prod-preco">R$ 34,90</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-miniespada.html" data-categoria="plantas"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-miniespada.jpg" class="prod-img" alt="Espada Mini de São Jorge" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Planta Viva · Proteção</span></div><div class="prod-info"><div class="prod-intencao">⚔️ Proteção e Firmeza</div><h3 class="prod-nome">Espada Mini de São Jorge</h3><p class="prod-desc">Protege a entrada da casa, corta inveja e purifica o ambiente. Suculenta anã de fácil cultivo.</p><div class="prod-footer"><span class="prod-preco">R$ 29,90</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-solo-estelar.html" data-categoria="difusores"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-soloestelar.jpg" class="prod-img" alt="Solo Estelar — Difusor em Cerâmica Fria" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Coleção Alquimia da Floresta · Peça Única</span></div><div class="prod-info"><div class="prod-intencao">✨ Equilíbrio e Presença</div><h3 class="prod-nome">Solo Estelar — Difusor em Cerâmica Fria</h3><p class="prod-desc">Difusor artesanal para aterramento, equilíbrio e presença plena. Peça única.</p><div class="prod-footer"><span class="prod-preco">R$ 39,90</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card esgotado" href="produtos/produto-semente-da-noite.html" data-categoria="difusores"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-sementedanoite.jpg" class="prod-img" alt="Semente da Noite — Difusor em Cerâmica Fria" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">ESGOTADO</span></div><div class="prod-info"><div class="prod-intencao">🌙 Proteção e Introspecção</div><h3 class="prod-nome">Semente da Noite — Difusor em Cerâmica Fria</h3><p class="prod-desc">Peça única — já foi vendida. Conheça sua história e energia.</p><div class="prod-footer"><span class="prod-preco">R$ 39,90 <span class="prod-preco-indisponivel">· Indisponível</span></span><span class="prod-btn">Ver detalhes</span></div></div></a><a class="produto-card esgotado" href="produtos/produto-oraculo-azul.html" data-categoria="difusores"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-oraculoazul.jpg" class="prod-img" alt="Oráculo Azul — Difusor em Cerâmica Fria" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">ESGOTADO</span></div><div class="prod-info"><div class="prod-intencao">👁️ Foco e Intuição</div><h3 class="prod-nome">Oráculo Azul — Difusor em Cerâmica Fria</h3><p class="prod-desc">Peça única — já foi vendida. Conheça sua história e energia.</p><div class="prod-footer"><span class="prod-preco">R$ 39,90 <span class="prod-preco-indisponivel">· Indisponível</span></span><span class="prod-btn">Ver detalhes</span></div></div></a><a class="produto-card " href="produtos/produto-difusor.html" data-categoria="difusores"><div class="prod-img-wrap"><img src="imagens/produtos/img-produto-difusor-2.jpg" class="prod-img" alt="Difusor Pessoal de Aromaterapia" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">Pingente Cerâmico Artesanal</span></div><div class="prod-info"><div class="prod-intencao">🌸 Equilíbrio · Presença</div><h3 class="prod-nome">Difusor Pessoal de Aromaterapia</h3><p class="prod-desc">Pingente de aromaterapia em cerâmica artesanal. Presença, bem-estar e conexão com o poder das plantas.</p><div class="prod-footer"><span class="prod-preco">R$ 39,90</span><span class="prod-btn">Ver Detalhes</span></div></div></a><a class="produto-card " href="artigos/artigo-muiraquita.html" data-categoria="amuletos"><div class="prod-img-wrap"><img src="imagens/geral/img-muiraquita-final.jpg" class="prod-img" alt="Quer saber mais sobre o Muiraquitã?" loading="lazy"><div class="prod-overlay"></div><span class="prod-badge">📖 Leia mais</span></div><div class="prod-info"><div class="prod-intencao">🐸 Ancestralidade</div><h3 class="prod-nome">Quer saber mais sobre o Muiraquitã?</h3><p class="prod-desc">Leia o artigo completo sobre a lenda das Icamiabas e a história do amuleto.</p><div class="prod-footer"><span class="prod-preco">Ler artigo →</span><span class="prod-btn">Ler</span></div></div></a><div class="prod-em-breve" data-categoria="todos"><div style="text-align:center;padding:36px;"><div style="font-size:1.8rem;margin-bottom:14px;opacity:0.3;">✦</div><p style="font-family:'Cinzel Decorative',serif;font-size:0.78rem;color:rgba(201,168,76,0.4);letter-spacing:0.1em;line-height:1.7;">Novos rituais<br>em breve</p></div></div></div>
-
-<footer>
-  <div class="foot-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
-  <p class="foot-copy">© 2026 Misticismo Verde · misticismoverde.com.br</p>
-  <a href="#top" class="foot-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Voltar ao topo</a>
-</footer>
-<div class="rodape-legal" style="background:#050f07;text-align:center;padding:0 24px 30px;font-family:'Cormorant Garamond',Georgia,serif;font-size:0.78rem;letter-spacing:0.06em;color:rgba(245,234,216,0.4);position:relative;z-index:2;">Misticismo Verde · CNPJ 63.040.689/0001-06 · Belém, Pará · <a href="trocas-e-devolucoes.html" style="color:rgba(201,168,76,0.7);">Trocas e devoluções</a> · <a href="privacidade.html" style="color:rgba(201,168,76,0.7);">Privacidade</a></div>
-
-<!-- MODAL PRODUTO -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal"><button class="modal-fechar" onclick="fecharModal()">✕</button><div class="modal-tag" id="mTag"></div><h2 class="modal-titulo" id="mTitulo"></h2><p class="modal-desc" id="mDesc"></p><div class="modal-secs" id="mSecs"></div><div class="modal-cta"><a href="#" class="btn-whats" id="mWhats" target="_blank">💬 Quero este produto</a><span class="modal-preco" id="mPreco"></span></div></div>
+<div class="mv-rodape" role="contentinfo">
+  <div class="mv-rodape-in">
+    <div><img src="imagens/geral/logo-mv-160.png" alt="Misticismo Verde" width="96" height="96" loading="lazy"><p>Mantenha o verde, honre a sabedoria ancestral.</p></div>
+    <div class="col"><h2>Explorar</h2><a href="biblioteca.html">Biblioteca Viva</a><a href="loja.html">Loja</a><a href="artigos.html">Artigos</a><a href="sobre.html">Sobre</a></div>
+    <div class="col"><h2>Contato</h2><a href="https://wa.me/5591996324631" target="_blank" rel="noopener">WhatsApp (91) 99632-4631</a><a href="https://instagram.com/misticismoverde" target="_blank" rel="noopener">Instagram @misticismoverde</a><a href="https://www.tiktok.com/@misticismoverde" target="_blank" rel="noopener">TikTok @misticismoverde</a><a href="mailto:misticismoverde@gmail.com">misticismoverde@gmail.com</a></div>
+    <div class="col"><h2>Informações</h2><a href="trocas-e-devolucoes.html">Trocas e devoluções</a><a href="privacidade.html">Privacidade</a><a href="contato.html">Fale com a gente</a></div>
+  </div>
+  <p class="base">© 2026 Misticismo Verde · CNPJ 63.040.689/0001-06 · Belém, Pará</p>
 </div>
 
 <script src="assets/site.js"></script>
 <script>
-var PRODUTOS = [{"id": "limpeza", "categoria": "sais", "href": "produtos/produto-limpeza.html", "img": "imagens/produtos/img-produto-limpeza.jpg", "badge": "Limpeza", "intencao": "❋ Purificação Profunda", "nome": "Sal 3 em 1 — Limpeza Profunda", "desc": "Remove energias indesejadas e renova o campo espiritual.", "preco": "R$ 20,00", "tag": "❋ Purificação Profunda", "esgotado": false}, {"id": "protecao", "categoria": "sais", "href": "produtos/produto-protecao.html", "img": "imagens/produtos/img-produto-protecao.jpg", "badge": "Proteção", "intencao": "⊛ Blindagem Energética", "nome": "Sal 3 em 1 — Proteção dos Caminhos", "desc": "Proteção ativa e abertura de caminhos seguros.", "preco": "R$ 20,00", "tag": "⊛ Blindagem Energética", "esgotado": false}, {"id": "prosperidade", "categoria": "sais", "href": "produtos/produto-prosperidade.html", "img": "imagens/produtos/img-produto-prosperidade.jpg", "badge": "Abundância", "intencao": "✦ Fluxo de Prosperidade", "nome": "Sal 3 em 1 — Prosperidade & Abundância", "desc": "Atrai boas oportunidades e ativa o fluxo de prosperidade.", "preco": "R$ 20,00", "tag": "✦ Fluxo de Prosperidade", "esgotado": false}, {"id": "forca", "categoria": "sais", "href": "produtos/produto-forca.html", "img": "imagens/produtos/img-produto-forca.jpg", "badge": "Vitalidade", "intencao": "◈ Energia Interior", "nome": "Sal 3 em 1 — Força & Vitalidade", "desc": "Revigora corpo e energia. Voltada à força interior e renovação.", "preco": "R$ 20,00", "tag": "◈ Energia Interior", "esgotado": false}, {"id": "amor", "categoria": "sais", "href": "produtos/produto-amor.html", "img": "imagens/produtos/img-produto-amor.jpg", "badge": "Equilíbrio", "intencao": "❋ Harmonia Emocional", "nome": "Sal 3 em 1 — Amor-Próprio & Equilíbrio", "desc": "Harmoniza o emocional e fortalece a autoestima.", "preco": "R$ 20,00", "tag": "❋ Harmonia Emocional", "esgotado": false}, {"id": "muiraquita", "categoria": "amuletos", "href": "produtos/produto-muiraquita.html", "img": "imagens/produtos/img-produto-muiraquita-prod.jpg", "badge": "Artesanal · Único", "intencao": "🐸 Amuleto Ancestral", "nome": "Muiraquitã — Amuleto Ancestral", "desc": "Proteção, sorte e ancestralidade amazônica. Cada peça é única, feita à mão.", "preco": "R$ 39,90", "tag": "🐸 Amuleto Ancestral", "esgotado": false}, {"id": "coruja", "categoria": "amuletos", "href": "produtos/produto-coruja.html", "img": "imagens/produtos/img-produto-coruja-1.jpg", "badge": "Artesanal · Único", "intencao": "🦉 Proteção e Sabedoria", "nome": "Cordão de Coruja — Amuleto de Proteção e Sabedoria", "desc": "Amuleto artesanal para proteção energética, clareza nos caminhos e fortalecimento da intuição.", "preco": "R$ 39,90", "tag": "🦉 Proteção e Sabedoria", "esgotado": false}, {"id": "jiboianeon", "categoria": "plantas", "href": "produtos/produto-jiboianeon.html", "img": "imagens/produtos/img-produto-jiboianeon.jpg", "badge": "Planta Viva · Purificação", "intencao": "🍃 Purificação e Renovação", "nome": "Jiboia Neon", "desc": "Purifica o ar, renova as energias e traz vitalidade para o ambiente.", "preco": "R$ 34,90", "tag": "🍃 Purificação e Renovação", "esgotado": false}, {"id": "miniespada", "categoria": "plantas", "href": "produtos/produto-miniespada.html", "img": "imagens/produtos/img-produto-miniespada.jpg", "badge": "Planta Viva · Proteção", "intencao": "⚔️ Proteção e Firmeza", "nome": "Espada Mini de São Jorge", "desc": "Protege a entrada da casa, corta inveja e purifica o ambiente. Suculenta anã de fácil cultivo.", "preco": "R$ 29,90", "tag": "⚔️ Proteção e Firmeza", "esgotado": false}, {"id": "solo-estelar", "categoria": "difusores", "href": "produtos/produto-solo-estelar.html", "img": "imagens/produtos/img-produto-soloestelar.jpg", "badge": "Coleção Alquimia da Floresta · Peça Única", "intencao": "✨ Equilíbrio e Presença", "nome": "Solo Estelar — Difusor em Cerâmica Fria", "desc": "Difusor artesanal para aterramento, equilíbrio e presença plena. Peça única.", "preco": "R$ 39,90", "tag": "✨ Equilíbrio e Presença", "esgotado": false}, {"id": "semente-da-noite", "categoria": "difusores", "href": "produtos/produto-semente-da-noite.html", "img": "imagens/produtos/img-produto-sementedanoite.jpg", "badge": "ESGOTADO", "intencao": "🌙 Proteção e Introspecção", "nome": "Semente da Noite — Difusor em Cerâmica Fria", "desc": "Peça única — já foi vendida. Conheça sua história e energia.", "preco": "R$ 39,90", "tag": "🌙 Proteção e Introspecção", "esgotado": true}, {"id": "oraculo-azul", "categoria": "difusores", "href": "produtos/produto-oraculo-azul.html", "img": "imagens/produtos/img-produto-oraculoazul.jpg", "badge": "ESGOTADO", "intencao": "👁️ Foco e Intuição", "nome": "Oráculo Azul — Difusor em Cerâmica Fria", "desc": "Peça única — já foi vendida. Conheça sua história e energia.", "preco": "R$ 39,90", "tag": "👁️ Foco e Intuição", "esgotado": true}, {"id": "difusor", "categoria": "difusores", "href": "produtos/produto-difusor.html", "img": "imagens/produtos/img-produto-difusor-2.jpg", "badge": "Pingente Cerâmico Artesanal", "intencao": "🌸 Equilíbrio · Presença", "nome": "Difusor Pessoal de Aromaterapia", "desc": "Pingente de aromaterapia em cerâmica artesanal. Presença, bem-estar e conexão com o poder das plantas.", "preco": "R$ 39,90", "tag": "🌸 Equilíbrio · Presença", "esgotado": false}, {"id": "muiraquita-artigo", "categoria": "amuletos", "href": "artigos/artigo-muiraquita.html", "img": "imagens/geral/img-muiraquita-final.jpg", "badge": "📖 Leia mais", "intencao": "🐸 Ancestralidade", "nome": "Quer saber mais sobre o Muiraquitã?", "desc": "Leia o artigo completo sobre a lenda das Icamiabas e a história do amuleto.", "preco": "Ler artigo →", "tag": ""}];
-
-function renderProdutos() {
-  var grid = document.getElementById("gridProdutos");
-  var html = "";
-  PRODUTOS.forEach(function(p) {
-    var isArtigo = p.tag === "";
-    var isEsgotado = p.esgotado === true;
-    var classeExtra = isEsgotado ? 'esgotado' : '';
-    var hrefLink = p.href;
-    var badgeText = isEsgotado ? 'ESGOTADO' : p.badge;
-    var precoText = isEsgotado ? 'R$ ' + p.preco.replace('R$ ', '') : p.preco;
-    var precoIndisponivel = isEsgotado ? ' <span class="prod-preco-indisponivel">· Indisponível</span>' : '';
-    var btnText = isEsgotado ? 'Ver detalhes' : (isArtigo ? 'Ler' : 'Ver Detalhes');
-    
-    html += '<a class="produto-card ' + classeExtra + '" href="' + hrefLink + '" data-categoria="' + (p.categoria||"outros") + '">' +
-      '<div class="prod-img-wrap"><img src="' + p.img + '" class="prod-img" alt="' + p.nome + '" loading="lazy" decoding="async"><div class="prod-overlay"></div><span class="prod-badge">' + badgeText + '</span></div>' +
-      '<div class="prod-info"><div class="prod-intencao">' + p.intencao + '</div><h3 class="prod-nome">' + p.nome + '</h3><p class="prod-desc">' + p.desc + '</p>' +
-      '<div class="prod-footer"><span class="prod-preco">' + precoText + precoIndisponivel + '</span><span class="prod-btn">' + btnText + '</span></div></div></a>';
-  });
-  html += '<div class="prod-em-breve" data-categoria="todos"><div style="text-align:center;padding:36px;"><div style="font-size:1.8rem;margin-bottom:14px;opacity:0.3;">✦</div><p style="font-family:\'Cinzel Decorative\',serif;font-size:0.78rem;color:rgba(201,168,76,0.4);letter-spacing:0.1em;line-height:1.7;">Novos rituais<br>em breve</p></div></div>';
-  grid.innerHTML = html;
-  atualizarContadores();
-}
-
-function atualizarContadores() {
-  var total = PRODUTOS.length;
-  document.getElementById("cnt-todos").textContent = total;
-  ["sais","amuletos","plantas","difusores"].forEach(function(cat) {
-    var n = PRODUTOS.filter(function(p){ return p.categoria === cat; }).length;
-    var elc = document.getElementById("cnt-" + cat);
-    if (elc) elc.textContent = n;
-  });
-}
-
 function filtrarCategoria(cat, btn) {
-  document.querySelectorAll(".cat-btn").forEach(function(b){ b.classList.remove("ativo"); });
-  if (btn) btn.classList.add("ativo");
-  var cards = document.querySelectorAll(".produto-card");
-  var emBreve = document.querySelector(".prod-em-breve");
+  document.querySelectorAll(".cat-btn").forEach(function(b){ b.classList.remove("ativo"); b.setAttribute("aria-pressed", "false"); });
+  if (btn) { btn.classList.add("ativo"); btn.setAttribute("aria-pressed", "true"); }
   var visiveis = 0;
-  cards.forEach(function(card) {
-    if (cat === "todos" || card.getAttribute("data-categoria") === cat) { card.classList.remove("oculto"); visiveis++; }
-    else { card.classList.add("oculto"); }
+  document.querySelectorAll("#gridProdutos .mv-card").forEach(function(card) {
+    var mostra = cat === "todos" || card.getAttribute("data-categoria") === cat;
+    card.classList.toggle("oculto", !mostra);
+    if (mostra) visiveis++;
   });
-  if (emBreve) emBreve.classList.toggle("oculto", cat !== "todos");
   var grid = document.getElementById("gridProdutos");
-  var vazioEl = grid.querySelector(".cat-vazio");
-  if (visiveis === 0) {
-    if (!vazioEl) { var d = document.createElement("div"); d.className = "cat-vazio"; d.textContent = "Produtos desta categoria em breve. ✦"; grid.appendChild(d); }
-  } else { if (vazioEl) vazioEl.remove(); }
+  var vazio = grid.querySelector(".cat-vazio");
+  if (visiveis === 0 && !vazio) { var d = document.createElement("p"); d.className = "cat-vazio"; d.textContent = "Produtos desta categoria em breve."; grid.appendChild(d); }
+  else if (visiveis > 0 && vazio) { vazio.remove(); }
 }
-
-document.getElementById("modalOverlay").addEventListener("click", function(e){ if (e.target === this) fecharModal(); });
-function fecharModal() { document.getElementById("modalOverlay").classList.remove("aberto"); document.body.style.overflow = ""; }
-
-renderProdutos();
 </script>
 </body>
 </html>

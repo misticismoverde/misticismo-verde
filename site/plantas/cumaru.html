@@ -7,7 +7,7 @@
 <meta name="description" content="Cumaru (Dipteryx odorata): O perfume sagrado da Amazônia — o amor que dura como a madeira mais densa da floresta.">
 <link rel="canonical" href="https://misticismoverde.com.br/plantas/cumaru">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#050f07">
+<meta name="theme-color" content="#101A13">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Misticismo Verde">
 <meta property="og:type" content="article">
@@ -18,25 +18,23 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://misticismoverde.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Biblioteca Viva", "item": "https://misticismoverde.com.br/biblioteca"}, {"@type": "ListItem", "position": 3, "name": "Cumaru", "item": "https://misticismoverde.com.br/plantas/cumaru"}]}, {"@type": "Article", "headline": "Cumaru", "description": "Cumaru (Dipteryx odorata): O perfume sagrado da Amazônia — o amor que dura como a madeira mais densa da floresta.", "image": ["https://misticismoverde.com.br/imagens/geral/og-misticismo-verde.jpg"], "inLanguage": "pt-BR", "mainEntityOfPage": "https://misticismoverde.com.br/plantas/cumaru", "author": {"@type": "Person", "name": "Thai Terrear", "url": "https://misticismoverde.com.br/sobre"}, "publisher": {"@type": "Organization", "name": "Misticismo Verde", "logo": {"@type": "ImageObject", "url": "https://misticismoverde.com.br/imagens/geral/logo-mv.png"}}, "about": {"@type": "Thing", "name": "Cumaru", "alternateName": "Dipteryx odorata"}}]}</script>
 <link rel="icon" type="image/png" href="../favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/paginas.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/mv.css">
 </head>
 <body>
-
-<button class="sound-btn" id="soundBtn" title="Sons da floresta">🌿</button>
 <audio id="florestAudio" loop preload="none" src="../assets/floresta.mp3"></audio>
-
-<nav id="navbar">
-  <a href="../index.html" class="nav-logo">
-    <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/><path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
-    Misticismo Verde
-  </a>
-  <button class="hamburger" id="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-  <ul class="nav-links" id="navLinks"><li><a href="../index.html">Início</a></li><li><a href="../sobre.html">Sobre</a></li><li><a href="../loja.html">Loja</a></li><li><a href="../artigos.html">Artigos</a></li><li><a href="../biblioteca.html" class="ativo">Biblioteca Viva</a></li><li><a href="../contato.html" class="nav-cta">Contato</a></li></ul>
-</nav>
+<div hidden><span id="soundBtn"></span><span id="hamburger"></span><span id="nav"></span><span id="navbar"></span><span id="navLinks"></span></div>
+<div class="mv-topo" role="banner"><div class="mv-topo-in">
+  <a class="mv-marca" href="../index.html"><img src="../imagens/geral/logo-mv-160.png" alt="" width="52" height="52"><span>Misticismo Verde</span></a>
+  <button type="button" class="mv-menu-btn" id="mvMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mvMenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <div class="mv-menu" id="mvMenu" role="navigation" aria-label="Menu principal"><a href="../biblioteca.html" class="ativo" aria-current="page">Biblioteca Viva</a><a href="../loja.html">Loja</a><a href="../artigos.html">Artigos</a><a href="../sobre.html">Sobre</a><a href="../contato.html">Contato</a>
+    <button type="button" class="mv-som" id="mvSom" aria-label="Ligar sons da floresta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg><span>Sons da floresta</span></button>
+  </div>
+</div></div>
 
 <main class="pg-wrap">
   <div class="migalhas" role="navigation" aria-label="Você está em"><a href="../index.html">Início</a><span>›</span><a href="../biblioteca.html">Biblioteca Viva</a><span>›</span>Cumaru</div>
@@ -73,12 +71,15 @@
   <section class="pl-sec" style="margin-top:56px"><h2><span>✦</span> Outras plantas da Biblioteca</h2><div class="relacionadas"><a href="abuta.html"><b>Abuta</b><i>Abuta grandifolia</i></a><a href="acai.html"><b>Açaí</b><i>Euterpe oleracea</i></a><a href="catuaba.html"><b>Catuaba</b><i>Erythroxylum vacciniifolium</i></a><a href="crajiru.html"><b>Crajiru</b><i>Arrabidaea chica</i></a><a href="guarana.html"><b>Guaraná</b><i>Paullinia cupana</i></a><a href="marapuama.html"><b>Marapuama</b><i>Liriosma ovata</i></a></div></section>
 </main>
 
-<footer>
-  <div class="foot-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
-  <p class="foot-copy">© 2026 Misticismo Verde · misticismoverde.com.br</p>
-  <a href="#" class="foot-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Voltar ao topo</a>
-</footer>
-<div class="rodape-legal" style="background:#050f07;text-align:center;padding:0 24px 30px;font-family:'Cormorant Garamond',Georgia,serif;font-size:0.78rem;letter-spacing:0.06em;color:rgba(245,234,216,0.4);position:relative;z-index:2;">Misticismo Verde · CNPJ 63.040.689/0001-06 · Belém, Pará · <a href="../trocas-e-devolucoes.html" style="color:rgba(201,168,76,0.7);">Trocas e devoluções</a> · <a href="../privacidade.html" style="color:rgba(201,168,76,0.7);">Privacidade</a></div>
+<div class="mv-rodape" role="contentinfo">
+  <div class="mv-rodape-in">
+    <div><img src="../imagens/geral/logo-mv-160.png" alt="Misticismo Verde" width="96" height="96" loading="lazy"><p>Mantenha o verde, honre a sabedoria ancestral.</p></div>
+    <div class="col"><h2>Explorar</h2><a href="../biblioteca.html">Biblioteca Viva</a><a href="../loja.html">Loja</a><a href="../artigos.html">Artigos</a><a href="../sobre.html">Sobre</a></div>
+    <div class="col"><h2>Contato</h2><a href="https://wa.me/5591996324631" target="_blank" rel="noopener">WhatsApp (91) 99632-4631</a><a href="https://instagram.com/misticismoverde" target="_blank" rel="noopener">Instagram @misticismoverde</a><a href="https://www.tiktok.com/@misticismoverde" target="_blank" rel="noopener">TikTok @misticismoverde</a><a href="mailto:misticismoverde@gmail.com">misticismoverde@gmail.com</a></div>
+    <div class="col"><h2>Informações</h2><a href="../trocas-e-devolucoes.html">Trocas e devoluções</a><a href="../privacidade.html">Privacidade</a><a href="../contato.html">Fale com a gente</a></div>
+  </div>
+  <p class="base">© 2026 Misticismo Verde · CNPJ 63.040.689/0001-06 · Belém, Pará</p>
+</div>
 
 <script src="../assets/site.js"></script>
 </body>

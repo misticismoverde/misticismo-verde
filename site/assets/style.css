@@ -3,8 +3,8 @@
 ═══════════════════════════════════════════════════ */
 :root {
   --verde-fundo: #050f07;--verde-escuro: #0a1a0f;--verde-medio: #0d2818;
-  --verde-musgo: #1a3d1f;--verde-claro: #2d5a27;--dourado: #c9a84c;
-  --dourado-claro: #e8c96a;--dourado-suave: #f0dfa0;--creme: #f5ead8;
+  --verde-musgo: #1a3d1f;--verde-claro: #2d5a27;--dourado: #8CC63F;
+  --dourado-claro: #A9D46E;--dourado-suave: #DDEBC8;--creme: #f5ead8;
   --creme-suave: rgba(245,234,216,0.75);--creme-fraco: rgba(245,234,216,0.45);
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
@@ -14,7 +14,7 @@ a{color:inherit;}
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 60px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(5,15,7,0.97),transparent);transition:all 0.3s;}
-nav.scrolled{background:rgba(5,15,7,0.98);padding:14px 60px;border-bottom:1px solid rgba(201,168,76,0.15);}
+nav.scrolled{background:rgba(5,15,7,0.98);padding:14px 60px;border-bottom:1px solid rgba(140,198,63,0.15);}
 .nav-logo{font-family:'Cinzel Decorative',serif;font-size:1rem;color:var(--dourado);text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:0.12em;}
 .nav-logo svg{width:26px;height:26px;}
 .nav-links{display:flex;gap:32px;list-style:none;}
@@ -30,7 +30,7 @@ nav.scrolled{background:rgba(5,15,7,0.98);padding:14px 60px;border-bottom:1px so
 .btn-hero:hover{background:var(--dourado);color:var(--verde-fundo);}
 .btn-whats{display:inline-flex;align-items:center;gap:9px;background:rgba(37,211,102,0.13);border:1px solid rgba(37,211,102,0.38);color:#63e887;padding:13px 26px;text-decoration:none;font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;transition:all 0.3s;font-family:'Cormorant Garamond',serif;}
 .btn-whats:hover{background:rgba(37,211,102,0.22);}
-.btn-sec-out{display:inline-flex;align-items:center;gap:8px;background:none;border:1px solid rgba(201,168,76,0.22);color:rgba(201,168,76,0.6);padding:13px 24px;font-family:'Cormorant Garamond',serif;font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;transition:all 0.3s;text-decoration:none;cursor:pointer;}
+.btn-sec-out{display:inline-flex;align-items:center;gap:8px;background:none;border:1px solid rgba(140,198,63,0.22);color:rgba(140,198,63,0.6);padding:13px 24px;font-family:'Cormorant Garamond',serif;font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;transition:all 0.3s;text-decoration:none;cursor:pointer;}
 .btn-sec-out:hover{color:var(--dourado);border-color:var(--dourado);}
 
 /* ── TIPOGRAFIA DE SEÇÃO ── */
@@ -43,22 +43,22 @@ nav.scrolled{background:rgba(5,15,7,0.98);padding:14px 60px;border-bottom:1px so
 .ornamento{text-align:center;color:var(--dourado);opacity:0.2;font-size:1.1rem;letter-spacing:16px;padding:10px;}
 
 /* ── SOM ── */
-.sound-btn{position:fixed;bottom:28px;left:28px;z-index:500;background:rgba(13,40,24,0.85);border:1px solid rgba(201,168,76,0.22);color:var(--dourado);width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;transition:all 0.3s;box-shadow:0 4px 20px rgba(0,0,0,0.4);}
+.sound-btn{position:fixed;bottom:28px;left:28px;z-index:500;background:rgba(13,40,24,0.85);border:1px solid rgba(140,198,63,0.22);color:var(--dourado);width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;transition:all 0.3s;box-shadow:0 4px 20px rgba(0,0,0,0.4);}
 .sound-btn:hover{border-color:var(--dourado);transform:scale(1.08);}
 
 /* ── FOOTER ── */
-footer{border-top:1px solid rgba(201,168,76,0.1);padding:44px 60px;display:flex;align-items:center;justify-content:space-between;background:var(--verde-fundo);position:relative;z-index:2;}
+footer{border-top:1px solid rgba(140,198,63,0.1);padding:44px 60px;display:flex;align-items:center;justify-content:space-between;background:var(--verde-fundo);position:relative;z-index:2;}
 .foot-logo{font-family:'Cinzel Decorative',serif;font-size:0.88rem;color:var(--dourado);letter-spacing:0.12em;}
-.foot-logo span{display:block;font-family:'Cormorant Garamond',serif;font-size:0.72rem;color:rgba(201,168,76,0.38);text-transform:uppercase;font-style:italic;margin-top:3px;font-weight:300;}
-.foot-copy{font-size:0.75rem;color:rgba(245,234,216,0.22);text-align:center;}
-.foot-link{font-size:0.75rem;color:rgba(201,168,76,0.38);text-decoration:none;}
+.foot-logo span{display:block;font-family:'Cormorant Garamond',serif;font-size:0.72rem;color:rgba(140,198,63,0.38);text-transform:uppercase;font-style:italic;margin-top:3px;font-weight:300;}
+.foot-copy{font-size:0.75rem;color:rgba(242,236,223,0.80);text-align:center;}
+.foot-link{font-size:0.75rem;color:rgba(140,198,63,0.38);text-decoration:none;}
 .foot-link:hover{color:var(--dourado);}
 
 /* ── MODAL GENÉRICO ── */
 .modal-overlay{position:fixed;inset:0;background:rgba(5,15,7,0.93);z-index:5000;display:none;align-items:center;justify-content:center;padding:32px;backdrop-filter:blur(6px);}
 .modal-overlay.aberto{display:flex;}
-.modal{max-width:780px;width:100%;background:linear-gradient(135deg,rgba(13,40,24,0.99),rgba(5,15,7,0.99));border:1px solid rgba(201,168,76,0.28);padding:44px;position:relative;max-height:88vh;overflow-y:auto;}
-.modal-fechar{position:absolute;top:18px;right:22px;background:none;border:none;color:rgba(245,234,216,0.35);font-size:1.4rem;cursor:pointer;}
+.modal{max-width:780px;width:100%;background:linear-gradient(135deg,rgba(13,40,24,0.99),rgba(5,15,7,0.99));border:1px solid rgba(140,198,63,0.28);padding:44px;position:relative;max-height:88vh;overflow-y:auto;}
+.modal-fechar{position:absolute;top:18px;right:22px;background:none;border:none;color:rgba(242,236,223,0.80);font-size:1.4rem;cursor:pointer;}
 .modal-fechar:hover{color:var(--dourado);}
 
 /* ── ANIMAÇÕES ── */
@@ -85,8 +85,8 @@ footer{border-top:1px solid rgba(201,168,76,0.1);padding:44px 60px;display:flex;
   left: 28px;
   z-index: 9999;
   background: rgba(13,40,24,0.88);
-  border: 1px solid rgba(201,168,76,0.22);
-  color: #c9a84c;
+  border: 1px solid rgba(140,198,63,0.22);
+  color: #8CC63F;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -99,6 +99,6 @@ footer{border-top:1px solid rgba(201,168,76,0.1);padding:44px 60px;display:flex;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 .sound-btn:hover {
-  border-color: #c9a84c;
+  border-color: #8CC63F;
   transform: scale(1.08);
 }

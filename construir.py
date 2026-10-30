@@ -171,30 +171,33 @@ def resumir(s, n=158):
     return s if len(s) <= n else s[:n - 1].rsplit(' ', 1)[0] + '…'
 
 
-# ───────────────────────── casca das páginas novas ─────────────────────────
+# ───────────────────────── casca das páginas (tema Fotografia) ─────────────────────────
 FONTES = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-          '<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">')
+          '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">')
+MENU = [('biblioteca.html', 'Biblioteca Viva'), ('loja.html', 'Loja'), ('artigos.html', 'Artigos'), ('sobre.html', 'Sobre'), ('contato.html', 'Contato')]
 
-def nav(px, ativo):
-    itens = [('index.html', 'Início'), ('sobre.html', 'Sobre'), ('loja.html', 'Loja'), ('artigos.html', 'Artigos'), ('biblioteca.html', 'Biblioteca Viva')]
-    lis = ''.join(f'<li><a href="{px}{h}"{" class=\"ativo\"" if h == ativo else ""}>{n}</a></li>' for h, n in itens)
-    return f'''<nav id="navbar">
-  <a href="{px}index.html" class="nav-logo">
-    <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 4 C20 4 28 12 28 22 C28 30 20 36 20 36 C20 36 12 30 12 22 C12 12 20 4 20 4Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 36 L20 14" stroke="currentColor" stroke-width="0.8" opacity="0.6"/><path d="M20 22 C16 18 10 20 10 20" stroke="currentColor" stroke-width="0.8" opacity="0.5"/><path d="M20 18 C24 14 30 16 30 16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/></svg>
-    Misticismo Verde
-  </a>
-  <button class="hamburger" id="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-  <ul class="nav-links" id="navLinks">{lis}<li><a href="{px}contato.html" class="nav-cta">Contato</a></li></ul>
-</nav>'''
+def topo(px, ativo):
+    links = ''.join(f'<a href="{px}{h}"{" class=\"ativo\" aria-current=\"page\"" if h == ativo else ""}>{n}</a>' for h, n in MENU)
+    return f'''<div class="mv-topo" role="banner"><div class="mv-topo-in">
+  <a class="mv-marca" href="{px}index.html"><img src="{px}imagens/geral/logo-mv-160.png" alt="" width="52" height="52"><span>Misticismo Verde</span></a>
+  <button type="button" class="mv-menu-btn" id="mvMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mvMenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <div class="mv-menu" id="mvMenu" role="navigation" aria-label="Menu principal">{links}
+    <button type="button" class="mv-som" id="mvSom" aria-label="Ligar sons da floresta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg><span>Sons da floresta</span></button>
+  </div>
+</div></div>'''
 
-def rodape_legal(px):
-    return (f'<div class="rodape-legal" style="background:#050f07;text-align:center;padding:0 24px 30px;font-family:\'Cormorant Garamond\',Georgia,serif;'
-            f'font-size:0.78rem;letter-spacing:0.06em;color:rgba(245,234,216,0.4);position:relative;z-index:2;">Misticismo Verde · CNPJ {CNPJ} · Belém, Pará · '
-            f'<a href="{px}trocas-e-devolucoes.html" style="color:rgba(201,168,76,0.7);">Trocas e devoluções</a> · '
-            f'<a href="{px}privacidade.html" style="color:rgba(201,168,76,0.7);">Privacidade</a></div>')
+def rodape(px):
+    return f'''<div class="mv-rodape" role="contentinfo">
+  <div class="mv-rodape-in">
+    <div><img src="{px}imagens/geral/logo-mv-160.png" alt="Misticismo Verde" width="96" height="96" loading="lazy"><p>Mantenha o verde, honre a sabedoria ancestral.</p></div>
+    <div class="col"><h2>Explorar</h2><a href="{px}biblioteca.html">Biblioteca Viva</a><a href="{px}loja.html">Loja</a><a href="{px}artigos.html">Artigos</a><a href="{px}sobre.html">Sobre</a></div>
+    <div class="col"><h2>Contato</h2><a href="https://wa.me/{WHATS}" target="_blank" rel="noopener">WhatsApp (91) 99632-4631</a><a href="https://instagram.com/misticismoverde" target="_blank" rel="noopener">Instagram @misticismoverde</a><a href="https://www.tiktok.com/@misticismoverde" target="_blank" rel="noopener">TikTok @misticismoverde</a><a href="mailto:misticismoverde@gmail.com">misticismoverde@gmail.com</a></div>
+    <div class="col"><h2>Informações</h2><a href="{px}trocas-e-devolucoes.html">Trocas e devoluções</a><a href="{px}privacidade.html">Privacidade</a><a href="{px}contato.html">Fale com a gente</a></div>
+  </div>
+  <p class="base">© {datetime.date.today().year} Misticismo Verde · CNPJ {CNPJ} · Belém, Pará</p>
+</div>'''
 
 def pagina(px, ativo, corpo):
-    ano = datetime.date.today().year
     return f'''<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -202,25 +205,16 @@ def pagina(px, ativo, corpo):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Misticismo Verde</title>
 <link rel="icon" type="image/png" href="{px}favicon.png">
-{FONTES}
 <link rel="stylesheet" href="{px}assets/style.css">
 <link rel="stylesheet" href="{px}assets/paginas.css">
 </head>
 <body>
-
-<button class="sound-btn" id="soundBtn" title="Sons da floresta">🌿</button>
 <audio id="florestAudio" loop preload="none" src="{px}assets/floresta.mp3"></audio>
-
-{nav(px, ativo)}
+<!--MV-TOPO-->
 
 {corpo}
 
-<footer>
-  <div class="foot-logo">Misticismo Verde<span>Thai Terrear — Belém, Pará</span></div>
-  <p class="foot-copy">© {ano} Misticismo Verde · misticismoverde.com.br</p>
-  <a href="#" class="foot-link" onclick="window.scrollTo({{top:0,behavior:'smooth'}});return false;">↑ Voltar ao topo</a>
-</footer>
-{rodape_legal(px)}
+<!--MV-RODAPE-->
 
 <script src="{px}assets/site.js"></script>
 </body>
@@ -322,31 +316,28 @@ def montar_produtos(produtos):
         h = re.sub(r'© \d{4} Misticismo Verde', f'© {datetime.date.today().year} Misticismo Verde', h)
         gravar(rel, cabecalho(h, rel, meta))
 
-    # loja
-    js = []
+    # loja: cartões no estilo novo (já prontos no HTML, bons para o Google)
     grade = ''
     for p in produtos:
-        js.append({'id': p['_id'], 'categoria': p['_cat'], 'href': p['_href'], 'img': img(p['_img'], ''), 'badge': p.get('loja_selo', ''),
-                   'intencao': p.get('loja_intencao', ''), 'nome': p.get('nome', ''), 'desc': p.get('loja_resumo', ''), 'preco': p['_preco'],
-                   'tag': p.get('loja_intencao') or '✦', 'esgotado': bool(p.get('esgotado'))})
-    js.append({'id': 'muiraquita-artigo', 'categoria': 'amuletos', 'href': 'artigos/artigo-muiraquita.html', 'img': 'imagens/geral/img-muiraquita-final.jpg',
-               'badge': '📖 Leia mais', 'intencao': '🐸 Ancestralidade', 'nome': 'Quer saber mais sobre o Muiraquitã?',
-               'desc': 'Leia o artigo completo sobre a lenda das Icamiabas e a história do amuleto.', 'preco': 'Ler artigo →', 'tag': ''})
-    for p in js:
-        esg = p.get('esgotado')
-        btn = 'Ler' if p['tag'] == '' else ('Ver detalhes' if esg else 'Ver Detalhes')
-        preco = p['preco'] + (' <span class="prod-preco-indisponivel">· Indisponível</span>' if esg else '')
-        grade += (f'<a class="produto-card {"esgotado" if esg else ""}" href="{p["href"]}" data-categoria="{p["categoria"]}">'
-                  f'<div class="prod-img-wrap"><img src="{a(p["img"])}" class="prod-img" alt="{a(p["nome"])}" loading="lazy"><div class="prod-overlay"></div>'
-                  f'<span class="prod-badge">{"ESGOTADO" if esg else t(p["badge"])}</span></div><div class="prod-info"><div class="prod-intencao">{t(p["intencao"])}</div>'
-                  f'<h3 class="prod-nome">{t(p["nome"])}</h3><p class="prod-desc">{t(p["desc"])}</p><div class="prod-footer"><span class="prod-preco">{preco}</span>'
-                  f'<span class="prod-btn">{btn}</span></div></div></a>')
-    grade += '<div class="prod-em-breve" data-categoria="todos"><div style="text-align:center;padding:36px;"><div style="font-size:1.8rem;margin-bottom:14px;opacity:0.3;">✦</div><p style="font-family:\'Cinzel Decorative\',serif;font-size:0.78rem;color:rgba(201,168,76,0.4);letter-spacing:0.1em;line-height:1.7;">Novos rituais<br>em breve</p></div></div>'
+        esg = bool(p.get('esgotado'))
+        nome = p.get('nome', '')
+        foto = img(p['_img'], '')
+        wa = whats(f'Olá Thais! Gostaria de adquirir o {p.get("titulo_pagina") or nome}.')
+        enc = whats(f'Olá Thais! Vi a peça {nome}, que já foi vendida. Gostaria de encomendar uma parecida.')
+        selo = 'Peça vendida' if esg else (p.get('loja_selo') or '')
+        acoes = (f'<a href="{a(enc)}" class="mv-btn mv-btn-linha" target="_blank" rel="noopener">Encomendar parecida</a>' if esg else
+                 f'<a href="{a(wa)}" class="mv-btn mv-btn-verde" target="_blank" rel="noopener">Comprar</a><a href="{p["_href"]}" class="mv-btn mv-btn-linha">Detalhes</a>')
+        grade += (f'<article class="mv-card produto-card{" esgotado" if esg else ""}" data-categoria="{p["_cat"]}">'
+                  f'<a class="foto" href="{p["_href"]}"><img src="{a(foto)}" alt="{a(nome)}" loading="lazy" decoding="async">'
+                  + (f'<span class="selo">{t(selo)}</span>' if selo else '') + '</a>'
+                  f'<p class="cat">{t(CAT_PROD.get(p["_cat"], ""))}</p>'
+                  f'<h3><a href="{p["_href"]}">{t(nome)}</a></h3>'
+                  f'<p class="desc">{t(p.get("loja_resumo"))}</p>'
+                  f'<p class="preco">{t(p["_preco"])}</p><div class="acoes">{acoes}</div></article>')
     h = ler(os.path.join(SAIDA, 'loja.html'))
-    h = h.replace('/*PRODUTOS*/[]/*FIM-PRODUTOS*/', json.dumps(js, ensure_ascii=False))
     h = h.replace('<!--GRADE-->', grade)
     for c in ['todos'] + list(CAT_PROD):
-        n = len(js) if c == 'todos' else len([p for p in js if p['categoria'] == c])
+        n = len(produtos) if c == 'todos' else len([p for p in produtos if p['_cat'] == c])
         h = re.sub(r'(id="cnt-%s">)\d*(<)' % c, r'\g<1>%d\2' % n, h)
     gravar('loja.html', h)
     return por_id
@@ -442,7 +433,8 @@ def montar_plantas(plantas, produtos):
     h = re.sub(r'Fichas de \d+ plantas', f'Fichas de {len(plantas)} plantas', h)
     gravar('biblioteca.html', h)
     ini = ler(os.path.join(SAIDA, 'index.html'))
-    gravar('index.html', re.sub(r'Biblioteca Viva com \d+ plantas', f'Biblioteca Viva com {len(plantas)} plantas', ini))
+    ini = re.sub(r'Biblioteca Viva com \d+ plantas', f'Biblioteca Viva com {len(plantas)} plantas', ini)
+    gravar('index.html', re.sub(r'\d+ plantas com nome científico', f'{len(plantas)} plantas com nome científico', ini))
     return {p['_id']: p for p in plantas}
 
 
@@ -553,6 +545,72 @@ def otimizar_imagens():
     return n
 
 
+
+# ───────────────────────── tema em todas as páginas ─────────────────────────
+def secao_ativa(rel):
+    if rel.startswith('plantas/') or rel == 'biblioteca.html': return 'biblioteca.html'
+    if rel.startswith('produtos/') or rel == 'loja.html': return 'loja.html'
+    if rel.startswith('artigos'): return 'artigos.html'
+    return rel
+
+def cor_texto(m):
+    alfa = max(float(m.group(1)), 0.8)
+    return f'color:rgba(242,236,223,{alfa:.2f})'
+
+def aplicar_tema():
+    for f in glob.glob(os.path.join(SAIDA, 'assets', '*.css')):
+        if f.endswith('mv.css'): continue
+        c = ler(f)
+        c = re.sub(r'#c9a84c', '#8CC63F', c, flags=re.I); c = re.sub(r'201,\s*168,\s*76', '140,198,63', c)
+        c = re.sub(r'#f0dfa0', '#DDEBC8', c, flags=re.I); c = re.sub(r'#e8c96a', '#A9D46E', c, flags=re.I)
+        c = re.sub(r'color:\s*rgba\(245,\s*234,\s*216,\s*(0?\.\d+|1)\)', cor_texto, c)
+        open(f, 'w', encoding='utf-8').write(c)
+    for f in glob.glob(os.path.join(SAIDA, '**', '*.html'), recursive=True):
+        rel = os.path.relpath(f, SAIDA).replace(os.sep, '/')
+        px = '../' * rel.count('/')
+        h = ler(f)
+        # cabeçalho
+        if '<!--MV-TOPO-->' in h:
+            h = h.replace('<!--MV-TOPO-->', topo(px, secao_ativa(rel)))
+        else:
+            h = re.sub(r'<nav\b[^>]*>.*?</nav>', '', h, count=1, flags=re.S)
+            corpo = re.search(r'<body[^>]*>', h)
+            h = h[:corpo.end()] + '\n' + topo(px, secao_ativa(rel)) + h[corpo.end():]
+        # rodapé
+        if '<!--MV-RODAPE-->' in h:
+            h = h.replace('<!--MV-RODAPE-->', rodape(px))
+        else:
+            h = re.sub(r'\s*<div class="rodape-legal".*?</div>', '', h, flags=re.S)
+            k = h.rfind('<footer')
+            if k >= 0:
+                fim = h.index('</footer>', k) + len('</footer>')
+                h = h[:k] + rodape(px) + h[fim:]
+            else:
+                h = h.replace('</body>', rodape(px) + '\n</body>', 1)
+        # ids que os scripts antigos procuram continuam existindo (escondidos)
+        faltam = [i for i in ('soundBtn', 'hamburger', 'nav', 'navbar', 'navLinks') if f'id="{i}"' not in h]
+        if faltam:
+            stub = '<div hidden>' + ''.join(f'<span id="{i}"></span>' for i in faltam) + '</div>'
+            h = h.replace('<div class="mv-topo"', stub + '\n<div class="mv-topo"', 1)
+        if 'id="florestAudio"' not in h:
+            h = h.replace('<div class="mv-topo"', f'<audio id="florestAudio" loop preload="none" src="{px}assets/floresta.mp3"></audio>\n<div class="mv-topo"', 1)
+        if 'assets/site.js' not in h:
+            h = h.replace('</body>', f'<script src="{px}assets/site.js"></script>\n</body>', 1)
+        # fontes e folha de estilo do tema
+        h = re.sub(r'<link href="https://fonts\.googleapis\.com/css2\?family=Cinzel[^>]*>\s*', '', h)
+        if 'family=Playfair+Display' not in h:
+            h = h.replace('</head>', FONTES + '\n</head>', 1)
+        if 'assets/mv.css' not in h:
+            h = h.replace('</head>', f'<link rel="stylesheet" href="{px}assets/mv.css">\n</head>', 1)
+        # cores antigas (dourado) viram o verde da logo; textos claros ficam mais legíveis
+        h = re.sub(r'#c9a84c', '#8CC63F', h, flags=re.I)
+        h = re.sub(r'201,\s*168,\s*76', '140,198,63', h)
+        h = re.sub(r'#f0dfa0', '#DDEBC8', h, flags=re.I)
+        h = re.sub(r'#e8c96a', '#A9D46E', h, flags=re.I)
+        h = re.sub(r'color:\s*rgba\(245,\s*234,\s*216,\s*(0?\.\d+|1)\)', cor_texto, h)
+        h = h.replace('<meta name="theme-color" content="#050f07">', '<meta name="theme-color" content="#101A13">')
+        open(f, 'w', encoding='utf-8').write(h)
+
 def main():
     if os.path.exists(SAIDA): shutil.rmtree(SAIDA)
     shutil.copytree(SITE_DIR, SAIDA)
@@ -560,6 +618,7 @@ def main():
     plantas = montar_plantas(carregar('plantas'), produtos)
     artigos = carregar('artigos')
     montar_artigos(artigos, produtos, plantas)
+    aplicar_tema()
     n_img = otimizar_imagens()
     n = sitemap()
     marca = os.path.join(SAIDA, 'index.html')
