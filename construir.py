@@ -434,6 +434,7 @@ def montar_plantas(plantas, produtos):
     gravar('biblioteca.html', h)
     ini = ler(os.path.join(SAIDA, 'index.html'))
     ini = re.sub(r'Biblioteca Viva com \d+ plantas', f'Biblioteca Viva com {len(plantas)} plantas', ini)
+    ini = re.sub(r'\d+ plantas na Biblioteca<', f'{len(plantas)} plantas na Biblioteca<', ini)
     gravar('index.html', re.sub(r'\d+ plantas com nome científico', f'{len(plantas)} plantas com nome científico', ini))
     return {p['_id']: p for p in plantas}
 

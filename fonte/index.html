@@ -27,32 +27,40 @@
 <body class="mv-home">
 <audio id="florestAudio" loop preload="none" src="assets/floresta.mp3"></audio>
 
-<section class="mv-hero">
-  <img src="imagens/geral/hero-jiboia.jpg" alt="" aria-hidden="true" fetchpriority="high">
-  <div class="veu" aria-hidden="true"></div>
+<section class="mv-hero mv-hero-paina">
+  <div class="mv-hero-fundo" aria-hidden="true">
+    <span class="mv-paina" style="left:6%;animation-duration:17s;animation-delay:-2s"></span><span class="mv-paina" style="left:14%;animation-duration:22s;animation-delay:-9s;width:5px;height:5px"></span><span class="mv-paina" style="left:23%;animation-duration:19s;animation-delay:-14s"></span><span class="mv-paina" style="left:31%;animation-duration:25s;animation-delay:-5s;width:4px;height:4px"></span><span class="mv-paina" style="left:40%;animation-duration:18s;animation-delay:-11s"></span><span class="mv-paina" style="left:48%;animation-duration:23s;animation-delay:-1s;width:5px;height:5px"></span><span class="mv-paina" style="left:57%;animation-duration:20s;animation-delay:-16s"></span><span class="mv-paina" style="left:64%;animation-duration:26s;animation-delay:-7s;width:4px;height:4px"></span><span class="mv-paina" style="left:72%;animation-duration:18s;animation-delay:-12s"></span><span class="mv-paina" style="left:80%;animation-duration:21s;animation-delay:-3s;width:6px;height:6px"></span><span class="mv-paina" style="left:88%;animation-duration:24s;animation-delay:-18s"></span><span class="mv-paina" style="left:95%;animation-duration:19s;animation-delay:-8s;width:4px;height:4px"></span>
+    <svg class="mv-mata" viewBox="0 0 1440 220" preserveAspectRatio="none"><path d="M0 220 V120 C60 90 110 110 160 80 C210 50 250 100 300 90 C360 78 400 40 460 60 C520 80 560 120 620 100 C690 76 720 40 790 50 C860 60 900 110 960 96 C1020 82 1060 50 1120 62 C1190 76 1230 120 1290 104 C1350 88 1400 70 1440 86 V220 Z" fill="#0C1A10"/><path d="M0 220 V160 C80 140 140 170 220 150 C300 130 360 160 440 150 C520 140 600 170 680 158 C760 146 840 168 920 156 C1000 144 1080 170 1160 160 C1240 150 1320 168 1440 152 V220 Z" fill="#09130C"/></svg>
+  </div>
   <!--MV-TOPO-->
-  <div class="conteudo">
-    <div style="max-width:640px">
-      <p class="mv-sobretitulo">Plantas · Saberes tradicionais · Belém do Pará</p>
-      <h1>Mantenha o verde, honre a sabedoria ancestral.</h1>
-      <p class="sub">Conheça as plantas da Amazônia pelo nome, pela história e pelo uso, e leve para casa produtos feitos à mão.</p>
+  <div class="mv-hero-in">
+    <div class="mv-hero-txt">
+      <p class="mv-sobretitulo mv-bronze"><span class="traco"></span>Belém do Pará · desde as raízes</p>
+      <h1>Saberes da floresta, <em class="mv-verde-brilho">vivos</em>.</h1>
+      <p class="mv-slogan">Mantenha o verde, honre a sabedoria ancestral.</p>
+      <ul class="mv-pilulas">
+        <li>43 plantas na Biblioteca</li>
+        <li>Feito à mão em Belém</li>
+        <li>Atendimento pelo WhatsApp</li>
+        <li><a href="trocas-e-devolucoes.html">Troca em até 7 dias</a></li>
+      </ul>
       <div class="mv-botoes">
-        <a href="biblioteca.html" class="mv-btn mv-btn-verde">Explorar a Biblioteca Viva</a>
-        <a href="loja.html" class="mv-btn mv-btn-linha">Ver a loja</a>
+        <a href="biblioteca.html" class="mv-btn mv-btn-verde mv-bt-luz">Explorar a Biblioteca Viva</a>
+        <a href="loja.html" class="mv-btn mv-btn-bronze">Ver a loja</a>
+      </div>
+    </div>
+    <div class="mv-hero-logo" aria-hidden="true">
+      <div class="mv-orbe">
+        <div class="mv-halo"></div>
+        <div class="mv-orbita o1"><span></span></div>
+        <div class="mv-orbita o2"><span></span></div>
+        <img src="imagens/geral/logo-mv.png" alt="" width="300" height="300" fetchpriority="high">
       </div>
     </div>
   </div>
 </section>
 
-<section class="mv-faixa" aria-label="Por que comprar com a gente">
-  <div class="mv-faixa-in">
-    <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9D46E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V9"/><path d="M12 9C12 5 15 3 19 3C19 7 16 9 12 9Z"/><path d="M12 13C12 10 9 8 5 8C5 11 8 13 12 13Z"/></svg>Feito à mão em Belém, em pequenas quantidades</div>
-    <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9D46E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12Z"/></svg>Atendimento direto com a Thai pelo WhatsApp</div>
-    <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9D46E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg><a href="trocas-e-devolucoes.html" style="color:inherit">Troca ou devolução em até 7 dias</a></div>
-  </div>
-</section>
-
-<section class="mv-secao" style="padding-bottom:32px">
+<section class="mv-secao" style="padding-top:88px;padding-bottom:32px">
   <h2>Por onde você quer começar?</h2>
   <p style="margin:0;color:#CFC9B9">Cada caminho tem a sua página.</p>
   <div class="mv-caminhos">
