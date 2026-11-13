@@ -4,8 +4,8 @@
    cabeçalho, rodapé e os componentes novos (início e loja).
 ═══════════════════════════════════════════════════════════════ */
 :root{
-  --mv-fundo:#101A13; --mv-fundo-2:#16241A; --mv-fundo-3:#0C150F;
-  --mv-linha:#26382B; --mv-linha-2:#3A5040;
+  --mv-fundo:#0A120D; --mv-fundo-2:#111C14; --mv-fundo-3:#070D09;
+  --mv-linha:#1F3024; --mv-linha-2:#3A5040;
   --mv-texto:#F2ECDF; --mv-texto-2:#DCD6C7; --mv-texto-3:#B5AF9F;
   --mv-verde:#8CC63F; --mv-verde-claro:#A9D46E; --mv-bronze:#D69A6E;
   --mv-serifa:'Playfair Display',Georgia,serif; --mv-sans:'Poppins',system-ui,-apple-system,sans-serif;
@@ -13,7 +13,7 @@
   --dourado:#8CC63F; --dourado-claro:#A9D46E; --dourado-suave:#DDEBC8; --d:#8CC63F; --ds:#DDEBC8;
   --creme:#F2ECDF; --cr:#F2ECDF; --creme-suave:rgba(242,236,223,.88); --cs:rgba(242,236,223,.88);
   --creme-fraco:rgba(242,236,223,.72); --cf:rgba(242,236,223,.72);
-  --verde-fundo:#101A13; --vf:#101A13;
+  --verde-fundo:#0A120D; --vf:#0A120D; --verde-escuro:#0A120D; --verde-medio:#111C14;
 }
 
 /* Tipografia: Poppins no texto, Playfair nos títulos */
@@ -204,3 +204,44 @@ body .mv-som,body .mv-som *{font-family:var(--mv-sans)!important}
   .mv-orbita,.mv-halo,.mv-verde-brilho,.mv-bt-luz::after{animation:none!important}
   .mv-verde-brilho{color:#8CC63F;background:none}
 }
+
+
+/* ═══ LINGUAGEM "PAINA" NAS PÁGINAS INTERNAS ═══ */
+.mv-topo{background:rgba(7,13,9,.94)}
+/* aberturas antigas (Sobre, Contato, Artigos, Biblioteca, produtos) */
+.pagehero,.hero{background:#070D09!important;overflow:hidden}
+.pagehero-bg.mv-hero-fundo,.hero-bg.mv-hero-fundo{position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 45%,rgba(140,198,63,.10),rgba(7,13,9,0) 70%),#070D09!important;filter:none!important;opacity:1!important;transform:none!important;animation:none!important;overflow:hidden}
+.pagehero-ov,.hero-ov{background:linear-gradient(180deg,rgba(7,13,9,0) 60%,var(--mv-fundo) 100%)!important}
+.hero-grad{background:linear-gradient(90deg,rgba(7,13,9,.6),rgba(7,13,9,0) 60%)!important}
+.pagehero{min-height:0!important;padding:96px 24px 120px!important}
+.pagehero-c,.hero-c,.hero-txt{position:relative;z-index:2}
+.pagehero .sec-title,.hero .hero-title,.hero .hero-titulo{font-size:clamp(36px,5.4vw,58px)!important;line-height:1.08!important;color:var(--mv-texto)!important}
+.hero-title span{color:var(--mv-verde)!important;font-style:italic}
+.pagehero .sec-sub,.hero .hero-intro{font-family:var(--mv-serifa)!important;font-style:italic;font-size:20px!important;color:var(--mv-texto-2)!important;line-height:1.55!important}
+/* sobretítulos com traço bronze */
+.tag,.hero-eyebrow,.s-eyebrow,.art-tag{display:inline-flex!important;align-items:center;gap:12px;color:#C9925E!important;font-weight:600!important}
+.tag::before,.hero-eyebrow::before,.s-eyebrow::before,.art-tag::before{content:"";display:inline-block;width:32px;height:1px;background:#C9925E;flex:none}
+.pagehero .tag::after,section .tag::after{content:"";display:inline-block;width:32px;height:1px;background:#C9925E;flex:none}
+/* faixa com paina no topo das fichas, artigos e páginas de informação */
+.mv-faixa-topo{position:absolute;left:0;right:0;top:0;height:460px;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse 60% 80% at 50% 30%,rgba(140,198,63,.09),rgba(7,13,9,0) 70%),#070D09;z-index:0}
+.mv-faixa-topo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(180deg,rgba(10,18,13,0),var(--mv-fundo))}
+.mv-faixa-topo .mv-mata{display:none}
+body:has(.mv-faixa-topo){position:relative}
+.mv-faixa-topo~main{position:relative;z-index:1}
+/* loja */
+.mv-banda-paina{background:#070D09;height:auto;min-height:300px;padding-top:40px}
+.mv-banda-paina .mv-hero-fundo{position:absolute;inset:0;pointer-events:none;overflow:hidden;background:radial-gradient(ellipse 60% 80% at 30% 50%,rgba(140,198,63,.10),rgba(7,13,9,0) 70%)}
+.mv-banda-paina .txt{padding-top:60px;padding-bottom:110px}
+.mv-banda-paina .mv-mata{height:120px}
+/* títulos de seção e cartões antigos */
+.sec-title{color:var(--mv-texto)!important}
+.m-card,.artigo,.download-card,.v-card,.livro-form,.livro-msgs .msg,.contato-card,.c-card,.id-card,.exp-item,.cuid-box,.ritual-step,.anc-cit{background:var(--mv-fundo-2)!important;border-color:var(--mv-linha)!important;border-radius:14px}
+.artigo{overflow:hidden}
+.artigo-img{transition:transform .5s}
+.artigo:hover .artigo-img{transform:scale(1.04)}
+.ornamento{color:#C9925E!important;opacity:.6}
+section,.section{background-color:transparent}
+@media(max-width:700px){.pagehero{padding:72px 20px 100px!important}.mv-faixa-topo{height:340px}}
+.eyebrow{display:inline-flex!important;align-items:center;gap:12px;color:#C9925E!important;font-weight:600!important;font-size:12px!important;letter-spacing:.14em!important}
+.eyebrow::before,.eyebrow::after{content:"";display:inline-block;width:32px;height:1px;background:#C9925E;flex:none}
+body .hero-title span,body .sec-title span,body h1 em,body h2 em{font-family:var(--mv-serifa)!important}

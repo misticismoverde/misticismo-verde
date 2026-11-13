@@ -548,6 +548,15 @@ def otimizar_imagens():
 
 
 # ───────────────────────── tema em todas as páginas ─────────────────────────
+PAINA_POS = [(6,17,2,0),(14,22,9,5),(23,19,14,0),(31,25,5,4),(40,18,11,0),(48,23,1,5),(57,20,16,0),(64,26,7,4),(72,18,12,0),(80,21,3,6),(88,24,18,0),(95,19,8,4)]
+MATA = ('<svg class="mv-mata" viewBox="0 0 1440 220" preserveAspectRatio="none"><path d="M0 220 V120 C60 90 110 110 160 80 C210 50 250 100 300 90 C360 78 400 40 460 60 C520 80 560 120 620 100 C690 76 720 40 790 50 C860 60 900 110 960 96 C1020 82 1060 50 1120 62 C1190 76 1230 120 1290 104 C1350 88 1400 70 1440 86 V220 Z" fill="#0C1A10"/>'
+        '<path d="M0 220 V160 C80 140 140 170 220 150 C300 130 360 160 440 150 C520 140 600 170 680 158 C760 146 840 168 920 156 C1000 144 1080 170 1160 160 C1240 150 1320 168 1440 152 V220 Z" fill="#0A120D"/></svg>')
+
+def paina(n=12, mata=True):
+    sp = ''.join(f'<span class="mv-paina" style="left:{l}%;animation-duration:{d}s;animation-delay:-{a}s' + (f';width:{w}px;height:{w}px' if w else '') + '"></span>'
+                 for l, d, a, w in PAINA_POS[:n])
+    return sp + (MATA if mata else '')
+
 def secao_ativa(rel):
     if rel.startswith('plantas/') or rel == 'biblioteca.html': return 'biblioteca.html'
     if rel.startswith('produtos/') or rel == 'loja.html': return 'loja.html'
@@ -603,6 +612,14 @@ def aplicar_tema():
             h = h.replace('</head>', FONTES + '\n</head>', 1)
         if 'assets/mv.css' not in h:
             h = h.replace('</head>', f'<link rel="stylesheet" href="{px}assets/mv.css">\n</head>', 1)
+        # aberturas das páginas internas: a foto de banco sai, entram a paina e a mata
+        h = h.replace('<div class="pagehero-bg"></div>', f'<div class="pagehero-bg mv-hero-fundo" aria-hidden="true">{paina()}</div>')
+        if 'id="heroTitulo"' in h or rel == 'biblioteca.html':
+            h = h.replace('<div class="hero-bg"></div>', f'<div class="hero-bg mv-hero-fundo" aria-hidden="true">{paina()}</div>', 1)
+        h = h.replace('<main class="pg-wrap">', f'<div class="mv-faixa-topo" aria-hidden="true">{paina(8)}</div>\n<main class="pg-wrap">', 1)
+        h = h.replace('<!--MV-PAINA-->', paina())
+        # sobretítulos sem os ✦ (o traço bronze entra pelo CSS)
+        h = re.sub(r'(<span class="(?:tag|eyebrow|hero-eyebrow|s-eyebrow|art-tag)[^"]*">)\s*✦\s*(.*?)\s*✦\s*(</span>)', r'\1\2\3', h)
         # cores antigas (dourado) viram o verde da logo; textos claros ficam mais legíveis
         h = re.sub(r'#c9a84c', '#8CC63F', h, flags=re.I)
         h = re.sub(r'201,\s*168,\s*76', '140,198,63', h)
