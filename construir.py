@@ -606,6 +606,9 @@ def aplicar_tema():
             h = h.replace('<div class="mv-topo"', f'<audio id="florestAudio" loop preload="none" src="{px}assets/floresta.mp3"></audio>\n<div class="mv-topo"', 1)
         if 'assets/site.js' not in h:
             h = h.replace('</body>', f'<script src="{px}assets/site.js"></script>\n</body>', 1)
+        # ícones (favicon MV)
+        h = re.sub(r'\s*<link rel="(?:icon|shortcut icon|apple-touch-icon)"[^>]*>', '', h)
+        h = h.replace('</head>', f'<link rel="icon" href="{px}favicon.ico" sizes="any">\n<link rel="icon" type="image/png" sizes="32x32" href="{px}favicon-32.png">\n<link rel="icon" type="image/png" sizes="192x192" href="{px}favicon.png">\n<link rel="apple-touch-icon" href="{px}apple-touch-icon.png">\n</head>', 1)
         # fontes e folha de estilo do tema
         h = re.sub(r'<link href="https://fonts\.googleapis\.com/css2\?family=Cinzel[^>]*>\s*', '', h)
         if 'family=Playfair+Display' not in h:
