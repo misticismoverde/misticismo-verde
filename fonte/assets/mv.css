@@ -246,19 +246,27 @@ section,.section{background-color:transparent}
 .eyebrow::before,.eyebrow::after{content:"";display:inline-block;width:32px;height:1px;background:#C9925E;flex:none}
 body .hero-title span,body .sec-title span,body h1 em,body h2 em{font-family:var(--mv-serifa)!important}
 
-/* ── Catálogos na loja ── */
-.mv-catalogos{margin:72px auto 0;max-width:1000px;text-align:center}
-.mv-catalogos h2{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(1.6rem,3vw,2.1rem);color:var(--mv-texto);margin:0 0 10px}
-.mv-catalogos>p{color:var(--mv-texto-2);max-width:560px;margin:0 auto 28px;line-height:1.7}
-.mv-catalogos-grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-.mv-catalogos figure{margin:0}
-.mv-catalogos figure img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--mv-linha)}
-.mv-catalogos figcaption{margin-top:10px;font-size:.88rem;color:var(--mv-texto-2)}
-.mv-catalogos figcaption a{color:var(--mv-verde-claro,#A9D46E)}
-.mv-catalogos-nota{font-size:.8rem;color:var(--mv-texto-3);margin-top:22px}
 /* tabela de medidas dentro das páginas de produto */
 .s-corpo .mv-tabela-wrap{overflow-x:auto;margin:18px 0}
 .s-corpo table{border-collapse:collapse;width:100%;min-width:520px;font-size:.9rem}
 .s-corpo th,.s-corpo td{border-bottom:1px solid rgba(242,236,223,.12);padding:10px 8px;text-align:left;vertical-align:top}
 .s-corpo th{color:#A9D46E;font-weight:500;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
 .s-corpo td:nth-child(2){white-space:nowrap}
+
+/* ── Catálogo em PDF (página inicial e loja) ── */
+.mv-catalogo-pdf{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;background:var(--mv-fundo-2);border:1px solid var(--mv-linha);border-radius:16px;padding:32px;max-width:1100px;margin:0 auto}
+.mv-catalogo-pdf .capa{display:block;border-radius:12px;overflow:hidden}
+.mv-catalogo-pdf .capa img{width:100%;height:auto;display:block;transition:transform .5s}
+.mv-catalogo-pdf .capa:hover img{transform:scale(1.03)}
+.mv-catalogo-pdf h2{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(1.5rem,2.6vw,2rem);color:var(--mv-texto);margin:6px 0 12px;line-height:1.25}
+.mv-catalogo-pdf .txt>p{color:var(--mv-texto-2);line-height:1.7;margin:0 0 20px}
+.mv-catalogo-pdf .txt>p.nota{font-size:.8rem;color:var(--mv-texto-3);margin:16px 0 0}
+.mv-catalogo-pdf .mv-botoes{display:flex;flex-wrap:wrap;gap:12px}
+.mv-catalogo-pdf.compacto{grid-template-columns:260px 1fr;gap:28px;padding:22px 26px;margin:0 0 40px}
+.mv-catalogo-pdf.compacto h2{font-size:1.35rem;margin:4px 0 8px}
+.mv-catalogo-pdf.compacto .txt>p{margin-bottom:14px;font-size:.95rem}
+@media (max-width:760px){
+  .mv-catalogo-pdf,.mv-catalogo-pdf.compacto{grid-template-columns:1fr;gap:20px;padding:20px}
+  .mv-catalogo-pdf.compacto .capa{max-width:320px}
+  .mv-catalogo-pdf .mv-botoes .mv-btn{flex:1 1 100%;text-align:center}
+}
