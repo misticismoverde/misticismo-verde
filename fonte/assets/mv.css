@@ -253,20 +253,8 @@ body .hero-title span,body .sec-title span,body h1 em,body h2 em{font-family:var
 .s-corpo th{color:#A9D46E;font-weight:500;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
 .s-corpo td:nth-child(2){white-space:nowrap}
 
-/* ── Catálogo em PDF (página inicial e loja) ── */
-.mv-catalogo-pdf{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;background:var(--mv-fundo-2);border:1px solid var(--mv-linha);border-radius:16px;padding:32px;max-width:1100px;margin:0 auto}
-.mv-catalogo-pdf .capa{display:block;border-radius:12px;overflow:hidden}
-.mv-catalogo-pdf .capa img{width:100%;height:auto;display:block;transition:transform .5s}
-.mv-catalogo-pdf .capa:hover img{transform:scale(1.03)}
-.mv-catalogo-pdf h2{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(1.5rem,2.6vw,2rem);color:var(--mv-texto);margin:6px 0 12px;line-height:1.25}
-.mv-catalogo-pdf .txt>p{color:var(--mv-texto-2);line-height:1.7;margin:0 0 20px}
-.mv-catalogo-pdf .txt>p.nota{font-size:.8rem;color:var(--mv-texto-3);margin:16px 0 0}
-.mv-catalogo-pdf .mv-botoes{display:flex;flex-wrap:wrap;gap:12px}
-.mv-catalogo-pdf.compacto{grid-template-columns:260px 1fr;gap:28px;padding:22px 26px;margin:0 0 40px}
-.mv-catalogo-pdf.compacto h2{font-size:1.35rem;margin:4px 0 8px}
-.mv-catalogo-pdf.compacto .txt>p{margin-bottom:14px;font-size:.95rem}
-@media (max-width:760px){
-  .mv-catalogo-pdf,.mv-catalogo-pdf.compacto{grid-template-columns:1fr;gap:20px;padding:20px}
-  .mv-catalogo-pdf.compacto .capa{max-width:320px}
-  .mv-catalogo-pdf .mv-botoes .mv-btn{flex:1 1 100%;text-align:center}
-}
+
+/* ── Card do catálogo em PDF (mesmo padrão do destaque) ── */
+.mv-destaque-catalogo .capa{display:block;background:#111C14;min-height:380px}
+.mv-destaque-catalogo .capa img{object-fit:contain;padding:18px;box-sizing:border-box;transition:transform .5s}
+.mv-destaque-catalogo .capa:hover img{transform:scale(1.03)}

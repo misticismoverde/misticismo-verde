@@ -587,6 +587,9 @@ def cor_texto(m):
     alfa = max(float(m.group(1)), 0.8)
     return f'color:rgba(242,236,223,{alfa:.2f})'
 
+import hashlib
+VERSAO = {n: hashlib.md5(open(os.path.join('fonte', 'assets', n), 'rb').read()).hexdigest()[:8] for n in ('mv.css', 'site.js')}
+
 def aplicar_tema():
     for f in glob.glob(os.path.join(SAIDA, 'assets', '*.css')):
         if f.endswith('mv.css'): continue
@@ -638,6 +641,8 @@ def aplicar_tema():
             h = h.replace('</head>', FONTES + '\n</head>', 1)
         if 'assets/mv.css' not in h:
             h = h.replace('</head>', f'<link rel="stylesheet" href="{px}assets/mv.css">\n</head>', 1)
+        # versão dos arquivos: força o navegador a buscar o visual novo após cada mudança
+        h = re.sub(r'assets/(mv\.css|site\.js)(\?v=[0-9a-f]+)?"', lambda m: f'assets/{m.group(1)}?v={VERSAO[m.group(1)]}"', h)
         # aberturas das páginas internas: a foto de banco sai, entram a paina e a mata
         h = h.replace('<div class="pagehero-bg"></div>', f'<div class="pagehero-bg mv-hero-fundo" aria-hidden="true">{paina()}</div>')
         if 'id="heroTitulo"' in h or rel == 'biblioteca.html':
