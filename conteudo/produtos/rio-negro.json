@@ -1,0 +1,54 @@
+{
+  "nome": "Rio Negro",
+  "ordem": 14,
+  "categoria": "Plantas Vivas",
+  "preco": 20.0,
+  "preco_a_partir": true,
+  "esgotado": false,
+  "pagina_propria": false,
+  "imagem": "/imagens/produtos/img-produto-rio-negro.jpg",
+  "loja_selo": "Planta Viva · Proteção",
+  "loja_intencao": "🌑 Absorve o que pesa",
+  "loja_resumo": "Alocasia de folhas escuras e brilhantes, conhecida na tradição por absorver as energias pesadas do ambiente.",
+  "seo_titulo": "Rio Negro (Alocasia plumbea 'Nigra'): muda de folhas escuras em Belém",
+  "seo_descricao": "Muda de Rio Negro (Alocasia plumbea 'Nigra'), planta de folhas grandes, escuras e brilhantes. Muda a partir de R$ 20,00; outros tamanhos sob consulta. Belém (PA).",
+  "titulo_pagina": "Rio Negro",
+  "energia": "Absorção · Proteção · Recolhimento",
+  "detalhes": "Alocasia plumbea 'Nigra' · muda R$ 20,00 · outros tamanhos: consulte a Thai",
+  "introducao": "Folhas grandes, em forma de coração alongado, num verde tão escuro que chega a parecer negro, com brilho de metal. Uma planta de presença forte, que muda o clima de qualquer canto.",
+  "para_quem_titulo": "Para quem sente o ambiente pesado",
+  "para_quem_texto": "Na tradição, a Rio Negro é a planta que recolhe o que está denso. Na prática, é uma folhagem marcante para quem gosta de plantas diferentes e tem um lugar claro e úmido para ela.",
+  "para_quem_lista": [
+    "Quem sente a casa ou o trabalho carregados",
+    "Quem quer uma planta de folhagem escura e fora do comum",
+    "Quem tem um canto claro, sem sol forte direto"
+  ],
+  "atuacao_titulo": "Ciência e tradição, cada uma no seu lugar",
+  "atuacao_texto": "<p><strong>Na botânica:</strong> é uma <em>Alocasia</em>, gênero de plantas de folhas grandes originário das florestas do Sudeste Asiático, da mesma família do taioba e do tinhorão (Araceae). A Rio Negro é o cultivar <em>Alocasia plumbea</em> 'Nigra', escolhido pela cor escura das folhas e dos talos.</p><p><strong>Na tradição:</strong> é conhecida por <em>sugar a escuridão do ambiente</em>. Diz-se que suas folhas negras <strong>aprisionam as energias pesadas</strong>, recolhendo o que está denso para que o espaço fique mais leve.</p>",
+  "ritual_titulo": "Como cuidar da sua Rio Negro",
+  "ritual_introducao": "Cuidados básicos:",
+  "ritual_passos": [
+    {
+      "modo": "Luz",
+      "descricao": "Bastante claridade, sem sol forte direto nas horas mais quentes. Com pouca luz, as folhas novas saem menores."
+    },
+    {
+      "modo": "Rega",
+      "descricao": "Terra sempre levemente úmida, nunca encharcada. Regue quando a camada de cima começar a secar e não deixe água parada no pratinho."
+    },
+    {
+      "modo": "Folhas",
+      "descricao": "É normal uma folha velha amarelar quando nasce uma nova. Retire a folha seca rente ao talo, com tesoura limpa."
+    }
+  ],
+  "intencao_frase": "O que é pesado fica retido nas folhas. Eu sigo leve.",
+  "experiencia_titulo": "",
+  "experiencia_texto": "",
+  "experiencia_itens": [],
+  "cuidados": "<p><strong>Planta tóxica se ingerida.</strong> Como outras Alocasias, tem cristais de oxalato de cálcio: mastigar folhas ou talos irrita boca e garganta de pessoas e animais, e a seiva pode irritar a pele. Mantenha fora do alcance de cães, gatos e crianças pequenas e use luvas ao podar.</p><p>Os usos espirituais descritos aqui são da tradição popular e não substituem cuidados de saúde.</p>",
+  "conexao_titulo": "A folha que recolhe",
+  "conexao_citacao": "Folha escura como as águas do Rio Negro: recebe o que chega e guarda no fundo.",
+  "conexao_texto": "Assim como as águas escuras do Rio Negro, que parecem guardar tudo o que tocam, esta planta é lembrada como a que recolhe o que pesa. Cuidar dela é um convite a perceber o que você também precisa deixar ir.",
+  "chamada_titulo": "Leve a Rio Negro para casa",
+  "chamada_texto": "A muda sai por R$ 20,00. Para plantas maiores, fale com a Thai pelo WhatsApp: o valor depende do tamanho."
+}
