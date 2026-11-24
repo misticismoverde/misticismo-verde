@@ -660,6 +660,27 @@ def aplicar_tema():
         h = h.replace('<meta name="theme-color" content="#050f07">', '<meta name="theme-color" content="#101A13">')
         open(f, 'w', encoding='utf-8').write(h)
 
+def versionar_imagens():
+    """Põe ?v=<código do arquivo> no endereço de cada imagem. Quando uma foto é trocada
+    mantendo o mesmo nome, o código muda e o navegador baixa a foto nova em vez da guardada."""
+    cache = {}
+    def cod(rel):
+        if rel not in cache:
+            f = os.path.join(SAIDA, rel)
+            cache[rel] = hashlib.md5(open(f, 'rb').read()).hexdigest()[:8] if os.path.isfile(f) else ''
+        return cache[rel]
+    padrao = re.compile(r'(imagens/[^"\'()\s?#<>]+?\.(?:jpe?g|png|webp|gif|svg))(?![\w?])', re.I)
+    def troca(m):
+        from urllib.parse import unquote
+        v = cod(unquote(m.group(1)))
+        return f'{m.group(1)}?v={v}' if v else m.group(1)
+    n = 0
+    for f in glob.glob(os.path.join(SAIDA, '**', '*.html'), recursive=True) + glob.glob(os.path.join(SAIDA, 'assets', '*.css')):
+        t = ler(f); novo = padrao.sub(troca, t)
+        if novo != t: open(f, 'w', encoding='utf-8').write(novo); n += 1
+    return n
+
+
 def main():
     if os.path.exists(SAIDA): shutil.rmtree(SAIDA)
     shutil.copytree(SITE_DIR, SAIDA)
@@ -669,6 +690,7 @@ def main():
     montar_artigos(artigos, produtos, plantas)
     aplicar_tema()
     n_img = otimizar_imagens()
+    versionar_imagens()
     n = sitemap()
     marca = os.path.join(SAIDA, 'index.html')
     open(marca, 'a', encoding='utf-8').write(f'\n<!-- montado em {datetime.datetime.now(datetime.timezone.utc):%Y-%m-%d %H:%M} UTC -->\n')
