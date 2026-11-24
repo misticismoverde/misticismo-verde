@@ -9,7 +9,7 @@
   "imagem": "/imagens/produtos/img-produto-rio-negro.jpg",
   "loja_selo": "Planta Viva · Proteção",
   "loja_intencao": "🌑 Absorve o que pesa",
-  "loja_resumo": "Alocasia de folhas escuras e brilhantes, conhecida na tradição por absorver as energias pesadas do ambiente.",
+  "loja_resumo": "Alocasia de folhas grandes, escuras e brilhantes como metal. Na tradição, conhecida por sugar a escuridão do ambiente e aprisionar as energias pesadas.",
   "seo_titulo": "Rio Negro (Alocasia plumbea 'Nigra'): muda de folhas escuras em Belém",
   "seo_descricao": "Muda de Rio Negro (Alocasia plumbea 'Nigra'), planta de folhas grandes, escuras e brilhantes. Muda a partir de R$ 20,00; outros tamanhos sob consulta. Belém (PA).",
   "titulo_pagina": "Rio Negro",
@@ -24,27 +24,65 @@
     "Quem tem um canto claro, sem sol forte direto"
   ],
   "atuacao_titulo": "Ciência e tradição, cada uma no seu lugar",
-  "atuacao_texto": "<p><strong>Na botânica:</strong> é uma <em>Alocasia</em>, gênero de plantas de folhas grandes originário das florestas do Sudeste Asiático, da mesma família do taioba e do tinhorão (Araceae). A Rio Negro é o cultivar <em>Alocasia plumbea</em> 'Nigra', escolhido pela cor escura das folhas e dos talos.</p><p><strong>Na tradição:</strong> é conhecida por <em>sugar a escuridão do ambiente</em>. Diz-se que suas folhas negras <strong>aprisionam as energias pesadas</strong>, recolhendo o que está denso para que o espaço fique mais leve.</p>",
-  "ritual_titulo": "Como cuidar da sua Rio Negro",
-  "ritual_introducao": "Cuidados básicos:",
+  "atuacao_texto": "<p><strong>Na botânica:</strong> é uma <em>Alocasia</em>, gênero de plantas de folhas grandes originário das florestas tropicais do Sudeste Asiático, da mesma família da taioba, do tinhorão e da costela-de-adão (as aráceas). A Rio Negro é o cultivar <em>Alocasia plumbea</em> 'Nigra', escolhido pela cor escura das folhas e dos talos. As folhas novas nascem enroladas, de dentro do talo da folha anterior, e se abrem aos poucos.</p><p><strong>Uma curiosidade:</strong> no Brasil, plantas desse grupo são chamadas de orelha-de-elefante, pelo tamanho das folhas. Em clima quente e úmido como o de Belém, elas crescem muito mais do que em outras regiões do país.</p><p><strong>Na tradição:</strong> é conhecida por <em>sugar a escuridão do ambiente</em>. Diz-se que suas folhas negras <strong>aprisionam as energias pesadas</strong>, recolhendo o que está denso para que o espaço fique mais leve. Por isso costuma ser colocada em cantos da casa onde o ambiente parece carregado, ou perto da entrada.</p>",
+  "ritual_titulo": "Como cuidar da Rio Negro em Belém e região",
+  "ritual_introducao": "Ela gosta de calor e umidade, então Belém é um bom lugar para ela. O cuidado principal é com a água: Alocasia não tolera raiz encharcada, e a época de chuva exige atenção.",
   "ritual_passos": [
     {
       "modo": "Luz",
-      "descricao": "Bastante claridade, sem sol forte direto nas horas mais quentes. Com pouca luz, as folhas novas saem menores."
+      "descricao": "Bastante claridade, sem sol forte direto entre 10h e 15h. Sol da manhã é bem-vindo e deixa as folhas mais escuras e brilhantes. Com pouca luz, os talos se esticam e as folhas novas saem menores."
     },
     {
       "modo": "Rega",
-      "descricao": "Terra sempre levemente úmida, nunca encharcada. Regue quando a camada de cima começar a secar e não deixe água parada no pratinho."
+      "descricao": "Terra levemente úmida, nunca encharcada. Regue quando a camada de cima começar a secar: em média duas vezes por semana no verão amazônico (junho a novembro, com menos chuva) e uma vez por semana, ou menos, no inverno amazônico (dezembro a maio, com chuva mais forte de fevereiro a abril). Na época de chuva, não deixe o vaso exposto à chuva direta."
     },
     {
-      "modo": "Folhas",
-      "descricao": "É normal uma folha velha amarelar quando nasce uma nova. Retire a folha seca rente ao talo, com tesoura limpa."
+      "modo": "Terra e vaso",
+      "descricao": "Substrato bem arejado: terra vegetal com casca de pinus ou fibra de coco e perlita ou casca de arroz carbonizada. Vaso com bom furo e, se possível, uma camada de drenagem no fundo. A raiz precisa de ar tanto quanto de água."
+    },
+    {
+      "modo": "Folhas que caem",
+      "descricao": "É normal uma folha velha amarelar quando nasce uma nova — ela costuma manter de 3 a 5 folhas. Corte a folha seca rente ao talo, com tesoura limpa e de luvas. Se várias folhas amarelarem de uma vez, a terra provavelmente está molhada demais."
+    },
+    {
+      "modo": "Pragas",
+      "descricao": "Se ficar em ambiente com ar-condicionado ou muito fechado, fique de olho no verso das folhas: pontinhos e teias finas indicam ácaros. Limpe as folhas com pano úmido e aumente a ventilação."
+    },
+    {
+      "modo": "Adubo",
+      "descricao": "Adubação leve uma vez por mês quando estiver soltando folhas novas. Em períodos de pouco crescimento, suspenda."
     }
   ],
   "intencao_frase": "O que é pesado fica retido nas folhas. Eu sigo leve.",
-  "experiencia_titulo": "",
-  "experiencia_texto": "",
-  "experiencia_itens": [],
+  "experiencia_titulo": "Ficha rápida",
+  "experiencia_texto": "O essencial para não errar:",
+  "experiencia_itens": [
+    {
+      "icone": "☀️",
+      "nome": "Luz",
+      "descricao": "Muita claridade; sol só pela manhã"
+    },
+    {
+      "icone": "💧",
+      "nome": "Rega",
+      "descricao": "Terra levemente úmida, nunca encharcada"
+    },
+    {
+      "icone": "📏",
+      "nome": "Porte",
+      "descricao": "Muda pequena; adulta pode passar de 1 m"
+    },
+    {
+      "icone": "🐾",
+      "nome": "Animais",
+      "descricao": "Tóxica para pessoas, cães e gatos se mastigada"
+    },
+    {
+      "icone": "🧤",
+      "nome": "Manuseio",
+      "descricao": "Use luvas ao podar: a seiva irrita a pele"
+    }
+  ],
   "cuidados": "<p><strong>Planta tóxica se ingerida.</strong> Como outras Alocasias, tem cristais de oxalato de cálcio: mastigar folhas ou talos irrita boca e garganta de pessoas e animais, e a seiva pode irritar a pele. Mantenha fora do alcance de cães, gatos e crianças pequenas e use luvas ao podar.</p><p>Os usos espirituais descritos aqui são da tradição popular e não substituem cuidados de saúde.</p>",
   "conexao_titulo": "A folha que recolhe",
   "conexao_citacao": "Folha escura como as águas do Rio Negro: recebe o que chega e guarda no fundo.",

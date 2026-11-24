@@ -1,9 +1,35 @@
 {
   "esgotado": false,
   "pagina_propria": false,
-  "experiencia_titulo": "",
-  "experiencia_texto": "",
-  "experiencia_itens": [],
+  "experiencia_titulo": "Ficha rápida",
+  "experiencia_texto": "O essencial para não errar:",
+  "experiencia_itens": [
+    {
+      "icone": "☀️",
+      "nome": "Luz",
+      "descricao": "Claridade sem sol forte direto"
+    },
+    {
+      "icone": "💧",
+      "nome": "Rega",
+      "descricao": "Terra levemente úmida; mais espaçada na época de chuva"
+    },
+    {
+      "icone": "📏",
+      "nome": "Porte",
+      "descricao": "Começa como muda; adulta pode passar de 1,5 m, devagar"
+    },
+    {
+      "icone": "🐾",
+      "nome": "Animais",
+      "descricao": "Não consta como tóxica para cães e gatos (ASPCA)"
+    },
+    {
+      "icone": "🏠",
+      "nome": "Onde colocar",
+      "descricao": "Sala, recepção, escritório, varanda coberta"
+    }
+  ],
   "nome": "Palmeira Ráfis",
   "ordem": 12,
   "categoria": "Plantas Vivas",
@@ -11,7 +37,7 @@
   "imagem": "/imagens/produtos/img-produto-palmeira-raphis.jpg",
   "loja_selo": "Planta Viva · Prosperidade",
   "loja_intencao": "🌴 Acolhimento e prosperidade",
-  "loja_resumo": "Muda de palmeira de folhas em leque, conhecida na tradição como planta de acolhimento e prosperidade.",
+  "loja_resumo": "Palmeira de folhas em leque que forma uma touceira elegante. Na tradição, planta de acolhimento e prosperidade, que dissolve o que pesa e atrai vitalidade.",
   "seo_titulo": "Palmeira Ráfis (Rhapis excelsa): planta de acolhimento e prosperidade",
   "seo_descricao": "Muda de Palmeira Ráfis (Rhapis excelsa), palmeira de folhas em leque conhecida como planta de acolhimento e prosperidade. Resistente, para ambientes internos claros. R$ 35,00, em Belém (PA).",
   "titulo_pagina": "Muda de Palmeira Ráfis",
@@ -27,21 +53,33 @@
     "Quem tem cães ou gatos: a Rhapis excelsa não consta como tóxica para eles na lista da ASPCA"
   ],
   "atuacao_titulo": "Ciência e tradição, cada uma no seu lugar",
-  "atuacao_texto": "<p><strong>Na botânica:</strong> a <em>Rhapis excelsa</em> é originária do leste da Ásia e é cultivada há séculos como planta ornamental. Diferente de muitas palmeiras, tolera bem a meia-sombra, por isso se adapta a ambientes internos. Cresce lentamente; é normal levar algum tempo para aparecerem folhas novas.</p><p><strong>Na tradição:</strong> a ráfis é conhecida como planta de <em>acolhimento e prosperidade</em>. Diz-se que ela não bloqueia as energias pesadas — <strong>ela as dissolve</strong> com sua copa densa e elegante, atraindo vitalidade e abundância para o ambiente. Por isso costuma ser colocada na sala, perto de onde as pessoas são recebidas, ou em espaços de trabalho.</p>",
-  "ritual_titulo": "Como cuidar da sua Palmeira Ráfis",
-  "ritual_introducao": "Cuidados básicos para a muda se desenvolver bem:",
+  "atuacao_texto": "<p><strong>Na botânica:</strong> a <em>Rhapis excelsa</em> é originária do sul da China e de regiões vizinhas do leste da Ásia. É cultivada há séculos como planta ornamental — no Japão, chegou a ser símbolo de status nas casas nobres. Diferente da maioria das palmeiras, cresce em touceira, com vários caules finos cobertos por uma fibra marrom, e tolera bem a meia-sombra, por isso se adapta a ambientes internos.</p><p><strong>Uma curiosidade:</strong> é uma palmeira de crescimento lento — às vezes solta só algumas folhas novas por ano. Em compensação, vive por muitos e muitos anos e não precisa de poda.</p><p><strong>Na tradição:</strong> a ráfis é conhecida como planta de <em>acolhimento e prosperidade</em>. Diz-se que ela não bloqueia as energias pesadas — <strong>ela as dissolve</strong> com sua copa densa e elegante, atraindo vitalidade e abundância para o ambiente. Por isso costuma ser colocada na sala, perto de onde as pessoas são recebidas, e em escritórios e lojas.</p>",
+  "ritual_titulo": "Como cuidar da Palmeira Ráfis em Belém e região",
+  "ritual_introducao": "O calor e a umidade do Pará fazem bem para a ráfis. O que mais a prejudica por aqui é o sol forte direto e a água parada no vaso durante a época de chuva.",
   "ritual_passos": [
     {
       "modo": "Luz",
-      "descricao": "Claridade sem sol direto nas horas mais quentes. Sol forte amarela e queima as pontas das folhas."
+      "descricao": "Claridade sem sol direto entre 10h e 15h. Em Belém, o sol do meio-dia amarela e queima as folhas em poucos dias. Sala clara, varanda coberta ou perto de uma janela com cortina leve são ideais."
     },
     {
       "modo": "Rega",
-      "descricao": "Mantenha a terra levemente úmida, sem encharcar. Diminua a rega se as folhas começarem a escurecer na base."
+      "descricao": "Mantenha a terra levemente úmida, nunca encharcada. Como referência, dentro de casa: duas regas por semana no verão amazônico (junho a novembro, com menos chuva) e uma por semana, ou menos, no inverno amazônico (dezembro a maio, com chuva mais forte de fevereiro a abril). Antes de regar, toque a terra: se os primeiros 2 cm estiverem secos, é hora."
+    },
+    {
+      "modo": "Ar-condicionado",
+      "descricao": "Ambientes com ar-condicionado o dia todo ressecam o ar. Se a ráfis ficar nesse tipo de sala, mantenha longe da saída de ar e, de vez em quando, passe um pano úmido nas folhas."
+    },
+    {
+      "modo": "Terra e vaso",
+      "descricao": "Terra vegetal com um pouco de areia grossa ou fibra de coco, em vaso com furo. Ela gosta de ficar com as raízes um pouco apertadas: só troque de vaso quando as raízes saírem pelo fundo, geralmente a cada 2 ou 3 anos."
     },
     {
       "modo": "Pontas secas",
-      "descricao": "Pontas marrons costumam indicar ar muito seco, excesso de adubo ou água acumulada. Pode aparar só a parte seca com tesoura limpa."
+      "descricao": "Pontas marrons costumam indicar água acumulada, excesso de adubo ou ar muito seco. Apare só a parte seca, acompanhando o formato da folha, com tesoura limpa."
+    },
+    {
+      "modo": "Adubo e multiplicação",
+      "descricao": "Adubação leve a cada 2 meses no período de crescimento; menos no inverno amazônico. Para multiplicar, divida a touceira com cuidado na troca de vaso, mantendo raízes em cada parte."
     }
   ],
   "intencao_frase": "Este lar acolhe. O que é pesado se dissolve, e a abundância encontra caminho até aqui.",

@@ -43,12 +43,16 @@
       "descricao": "Regue até a água sair pelo furo. A terra assenta um pouco; complete se precisar."
     },
     {
-      "modo": "Plantas de terra seca",
-      "descricao": "Para suculentas, cactos e espadas, misture com areia grossa para a água escorrer mais rápido."
+      "modo": "Misturas para Belém",
+      "descricao": "Com tanta chuva e umidade, terra pura pode ficar pesada e encharcada. Para folhagens (jiboia, flecha, costela, alocasia), misture com fibra de coco ou casca de arroz carbonizada. Para espadas, suculentas e cactos, misture meio a meio com areia grossa."
+    },
+    {
+      "modo": "Melhor época",
+      "descricao": "Plantio e troca de vaso pegam melhor no início do verão amazônico (a partir de junho) ou em dias sem chuva forte, quando a terra não fica encharcada logo depois."
     }
   ],
   "intencao_frase": "",
-  "cuidados": "<p>Guarde o saco fechado, em local seco e longe do alcance de crianças e animais. Lave as mãos depois de manusear a terra.</p>",
+  "cuidados": "<p>Guarde o saco bem fechado, em local seco e coberto: na umidade de Belém, terra aberta e molhada pode criar mofo e atrair mosquitinhos. Mantenha longe do alcance de crianças e animais e lave as mãos depois de manusear.</p>",
   "conexao_titulo": "",
   "conexao_citacao": "",
   "conexao_texto": "",

@@ -22,8 +22,8 @@ AVISOS = []
 
 CAT_PROD = {'sais': 'Sais Rituais', 'amuletos': 'Amuletos', 'plantas': 'Plantas Vivas', 'jardinagem': 'Jardinagem', 'difusores': 'Difusores'}
 # rótulos das seções do modelo quando o produto é de cultivo (plantas, terra, vasos)
-ROTULOS_CULTIVO = [('🔮 O que ele atua', '🌱 Sobre o produto'), ('🕯️ Como usar — Ritual guiado', '🪴 Como cuidar'),
-                   ('✨ Intenção sugerida', '✨ Uma intenção para acompanhar'), ('🌙 Experiência após o uso', '🌙 O que esperar'),
+ROTULOS_CULTIVO = [('🔮 O que ele atua', '🌱 Sobre a planta'), ('🕯️ Como usar — Ritual guiado', '🪴 Como cuidar · Clima de Belém'),
+                   ('✨ Intenção sugerida', '✨ Uma intenção para acompanhar'), ('🌙 Experiência após o uso', '📋 Ficha rápida'),
                    ('🌿 Conexão com a natureza', '🌿 Na tradição popular'), ('✦ Outros rituais ✦', 'Veja também'),
                    ('Cada intenção tem a sua fórmula', 'Outros itens da loja'), ('· · · repita com o coração · · ·', '· · · se quiser, repita ao regar · · ·')]
 
@@ -322,7 +322,7 @@ def montar_produtos(produtos):
         for k, v in els.items(): h = trocar_el(h, k, v)
         h = remover_secao_vazia(h, ['pqTitulo', 'atTitulo', 'rTitulo', 'intFrase', 'expTitulo', 'cuidBox', 'ancTitulo'])
         if p['_cat'] in ('plantas', 'jardinagem'):
-            extra = [('🕯️ Como usar — Ritual guiado', '🪴 Como usar'), ('⚠️ Cuidados', 'ℹ️ Bom saber'), ('🌿 Para quem é', '🌿 Indicações')] if p['_cat'] == 'jardinagem' else []
+            extra = [('🕯️ Como usar — Ritual guiado', '🪴 Como usar'), ('🔮 O que ele atua', '🌱 Sobre o produto'), ('⚠️ Cuidados', 'ℹ️ Bom saber'), ('🌿 Para quem é', '🌿 Indicações')] if p['_cat'] == 'jardinagem' else []
             for de, para in extra + ROTULOS_CULTIVO: h = h.replace(de, para)
         if p.get('esgotado'):
             h = h.replace('<!--AVISO-ESGOTADO--><div class="hero">', '''<div style="background:rgba(200,50,50,0.08);border:1px solid rgba(200,50,50,0.2);padding:14px 24px;text-align:center;position:relative;z-index:2;margin:100px 60px 0 60px;border-radius:8px;">

@@ -1,9 +1,35 @@
 {
   "esgotado": false,
   "pagina_propria": false,
-  "experiencia_titulo": "",
-  "experiencia_texto": "",
-  "experiencia_itens": [],
+  "experiencia_titulo": "Ficha rápida",
+  "experiencia_texto": "O essencial para não errar:",
+  "experiencia_itens": [
+    {
+      "icone": "☀️",
+      "nome": "Luz",
+      "descricao": "Meia-sombra a sol da manhã; evite o sol forte do meio-dia"
+    },
+    {
+      "icone": "💧",
+      "nome": "Rega",
+      "descricao": "A cada 15–20 dias no verão amazônico; bem menos na época de chuva"
+    },
+    {
+      "icone": "📏",
+      "nome": "Porte",
+      "descricao": "Folhas de 40 cm a mais de 1 m, conforme o vaso e a idade"
+    },
+    {
+      "icone": "🐾",
+      "nome": "Animais",
+      "descricao": "Tóxica para cães e gatos se mastigada"
+    },
+    {
+      "icone": "🏠",
+      "nome": "Onde colocar",
+      "descricao": "Entrada da casa, varanda coberta, sala clara"
+    }
+  ],
   "nome": "Espada de São Jorge",
   "ordem": 10,
   "categoria": "Plantas Vivas",
@@ -11,36 +37,50 @@
   "imagem": "/imagens/produtos/img-produto-espada.jpg",
   "loja_selo": "Planta Viva · Proteção",
   "loja_intencao": "⚔️ Guardiã dos lares",
-  "loja_resumo": "A clássica espada de folhas altas e rajadas. Uma das plantas mais resistentes para dentro de casa.",
+  "loja_resumo": "A guardiã clássica dos lares brasileiros: folhas altas e rajadas, quase sem manutenção. Associada a Ogum e a São Jorge, é plantada na entrada da casa para proteger.",
   "seo_titulo": "Espada de São Jorge (Dracaena trifasciata): planta viva em Belém",
   "seo_descricao": "Espada de São Jorge (Dracaena trifasciata), planta resistente de folhas altas e rajadas, tradicional nos lares brasileiros. R$ 30,00, em Belém (PA).",
   "titulo_pagina": "Espada de São Jorge",
   "energia": "Dracaena trifasciata · antiga Sansevieria trifasciata",
   "detalhes": "Planta viva · retirada ou entrega a combinar",
-  "introducao": "Folhas eretas, firmes e rajadas de verde-escuro. É uma das plantas mais tradicionais das casas brasileiras e uma das mais fáceis de manter viva.",
+  "introducao": "Folhas eretas, firmes e rajadas de verde-escuro, que crescem para cima como lâminas. Poucas plantas são tão presentes nas casas brasileiras: está na porta de entrada, no quintal da avó, no vaso de sete ervas. E poucas são tão fáceis de manter viva — desde que não receba água demais, o que em Belém exige atenção.",
   "para_quem_titulo": "Para quem quer uma planta que aguenta quase tudo",
-  "para_quem_texto": "Ela tolera pouca luz e longos intervalos sem rega. O maior risco para ela é o excesso de água, não a falta.",
+  "para_quem_texto": "Ela tolera pouca luz, esquecimentos e longos intervalos sem rega. É uma planta para quem quer presença e proteção no lar sem depender de cuidados diários. O único inimigo de verdade é o excesso de água — e isso, no clima chuvoso do Pará, merece cuidado.",
   "para_quem_lista": [
+    "Quem quer proteger a entrada da casa ou do comércio",
     "Quem viaja ou esquece de regar",
-    "Quem quer uma planta para a entrada da casa",
-    "Quem procura a versão grande; para espaços pequenos há também a Espada Mini de São Jorge"
+    "Quem está começando a cuidar de plantas e quer uma que perdoa erros",
+    "Quem quer montar um vaso de proteção com outras plantas da tradição",
+    "Quem procura a versão grande; para mesas e espaços pequenos há também a Espada Mini de São Jorge"
   ],
   "atuacao_titulo": "Ciência e tradição, cada uma no seu lugar",
-  "atuacao_texto": "<p><strong>Na botânica:</strong> é nativa da África tropical. Até 2017 era classificada como <em>Sansevieria trifasciata</em>; hoje os botânicos a incluem no gênero <em>Dracaena</em>. As folhas guardam água, por isso a planta resiste a períodos secos.</p><p><strong>Na tradição:</strong> o nome popular vem da forma das folhas, que lembram uma espada. Nas tradições afro-brasileiras ela é associada a Ogum e, na devoção popular, a São Jorge, e é colocada na entrada das casas como guardiã do lar. <a href=\"../plantas/espada.html\">Veja a ficha completa na Biblioteca Viva</a>.</p>",
-  "ritual_titulo": "Como cuidar da sua Espada de São Jorge",
-  "ritual_introducao": "Cuidados básicos:",
+  "atuacao_texto": "<p><strong>Na botânica:</strong> é nativa da África tropical. Até 2017 era classificada como <em>Sansevieria trifasciata</em>; estudos de DNA levaram os botânicos a incluí-la no gênero <em>Dracaena</em>, mas o nome antigo continua muito usado. As folhas são suculentas e guardam água, por isso a planta atravessa semanas sem rega.</p><p><strong>Uma curiosidade:</strong> a espada faz um tipo de fotossíntese chamado CAM, comum em plantas de lugares secos — ela abre os poros das folhas à noite, quando perde menos água. Quando está bem adaptada, pode dar flores brancas e perfumadas, que costumam abrir no fim da tarde. Ela aparece no famoso estudo da NASA de 1989 sobre plantas e ar interno, mas pesquisas posteriores mostraram que, numa casa de verdade, o efeito sobre o ar é pequeno: o melhor “purificador” continua sendo a janela aberta.</p><p><strong>Na tradição:</strong> o nome popular vem da forma das folhas, que lembram uma espada. Nas tradições afro-brasileiras ela é associada a <strong>Ogum</strong>, orixá dos caminhos e das batalhas, e, na devoção popular, a <strong>São Jorge</strong>, o santo guerreiro. Por isso é colocada na entrada das casas e dos comércios como guardiã: diz-se que corta a inveja e o mau-olhado antes que entrem. A variedade de bordas amarelas é chamada de espada-de-Santa-Bárbara ou espada-de-Iansã.</p><p><strong>Na prática popular:</strong> ela é uma das plantas do tradicional <em>vaso de sete ervas</em>, junto com <a href=\"../plantas/comigo.html\">comigo-ninguém-pode</a>, <a href=\"../plantas/arruda.html\">arruda</a>, <a href=\"../plantas/guine.html\">guiné</a>, <a href=\"../plantas/alecrim.html\">alecrim</a>, <a href=\"../plantas/manjericao.html\">manjericão</a> e pimenteira. <a href=\"../plantas/espada.html\">Veja a ficha completa da espada na Biblioteca Viva</a>.</p>",
+  "ritual_titulo": "Como cuidar da Espada de São Jorge em Belém e região",
+  "ritual_introducao": "A espada é de origem africana, de regiões com estação seca. O calor do Pará ela adora; a chuva e a umidade é que pedem atenção. Quase toda espada que morre em Belém morre de excesso de água.",
   "ritual_passos": [
     {
-      "modo": "Luz",
-      "descricao": "Vai bem da meia-sombra ao sol da manhã. Com mais luz, cresce mais rápido e as listras ficam mais marcadas."
+      "modo": "Rega — o cuidado mais importante",
+      "descricao": "Só regue quando a terra estiver seca até o fundo (enfie o dedo ou um palito: se sair úmido, espere). Dentro de casa, isso dá cerca de uma rega a cada 15 a 20 dias no verão amazônico (junho a novembro, com menos chuva) e a cada 25 a 30 dias, ou menos, no inverno amazônico (dezembro a maio, com chuva mais forte de fevereiro a abril). Regue a terra, não o meio da roseta de folhas, e jogue fora a água que sobrar no pratinho."
     },
     {
-      "modo": "Rega",
-      "descricao": "Só regue quando a terra estiver totalmente seca. Em ambiente interno, isso costuma levar de uma a duas semanas; em época de chuva, ainda mais."
+      "modo": "Chuva",
+      "descricao": "Na época de chuva, não deixe o vaso em quintal ou varanda descoberta: dias seguidos de chuva encharcam a terra e apodrecem a base das folhas. Varanda coberta, área de serviço clara ou perto da porta, protegida da chuva, são lugares ideais."
     },
     {
-      "modo": "Vaso",
-      "descricao": "Vaso com furo e terra que drene bem. Água parada apodrece a base das folhas."
+      "modo": "Luz e sol",
+      "descricao": "Vai bem da meia-sombra ao sol da manhã. Perto da linha do Equador o sol do meio-dia é muito forte: a pleno sol, das 10h às 15h, as folhas podem amarelar e ganhar manchas queimadas. Com mais claridade, as listras ficam mais marcadas e a planta cresce mais rápido."
+    },
+    {
+      "modo": "Terra e vaso",
+      "descricao": "Use terra que escoe rápido: metade terra vegetal e metade areia grossa (ou acrescente perlita, casca de arroz carbonizada ou pedrisco). Vaso sempre com furo. Vaso de barro ajuda, porque “respira” e seca a terra mais depressa — uma vantagem real na umidade de Belém."
+    },
+    {
+      "modo": "Sinais de alerta",
+      "descricao": "Folha mole, enrugada na base ou com cheiro azedo = excesso de água: corte a parte podre, deixe secar um dia e replante em terra seca. Folha enrugada por inteiro, mas firme = sede. Algodãozinho branco entre as folhas = cochonilha: limpe com cotonete com álcool."
+    },
+    {
+      "modo": "Adubo e multiplicação",
+      "descricao": "Ela come pouco: uma adubação leve a cada 2 ou 3 meses basta, de preferência no início do verão amazônico. Para multiplicar, separe as mudas que nascem ao lado da planta-mãe, com raiz, na hora de trocar de vaso."
     }
   ],
   "intencao_frase": "Meu espaço está protegido. Só entra aqui o que é bem-vindo.",

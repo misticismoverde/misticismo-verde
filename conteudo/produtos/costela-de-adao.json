@@ -1,9 +1,35 @@
 {
   "esgotado": false,
   "pagina_propria": false,
-  "experiencia_titulo": "",
-  "experiencia_texto": "",
-  "experiencia_itens": [],
+  "experiencia_titulo": "Ficha rápida",
+  "experiencia_texto": "O essencial para não errar:",
+  "experiencia_itens": [
+    {
+      "icone": "☀️",
+      "nome": "Luz",
+      "descricao": "Muita claridade, sem sol do meio-dia"
+    },
+    {
+      "icone": "💧",
+      "nome": "Rega",
+      "descricao": "1 a 2 vezes por semana, conforme a época"
+    },
+    {
+      "icone": "📏",
+      "nome": "Porte",
+      "descricao": "Ramos de 1 a 2 m com o tempo, pendentes ou num tutor"
+    },
+    {
+      "icone": "🐾",
+      "nome": "Animais",
+      "descricao": "Tóxica para cães e gatos se mastigada"
+    },
+    {
+      "icone": "🏠",
+      "nome": "Onde colocar",
+      "descricao": "Suporte alto, prateleira, varanda coberta"
+    }
+  ],
   "nome": "Mini Costela de Adão",
   "ordem": 13,
   "categoria": "Plantas Vivas",
@@ -11,36 +37,49 @@
   "imagem": "/imagens/produtos/img-produto-costela-de-adao.jpg",
   "loja_selo": "Planta Viva",
   "loja_intencao": "🌿 Folhas cheias de janelas",
-  "loja_resumo": "Monstera de folhas pequenas e furadas. Vai bem pendente ou subindo num tutor.",
+  "loja_resumo": "Monstera de folhas pequenas e cheias de janelas. Trepadeira das florestas tropicais, que também ocorre na Amazônia; linda pendente ou num tutor.",
   "seo_titulo": "Mini Costela de Adão (Monstera adansonii) em Belém",
   "seo_descricao": "Mini Costela de Adão (Monstera adansonii), folhagem de folhas furadas para pendente ou tutor, ideal para meia-sombra. R$ 40,00, em Belém (PA).",
   "titulo_pagina": "Mini Costela de Adão",
   "energia": "Monstera adansonii · folhagem de meia-sombra",
   "detalhes": "Planta viva · retirada ou entrega a combinar",
-  "introducao": "Folhas com aberturas naturais, como pequenas janelas. É prima menor da costela-de-adão de folhas grandes e fica linda pendurada ou subindo por um tutor.",
+  "introducao": "Folhas com aberturas naturais, como pequenas janelas. É prima menor da costela-de-adão de folhas grandes e uma planta da nossa região: ocorre naturalmente nas florestas tropicais da América, incluindo a Amazônia. Fica linda pendurada ou subindo por um tutor.",
   "para_quem_titulo": "Para quem gosta de plantas diferentes",
   "para_quem_texto": "Cresce rápido quando está feliz e é fácil de multiplicar por estacas.",
   "para_quem_lista": [
     "Quem quer uma planta pendente para prateleira ou suporte alto",
-    "Quem tem um ambiente claro e úmido",
-    "Quem gosta de acompanhar folhas novas abrindo"
+    "Quem tem um ambiente claro e úmido — como quase toda casa em Belém",
+    "Quem gosta de acompanhar folhas novas se abrindo",
+    "Quem quer multiplicar e presentear: as estacas enraízam com facilidade"
   ],
   "atuacao_titulo": "Uma trepadeira das florestas tropicais",
-  "atuacao_texto": "<p>A <em>Monstera adansonii</em> ocorre naturalmente nas florestas da América Central e do Sul, incluindo o Brasil. Na natureza, ela sobe pelos troncos das árvores usando raízes aéreas.</p><p><strong>Não confundir:</strong> o nome costela-de-adão também é usado para a <em>Monstera deliciosa</em>, que tem folhas bem maiores. Esta é a versão de folhas pequenas.</p>",
-  "ritual_titulo": "Como cuidar da sua Mini Costela de Adão",
-  "ritual_introducao": "Cuidados básicos:",
+  "atuacao_texto": "<p><strong>Na botânica:</strong> a <em>Monstera adansonii</em> ocorre naturalmente nas florestas da América Central e do Sul, incluindo o Brasil e a Amazônia. Na natureza, ela sobe pelos troncos das árvores usando raízes aéreas, buscando a luz que passa entre as copas.</p><p><strong>Por que as folhas têm furos?</strong> Os botânicos ainda discutem. As hipóteses mais aceitas são que os furos deixam a luz chegar às folhas de baixo e ajudam a folha a resistir ao vento e às chuvas fortes da floresta sem rasgar.</p><p><strong>Não confundir:</strong> o nome costela-de-adão também é usado para a <em>Monstera deliciosa</em>, de folhas enormes. Esta é a versão de folhas pequenas, ideal para apartamentos.</p>",
+  "ritual_titulo": "Como cuidar da Mini Costela de Adão em Belém e região",
+  "ritual_introducao": "Ela vem de um clima parecido com o nosso, então a umidade de Belém é uma aliada. O cuidado é com o sol forte e com o vaso encharcado na época de chuva.",
   "ritual_passos": [
     {
       "modo": "Luz",
-      "descricao": "Bastante claridade, sem sol direto forte. Com pouca luz, as folhas novas saem menores e com menos aberturas."
+      "descricao": "Bastante claridade, sem sol direto entre 10h e 15h. Sol da manhã é bem-vindo. Com pouca luz, as folhas novas saem menores e sem as aberturas."
     },
     {
       "modo": "Rega",
-      "descricao": "Regue quando os primeiros centímetros da terra estiverem secos. Gosta de umidade no ar, o que o clima de Belém já ajuda."
+      "descricao": "Regue quando os primeiros 2 a 3 cm da terra estiverem secos: em média duas vezes por semana no verão amazônico (junho a novembro, com menos chuva) e uma vez por semana no inverno amazônico (dezembro a maio, com chuva mais forte de fevereiro a abril). Não precisa borrifar as folhas — a umidade do ar em Belém já é suficiente."
     },
     {
-      "modo": "Apoio",
-      "descricao": "Para crescer para cima, ofereça um tutor; se preferir pendente, deixe os ramos caírem e pode as pontas para encorpar."
+      "modo": "Terra e vaso",
+      "descricao": "Terra leve e arejada: terra vegetal com fibra ou casca de coco e um pouco de perlita ou casca de arroz carbonizada. Vaso com furo. Em vaso pendente, use um com prato ou retire o excesso de água para não escorrer."
+    },
+    {
+      "modo": "Tutor ou pendente",
+      "descricao": "Para crescer para cima e ter folhas maiores, ofereça um tutor de fibra de coco e direcione as raízes aéreas para ele. Para ficar pendente, deixe os ramos caírem e pode as pontas para encorpar."
+    },
+    {
+      "modo": "Sinais de alerta",
+      "descricao": "Folhas amarelas e terra sempre molhada = excesso de água. Pontas e bordas secas = sede ou sol forte. Folhas pequenas e ramos esticados = falta de luz."
+    },
+    {
+      "modo": "Adubo e multiplicação",
+      "descricao": "Adubação leve uma vez por mês quando estiver crescendo. Para fazer mudas, corte um pedaço de ramo com pelo menos um nó e uma raiz aérea e coloque na água ou direto na terra úmida."
     }
   ],
   "intencao_frase": "",

@@ -1,9 +1,35 @@
 {
   "esgotado": false,
   "pagina_propria": false,
-  "experiencia_titulo": "",
-  "experiencia_texto": "",
-  "experiencia_itens": [],
+  "experiencia_titulo": "Ficha rápida",
+  "experiencia_texto": "O essencial para não errar:",
+  "experiencia_itens": [
+    {
+      "icone": "☀️",
+      "nome": "Luz",
+      "descricao": "Meia-sombra clara, sem sol forte direto"
+    },
+    {
+      "icone": "💧",
+      "nome": "Rega",
+      "descricao": "1 a 2 vezes por semana, conforme a época"
+    },
+    {
+      "icone": "📏",
+      "nome": "Porte",
+      "descricao": "Compacta com poda; trepadeira ou pendente se deixar crescer"
+    },
+    {
+      "icone": "🐾",
+      "nome": "Animais",
+      "descricao": "Tóxica para cães e gatos se mastigada"
+    },
+    {
+      "icone": "🏠",
+      "nome": "Onde colocar",
+      "descricao": "Prateleira, varanda coberta, perto de janela"
+    }
+  ],
   "nome": "Planta Flecha",
   "ordem": 11,
   "categoria": "Plantas Vivas",
@@ -11,36 +37,49 @@
   "imagem": "/imagens/produtos/img-produto-flecha.jpg",
   "loja_selo": "Planta Viva",
   "loja_intencao": "🍃 Movimento e leveza",
-  "loja_resumo": "Folhas em forma de flecha, claras e rajadas. Fácil de cuidar e cresce bem em meia-sombra.",
+  "loja_resumo": "Folhas em forma de flecha, verde-claras e rajadas. Adora o calor e a umidade de Belém e pode virar pendente ou trepadeira.",
   "seo_titulo": "Planta Flecha (Syngonium podophyllum): muda para meia-sombra",
   "seo_descricao": "Planta Flecha (Syngonium podophyllum), folhagem clara em formato de flecha, fácil de cuidar e boa para meia-sombra. R$ 25,00, em Belém (PA).",
   "titulo_pagina": "Planta Flecha",
   "energia": "Syngonium podophyllum · folhagem de meia-sombra",
   "detalhes": "Planta viva · retirada ou entrega a combinar",
-  "introducao": "Folhas em formato de ponta de flecha, verde-claro com nervuras quase brancas. É uma folhagem tropical que se adapta bem a ambientes internos claros e ao clima úmido de Belém.",
+  "introducao": "Folhas em formato de ponta de flecha, verde-claro com nervuras quase brancas. É uma folhagem tropical que se sente em casa no clima úmido de Belém e se adapta bem a ambientes internos claros, varandas cobertas e prateleiras.",
   "para_quem_titulo": "Para quem quer verde sem complicação",
   "para_quem_texto": "A Planta Flecha perdoa pequenos esquecimentos e mostra quando precisa de água: as folhas ficam mais murchas e voltam depois da rega.",
   "para_quem_lista": [
     "Quem está começando a cuidar de plantas",
     "Quem tem um cantinho claro, mas sem sol direto",
-    "Quem gosta de plantas que crescem e podem virar pendentes ou trepadeiras"
+    "Quem gosta de plantas que crescem rápido e podem virar pendentes ou trepadeiras",
+    "Quem quer fazer mudas para presentear: as estacas enraízam na água"
   ],
   "atuacao_titulo": "Uma folhagem que muda com o tempo",
-  "atuacao_texto": "<p>O <em>Syngonium podophyllum</em> é nativo das florestas tropicais das Américas. Quando jovem, tem as folhas em forma de flecha que dão o nome popular; com o tempo, se tiver onde apoiar, vira trepadeira e as folhas podem ficar maiores e mais recortadas.</p><p>Se preferir manter compacta, basta podar as pontas. As estacas cortadas enraízam com facilidade na água.</p>",
-  "ritual_titulo": "Como cuidar da sua Planta Flecha",
-  "ritual_introducao": "Cuidados básicos para ela se manter bonita dentro de casa:",
+  "atuacao_texto": "<p><strong>Na botânica:</strong> o <em>Syngonium podophyllum</em> é nativo das florestas tropicais das Américas, onde cresce subindo pelos troncos das árvores. É da família das aráceas, a mesma da jiboia, do antúrio e da costela-de-adão.</p><p><strong>Uma curiosidade:</strong> a folha muda de forma conforme a planta envelhece. Jovem, tem o formato de flecha que dá o nome popular; adulta, se tiver onde subir, solta raízes aéreas, as folhas ficam maiores e se dividem em vários lobos, como uma mão aberta.</p><p><strong>No dia a dia:</strong> se preferir mantê-la compacta e com as folhas em flecha, basta podar as pontas que começam a se esticar. As estacas podadas enraízam num copo de água em duas a três semanas.</p>",
+  "ritual_titulo": "Como cuidar da Planta Flecha em Belém e região",
+  "ritual_introducao": "O calor e a umidade do Pará são o clima que ela tem na natureza. Aqui, o cuidado é mais com o sol forte e com fungos na época de chuva.",
   "ritual_passos": [
     {
       "modo": "Luz",
-      "descricao": "Claridade sem sol direto forte. Perto de uma janela com cortina leve é o ideal; sol forte queima as folhas claras."
+      "descricao": "Claridade sem sol direto forte. As variedades claras, como esta, queimam rápido no sol do meio-dia de Belém. Com pouca luz, as folhas perdem o desenho claro e os ramos ficam compridos e finos."
     },
     {
       "modo": "Rega",
-      "descricao": "Regue quando a camada de cima da terra estiver seca ao toque. Evite deixar água parada no pratinho."
+      "descricao": "Regue quando a camada de cima da terra estiver seca ao toque. Dentro de casa, isso costuma dar duas regas por semana no verão amazônico (junho a novembro, com menos chuva) e uma por semana no inverno amazônico (dezembro a maio, com chuva mais forte de fevereiro a abril). Ela avisa: as folhas ficam caídas quando tem sede e se levantam algumas horas depois da rega."
     },
     {
-      "modo": "Vaso",
-      "descricao": "Vaso com furo de drenagem. Quando as raízes começarem a sair por baixo, é hora de passar para um vaso um pouco maior."
+      "modo": "Fungos na época de chuva",
+      "descricao": "Com a umidade alta, água parada nas folhas à noite favorece manchas de fungo. Regue de manhã, direto na terra, e deixe o vaso num lugar ventilado."
+    },
+    {
+      "modo": "Terra e vaso",
+      "descricao": "Terra vegetal com fibra de coco ou casca de arroz carbonizada, que deixa o substrato leve. Vaso com furo. Troque por um vaso um pouco maior quando as raízes saírem por baixo, em geral uma vez por ano."
+    },
+    {
+      "modo": "Poda e apoio",
+      "descricao": "Pode as pontas para encorpar. Se quiser que suba, ofereça uma estaca de fibra de coco e prenda os ramos com cuidado: as raízes aéreas se agarram sozinhas com o tempo."
+    },
+    {
+      "modo": "Adubo",
+      "descricao": "Adubação leve a cada mês ou mês e meio, principalmente quando estiver soltando muitas folhas novas."
     }
   ],
   "intencao_frase": "",
