@@ -25,7 +25,7 @@ CAT_PROD = {'sais': 'Sais Rituais', 'amuletos': 'Amuletos', 'plantas': 'Plantas 
 ROTULOS_CULTIVO = [('🔮 O que ele atua', '🌱 Sobre a planta'), ('🕯️ Como usar — Ritual guiado', '🪴 Como cuidar · Clima de Belém'),
                    ('✨ Intenção sugerida', '✨ Uma intenção para acompanhar'), ('🌙 Experiência após o uso', '📋 Ficha rápida'),
                    ('🌿 Conexão com a natureza', '🌿 Na tradição popular'), ('✦ Outros rituais ✦', 'Veja também'),
-                   ('Cada intenção tem a sua fórmula', 'Outros itens da loja'), ('· · · repita com o coração · · ·', '· · · se quiser, repita ao regar · · ·')]
+                   ('Cada intenção tem a sua fórmula', 'Outros itens da loja'), ('← Ver todos os rituais', '← Ver toda a loja'), ('· · · repita com o coração · · ·', '· · · se quiser, repita ao regar · · ·')]
 
 def remover_secao_vazia(h, ids):
     """Tira do modelo a seção cujo conteúdo ficou vazio, para não sobrar título solto na página."""
