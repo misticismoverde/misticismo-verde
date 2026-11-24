@@ -9,3 +9,7 @@
 # Exemplo:
 # /produto-limpeza.html   /produtos/produto-limpeza   301
 # ─────────────────────────────────────────────────────────────
+
+# Difusor Pessoal de Aromaterapia saiu da loja (era a mesma peça do Semente da Noite)
+/produtos/produto-difusor        /produtos/produto-semente-da-noite   301
+/produtos/produto-difusor.html   /produtos/produto-semente-da-noite   301
