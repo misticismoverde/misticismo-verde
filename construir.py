@@ -593,12 +593,15 @@ def aplicar_tema():
         c = ler(f)
         c = re.sub(r'#c9a84c', '#8CC63F', c, flags=re.I); c = re.sub(r'201,\s*168,\s*76', '140,198,63', c)
         c = re.sub(r'#f0dfa0', '#DDEBC8', c, flags=re.I); c = re.sub(r'#e8c96a', '#A9D46E', c, flags=re.I)
+        c = re.sub(r"'(Cinzel Decorative|Cinzel|Cormorant Garamond|IM Fell English)'", "'Playfair Display'", c)
         c = re.sub(r'color:\s*rgba\(245,\s*234,\s*216,\s*(0?\.\d+|1)\)', cor_texto, c)
         open(f, 'w', encoding='utf-8').write(c)
     for f in glob.glob(os.path.join(SAIDA, '**', '*.html'), recursive=True):
         rel = os.path.relpath(f, SAIDA).replace(os.sep, '/')
         px = '../' * rel.count('/')
         h = ler(f)
+        # fontes antigas que o site não carrega mais -> fontes da marca
+        h = re.sub(r"'(Cinzel Decorative|Cinzel|Cormorant Garamond|IM Fell English)'", "'Playfair Display'", h)
         # cabeçalho
         if '<!--MV-TOPO-->' in h:
             h = h.replace('<!--MV-TOPO-->', topo(px, secao_ativa(rel)))
