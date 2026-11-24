@@ -1,0 +1,53 @@
+{
+  "esgotado": false,
+  "pagina_propria": false,
+  "experiencia_titulo": "",
+  "experiencia_texto": "",
+  "experiencia_itens": [],
+  "nome": "Mini Costela de Adão",
+  "ordem": 13,
+  "categoria": "Plantas Vivas",
+  "preco": 40.0,
+  "imagem": "/imagens/produtos/img-produto-costela-de-adao.jpg",
+  "loja_selo": "Planta Viva",
+  "loja_intencao": "🌿 Folhas cheias de janelas",
+  "loja_resumo": "Monstera de folhas pequenas e furadas. Vai bem pendente ou subindo num tutor.",
+  "seo_titulo": "Mini Costela de Adão (Monstera adansonii) em Belém",
+  "seo_descricao": "Mini Costela de Adão (Monstera adansonii), folhagem de folhas furadas para pendente ou tutor, ideal para meia-sombra. R$ 40,00, em Belém (PA).",
+  "titulo_pagina": "Mini Costela de Adão",
+  "energia": "Monstera adansonii · folhagem de meia-sombra",
+  "detalhes": "Planta viva · retirada ou entrega a combinar",
+  "introducao": "Folhas com aberturas naturais, como pequenas janelas. É prima menor da costela-de-adão de folhas grandes e fica linda pendurada ou subindo por um tutor.",
+  "para_quem_titulo": "Para quem gosta de plantas diferentes",
+  "para_quem_texto": "Cresce rápido quando está feliz e é fácil de multiplicar por estacas.",
+  "para_quem_lista": [
+    "Quem quer uma planta pendente para prateleira ou suporte alto",
+    "Quem tem um ambiente claro e úmido",
+    "Quem gosta de acompanhar folhas novas abrindo"
+  ],
+  "atuacao_titulo": "Uma trepadeira das florestas tropicais",
+  "atuacao_texto": "<p>A <em>Monstera adansonii</em> ocorre naturalmente nas florestas da América Central e do Sul, incluindo o Brasil. Na natureza, ela sobe pelos troncos das árvores usando raízes aéreas.</p><p><strong>Não confundir:</strong> o nome costela-de-adão também é usado para a <em>Monstera deliciosa</em>, que tem folhas bem maiores. Esta é a versão de folhas pequenas.</p>",
+  "ritual_titulo": "Como cuidar da sua Mini Costela de Adão",
+  "ritual_introducao": "Cuidados básicos:",
+  "ritual_passos": [
+    {
+      "modo": "Luz",
+      "descricao": "Bastante claridade, sem sol direto forte. Com pouca luz, as folhas novas saem menores e com menos aberturas."
+    },
+    {
+      "modo": "Rega",
+      "descricao": "Regue quando os primeiros centímetros da terra estiverem secos. Gosta de umidade no ar, o que o clima de Belém já ajuda."
+    },
+    {
+      "modo": "Apoio",
+      "descricao": "Para crescer para cima, ofereça um tutor; se preferir pendente, deixe os ramos caírem e pode as pontas para encorpar."
+    }
+  ],
+  "intencao_frase": "",
+  "cuidados": "<p><strong>Planta tóxica se ingerida.</strong> A Mini Costela de Adão tem cristais de oxalato de cálcio na seiva: mastigar folhas ou caules irrita boca e garganta de pessoas e animais. Deixe fora do alcance de cães, gatos e crianças pequenas e lave as mãos depois de podar.</p>",
+  "conexao_titulo": "",
+  "conexao_citacao": "",
+  "conexao_texto": "",
+  "chamada_titulo": "Leve a Mini Costela de Adão para casa",
+  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir."
+}

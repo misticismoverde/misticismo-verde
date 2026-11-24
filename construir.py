@@ -20,7 +20,22 @@ CNPJ = '63.040.689/0001-06'
 HOJE = datetime.date.today().isoformat()
 AVISOS = []
 
-CAT_PROD = {'sais': 'Sais Rituais', 'amuletos': 'Amuletos', 'plantas': 'Plantas Vivas', 'difusores': 'Difusores'}
+CAT_PROD = {'sais': 'Sais Rituais', 'amuletos': 'Amuletos', 'plantas': 'Plantas Vivas', 'jardinagem': 'Jardinagem', 'difusores': 'Difusores'}
+# rótulos das seções do modelo quando o produto é de cultivo (plantas, terra, vasos)
+ROTULOS_CULTIVO = [('🔮 O que ele atua', '🌱 Sobre o produto'), ('🕯️ Como usar — Ritual guiado', '🪴 Como cuidar'),
+                   ('✨ Intenção sugerida', '✨ Uma intenção para acompanhar'), ('🌙 Experiência após o uso', '🌙 O que esperar'),
+                   ('🌿 Conexão com a natureza', '🌿 Na tradição popular'), ('✦ Outros rituais ✦', 'Veja também'),
+                   ('Cada intenção tem a sua fórmula', 'Outros itens da loja'), ('· · · repita com o coração · · ·', '· · · se quiser, repita ao regar · · ·')]
+
+def remover_secao_vazia(h, ids):
+    """Tira do modelo a seção cujo conteúdo ficou vazio, para não sobrar título solto na página."""
+    for m in list(re.finditer(r'<section class="secao">.*?</section>', h, re.S)):
+        bloco = m.group(0)
+        if not any(f'id="{i}"' in bloco for i in ids): continue
+        texto = re.sub(r'<span class="(s-eyebrow|int-orn)">.*?</span>', '', bloco, flags=re.S)
+        if not re.sub(r'<[^>]+>|\s', '', texto): h = h.replace(bloco, '')
+    return h
+
 CAT_PLANTA = {'protecao': 'Proteção', 'limpeza': 'Limpeza', 'amor': 'Amor', 'prosperidade': 'Prosperidade',
               'cura': 'Cura', 'amazonica': 'Amazônica'}
 ROMANOS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
@@ -236,7 +251,7 @@ def montar_produtos(produtos):
     for p in produtos:
         p['_cat'] = chave(p.get('categoria'), CAT_PROD)
         p['_href'] = f'produtos/produto-{p["_id"]}.html'
-        p['_preco'] = preco_txt(p.get('preco'))
+        p['_preco'] = ('a partir de ' if p.get('preco_a_partir') else '') + preco_txt(p.get('preco'))
         p['_img'] = p.get('imagem') or OG_PADRAO
         if not p.get('imagem'): AVISOS.append(f'Produto sem foto: {p.get("nome")}')
     produtos.sort(key=lambda p: (p.get('ordem') or 999, p.get('nome', '')))
@@ -257,7 +272,7 @@ def montar_produtos(produtos):
             continue
         px = '../'
         nome_pg = p.get('titulo_pagina') or p.get('nome', '')
-        wa = whats(f'Olá Thais! Gostaria de adquirir o {nome_pg}.')
+        wa = whats(f'Olá Thais! Gostaria de adquirir: {nome_pg}.')
         els = {
             'heroTitulo': f'<h1 class="hero-titulo" id="heroTitulo">{t(nome_pg)}</h1>',
             'heroEnergia': f'<p class="hero-energia" id="heroEnergia">{t(p.get("energia"))}</p>',
@@ -302,8 +317,13 @@ def montar_produtos(produtos):
             els['btnCta'] = f'<a class="btn-comprar" id="btnCta" href="{a(enc)}" target="_blank" rel="noopener">💬 Encomendar uma peça parecida</a>'
             els['preco'] = f'<p class="preco" style="text-decoration:line-through;color:#ff6b6b;" id="preco">{t(p["_preco"])}</p>'
             els['precoDet'] = '<p class="preco-det" id="precoDet" style="color:#ff6b6b;">⚠️ Indisponível · Peça única vendida</p>'
+        if not p.get('intencao_frase'): els['intFrase'] = '<div class="int-frase" id="intFrase"></div>'
         h = modelo
         for k, v in els.items(): h = trocar_el(h, k, v)
+        h = remover_secao_vazia(h, ['pqTitulo', 'atTitulo', 'rTitulo', 'intFrase', 'expTitulo', 'cuidBox', 'ancTitulo'])
+        if p['_cat'] in ('plantas', 'jardinagem'):
+            extra = [('🕯️ Como usar — Ritual guiado', '🪴 Como usar'), ('⚠️ Cuidados', 'ℹ️ Bom saber'), ('🌿 Para quem é', '🌿 Indicações')] if p['_cat'] == 'jardinagem' else []
+            for de, para in extra + ROTULOS_CULTIVO: h = h.replace(de, para)
         if p.get('esgotado'):
             h = h.replace('<!--AVISO-ESGOTADO--><div class="hero">', '''<div style="background:rgba(200,50,50,0.08);border:1px solid rgba(200,50,50,0.2);padding:14px 24px;text-align:center;position:relative;z-index:2;margin:100px 60px 0 60px;border-radius:8px;">
   <p style="color:#ff6b6b;font-family:'Cinzel Decorative',serif;font-size:0.75rem;letter-spacing:0.15em;margin:0;">⚠️ PEÇA ÚNICA — JÁ FOI VENDIDA</p>
@@ -322,7 +342,7 @@ def montar_produtos(produtos):
         esg = bool(p.get('esgotado'))
         nome = p.get('nome', '')
         foto = img(p['_img'], '')
-        wa = whats(f'Olá Thais! Gostaria de adquirir o {p.get("titulo_pagina") or nome}.')
+        wa = whats(f'Olá Thais! Gostaria de adquirir: {p.get("titulo_pagina") or nome}.')
         enc = whats(f'Olá Thais! Vi a peça {nome}, que já foi vendida. Gostaria de encomendar uma parecida.')
         selo = 'Peça vendida' if esg else (p.get('loja_selo') or '')
         acoes = (f'<a href="{a(enc)}" class="mv-btn mv-btn-linha" target="_blank" rel="noopener">Encomendar parecida</a>' if esg else

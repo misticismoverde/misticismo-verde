@@ -1,0 +1,53 @@
+{
+  "esgotado": false,
+  "pagina_propria": false,
+  "experiencia_titulo": "",
+  "experiencia_texto": "",
+  "experiencia_itens": [],
+  "nome": "Espada de São Jorge",
+  "ordem": 10,
+  "categoria": "Plantas Vivas",
+  "preco": 30.0,
+  "imagem": "/imagens/produtos/img-produto-espada.jpg",
+  "loja_selo": "Planta Viva · Proteção",
+  "loja_intencao": "⚔️ Guardiã dos lares",
+  "loja_resumo": "A clássica espada de folhas altas e rajadas. Uma das plantas mais resistentes para dentro de casa.",
+  "seo_titulo": "Espada de São Jorge (Dracaena trifasciata): planta viva em Belém",
+  "seo_descricao": "Espada de São Jorge (Dracaena trifasciata), planta resistente de folhas altas e rajadas, tradicional nos lares brasileiros. R$ 30,00, em Belém (PA).",
+  "titulo_pagina": "Espada de São Jorge",
+  "energia": "Dracaena trifasciata · antiga Sansevieria trifasciata",
+  "detalhes": "Planta viva · retirada ou entrega a combinar",
+  "introducao": "Folhas eretas, firmes e rajadas de verde-escuro. É uma das plantas mais tradicionais das casas brasileiras e uma das mais fáceis de manter viva.",
+  "para_quem_titulo": "Para quem quer uma planta que aguenta quase tudo",
+  "para_quem_texto": "Ela tolera pouca luz e longos intervalos sem rega. O maior risco para ela é o excesso de água, não a falta.",
+  "para_quem_lista": [
+    "Quem viaja ou esquece de regar",
+    "Quem quer uma planta para a entrada da casa",
+    "Quem procura a versão grande; para espaços pequenos há também a Espada Mini de São Jorge"
+  ],
+  "atuacao_titulo": "Ciência e tradição, cada uma no seu lugar",
+  "atuacao_texto": "<p><strong>Na botânica:</strong> é nativa da África tropical. Até 2017 era classificada como <em>Sansevieria trifasciata</em>; hoje os botânicos a incluem no gênero <em>Dracaena</em>. As folhas guardam água, por isso a planta resiste a períodos secos.</p><p><strong>Na tradição:</strong> o nome popular vem da forma das folhas, que lembram uma espada. Nas tradições afro-brasileiras ela é associada a Ogum e, na devoção popular, a São Jorge, e é colocada na entrada das casas como guardiã do lar. <a href=\"../plantas/espada.html\">Veja a ficha completa na Biblioteca Viva</a>.</p>",
+  "ritual_titulo": "Como cuidar da sua Espada de São Jorge",
+  "ritual_introducao": "Cuidados básicos:",
+  "ritual_passos": [
+    {
+      "modo": "Luz",
+      "descricao": "Vai bem da meia-sombra ao sol da manhã. Com mais luz, cresce mais rápido e as listras ficam mais marcadas."
+    },
+    {
+      "modo": "Rega",
+      "descricao": "Só regue quando a terra estiver totalmente seca. Em ambiente interno, isso costuma levar de uma a duas semanas; em época de chuva, ainda mais."
+    },
+    {
+      "modo": "Vaso",
+      "descricao": "Vaso com furo e terra que drene bem. Água parada apodrece a base das folhas."
+    }
+  ],
+  "intencao_frase": "Meu espaço está protegido. Só entra aqui o que é bem-vindo.",
+  "cuidados": "<p><strong>Planta tóxica se ingerida.</strong> Contém saponinas, que podem causar vômito e salivação em cães e gatos que mastigarem as folhas. Mantenha fora do alcance de animais e crianças pequenas.</p><p>Os usos espirituais descritos aqui são da tradição popular e não substituem cuidados de saúde.</p>",
+  "conexao_titulo": "Guardiã da porta de entrada",
+  "conexao_citacao": "Folha erguida como espada, plantada na porta para guardar a casa.",
+  "conexao_texto": "Na tradição popular brasileira, a espada fica perto da entrada para lembrar que o lar tem quem o guarde. Cuidar dela é também um jeito de cuidar do próprio espaço.",
+  "chamada_titulo": "Leve a Espada de São Jorge para casa",
+  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir."
+}

@@ -1,0 +1,53 @@
+{
+  "esgotado": false,
+  "pagina_propria": false,
+  "experiencia_titulo": "",
+  "experiencia_texto": "",
+  "experiencia_itens": [],
+  "nome": "Palmeira Ráfis",
+  "ordem": 12,
+  "categoria": "Plantas Vivas",
+  "preco": 35.0,
+  "imagem": "/imagens/produtos/img-produto-palmeira-raphis.jpg",
+  "loja_selo": "Planta Viva · Muda",
+  "loja_intencao": "🌴 Elegância para dentro de casa",
+  "loja_resumo": "Muda de palmeira de folhas em leque. Elegante, resistente e de crescimento lento.",
+  "seo_titulo": "Muda de Palmeira Ráfis (Rhapis excelsa) em Belém",
+  "seo_descricao": "Muda de Palmeira Ráfis (Rhapis excelsa), palmeira de folhas em leque para ambientes internos claros. Resistente e de crescimento lento. R$ 35,00, em Belém (PA).",
+  "titulo_pagina": "Muda de Palmeira Ráfis",
+  "energia": "Rhapis excelsa · palmeira para ambientes internos",
+  "detalhes": "Muda · planta viva · retirada ou entrega a combinar",
+  "introducao": "Uma palmeira de folhas em leque, finas e brilhantes, que cresce em touceira. Fica muito bem em salas, varandas cobertas e escritórios com boa claridade.",
+  "para_quem_titulo": "Para quem quer uma planta de presença",
+  "para_quem_texto": "A ráfis cresce devagar e dura muitos anos. Começa como muda e, com paciência, forma uma touceira cheia.",
+  "para_quem_lista": [
+    "Quem quer uma planta elegante para a sala ou a varanda coberta",
+    "Quem prefere plantas que não pedem poda frequente",
+    "Quem tem cães ou gatos: a Rhapis excelsa não consta como tóxica para eles na lista da ASPCA"
+  ],
+  "atuacao_titulo": "Uma palmeira que gosta de sombra clara",
+  "atuacao_texto": "<p>A <em>Rhapis excelsa</em> é originária do leste da Ásia e é cultivada há séculos como planta ornamental. Diferente de muitas palmeiras, tolera bem a meia-sombra, por isso se adapta a ambientes internos.</p><p>Ela cresce lentamente; é normal levar algum tempo para aparecerem folhas novas.</p>",
+  "ritual_titulo": "Como cuidar da sua Palmeira Ráfis",
+  "ritual_introducao": "Cuidados básicos para a muda se desenvolver bem:",
+  "ritual_passos": [
+    {
+      "modo": "Luz",
+      "descricao": "Claridade sem sol direto nas horas mais quentes. Sol forte amarela e queima as pontas das folhas."
+    },
+    {
+      "modo": "Rega",
+      "descricao": "Mantenha a terra levemente úmida, sem encharcar. Diminua a rega se as folhas começarem a escurecer na base."
+    },
+    {
+      "modo": "Pontas secas",
+      "descricao": "Pontas marrons costumam indicar ar muito seco, excesso de adubo ou água acumulada. Pode aparar só a parte seca com tesoura limpa."
+    }
+  ],
+  "intencao_frase": "",
+  "cuidados": "<p>Mesmo sem toxicidade conhecida para cães e gatos, não é alimento: evite que os animais mastiguem as folhas. Se notar algo diferente no seu animal, procure um veterinário.</p>",
+  "conexao_titulo": "",
+  "conexao_citacao": "",
+  "conexao_texto": "",
+  "chamada_titulo": "Leve a Palmeira Ráfis para casa",
+  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir."
+}

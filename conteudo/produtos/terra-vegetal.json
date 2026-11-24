@@ -1,0 +1,57 @@
+{
+  "esgotado": false,
+  "pagina_propria": false,
+  "experiencia_titulo": "",
+  "experiencia_texto": "",
+  "experiencia_itens": [],
+  "nome": "Terra Vegetal 5 kg",
+  "ordem": 14,
+  "categoria": "Jardinagem",
+  "preco": 15.0,
+  "imagem": "/imagens/produtos/img-produto-terra-vegetal.jpg",
+  "loja_selo": "Jardinagem",
+  "loja_intencao": "🌱 Base para suas plantas",
+  "loja_resumo": "Substrato 100% natural, enriquecido com matéria orgânica. Saco de 5 kg para plantio e replantio.",
+  "seo_titulo": "Terra Vegetal 5 kg: substrato natural para plantas em Belém",
+  "seo_descricao": "Terra vegetal 100% natural, enriquecida com matéria orgânica, em saco de 5 kg para plantio e replantio. R$ 15,00, em Belém (PA).",
+  "titulo_pagina": "Terra Vegetal 5 kg",
+  "energia": "Substrato natural para plantio",
+  "detalhes": "Saco de 5 kg · retirada ou entrega a combinar",
+  "introducao": "Terra vegetal 100% natural, enriquecida com matéria orgânica, para plantar mudas, trocar a planta de vaso ou completar a terra que baixou.",
+  "para_quem_titulo": "Para que serve",
+  "para_quem_texto": "É a base do vaso. Uma terra nova e solta ajuda as raízes a respirar e a encontrar nutrientes.",
+  "para_quem_lista": [
+    "Plantio de mudas novas",
+    "Troca de vaso quando a planta cresceu",
+    "Completar a terra de vasos que baixou com o tempo"
+  ],
+  "atuacao_titulo": "",
+  "atuacao_texto": "",
+  "ritual_titulo": "Como usar",
+  "ritual_introducao": "",
+  "ritual_passos": [
+    {
+      "modo": "Drenagem",
+      "descricao": "Use vaso com furo. Se quiser, coloque uma camada fina de pedrisco ou argila expandida no fundo antes da terra."
+    },
+    {
+      "modo": "Plantio",
+      "descricao": "Preencha o vaso, acomode a muda sem enterrar o caule além do nível em que ela já estava e firme a terra com os dedos."
+    },
+    {
+      "modo": "Primeira rega",
+      "descricao": "Regue até a água sair pelo furo. A terra assenta um pouco; complete se precisar."
+    },
+    {
+      "modo": "Plantas de terra seca",
+      "descricao": "Para suculentas, cactos e espadas, misture com areia grossa para a água escorrer mais rápido."
+    }
+  ],
+  "intencao_frase": "",
+  "cuidados": "<p>Guarde o saco fechado, em local seco e longe do alcance de crianças e animais. Lave as mãos depois de manusear a terra.</p>",
+  "conexao_titulo": "",
+  "conexao_citacao": "",
+  "conexao_texto": "",
+  "chamada_titulo": "Garanta a terra para o seu próximo plantio",
+  "chamada_texto": "Vai trocar uma planta de vaso? Peça junto a terra e o vaso no tamanho certo."
+}
