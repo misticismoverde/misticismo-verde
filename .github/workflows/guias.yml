@@ -35,7 +35,7 @@ jobs:
       - name: Montar o site e guardar o que mudou
         run: |
           python construir.py
-          git add -A fonte/downloads site public
+          git add -A fonte/downloads site
           if git diff --cached --quiet; then
             echo "Guias já estavam em dia."
           else
