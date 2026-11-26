@@ -66,6 +66,10 @@ content:
           - { name: nome, label: Nome, type: string }
           - { name: descricao, label: Descrição, type: text }
       - { name: cuidados, label: Cuidados, type: rich-text, options: { format: html } }
+      - { name: guia_nome_cientifico, label: "Guia de cuidados: nome científico (só plantas)", type: string, description: "Aparece no PDF de cuidados. Ex.: Rhapis excelsa" }
+      - { name: guia_rega_verao, label: "Guia de cuidados: rega no verão amazônico (jun–nov)", type: string, description: "Ex.: 2 vezes por semana" }
+      - { name: guia_rega_inverno, label: "Guia de cuidados: rega no inverno amazônico (dez–mai)", type: string, description: "Ex.: 1 vez por semana" }
+      - { name: guia_toxica, label: "Guia de cuidados: tóxica para animais e crianças", type: boolean }
       - { name: conexao_titulo, label: "Conexão com a natureza: título", type: string }
       - { name: conexao_citacao, label: "Conexão com a natureza: citação", type: text }
       - { name: conexao_texto, label: "Conexão com a natureza: texto", type: text }

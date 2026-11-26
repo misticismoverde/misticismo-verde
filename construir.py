@@ -590,32 +590,32 @@ def cor_texto(m):
 import hashlib
 VERSAO = {n: hashlib.md5(open(os.path.join('fonte', 'assets', n), 'rb').read()).hexdigest()[:8] for n in ('mv.css', 'site.js')}
 
-GUIA_PDF = 'downloads/guia-de-cuidados-misticismo-verde.pdf'
-def bloco_guia(px, compacto=False):
-    """Chamada para baixar o guia de cuidados (páginas das plantas e loja)."""
-    return f'''<div class="mv-guia-baixar{' compacto' if compacto else ''}">
+def bloco_guia(px, pid, nome):
+    """Chamada para baixar o guia de cuidados da própria planta (gerado por guia/gerar_guia.py)."""
+    pdf = f'downloads/guias/guia-{pid}.pdf'
+    return f'''<div class="mv-guia-baixar">
   <div class="mv-guia-ico" aria-hidden="true">🌱</div>
   <div class="mv-guia-txt">
     <p class="mv-sobretitulo" style="color:#D69A6E;margin:0 0 4px">Comprou sua planta?</p>
-    <h3>Guia de cuidados para ter em mãos</h3>
-    <p>As plantas da loja, uma por página, com rega, luz, terra e sinais de alerta pensados para o clima de Belém. Em PDF, para guardar no celular ou imprimir.</p>
+    <h3>Guia de cuidados: {nome}</h3>
+    <p>Rega, luz, terra e sinais de alerta da sua planta, pensados para o clima de Belém. Em PDF, para guardar no celular ou imprimir.</p>
   </div>
   <div class="mv-guia-btns">
-    <a class="mv-btn mv-btn-verde" href="{px}{GUIA_PDF}" download>Baixar o guia (PDF)</a>
-    <a class="mv-guia-abrir" href="{px}{GUIA_PDF}" target="_blank" rel="noopener">Abrir no navegador</a>
+    <a class="mv-btn mv-btn-verde" href="{px}{pdf}" download>Baixar o guia (PDF)</a>
+    <a class="mv-guia-abrir" href="{px}{pdf}" target="_blank" rel="noopener">Abrir no navegador</a>
   </div>
 </div>'''
 
-def inserir_guia(h, px):
-    """Coloca o bloco do guia logo depois da seção de cuidados de uma página de planta."""
-    if not os.path.exists(os.path.join(SAIDA, GUIA_PDF)) or 'mv-guia-baixar' in h: return h
+def inserir_guia(h, px, pid, nome):
+    """Coloca o bloco do guia logo depois da seção de cuidados, se o PDF da planta existir."""
+    if not os.path.exists(os.path.join(SAIDA, 'downloads', 'guias', f'guia-{pid}.pdf')) or 'mv-guia-baixar' in h: return h
     for marca in ('id="rTitulo"', 'Clima do Norte'):
-        i = h.find(marca)
-        if i >= 0:
-            j = h.find('</section>', i)
-            if j >= 0:
-                j += len('</section>')
-                return h[:j] + '\n<div class="mv-guia-faixa">' + bloco_guia(px) + '</div>\n' + h[j:]
+        k = h.find(marca)
+        if k >= 0:
+            fim = h.find('</section>', k)
+            if fim >= 0:
+                fim += len('</section>')
+                return h[:fim] + '\n<div class="mv-guia-faixa">' + bloco_guia(px, pid, nome) + '</div>\n' + h[fim:]
     return h
 
 def aplicar_tema():
@@ -627,15 +627,16 @@ def aplicar_tema():
         c = re.sub(r"'(Cinzel Decorative|Cinzel|Cormorant Garamond|IM Fell English)'", "'Playfair Display'", c)
         c = re.sub(r'color:\s*rgba\(245,\s*234,\s*216,\s*(0?\.\d+|1)\)', cor_texto, c)
         open(f, 'w', encoding='utf-8').write(c)
-    plantas_loja = {os.path.basename(a)[:-5] for a in glob.glob(os.path.join(RAIZ, 'conteudo', 'produtos', '*.json'))
-                    if json.load(open(a, encoding='utf-8')).get('categoria') == 'Plantas Vivas'}
+    plantas_loja = {}
+    for a in glob.glob(os.path.join(RAIZ, 'conteudo', 'produtos', '*.json')):
+        d = json.load(open(a, encoding='utf-8'))
+        if d.get('categoria') == 'Plantas Vivas': plantas_loja[os.path.basename(a)[:-5]] = d.get('nome', '')
     for f in glob.glob(os.path.join(SAIDA, '**', '*.html'), recursive=True):
         rel = os.path.relpath(f, SAIDA).replace(os.sep, '/')
         px = '../' * rel.count('/')
         h = ler(f)
         m_pl = re.match(r'produtos/produto-(.+)\.html$', rel)
-        if m_pl and m_pl.group(1) in plantas_loja: h = inserir_guia(h, px)
-        if rel == 'loja.html': h = h.replace('<!--MV-GUIA-->', bloco_guia(px, True))
+        if m_pl and m_pl.group(1) in plantas_loja: h = inserir_guia(h, px, m_pl.group(1), plantas_loja[m_pl.group(1)])
         # fontes antigas que o site não carrega mais -> fontes da marca
         h = re.sub(r"'(Cinzel Decorative|Cinzel|Cormorant Garamond|IM Fell English)'", "'Playfair Display'", h)
         # cabeçalho

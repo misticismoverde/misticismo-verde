@@ -89,5 +89,9 @@
   "conexao_citacao": "Folha erguida como espada, plantada na porta para guardar a casa.",
   "conexao_texto": "Na tradição popular brasileira, a espada fica perto da entrada para lembrar que o lar tem quem o guarde. Cuidar dela é também um jeito de cuidar do próprio espaço.",
   "chamada_titulo": "Leve a Espada de São Jorge para casa",
-  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir."
+  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir.",
+  "guia_nome_cientifico": "Dracaena trifasciata",
+  "guia_rega_verao": "a cada 15 a 20 dias",
+  "guia_rega_inverno": "a cada 25 a 30 dias, ou mais",
+  "guia_toxica": true
 }

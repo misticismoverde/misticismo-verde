@@ -1,0 +1,46 @@
+# Refaz os guias de cuidados (PDF) sempre que um produto, uma foto de produto ou o gerador muda.
+# Assim, planta nova no painel ganha guia próprio e entra no guia completo sem ninguém precisar lembrar.
+name: Guias de cuidados
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'conteudo/produtos/**'
+      - 'fonte/imagens/**'
+      - 'guia/**'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: guias
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Pillow e Playwright
+        run: |
+          pip install pillow playwright
+          python -m playwright install --with-deps chromium
+      - name: Gerar os guias
+        run: python guia/gerar_guia.py
+      - name: Montar o site e guardar o que mudou
+        run: |
+          python construir.py
+          git add -A fonte/downloads site public
+          if git diff --cached --quiet; then
+            echo "Guias já estavam em dia."
+          else
+            git -c user.name="Guias Misticismo Verde" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Guias de cuidados atualizados automaticamente"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

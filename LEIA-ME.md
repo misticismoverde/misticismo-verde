@@ -41,13 +41,20 @@ Página inicial, Sobre, Contato, Trocas, Privacidade e as páginas feitas à mã
 
 Publicação: Cloudflare Workers (projeto `wild-voice-16a6`), ligado a este repositório. Comando da build: `python3 construir.py`; comando de implantação: `npx wrangler deploy`; a pasta publicada é definida em `wrangler.jsonc` (`site/`).
 
-## Guia de cuidados (PDF)
+## Guias de cuidados (PDF)
 
-O arquivo `fonte/downloads/guia-de-cuidados-misticismo-verde.pdf` é o guia que os clientes baixam
-nas páginas das plantas e na loja. Ele **não** é refeito sozinho: depois de mudar os cuidados de
-uma planta no painel, trocar uma foto ou incluir uma planta nova, peça ao Claude para
-"gerar o guia de novo" (ele roda `python3 guia/gerar_guia.py`).
+- **Guia completo:** `fonte/downloads/guia-de-cuidados-misticismo-verde.pdf`, na seção Downloads da página de Artigos, junto do Calendário Lunar.
+- **Um guia por planta:** `fonte/downloads/guias/guia-<produto>.pdf`. O botão "Baixar o guia" aparece sozinho na página de cada planta da categoria **Plantas Vivas**.
 
-- Os cuidados das plantas do painel vêm dos mesmos textos do site (seção "Como cuidar").
-- Jiboia Neon e Mini Espada têm páginas feitas à mão; os cuidados delas ficam em `guia/gerar_guia.py`.
-- Para incluir uma planta nova no guia, ela precisa ser acrescentada à lista `PLANTAS` desse arquivo.
+**Atualização automática:** sempre que um produto, uma foto de produto ou o gerador muda no ramo `main`,
+o GitHub refaz todos os guias (arquivo `.github/workflows/guias.yml`) e publica. Uma planta nova entra
+no guia completo e ganha o guia dela. Leva uns 3 minutos depois de salvar no painel.
+
+Para uma planta nova sair bem no guia, preencha no painel:
+- "Como usar: passos" (vira o "Como cuidar em Belém e região");
+- "Experiência: itens" com os itens **Luz** e **Porte**;
+- "Cuidados" (vira o aviso de atenção);
+- "Guia de cuidados: nome científico", "rega no verão amazônico", "rega no inverno amazônico" e "tóxica".
+
+Jiboia Neon e Mini Espada têm páginas feitas à mão; os passos delas ficam em `guia/gerar_guia.py` (MANUAIS).
+Para gerar à mão: `python3 guia/gerar_guia.py`.

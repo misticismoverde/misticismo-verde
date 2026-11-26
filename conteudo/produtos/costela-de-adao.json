@@ -88,5 +88,9 @@
   "conexao_citacao": "Uma folha com janelas: deixa a luz entrar e guarda o resto.",
   "conexao_texto": "Na floresta, a costela sobe abraçada a outras árvores. Em casa, ela lembra que ninguém cresce sozinho. Cuidar dela, orientar os ramos e fazer mudas para presentear é também um jeito de cuidar dos próprios laços.",
   "chamada_titulo": "Leve a Mini Costela de Adão para casa",
-  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir."
+  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir.",
+  "guia_nome_cientifico": "Monstera adansonii",
+  "guia_rega_verao": "2 vezes por semana",
+  "guia_rega_inverno": "1 vez por semana",
+  "guia_toxica": true
 }

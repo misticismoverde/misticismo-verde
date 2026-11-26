@@ -88,5 +88,9 @@
   "conexao_citacao": "Não é muro, é copa: o que chega pesado se desfaz entre as folhas.",
   "conexao_texto": "Enquanto outras plantas são lembradas como guardiãs, a ráfis é lembrada como anfitriã. Cuidar dela — regar com calma, limpar as folhas, ver a touceira crescer — é também um jeito de cultivar um lar que recebe bem.",
   "chamada_titulo": "Leve a Palmeira Ráfis para casa",
-  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir."
+  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir.",
+  "guia_nome_cientifico": "Rhapis excelsa",
+  "guia_rega_verao": "2 vezes por semana",
+  "guia_rega_inverno": "1 vez por semana, ou menos",
+  "guia_toxica": false
 }

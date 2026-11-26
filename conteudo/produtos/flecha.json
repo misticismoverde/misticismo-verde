@@ -88,5 +88,9 @@
   "conexao_citacao": "Folha em ponta de flecha: mira à frente e cresce mudando de forma.",
   "conexao_texto": "Assim como a planta, que troca o formato das folhas conforme amadurece, a flecha lembra que mudar não é perder a essência. Cuidar dela — podar, renovar, fazer novas mudas — é um pequeno exercício de foco e recomeço.",
   "chamada_titulo": "Leve a Planta Flecha para casa",
-  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir."
+  "chamada_texto": "Quer saber se ela combina com o seu espaço? Mande uma mensagem com uma foto do lugar onde pretende colocar a planta e a Thais te ajuda a decidir.",
+  "guia_nome_cientifico": "Syngonium podophyllum",
+  "guia_rega_verao": "2 vezes por semana",
+  "guia_rega_inverno": "1 vez por semana",
+  "guia_toxica": true
 }

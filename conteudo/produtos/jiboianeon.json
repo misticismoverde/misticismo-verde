@@ -10,5 +10,9 @@
   "loja_resumo": "Folhas amarelo-limão que iluminam o ambiente. Renova as energias, traz vitalidade e é uma das plantas mais fáceis de cuidar.",
   "seo_titulo": "Jiboia Neon (Epipremnum aureum): planta viva para o lar",
   "seo_descricao": "Jiboia Neon (Epipremnum aureum 'Neon'), planta de folhas amarelo-limão, fácil de cultivar e adaptada ao clima do Pará. Planta viva, R$ 34,90, em Belém (PA).",
-  "pagina_propria": true
+  "pagina_propria": true,
+  "guia_nome_cientifico": "Epipremnum aureum 'Neon'",
+  "guia_rega_verao": "a cada 4 a 6 dias",
+  "guia_rega_inverno": "a cada 7 a 10 dias",
+  "guia_toxica": true
 }
