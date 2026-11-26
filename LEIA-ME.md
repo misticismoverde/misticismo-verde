@@ -40,3 +40,14 @@ Página inicial, Sobre, Contato, Trocas, Privacidade e as páginas feitas à mã
 - `construir.py` — junta tudo e grava o site pronto em `site/` (pasta publicada; é refeita a cada montagem).
 
 Publicação: Cloudflare Workers (projeto `wild-voice-16a6`), ligado a este repositório. Comando da build: `python3 construir.py`; comando de implantação: `npx wrangler deploy`; a pasta publicada é definida em `wrangler.jsonc` (`site/`).
+
+## Guia de cuidados (PDF)
+
+O arquivo `fonte/downloads/guia-de-cuidados-misticismo-verde.pdf` é o guia que os clientes baixam
+nas páginas das plantas e na loja. Ele **não** é refeito sozinho: depois de mudar os cuidados de
+uma planta no painel, trocar uma foto ou incluir uma planta nova, peça ao Claude para
+"gerar o guia de novo" (ele roda `python3 guia/gerar_guia.py`).
+
+- Os cuidados das plantas do painel vêm dos mesmos textos do site (seção "Como cuidar").
+- Jiboia Neon e Mini Espada têm páginas feitas à mão; os cuidados delas ficam em `guia/gerar_guia.py`.
+- Para incluir uma planta nova no guia, ela precisa ser acrescentada à lista `PLANTAS` desse arquivo.

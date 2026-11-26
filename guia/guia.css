@@ -1,0 +1,90 @@
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: 'Poppins', sans-serif; font-weight: 300; color: #22302A; font-size: 9.6pt; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+b, strong { font-weight: 600; color: #15251B; }
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 500; color: #0F2416; margin: 0; }
+
+.pg { width: 210mm; height: 297mm; padding: 16mm 17mm 18mm; position: relative; page-break-after: always; overflow: hidden; background: #FBF8F1; }
+.pg:last-child { page-break-after: auto; }
+.sobre { font-size: 7.6pt; letter-spacing: .16em; text-transform: uppercase; color: #9A6331; font-weight: 600; margin: 0 0 3mm; }
+.pg > h2 { font-size: 22pt; line-height: 1.15; margin-bottom: 5mm; }
+.pg h3 { font-size: 13pt; margin: 6mm 0 3mm; }
+.intro { font-size: 10pt; margin: 0 0 5mm; }
+.rodape-pg { position: absolute; left: 17mm; right: 17mm; bottom: 8mm; font-size: 7pt; color: #8A8F82; border-top: .3mm solid #E3DDCF; padding-top: 2mm; }
+
+/* capa */
+.capa { background: radial-gradient(120% 80% at 50% 30%, #1F3A26 0%, #0A120D 70%); color: #F2ECDF; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 22mm; }
+.capa .logo { width: 62mm; height: 62mm; border-radius: 50%; margin-bottom: 9mm; box-shadow: 0 0 18mm rgba(140,198,63,.25); }
+.capa .sobre { color: #D69A6E; }
+.capa h1 { color: #F2ECDF; font-size: 38pt; line-height: 1.08; margin: 1mm 0 6mm; }
+.capa .sub { font-size: 12pt; color: #DDEBC8; max-width: 130mm; margin: 0 0 9mm; }
+.capa-lista { list-style: none; padding: 0; margin: 0 0 12mm; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm 8mm; text-align: left; font-size: 9.5pt; color: #D6D0C1; }
+.capa-lista li::before { content: "✦ "; color: #8CC63F; }
+.lema { font-family: 'Playfair Display', serif; font-style: italic; font-size: 12pt; color: #A9D46E; margin: 0 0 3mm; }
+.versao { font-size: 8pt; color: #8E9A86; margin: 0; }
+
+/* estações */
+.estacoes { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.est { border-radius: 4mm; padding: 5mm 5.5mm; }
+.est h3 { margin: 0 0 1mm !important; font-size: 13.5pt !important; }
+.est .meses { font-size: 8pt; font-weight: 500; margin: 0 0 2.5mm; }
+.est ul { margin: 0; padding-left: 4.5mm; }
+.est li { margin-bottom: 1.4mm; }
+.chuva { background: #E4EDF0; } .chuva .meses { color: #2F5E6E; }
+.sol { background: #F6EAD7; } .sol .meses { color: #9A6331; }
+
+ol.regras { margin: 0; padding: 0; list-style: none; counter-reset: r; }
+ol.regras li { counter-increment: r; position: relative; padding: 0 0 0 10mm; margin-bottom: 2.4mm; }
+ol.regras li::before { content: counter(r); position: absolute; left: 0; top: -.4mm; width: 6.5mm; height: 6.5mm; border-radius: 50%; background: #2E5A36; color: #fff; font-weight: 600; font-size: 8.5pt; text-align: center; line-height: 6.5mm; }
+ul.lista { margin: 0 0 2mm; padding: 0; list-style: none; }
+ul.lista li { position: relative; padding-left: 6mm; margin-bottom: 2.6mm; }
+ul.lista li::before { content: ""; position: absolute; left: 1mm; top: 2.1mm; width: 2mm; height: 2mm; border-radius: 50%; background: #8CC63F; }
+
+table.sinais { width: 100%; border-collapse: collapse; font-size: 8.4pt; }
+.sinais th { text-align: left; font-weight: 600; font-size: 7.4pt; letter-spacing: .08em; text-transform: uppercase; color: #9A6331; padding: 0 2.5mm 2mm; border-bottom: .4mm solid #2E5A36; }
+.sinais td { padding: 2mm 2.5mm; border-bottom: .25mm solid #E3DDCF; vertical-align: top; line-height: 1.4; }
+.sinais td:first-child { font-weight: 500; color: #15251B; width: 36%; }
+.sinais td:nth-child(2) { width: 24%; }
+
+ol.indice { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 8mm; }
+.indice li { display: grid; grid-template-columns: 1fr auto; padding: 1mm 0; border-bottom: .25mm dotted #C9C2B0; break-inside: avoid; }
+.indice span { font-weight: 500; color: #15251B; }
+.indice i { grid-row: 2; font-size: 7.6pt; color: #6F7A69; }
+.indice b { color: #9A6331; font-size: 8pt; }
+
+/* páginas das plantas */
+.planta { padding-top: 13mm; }
+.topo-planta h2 { font-size: 25pt; line-height: 1.1; }
+.topo-planta .cient { font-family: 'Playfair Display', serif; font-style: italic; color: #4C6A52; font-size: 11pt; margin: 1mm 0 0; }
+.ficha-wrap { display: grid; grid-template-columns: 62mm 1fr; gap: 6mm; margin: 5mm 0 1mm; align-items: stretch; }
+.foto { width: 62mm; height: 62mm; object-fit: cover; border-radius: 4mm; }
+dl.ficha { margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2.4mm; align-content: start; }
+.ficha div { background: #EEF3E4; border-radius: 2.5mm; padding: 2.4mm 3mm; }
+.ficha div:first-child { grid-column: 1 / -1; }
+.ficha dt { font-size: 6.8pt; letter-spacing: .1em; text-transform: uppercase; color: #9A6331; font-weight: 600; margin-bottom: .6mm; }
+.ficha dd { margin: 0; font-size: 8.8pt; line-height: 1.35; color: #15251B; font-weight: 400; }
+.ficha .alerta-ficha { background: #F7E4DC; } .ficha .alerta-ficha dd { color: #8A2E12; font-weight: 500; }
+.planta h3 { margin-top: 5mm; }
+.passos { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm; }
+.passo h4 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 8.6pt; color: #2E5A36; margin: 0 0 .8mm; text-transform: uppercase; letter-spacing: .04em; }
+.passo p { margin: 0; font-size: 8.5pt; line-height: 1.5; }
+.caixa-alerta { margin-top: 4.5mm; background: #FBEFE6; border-left: 1.2mm solid #C25B2A; border-radius: 0 2.5mm 2.5mm 0; padding: 3mm 4mm; font-size: 8.5pt; line-height: 1.5; }
+.caixa-alerta b { color: #8A2E12; }
+
+/* terra e vaso */
+.duas { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.cartao { background: #EEF3E4; border-radius: 4mm; padding: 4.5mm 5mm; }
+.cartao h4 { font-size: 12pt; margin-bottom: 1mm; }
+.cartao .pq { font-size: 7.8pt; color: #9A6331; font-weight: 500; margin: 0 0 2mm; }
+.cartao p { margin: 0; }
+
+/* final */
+.final { background: radial-gradient(120% 80% at 50% 30%, #1F3A26 0%, #0A120D 70%); color: #F2ECDF; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 25mm; }
+.final .logo { width: 34mm; height: 34mm; border-radius: 50%; margin-bottom: 8mm; }
+.final h2 { color: #F2ECDF; font-size: 26pt; margin-bottom: 4mm; }
+.final .sub { font-size: 11pt; color: #DDEBC8; max-width: 125mm; margin: 0 0 9mm; }
+.contatos { background: rgba(255,255,255,.06); border: .3mm solid rgba(140,198,63,.35); border-radius: 4mm; padding: 6mm 10mm; margin-bottom: 10mm; }
+.contatos p { margin: 1.6mm 0; font-size: 10.5pt; color: #F2ECDF; }
+.contatos b { color: #A9D46E; font-weight: 500; margin-right: 2mm; }
+.final .nota { font-size: 7.8pt; color: #A9A28F; max-width: 140mm; margin: 0 0 8mm; }
